@@ -9,9 +9,9 @@ import HomeClients from "../../components/Home/HomeClients/HomeClients";
 import HomeFeedback from "../../components/Home/HomeFeedback/HomeFeedback";
 import HomeService from "../../components/Home/HomeService/HomeService";
 import Navbar from "../../components/Navbar/Navbar";
-
 import { Data } from "./IndustrySlideData";
-
+// import { useDispatch, useSelector } from 'react-redux';
+// import { fetchData } from '../../redux/home/homeActions';
 function Home() {
 
   useEffect(() => {
