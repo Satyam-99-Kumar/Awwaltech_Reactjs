@@ -134,12 +134,12 @@
       padding: 0 6rem;
       @include media("<=phone") {
         width: 320%;
-        margin-left: -20%;
+        
         padding: 0 15px;
       }
       .solution {
         width: 30%;
-        height: 57vh;
+        
         padding: 2rem;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         border-radius: 6px;
