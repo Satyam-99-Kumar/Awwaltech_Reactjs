@@ -1,0 +1,147 @@
+@import "../../../styles/breakpoints.scss";
+
+.detail {
+  width: calc(100% - 12rem);
+  display: flex;
+  padding: 24px;
+  margin: 6rem 6rem 0 6rem;
+  background: #f7f8fa;
+  @include media("<=phone") {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+
+  .head {
+    width: 50%;
+    @include media("<=phone") {
+      width: 100%;
+    }
+    p {
+      color: var(--primary-color);
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 28px;
+    }
+    h2 {
+      font-weight: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 42px;
+      letter-spacing: -0.34px;
+      margin-top: 1rem;
+    }
+  }
+  .text {
+    width: 50%;
+    @include media("<=phone") {
+      width: 100%;
+    }
+    p {
+      margin-bottom: 2rem;
+      font-size: 15px;
+      line-height: 21px;
+      font-weight: 400;
+      font-family: var(--font-secondary);
+
+      &:last-child {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -24px;
+          left: 0;
+          width: 10rem;
+          height: 1px;
+          background: gray;
+        }
+      }
+    }
+  }
+}
+
+.solutions {
+  width: 100%;
+  min-height: 55vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding: 0 6rem;
+  @include media("<=phone") {
+    flex-wrap: wrap;
+    margin-top: 24px;
+    padding: 15px;
+  }
+  .solution {
+    width: 30%;
+    height: fit-content;
+    padding: 2rem;
+    border: 1px solid transparent;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    transition: 0.3s;
+    @include media("<=phone") {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .logo {
+      margin-bottom: 21px;
+      img {
+        height: 3rem;
+        transition: 0.3s;
+      }
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 26px;
+      margin-bottom: 1rem;
+    }
+    p {
+      width: 100%;
+      text-align: left;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 21px;
+      font-family: var(--font-secondary);
+    }
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: #175fff;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 600;
+      margin-top: 22px;
+      span {
+        &:first-child {
+          opacity: 0;
+          margin-left: 8px;
+          transition: all 0.4s;
+        }
+        &:last-child {
+          margin-left: -2rem;
+          font-size: 1.5rem;
+          transition: all 0.3s;
+        }
+      }
+    }
+    &:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      border: 1px solid var(--primary-color);
+      cursor: pointer;
+    }
+    &:hover a span:first-child {
+      opacity: 1;
+    }
+    &:hover a span:last-child {
+      margin-left: 8px;
+    }
+    &:hover img {
+      transform: scale(0.85);
+    }
+  }
+}

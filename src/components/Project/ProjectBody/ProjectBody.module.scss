@@ -1,0 +1,47 @@
+.projectBody {
+  width: 100%;
+
+  //   TEXT BLOCK
+  .textBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    h4 {
+      font-family: var(--font-primary);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 42px;
+      letter-spacing: -0.34px;
+      color: #000000;
+    }
+    p.txt {
+      font-family: var(--font-secondary);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: -0.000793565em;
+      color: rgba(0, 0, 0, 0.7);
+      margin-bottom: 20px;
+    }
+    &__image {
+      width: calc(50% - 32px);
+      img {
+        width: 100%;
+      }
+    }
+    &__text {
+      width: calc(50% - 32px);
+    }
+  }
+
+  //   IMAGE BLOCK
+  .imageBlock {
+    width: 100%;
+    height: fit-content;
+    img{ width: 100%; }
+  }
+}

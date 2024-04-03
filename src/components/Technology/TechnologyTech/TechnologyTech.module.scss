@@ -1,0 +1,86 @@
+@import "../../../styles/breakpoints.scss";
+
+.tech {
+  width: 100%;
+  min-height: 100vh;
+  padding: 150px 100px;
+  @include media("<=phone") {
+    padding: 15px;
+  }
+
+  .text {
+    div.logo {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+    }
+    h3 {
+      font-family: var(--font-secondary);
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 21px;
+      letter-spacing: -0.0419664px;
+    }
+    h1 {
+      font-family: var(--font-primary);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: -0.34px;
+      margin-bottom: 24px;
+      margin-top: 16px;
+    }
+    p {
+      font-family: var(--font-secondary);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 21px;
+      letter-spacing: -0.0419664px;
+    }
+  }
+
+  .slides {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 62px;
+    @include media("<=phone") {
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+    .slide {
+      width: 23%;
+      padding: 16px;
+      border-radius: 6px;
+      box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+      @include media("<=phone") {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+      h3 {
+        margin-top: 10px;
+        font-weight: 400;
+        font-family: var(--font-secondary);
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: -0.0419664px;
+      }
+      p {
+        font-family: var(--font-secondary);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: -0.0419664px;
+        margin: 10px 0;
+      }
+      h4 {
+        font-family: var(--font-secondary);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: -0.0419664px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

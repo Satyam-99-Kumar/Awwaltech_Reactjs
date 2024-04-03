@@ -1,0 +1,203 @@
+@import "../../../styles/breakpoints.scss";
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background: url(../../../assets/Home/unsplash_1lfI7wkGWZ4.png) no-repeat
+    center center / cover;
+  position: relative;
+  @include media("<=phone") {
+    height: 105vh;
+  }
+
+  &__text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    @include media("<=phone") {
+      top: 18%;
+      width: 100%;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #ffff;
+      font-size: 48px;
+      line-height: 56px;
+      font-weight: 700;
+      @include media("<=phone") {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: -0.00304em;
+      }
+    }
+    p {
+      text-align: center;
+      color: #ffff;
+      font-size: 26px;
+      font-weight: 700;
+      margin-top: 20px;
+      @include media("<=phone") {
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 26px;
+        letter-spacing: -0.00272em;
+        color: #e5e5e5;
+        margin-top: 10px;
+      }
+    }
+
+    .btnGroup {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      @include media("<=phone") {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+
+      button {
+        width: 192px;
+        height: 66px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 4px;
+        outline: none;
+        margin-right: 2rem;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 600;
+        font-family: var(--font-secondary);
+        cursor: pointer;
+        @include media("<=phone") {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 22px;
+        }
+        &:nth-child(1) {
+          background-color: #175fff;
+          color: #fff;
+          transition: 0.3s;
+          &:hover {
+            background-color: #99b9ff;
+          }
+        }
+        &:nth-child(2) {
+          background-color: #e7f1fe;
+          color: #175fff;
+          border: 2px solid #175fff;
+          transition: 0.3s;
+          &:hover {
+            background-color: #e7f1fe;
+            border: 2px solid #99b9ff;
+            color: #153ab7;
+          }
+        }
+      }
+    }
+  }
+
+  &__option {
+    width: 100%;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include media("<=phone") {
+      flex-wrap: wrap;
+      bottom: 0;
+      right: 0;
+    }
+
+    .optionWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      @include media("<=phone") {
+        width: 100%;
+        margin-bottom: 1.9rem;
+      }
+    }
+
+    .specialLinkWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      @include media("<=phone") {
+        width: 100%;
+      }
+    }
+
+    .block {
+      height: 10.5rem;
+      width: 10.5rem;
+      padding: 2rem;
+      cursor: pointer;
+      @include media("<=phone") {
+        width: 144px;
+        height: 144px;
+      }
+      img {
+        width: 1.5rem;
+      }
+      h4 {
+        font-size: 1rem;
+        margin-top: 1rem;
+        font-family: var(--font-secondary);
+        @include media("<=phone") {
+          font-size: 15px;
+          line-height: 21px;
+        }
+      }
+      h4,
+      svg {
+        color: #fff !important;
+      }
+    }
+    .block.first {
+      background: rgba(23, 95, 255, 1);
+      color: #fff;
+      transition: 0.3s;
+      &:hover {
+        background: rgba(23, 95, 255, 0.6);
+      }
+    }
+    .block.second {
+      background: #0b2845;
+      transition: 0.3s;
+      &:hover {
+        background: #051526;
+      }
+    }
+    .logo {
+      height: 5rem;
+      width: 5rem;
+      margin-right: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 2.5rem;
+        margin-right: 0;
+      }
+    }
+    .text {
+      width: 10%;
+      margin-right: 4rem;
+      color: #808080;
+      @include media("<=phone") {
+        display: none;
+      }
+      p {
+        font-family: var(--font-secondary);
+      }
+    }
+  }
+}

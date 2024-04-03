@@ -1,0 +1,118 @@
+.sliderWrapper {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    padding: 60px 100px;
+    h3 {
+      font-family: var(--font-primary);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      letter-spacing: -0.34px;
+      color: #0b2845;
+      margin-bottom: 60px;
+    }
+    .slider {
+      width: 100%;
+      &__container {
+        width: 100%;
+        padding: 0 22px;
+        .post {
+          .image {
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+          .text {
+            padding: 1.5rem 0;
+            h4 {
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 21px;
+              margin-bottom: 1rem;
+              font-family: var(--font-secondary);
+            }
+            p {
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 21px;
+              margin-bottom: 1rem;
+              font-family: var(--font-secondary);
+              color: rgba(0, 0, 0, 0.7);
+            }
+            a {
+              text-decoration: none;
+              color: var(--primary-color);
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 20px;
+              display: flex;
+              span {
+                font-size: 1.5rem;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .sliderArrow1,
+    .sliderArrow2 {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      &:hover {
+        background: #e7f1fe;
+      }
+      &:active {
+        background: #9ec8fa;
+      }
+    }
+    .sliderArrow1 {
+      left: 50px;
+    }
+    .sliderArrow2 {
+      right: 50px;
+    }
+  
+    .globalLink {
+      width: 100%;
+      text-align: center;
+      padding: 2rem 0;
+      a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: -0.01em;
+        color: #325ce8;
+        span {
+          font-size: 1.2rem;
+          margin-top: 5px;
+          margin-left: 10px;
+          font-weight: bold;
+          transition: all 0.3s;
+        }
+        &:hover span {
+          transform: translateX(7px);
+        }
+      }
+    }
+  }
+  

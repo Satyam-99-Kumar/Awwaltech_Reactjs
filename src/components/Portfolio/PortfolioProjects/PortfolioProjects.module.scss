@@ -1,0 +1,148 @@
+@import "../../../styles/breakpoints.scss";
+
+.projects {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 100px;
+  @include media("<=phone") {
+    padding: 15px;
+    overflow: hidden;
+  }
+
+  .options {
+    margin-bottom: 4rem;
+    @include media("<=phone") {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 10px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    &__wrapper {
+      display: flex;
+      @include media("<=phone") {
+        width: 350%;
+      }
+    }
+    .option {
+      margin-right: 2rem;
+      padding: 1rem 2rem;
+      border-bottom: 2px solid #ccc;
+      color: #333;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      font-family: var(--font-secondary);
+    }
+    .active {
+      border-bottom: 2px solid var(--primary-color);
+      color: var(--primary-color);
+    }
+  }
+
+  .allprojects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    .project {
+      width: 30%;
+      min-height: 30vh;
+      margin-bottom: 3rem;
+      margin-right: 3rem;
+      @include media("<=phone") {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+      }
+      .image {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .text {
+        padding: 1.5rem 0;
+        @include media("<=phone") {
+          padding: 10px 0;
+        }
+        h4 {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 21px;
+          margin: 0;
+          margin-bottom: 1rem;
+          font-family: var(--font-secondary);
+          @include media("<=phone") {
+            margin: 0;
+            margin-bottom: 10px;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 21px;
+          margin-bottom: 1rem;
+          font-family: var(--font-secondary);
+          color: rgba(0, 0, 0, 0.7);
+        }
+        a {
+          text-decoration: none;
+          color: var(--primary-color);
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          display: flex;
+          align-items: center;
+          span {
+            font-size: 1.3rem;
+            margin-top: 5px;
+            margin-left: 10px;
+            font-weight: bold;
+            transition: all 0.3s;
+          }
+          &:hover span {
+            transform: translateX(7px);
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    div {
+      width: 33px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      margin: 0 0.5rem;
+      color: #42526e;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      &:nth-child(2) {
+        background: var(--primary-color);
+        color: #fff;
+      }
+      &:first-child,
+      &:last-child {
+        font-size: 1.2rem;
+      }
+      &:first-child {
+        color: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}

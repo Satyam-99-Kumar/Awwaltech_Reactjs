@@ -1,0 +1,69 @@
+// A PROJECT
+.aproject {
+  width: 100%;
+  padding: 100px;
+
+  .wrapper {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    background: #f7f8fa;
+
+    &__left {
+      width: 40%;
+      height: 40vh;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__right {
+      width: 60%;
+      height: 40vh;
+      padding-left: 64px;
+      p.text {
+        color: var(--primary-color);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        padding: 0;
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 42px;
+        font-weight: normal;
+        line-height: 2.5rem;
+        margin-top: 13px;
+      }
+      .line {
+        width: 10rem;
+        height: 2px;
+        margin-top: 32px;
+        background: var(--black-color);
+      }
+      p.text {
+        display: block;
+        color: var(--black-color);
+        margin-top: 32px;
+        font-size: 15px;
+        line-height: 21px;
+        font-family: var(--font-secondary);
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 34px;
+        display: flex;
+        span {
+          font-size: 1.5rem;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

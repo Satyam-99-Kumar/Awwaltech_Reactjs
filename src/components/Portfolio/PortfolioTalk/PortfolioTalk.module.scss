@@ -1,0 +1,78 @@
+@import "../../../styles/breakpoints.scss";
+
+.talk {
+  width: 100%;
+  display: flex;
+  @include media("<=phone") {
+    height: fit-content;
+    flex-wrap: wrap;
+  }
+  &__text {
+    width: 55%;
+    background: #175fff;
+    padding: 6rem 100px;
+    @include media("<=phone") {
+      width: 100%;
+      height: fit-content;
+      padding: 32px 15px;
+    }
+    h1,
+    p {
+      color: #fff;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 46px;
+      letter-spacing: -0.34px;
+      font-family: var(--font-primary);
+      margin-bottom: 24px;
+    }
+    p {
+      font-family: var(--font-secondary);
+      font-size: 15px;
+      line-height: 21px;
+    }
+    .btnGroup {
+      display: flex;
+      margin-top: 24px;
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        margin-right: 1.5rem;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        width: 157.5px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        font-family: var(--font-secondary);
+
+        &:first-child {
+          background-color: #e7f1fe;
+          color: #175fff;
+          border: 2px solid #175fff;
+          transition: 0.3s;
+          &:hover {
+            background-color: #e7f1fe;
+            border: 2px solid #99b9ff;
+            color: #153ab7;
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    width: 45%;
+    background: url(../../../assets/Portfolio/p3.png) no-repeat center center /
+      cover;
+    @include media("<=phone") {
+      width: 100%;
+      height: 30vh;
+    }
+  }
+}

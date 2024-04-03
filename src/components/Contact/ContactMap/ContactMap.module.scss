@@ -1,0 +1,15 @@
+@import "../../../styles/breakpoints.scss";
+
+.map {
+  width: 100%;
+  height: fit-content;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+  position: relative;
+  @include media("<=phone") {
+    margin-top: 2rem;
+  }
+  img{
+      width: 100%;
+  }
+}

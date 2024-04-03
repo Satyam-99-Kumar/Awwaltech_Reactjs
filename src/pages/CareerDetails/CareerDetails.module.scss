@@ -1,0 +1,54 @@
+@import "../../styles/breakpoints.scss";
+
+.careerDetails {
+  width: 100%;
+  padding: 150px 100px 100px 100px;
+  @include media("<=phone") {
+    margin-top: 3rem;
+    padding: 15px;
+  }
+
+  h1 {
+    font-family: var(--fonr-primary);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.34px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 24px;
+  }
+  p {
+    font-family: var(--fonr-secondary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: -0.0419664px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  &__detail {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    @include media("<=phone") {
+      width: 100%;
+      margin-top: 0;
+    }
+    .description {
+      width: 50%;
+      @include media("<=phone") {
+        width: 100%;
+      }
+    }
+    .form {
+      width: 50%;
+      padding-left: 36px;
+      @include media("<=phone") {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+}

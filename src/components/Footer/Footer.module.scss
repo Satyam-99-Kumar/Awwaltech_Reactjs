@@ -1,0 +1,180 @@
+@import "../../styles/breakpoints.scss";
+
+.footer {
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  padding: 80px 160px;
+  @include media("<=phone") {
+    padding: 63px 15px 15px 15px;
+    flex-wrap: wrap;
+  }
+
+  h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -3.12962e-5em;
+    color: #147bf3;
+    font-family: var(--font-primary);
+  }
+
+  &__one {
+    width: 41%;
+    @include media("<=phone") {
+      width: 100%;
+    }
+    img {
+      width: 40%;
+      margin-bottom: 1.2rem;
+      @include media("<=phone") {
+        width: 80%;
+      }
+    }
+    p {
+      width: 70%;
+      font-size: 15px;
+      line-height: 21px;
+      font-family: var(--font-secondary);
+      @include media("<=phone") {
+        width: 100%;
+      }
+    }
+    .info {
+      margin-top: 18px;
+      h5 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -3.12962e-5em;
+        color: #000000;
+        margin-bottom: 8px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        font-family: var(--font-secondary);
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  &__two {
+    width: 23%;
+    @include media("<=phone") {
+      width: 100%;
+      margin-top: 18px;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      color: var(--black-color);
+      font-family: var(--font-secondary);
+      transition: 0.3s;
+      &:hover{
+        color: #777;
+      }
+      @include media("<=phone") {
+        margin-top: 15px;
+      } 
+    }
+  }
+  &__three {
+    width: 23%;
+    @include media("<=phone") {
+      width: 100%;
+      margin-top: 18px;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      color: var(--black-color);
+      font-family: var(--font-secondary);
+      transition: 0.3s;
+      &:hover{
+        color: #777;
+      }
+      @include media("<=phone") {
+        margin-top: 15px;
+      } 
+    }
+  }
+  &__four {
+    width: 23%;
+    @include media("<=phone") {
+      width: 100%;
+      margin-top: 18px;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      color: var(--black-color);
+      font-family: var(--font-secondary);
+      transition: 0.3s;
+      &:hover{
+        color: #777;
+      }
+      @include media("<=phone") {
+        margin-top: 15px;
+      } 
+    }
+  }
+}
+
+.regions {
+  padding: 32px 160px;
+  display: flex;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  @include media("<=phone") {
+    padding: 15px;
+    flex-wrap: wrap;
+  } 
+  .region {
+    width: 25%;
+    @include media("<=phone") {
+      width: 100%;
+      margin-top: 18px;
+    }
+    h5 {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -3.12962e-5em;
+      color: #000000;
+      margin-bottom: 8px;
+      margin-top: 10px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #000000;
+    }
+    span{
+      color: #147bf3;
+      font-size: 20px;
+    }
+  }
+}
+
+.copyright {
+  background: #ccc;
+  color: var(--black-color);
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-family: var(--font-secondary);
+  @include media("<=phone") {
+    text-align: left;
+  } 
+}

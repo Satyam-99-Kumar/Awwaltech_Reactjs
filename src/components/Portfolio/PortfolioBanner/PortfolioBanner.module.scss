@@ -1,0 +1,77 @@
+@import "../../../styles/breakpoints.scss";
+
+.banner {
+  width: 100%;
+  min-height: 80vh;
+  background: var(--secondary-color);
+  display: flex;
+  @include media("<=phone") {
+    flex-wrap: wrap;
+  }
+
+  &__left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 100px;
+    @include media("<=phone") {
+      width: 100%;
+      padding: 15px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 36px;
+      margin-bottom: 10px;
+      font-family: var(--font-primary);
+      color: #e5e5e5;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: 0.00014em;
+      font-family: var(--font-primary);
+    }
+    h1.mobileViewHeading {
+      @include media("<=phone") {
+        display: block;
+      }
+      @include media(">=phone") {
+        display: none;
+      }
+    }
+    h1.desktopViewHeading {
+      @include media("<=phone") {
+        display: none;
+      }
+      @include media(">=phone") {
+        display: block;
+      }
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 15px 32px;
+      color: var(--primary-color);
+      background: var(--primary-color-light);
+      margin-top: 2rem;
+    }
+  }
+
+  &__right {
+    width: 50%;
+    position: relative;
+    @include media("<=phone") {
+      width: 100%;
+      display: none;
+    }
+    .frame {
+      position: absolute;
+      top: 50%;
+      left: 12rem;
+      transform: translateY(-50%);
+    }
+  }
+}

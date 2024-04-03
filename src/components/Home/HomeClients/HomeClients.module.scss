@@ -1,0 +1,265 @@
+@import "../../../styles/breakpoints.scss";
+
+.clients {
+  width: 100%;
+  min-height: fit-content;
+  position: relative;
+  background: #f5f5f7;
+
+  &__text {
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    @include media("<=phone") {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 60px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 600px;
+      letter-spacing: -0.34px;
+      @include media("<=phone") {
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: -1px;
+      }
+    }
+    p {
+      width: 50%;
+      margin: auto;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 15px;
+      line-height: 21px;
+      font-weight: 400;
+      font-family: var(--font-secondary);
+      @include media("<=phone") {
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .options {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 4rem;
+    @include media("<=phone") {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 0;
+      padding-bottom: 10px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      @include media("<=phone") {
+        width: 350%;
+      }
+    }
+
+    .option {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: linear-gradient(0deg, #ffffff, #ffffff), #0b2845;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border: 1px solid transparent;
+      border-radius: 6px;
+      font-family: var(--font-secondary);
+      font-size: 18px;
+      line-height: 21px;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+      }
+      @include media("<=phone") {
+        width: 24%;
+      }
+      div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 24px;
+        font-size: 18px;
+      }
+    }
+    .option.active {
+      color: var(--primary-color);
+    }
+  }
+
+  .enterprize {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 4rem;
+    margin-top: 4rem;
+    @include media("<=phone") {
+      flex-wrap: wrap;
+      padding-left: 15px;
+      padding-right: 10px;
+      padding-bottom: 15px;
+    }
+    .image {
+      width: 25%;
+      @include media("<=phone") {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+      .slider {
+        width: 80%;
+        height: 35vh;
+        @include media("<=phone") {
+          width: 100%;
+        }
+        &__container {
+          height: 35vh;
+          img {
+            height: 35vh;
+            @include media("<=phone") {
+              height: 35vh;
+              width: 100%;
+              object-fit: cover;
+              border-radius: 6px;
+            }
+          }
+        }
+      }
+      img {
+        height: 35vh;
+      }
+    }
+    .content {
+      width: 75%;
+      @include media("<=phone") {
+        width: 100%;
+      }
+      h3 {
+        font-size: 21px;
+        color: #175fff;
+        margin-bottom: 24px;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 26px;
+        @include media("<=phone") {
+          margin-bottom: 0;
+        }
+      }
+      .contentWrapper {
+        width: 100%;
+        display: flex;
+        margin-top: 2rem;
+        @include media("<=phone") {
+          flex-wrap: wrap;
+        }
+
+        .contentLeft,
+        .contentRight {
+          width: 50%;
+          min-height: 35vh;
+          @include media("<=phone") {
+            width: 100%;
+          }
+          h4 {
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 500;
+            font-size: var(--font-secondary);
+            color: rgba(0, 0, 0, 0.7) !important;
+            @include media("<=phone") {
+              margin: -10px 0 10px 0;
+            }
+          }
+          ul {
+            margin-top: 21px;
+            list-style: none;
+            @include media("<=phone") {
+              margin-top: 0;
+            }
+            li {
+              font-size: 14px;
+              line-height: 20px;
+              margin-bottom: 1.2rem;
+              display: flex;
+              color: rgba(0, 0, 0, 0.6) !important;
+
+              div:nth-child(1) {
+                margin-right: 1rem;
+                color: var(--primary-color);
+              }
+            }
+          }
+        }
+        .contentRight {
+          @include media("<=phone") {
+            margin-top: 55px;
+          }
+        }
+      }
+    }
+  }
+  .enterprize.activeAnim {
+    animation: fadeIn 1s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.logos {
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  @include media("<=phone") {
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+  }
+}
+.logos div {
+  width: 14%;
+  height: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  @include media("<=phone") {
+    width: 26%;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+.logos div img {
+  height: 100%;
+  @include media("<=phone") {
+    height: 90%;
+  }
+}

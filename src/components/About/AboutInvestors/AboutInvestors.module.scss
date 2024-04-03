@@ -1,0 +1,29 @@
+@import "../../../styles/breakpoints.scss";
+
+.investors {
+  width: 100%;
+  padding: 2rem 10rem 6rem 10rem;
+  position: relative;
+  @include media("<=phone") {
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  h4 {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 243px;
+    @include media("<=phone") {
+      display: none;
+    }
+  }
+
+  .img {
+    position: absolute;
+    bottom: -5rem;
+    right: 0;
+    height: 16rem;
+  }
+}

@@ -1,0 +1,55 @@
+// INTEGRATION
+.intregation {
+    padding: 100px;
+    background: var(--secondary-color);
+    h5 {
+      font-family: var(--font-secondary);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 21px;
+      letter-spacing: -0.0419664px;
+      color: #e5e5e5;
+    }
+    h1 {
+      font-family: var(--font-primary);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: -0.34px;
+      color: #fcfcfc;
+      margin-bottom: 24px;
+      margin-top: 12px;
+    }
+    p {
+      font-family: var(--font-secondary);
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 21px;
+      letter-spacing: -0.0419664px;
+      color: #b2b2b2;
+    }
+    .tools{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 62px;
+      .tool{
+        width: 24%;
+        height: 103px;
+        background: #243D57;
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        border-radius: 10px;
+        &__image{
+          margin-right: 16px;
+        }
+        &__name{
+          font-size: 15px;
+          line-height: 21px;
+          color: #fcfcfc;
+        }
+      }
+    }
+  }

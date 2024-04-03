@@ -1,0 +1,31 @@
+@import "../../../styles/breakpoints.scss";
+
+.logos {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    @include media("<=phone") {
+      padding: 15px;
+      justify-content: space-between;
+    }
+  }
+  .logos div {
+    width: 14%;
+    height: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    @include media("<=phone") {
+      width: 26%;
+      height: 3.5rem;
+    }
+  }
+  .logos div img {
+    height: 100%;
+  }
+  

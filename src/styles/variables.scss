@@ -1,0 +1,16 @@
+ /* FONTS (Manrope & Inter) */
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+ 
+  /* VARIABLES */
+ :root {
+   --white-color: #ffffff;
+   --body-color: ##E5E5E5;
+   --black-color: #231f20;
+   --primary-color: #165FFF;
+   --primary-color-light: #E7F1FE;
+   --secondary-color: #0B2845;
+   --font-primary: 'Manrope', sans-serif;
+   --font-secondary: 'Inter', sans-serif;
+ }

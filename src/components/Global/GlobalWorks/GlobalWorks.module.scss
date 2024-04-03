@@ -1,0 +1,190 @@
+@import "../../../styles/breakpoints.scss";
+
+.works {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 6rem;
+  @include media("<=phone") {
+    padding-bottom: 37px;
+    overflow: hidden;
+  }
+
+  &__text {
+    padding: 6rem 10rem 0 10rem;
+    @include media("<=phone") {
+      padding: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      span {
+        color: #175fff;
+      }
+      margin-bottom: 24px;
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 500;
+      letter-spacing: -0.34px;
+      @include media("<=phone") {
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: -1px;
+        margin-bottom: 24px;
+      }
+    }
+    p {
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      font-size: 15px;
+      line-height: 21px;
+      color: rgba(0, 0, 0, 0.5);
+      @include media("<=phone") {
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    @include media("<=phone") {
+      width: 200%;
+      margin-left: -10%;
+    }
+    .allworks {
+      margin-top: 4rem;
+      padding: 0 100px;
+      @include media("<=phone") {
+        margin-top: 2rem;
+        padding: 0 15px;
+      }
+      .work {
+        height: 63vh;
+        border-radius: 8px;
+        padding: 2rem;
+        @include media("<=phone") {
+          padding: 12px;
+        }
+        
+        &__container {
+          background: #fff;
+          height: 57vh;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+          border: 1px solid transparent;
+          transition: 0.3s;
+          @include media("<=phone") {
+            height: 60vh;
+          }
+          &:hover {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+          }
+          .image {
+            width: 100%;
+            height: 35vh;
+            @include media("<=phone") {
+              height: 32vh;
+            }
+            img {
+              width: 100%;
+            }
+          }
+          .content {
+            padding: 2rem;
+            @include media("<=phone") {
+              padding: 12px;
+            }
+            h4 {
+              font-size: 21px;
+              line-height: 26px;
+              font-weight: normal;
+              margin: 0;
+              color: rgba(0, 0, 0, 0.7) !important;
+            }
+            p {
+              display: block;
+              font-size: 15px;
+              line-height: 21px;
+              font-weight: 400;
+              font-family: var(--font-secondary);
+              margin-bottom: 20px;
+              margin-top: 14px;
+              color: rgba(0, 0, 0, 0.5) !important;
+              
+            }
+            a {
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 600;
+              text-decoration: none;
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+    }
+    .sliderArrow1,
+    .sliderArrow2 {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      &:hover {
+        background: #e7f1fe;
+      }
+      &:active {
+        background: #9ec8fa;
+      }
+      @include media("<=phone") {
+        display: none;
+      }
+    }
+    .sliderArrow1 {
+      left: 50px;
+    }
+    .sliderArrow2 {
+      right: 50px;
+    }
+  }
+
+  a.global {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #325ce8;
+    @include media("<=phone") {
+      margin-top: 2rem;
+    }
+    
+    span {
+      font-size: 1.2rem;
+      margin-top: 5px;
+      margin-left: 10px;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    &:hover span {
+      transform: translateX(7px);
+    }
+  }
+}

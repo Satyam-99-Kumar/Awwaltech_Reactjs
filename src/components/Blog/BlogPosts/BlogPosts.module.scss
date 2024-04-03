@@ -1,0 +1,91 @@
+@import "../../../styles/breakpoints.scss";
+
+.blogpost {
+  padding: 100px;
+  @include media("<=phone") {
+    padding: 15px;
+  }
+}
+.allposts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .post {
+    width: 30%;
+    min-height: 30vh;
+    margin-bottom: 3rem;
+    @include media("<=phone") {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+    .image {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      padding: 1.5rem 0;
+      @include media("<=phone") {
+        padding: 10px 0;
+      }
+      h4 {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 1rem;
+        font-family: var(--font-secondary);
+        @include media("<=phone") {
+          margin: 0;
+          margin-bottom: 10px;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 1rem;
+        font-family: var(--font-secondary);
+        color: rgba(0, 0, 0, 0.7);
+      }
+      a {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        span {
+          font-size: 1.3rem;
+          margin-top: 5px;
+          margin-left: 10px;
+          font-weight: bold;
+          transition: all 0.3s;
+        }
+        &:hover span {
+          color: var(--primary-color);
+          transform: translateX(7px);
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  div {
+    width: 33px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem;
+    &:nth-child(2) {
+      background: var(--primary-color);
+      color: #fff;
+    }
+  }
+}

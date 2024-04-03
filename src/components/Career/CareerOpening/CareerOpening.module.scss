@@ -1,0 +1,113 @@
+@import "../../../styles/breakpoints.scss";
+
+.opening {
+  width: 100%;
+  padding: 100px;
+  @include media("<=phone") {
+    padding: 15px;
+  }
+
+  &__text {
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 600px;
+      letter-spacing: -0.34px;
+    }
+    p {
+      width: 50%;
+      margin: auto;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 15px;
+      line-height: 21px;
+      font-weight: 400;
+      font-family: var(--font-secondary);
+      @include media("<=phone") {
+        width: 100%;
+      }
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    @include media("<=phone") {
+      margin-top: 45px;
+    }
+    .item {
+      width: calc(33.33% - 12px);
+      background: #ffffff;
+      box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+      border: 1px solid transparent;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      transition: 0.3s;
+      @include media("<=phone") {
+        height: fit-content;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+      &:hover {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+      }
+
+      img {
+        margin-bottom: 21px;
+        @include media("<=phone") {
+          margin-bottom: -10px;
+        }
+      }
+      h4 {
+        margin-bottom: 14px;
+        font-family: var(--font-primary);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 26px;
+        letter-spacing: -0.00272em;
+        color: rgba(0, 0, 0, 0.7);
+        @include media("<=phone") {
+          margin: 10px 0;
+        }
+      }
+      p {
+        margin-bottom: 48px;
+        font-family: var(--font-secondary);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: -0.0419664px;
+        color: rgba(0, 0, 0, 0.7);
+        @include media("<=phone") {
+          margin-bottom: 0;
+        }
+      }
+      a {
+        width: fit-content;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #175fff;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        span {
+          margin-left: 8px;
+          margin-top: 6px;
+          font-size: 1.5rem;
+          transition: 0.3s;
+        }
+        &:hover span {
+          transform: translateX(8px);
+        }
+      }
+    }
+  }
+}

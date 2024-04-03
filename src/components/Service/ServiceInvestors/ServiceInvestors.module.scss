@@ -1,0 +1,9 @@
+@import "../../../styles/breakpoints.scss";
+
+.serviceInvestors {
+  width: 100%;
+  height: fit-content;
+  @include media(">=phone") {
+    display: none;
+  }
+}

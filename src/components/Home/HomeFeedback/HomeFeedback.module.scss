@@ -1,0 +1,147 @@
+@import "../../../styles/breakpoints.scss";
+
+.feedback {
+  width: 100%;
+  min-height: 78vh;
+  position: relative;
+  background: #f5f5f7;
+  overflow: hidden;
+
+  &__text {
+    padding-top: 6rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    @include media("<=phone") {
+      padding-top: 63px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 600;
+      letter-spacing: -0.34px;
+      @include media("<=phone") {
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: -1px;
+      }
+    }
+    p {
+      width: 50%;
+      margin: auto;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 15px;
+      line-height: 21px;
+      font-family: var(--font-secondary);
+      color: rgba(0, 0, 0, 0.7);
+      &:nth-child(1) {
+        color: #808080;
+      }
+      @include media("<=phone") {
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    @include media("<=phone") {
+      width: 250%;
+      margin-left: -75%;
+    }
+    .allFeedBacks {
+      margin-top: 4rem;
+      padding: 0 90px;
+      align-items: center !important;
+      @include media("<=phone") {
+        margin-top: 24px;
+        margin-bottom: 60px;
+        padding: 10px;
+      }
+      .feedback {
+        min-height: fit-content;
+        border-radius: 8px;
+        padding: 2rem;
+        @include media("<=phone") {
+          padding: 1rem;
+        }
+        &__container {
+          background: #fff;
+          min-height: fit-content;
+          border-radius: 8px;
+          padding: 1.5rem;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          @include media("<=phone") {
+            padding: 1rem;
+          }
+          .logo {
+            color: gray;
+            font-size: 2rem;
+          }
+          .text {
+            font-size: 15px;
+            line-height: 21px;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            font-family: var(--font-secondary);
+            color: rgba(0, 0, 0, 0.5);
+          }
+          .user {
+            display: flex;
+            align-items: center;
+            &__image {
+              width: 40px;
+              margin-right: 1rem;
+              img {
+                width: 100%;
+              }
+            }
+            &__name {
+              font-size: 14px;
+              font-weight: 20px;
+              font-weight: 600;
+              color: rgba(0, 0, 0, 0.8);
+            }
+          }
+        }
+      }
+    }
+
+    .sliderArrow1,
+    .sliderArrow2 {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      &:hover {
+        background: #e7f1fe;
+      }
+      &:active {
+        background: #9ec8fa;
+      }
+    }
+    .sliderArrow1 {
+      left: 50px;
+    }
+    .sliderArrow2 {
+      right: 50px;
+    }
+  }
+}

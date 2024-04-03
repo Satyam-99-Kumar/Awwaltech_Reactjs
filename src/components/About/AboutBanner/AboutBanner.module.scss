@@ -1,0 +1,92 @@
+@import "../../../styles/breakpoints.scss";
+
+.aboutBanner {
+  width: 100%;
+  min-height: 80vh;
+  background: #165fff;
+  display: flex;
+  @include media("<=phone") {
+    flex-wrap: wrap;
+  }
+
+  &__left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 100px;
+    @include media("<=phone") {
+      width: 100%;
+      padding: 15px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 36px;
+      font-family: var(--font-primary);
+      margin-bottom: 1rem;
+      color: #e5e5e5;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: 0.00014em;
+      font-family: var(--font-primary);
+    }
+    a {
+      text-decoration: none;
+      margin-top: 2rem;
+      width: 199px;
+      height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-secondary);
+      font-size: 18px;
+      font-kerning: 21px;
+      font-weight: 600;
+      border-radius: 4px;
+      background-color: #e7f1fe;
+      color: #175fff;
+      border: 2px solid #175fff;
+      transition: 0.3s;
+      &:hover {
+        background-color: #e7f1fe;
+        border: 2px solid #99b9ff;
+        color: #153ab7;
+      }
+    }
+  }
+  &__right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    @include media("<=phone") {
+      width: 100%;
+      display: none;
+    }
+    div {
+      min-width: 40%;
+      position: relative;
+      &:last-child {
+        min-width: 20%;
+      }
+      img {
+        position: absolute;
+        width: 90%;
+      }
+    }
+    .frame1 img {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .frame2 img,
+    .frame3 img {
+      bottom: 0;
+    }
+    .frame3 img {
+      width: 100%;
+    }
+  }
+}
