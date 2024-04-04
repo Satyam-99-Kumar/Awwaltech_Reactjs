@@ -2,11 +2,12 @@
 
 .banner {
   width: 100%;
-  min-height: 80vh;
+  min-height: 122vh;
   background: #165fff;
   display: flex;
   @include media("<=phone") {
     flex-wrap: wrap;
+    min-height: 0vh;
   }
 
   &__left {
@@ -18,8 +19,8 @@
     @include media("<=phone") {
       width: 100%;
       padding: 15px;
-      padding-top: 120px;
-      padding-bottom: 100px;
+      padding-top: 64px;
+      // padding-bottom: 100px;
     }
     p {
       font-weight: 600;

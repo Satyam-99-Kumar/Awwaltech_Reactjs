@@ -101,6 +101,8 @@
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.08);
   border-radius: 6px;
+  margin-top: 24px;
+  
 }
 .option .optionWrapper:hover {
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
@@ -129,6 +131,9 @@
 }
 .option.active .optionWrapper .logo{
   color: var(--primary-color);
+}
+.slick-vertical .slick-slide{
+  margin-bottom: 10px;
 }
 
 .industries .content .arrowButton {

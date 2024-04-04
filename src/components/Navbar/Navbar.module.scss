@@ -111,7 +111,7 @@
         width: 35rem;
         position: absolute;
         top: 5.9rem;
-        left: 50%;
+        left:350px;
         transform: translateX(-50%);
         background: #fff;
         padding: 1rem;
@@ -275,7 +275,19 @@
     display: flex;
     flex-direction: column;
   }
-  div,
+  div{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    color: #222;
+    // margin-bottom: 1rem;
+    // padding: 0.5rem 1.5rem;
+    font-family: var(--font-quick);
+    font-weight: 500;
+
+  }
+
   a {
     display: flex;
     align-items: center;
