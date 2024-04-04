@@ -37,7 +37,7 @@ function ServiceSolution() {
               </div>
               <div>
                 To be a first choice for extending your E-commerce team
-                offshore.
+                offshore.  To be a first choice for extending
               </div>
             </li>
             <li>
@@ -82,7 +82,7 @@ function ServiceSolution() {
               </div>
               <div>
                 To be a first choice for extending your E-commerce team
-                offshore.
+                offshore.  To be a first choice for extending
               </div>
             </li>
             <li>

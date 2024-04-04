@@ -54,9 +54,9 @@
   }
 
   &__achieves {
-    width: 45%;
+    width: 56%;
     height: fit-content;
-    padding: 60px 100px;
+    padding: 60px 29px;
     display: flex;
     justify-content: space-between;
     @include media("<=phone") {
@@ -65,13 +65,13 @@
       flex-wrap: wrap;
     }
     .block1 {
-      width: 47%;
+      width: 49%;
       @include media("<=phone") {
         width: 100%;
       }
     }
     .block2 {
-      width: 47%;
+      width:49%;
       @include media("<=phone") {
         width: 100%;
       }
