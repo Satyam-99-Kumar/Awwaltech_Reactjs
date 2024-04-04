@@ -26,24 +26,30 @@ function Home() {
       } catch (error) {
         // Handle error
       }
+     
+
     };
 
     fetchDataFromAPI();
+    console.log("==>", apiData)
   }, []);
+ 
+
+
 
 
   return (
     <>
       <Navbar />
-      <HomeBanner />
+      <HomeBanner data={apiData}/>
       <HomeService data={apiData} />
       <GlobalIndustries data={Data} />
-      <HomeClients />
+      <HomeClients data={apiData} />
       <GlobalWorks background={`#F5F5F7`} />
-      <HomeAchievements />
+      <HomeAchievements  data={apiData}/>
       <HomeFeedback background={`#F5F5F7`} />
-      <GlobalContact />
-      <Footer />
+      <GlobalContact data={apiData}/>
+      <Footer data={apiData}/>
     </>
   );
 }

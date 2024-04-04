@@ -7,13 +7,20 @@ import img3 from "../../../assets/Home/Technologies/Vector.png";
 import img4 from "../../../assets/Home/Technologies/Fill.png";
 import img5 from "../../../assets/Home/Technologies/Microsoft.png";
 import img6 from "../../../assets/Home/Technologies/Terminal.png";
+import { useEffect, useState } from "react";
 
-function HomeBanner() {
+function HomeBanner(data) {
+    const [apiData, setData] = useState(null); 
+useEffect(() => {
+console.log("Hello", data)
+
+}, [])
+
   return (
     <header className={style.header}>
         <div className={style.header__text}>
             <h1>
-                <div>The Ultimate Mobile App</div>
+                <div></div>
                 <div>& Web Solutions for Every Trade</div>
             </h1>
             <p>Experience A New Degree Of Innovation</p>
