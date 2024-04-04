@@ -2,7 +2,7 @@
 
 .banner {
   width: 100%;
-  min-height: 122vh;
+  min-height: 80vh;
   background: #165fff;
   display: flex;
   @include media("<=phone") {
@@ -71,20 +71,20 @@
     }
     .frame {
       position: absolute;
-      top: 50%;
-      left: 12rem;
+      top:50%;
+      left: 6rem;
       transform: translateY(-50%);
     }
     .iphone1 {
       position: absolute;
-      bottom: 0;
-      right: 2rem;
+      bottom: 0px;
+      right:4rem;
       width: 55%;
     }
     .iphone2 {
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: 0px;
+      left: -150px
     }
     .iphone3 {
       position: absolute;

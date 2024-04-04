@@ -13,9 +13,9 @@ function ServiceEnterprize() {
           </div>
           <p>Driving Enterprise</p>
           <h1>
-              <div>Why to choose Minttask as your</div>
-              <div>Mobile App Development</div>
-              <div>Company ?</div>
+            <div>Why to choose Minttask as your</div>
+            <div>Mobile App Development</div>
+            <div>Company ?</div>
           </h1>
           <p>
             Empowering businesses across verticals by leveraging the power of
@@ -35,7 +35,8 @@ function ServiceEnterprize() {
             <BsCheckCircle />
             <p>
               Our complete spectrum of mobile app development and web solutions
-              help startups, small-medium enterprises
+              help startups, small-medium enterprises reduce costs and improve
+              performance.
             </p>
           </div>
           {/* -- 2 -- */}
@@ -43,7 +44,8 @@ function ServiceEnterprize() {
             <BsCheckCircle />
             <p>
               Our complete spectrum of mobile app development and web solutions
-              help startups, small-medium enterprises
+              help startups, small-medium enterprises reduce costs and improve
+              performance.
             </p>
           </div>
           {/* -- 3 -- */}
@@ -51,7 +53,8 @@ function ServiceEnterprize() {
             <BsCheckCircle />
             <p>
               Our complete spectrum of mobile app development and web solutions
-              help startups, small-medium enterprises
+              help startups, small-medium enterprises reduce costs and improve
+              performance.
             </p>
           </div>
         </div>
