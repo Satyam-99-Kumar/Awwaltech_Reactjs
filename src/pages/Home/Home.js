@@ -24,14 +24,10 @@ function Home() {
         console.log("==>", result)
         setData(result);
       } catch (error) {
-        // Handle error
+        console.log("Error", error);
       }
-     
-
     };
-
     fetchDataFromAPI();
-    console.log("==>", apiData)
   }, []);
  
 

@@ -9,19 +9,20 @@ import img5 from "../../../assets/Home/Technologies/Microsoft.png";
 import img6 from "../../../assets/Home/Technologies/Terminal.png";
 import { useEffect, useState } from "react";
 
-function HomeBanner(data) {
+function HomeBanner({data}) {
     const [apiData, setData] = useState(null); 
 useEffect(() => {
-console.log("Hello", data)
+    setData(data);
+console.log("Hello===>", data.result)
 
-}, [])
+},)
 
   return (
     <header className={style.header}>
         <div className={style.header__text}>
             <h1>
                 <div></div>
-                <div>& Web Solutions for Every Trade</div>
+                {/* <div>{apiData.result[1].HomeBanner.BannerTitle}</div> */}
             </h1>
             <p>Experience A New Degree Of Innovation</p>
             <div className={style.btnGroup}>
