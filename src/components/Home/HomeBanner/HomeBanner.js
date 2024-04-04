@@ -25,7 +25,7 @@ function HomeBanner() {
         <div className={style.header__option}>
             <div className={style.optionWrapper}>
                 <div className={style.text}>
-                    <p>Trusted by the fastest growing companies</p>
+                    <p style={{color:"#808080"}}>Trusted by the fastest growing companies</p>
                 </div>
                 
                 <div className={style.logo}><img src={img1} alt="" /></div>
