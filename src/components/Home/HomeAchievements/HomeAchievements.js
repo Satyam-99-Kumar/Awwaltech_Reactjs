@@ -31,7 +31,8 @@ function HomeAchievements() {
             <BsCheckCircle />
             <p>
               Our complete spectrum of mobile app development and web solutions
-              help startups, small-medium enterprises
+              help startups, small-medium enterprises  Our complete spectrum of mobile 
+              
             </p>
           </div>
           {/* -- 2 -- */}
@@ -39,7 +40,8 @@ function HomeAchievements() {
             <BsCheckCircle />
             <p>
               Our complete spectrum of mobile app development and web solutions
-              help startups, small-medium enterprises
+              help startups, small-medium enterprises  Our complete spectrum of mobile 
+             
             </p>
           </div>
           {/* -- 3 -- */}
@@ -47,7 +49,8 @@ function HomeAchievements() {
             <BsCheckCircle />
             <p>
               Our complete spectrum of mobile app development and web solutions
-              help startups, small-medium enterprises
+              help startups, small-medium enterprises  Our complete spectrum of mobile 
+              
             </p>
           </div>
         </div>

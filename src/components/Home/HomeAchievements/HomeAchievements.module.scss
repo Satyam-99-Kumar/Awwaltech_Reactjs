@@ -48,8 +48,8 @@
   }
 
   &__achieves {
-    width: 45%;
-    padding: 70px 100px;
+    width: 50%;
+    padding: 70px 30px;
     display: flex;
     justify-content: space-between;
     @include media("<=phone") {
@@ -58,14 +58,14 @@
       padding: 15px;
     }
     .block1 {
-      width: 47%;
+      width: 48%;
       @include media("<=phone") {
         width: 100%;
         flex-wrap: wrap;
       }
     }
     .block2 {
-      width: 47%;
+      width:48%;
       @include media("<=phone") {
         width: 100%;
         flex-wrap: wrap;
@@ -73,13 +73,14 @@
     }
     .achive {
       width: 100%;
-      padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+      // padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+      padding: 10px 10px;
       background: #243d57;
       border-radius: 6px;
       transition: 0.3s;
       
       &:not(:last-child){
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         @include media("<=phone") {
           margin-bottom: 24px;
         }
