@@ -10,26 +10,28 @@ import img6 from "../../../assets/Home/Technologies/Terminal.png";
 import { useEffect, useState } from "react";
 
 function HomeBanner({data}) {
-    const [apiData, setData] = useState(null); 
-useEffect(() => {
-    setData(data);
-console.log("Hello===>", data.result)
-
-},)
+    const [apiData, setData] = useState(null);
+    useEffect(() => {
+        setData(data);
+        console.log("homebanner", data);
+      }, [data]);
 
   return (
     <header className={style.header}>
+      {apiData && apiData.result && apiData.result.length > 1 && ( 
         <div className={style.header__text}>
-            <h1>
-                <div></div>
-                {/* <div>{apiData.result[1].HomeBanner.BannerTitle}</div> */}
-            </h1>
-            <p>Experience A New Degree Of Innovation</p>
-            <div className={style.btnGroup}>
-                <button>Get started</button>
-                <button>Get a quote</button>
-            </div>
+          <h1>
+            
+            <div>{apiData?.result?.[1]?.Banner?.BannerTitle}</div>
+            <div>{apiData?.result?.[1]?.Banner?.BannerSubtitle}</div>
+          </h1>
+          <p>{apiData?.result?.[1]?.MetaData?.Description}</p> 
+          <div className={style.btnGroup}>
+            <button>Get started</button>
+            <button>Get a quote</button>
+          </div>
         </div>
+      )}
         <div className={style.header__option}>
             <div className={style.optionWrapper}>
                 <div className={style.text}>
