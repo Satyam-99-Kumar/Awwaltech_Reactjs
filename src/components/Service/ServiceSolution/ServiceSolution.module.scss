@@ -22,7 +22,7 @@
     }
     &__right {
       width: 60%;
-      padding-left: 2rem;
+      // padding-left: 2rem;
       p {
         font-size: 21px;
         line-height: 26px;
@@ -42,7 +42,7 @@
         list-style: none;
         li {
           display: flex;
-          margin-bottom: 1.2rem;
+          margin-bottom: 10px;
           div {
             &:first-child {
               width: 40px;

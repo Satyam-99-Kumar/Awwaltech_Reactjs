@@ -66,7 +66,7 @@
         padding: 0 15px;
       }
       .work {
-        height: 81vh;
+        height: 70vh;
         border-radius: 8px;
         padding: 2rem;
         @include media("<=phone") {
@@ -76,7 +76,7 @@
         
         &__container {
           background: #fff;
-          height: 57vh;
+          height: 60vh;
           border-radius: 8px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
           border: 1px solid transparent;
@@ -98,7 +98,8 @@
             }
           }
           .content {
-            padding: 2rem;
+            // padding: 2rem;
+            padding: 20px 10px;
             @include media("<=phone") {
               padding: 12px;
             }
