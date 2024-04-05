@@ -1,12 +1,26 @@
-import Slider from "react-slick/lib/slider";
-import style from "./GlobalWorks.module.scss";
-import Work from "./Work";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import { Link } from "react-router-dom";
-import { useRef } from "react";
+// GlobalWorks.js
+import React, { useEffect, useState } from 'react';
+import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
+import { BsChevronRight } from 'react-icons/bs';
+import { fetchHomeData } from '../../../config/apiService'; // Import the API service function
+import style from './GlobalWorks.module.scss';
 
-function GlobalWorks({background}) {
-  const slider = useRef(null);
+function GlobalWorks({ background }) {
+  const [apiData, setApiData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await fetchHomeData();
+        setApiData(data);
+      } catch (error) {
+        console.error('Error fetching API data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const settings = {
     dots: false,
@@ -21,48 +35,34 @@ function GlobalWorks({background}) {
         breakpoint: 760,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <div className={style.works} style={{background: background}}>
+    <div className={style.works} style={{ background }}>
       <div className={style.works__text}>
-        <h1>
-          Explore Our <span>Recent Work</span>
-        </h1>
-        <p>
-          Our complete spectrum of mobile app development and web solutions help
-          startups, small-medium enterprises, and organizations to create
-          outcome-focused solutions with enhanced agility that help them to
-          rapidly reshape, renew and build new capabilities for their business.
-        </p>
+        <h1>{apiData?.result?.[0]?.RecentWorkSection?.Title1}</h1>
+        <p>{apiData?.result?.[0]?.RecentWorkSection?.Paragraph}</p>
       </div>
 
       <div className={style.slider}>
-        <Slider className={style.allworks} {...settings} ref={slider}>
-          <Work id={1} />
-          <Work id={2} />
-          <Work id={3} />
-          <Work id={4} />
-          <Work id={5} />
+        <Slider className={style.allworks} {...settings}>
+          {apiData?.result?.[0]?.RecentWorkSection?.Projects.map((project, index) => (
+            <div key={index}>
+              <img src={project.Image} alt={project.ProjectName} />
+              <p>{project.ProjectName}</p>
+              <p>{project.Paragraph}</p>
+              <Link to={project.Link}>Explore More</Link>
+            </div>
+          ))}
         </Slider>
-
-        <div className={style.sliderArrow1} onClick={() => slider?.current?.slickPrev()}>
-          <BsChevronLeft />
-        </div>
-        <div className={style.sliderArrow2} onClick={() => slider?.current?.slickNext()}>
-          <BsChevronRight />
-        </div>
       </div>
 
       <Link className={style.global} to="/">
-        Veiw all projects{" "}
-        <span>
-          <BsChevronRight />
-        </span>
+        View all projects <span><BsChevronRight /></span>
       </Link>
     </div>
   );
