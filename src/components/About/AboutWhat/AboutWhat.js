@@ -4,23 +4,22 @@ import { BsCart } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import style from "./AboutWhat.module.scss";
 import img1 from "../../../assets/About/discussion.png";
+import { fetchAboutData } from "../../../config/apiService"; 
 
 function AboutWhat() {
   const [apiData, setApiData] = useState(null);
 
   useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    try {
-      const response = await fetch("http://localhost:3000/v1/about/content");
-      const data = await response.json();
-      setApiData(data);
-    } catch (error) {
-      console.error("Error fetching data:", error);
+    async function fetchApiData() {
+      try {
+        const data = await fetchAboutData();
+        setApiData(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
     }
-  };
+    fetchApiData();
+  }, []);
 
   const settings = {
     dots: false,
@@ -59,16 +58,21 @@ function AboutWhat() {
             <img src={img1} alt="" />
           </div>
           <div className={style.text}>
-            {/* Mission & Vision */}
+            <p className={style.secondaryHead}>{apiData?.result?.[0]?.EnterprisesSection?.Title}</p>
+            <h2>
+            {apiData?.result?.[0]?.EnterprisesSection?.MainTitle}
+            </h2>
+
+            {/* mission & vission */}
             <div className={style.missionVission}>
               <div className={style.mission}>
-                <h4>Our Vision</h4>
+                <h4>{apiData?.result?.[0]?.EnterprisesSection?.Vision}</h4>
                 <div className={style.textt}>
                   <div>
                     <AiOutlineCheck />
                   </div>
-                  <div>
-                    {apiData?.result?.[0]?.WhatIsMinttaskSection?.Mission}
+                  <div>MissionParagraph
+                  <div>{apiData?.result?.[0]?.EnterprisesSection?.VisionParagraph}</div>
                   </div>
                 </div>
               </div>
@@ -79,7 +83,7 @@ function AboutWhat() {
                     <AiOutlineCheck />
                   </div>
                   <div>
-                    {apiData?.result?.[0]?.WhatIsMinttaskSection?.Vision}
+                  {apiData?.result?.[0]?.EnterprisesSection?.MissionParagraph}
                   </div>
                 </div>
               </div>
@@ -87,11 +91,9 @@ function AboutWhat() {
 
             {/* Final text */}
             <div className={style.finalTxt}>
+              
               <p>
-                {apiData?.result?.[0]?.WhatIsMinttaskSection?.FinalText1}
-              </p>
-              <p>
-                {apiData?.result?.[0]?.WhatIsMinttaskSection?.FinalText2}
+              {apiData?.result?.[0]?.EnterprisesSection?.Enterprises[0]?.EnterprisesName}
               </p>
             </div>
           </div>

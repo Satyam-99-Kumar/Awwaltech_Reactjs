@@ -1,30 +1,43 @@
+import { useEffect, useState } from "react";
 import style from "./AboutEnterprize.module.scss";
 import { AiOutlineHeart } from "react-icons/ai";
 import { RiCheckboxMultipleLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { fetchAboutData } from "../../../config/apiService"; // Adjust the path as needed
 
 function AboutEnterprize() {
+  const [apiData, setApiData] = useState(null);
+
+  useEffect(() => {
+    async function fetchApiData() {
+      try {
+        const data = await fetchAboutData();
+        setApiData(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+    fetchApiData();
+  }, []);
+
+
   return (
     <div className={style.enterprize}>
       <div className={style.enterprize__text}>
-        <p>Driving Enterprise</p>
+        <p>{apiData?.result?.[0]?.DrivingEnterprisesSection?.Title1}</p>
         <h1>
-          <div>This is one movement you </div>
-          <div>don't want to miss</div>
+          <div>{apiData?.result?.[0]?.DrivingEnterprisesSection?.Title2}</div>
         </h1>
-        <p>
-          Codiant is a one-stop solution for your IT & software development
-          needs. Our advanced services in the field of Enterprise Mobility,
-          Mobile App Development, Custom Web Product Development, and UI/UX
-          Development services help you address evolving market challenges by
-          defining, designing and building applications tailored to meet your
-          specific business requirements. As a key player in technology
-          industry, we strive to develop smart solutions that augments human
-          capabilities, foster innovation, and create more effective processes
-          at lower cost.
-        </p>
+        <p>{apiData?.result?.[0]?.DrivingEnterprisesSection?.Paragraph}</p>
       </div>
 
+      {/* Render Enterprises */}
+      {apiData?.result?.[0]?.DrivingEnterprisesSection?.DrivingEnterprises.map((enterprise, index) => (
+        <div key={index} className={style.enterprise}>
+          <img src={enterprise.Logo} alt={enterprise.EnterprisesName} />
+          <Link to={enterprise.Link}>{enterprise.EnterprisesName}</Link>
+        </div>
+      ))}
       <div className={style.enterprizeContentWrappr}>
       <div className={style.enterprize__content}>
         <div className={style.element}>
