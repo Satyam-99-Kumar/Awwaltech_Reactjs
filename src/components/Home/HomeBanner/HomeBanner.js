@@ -13,37 +13,37 @@ function HomeBanner({data}) {
     const [apiData, setData] = useState(null);
     useEffect(() => {
         setData(data);
-        console.log("homebanner", data);
+        console.log("bann===>", data)
       }, [data]);
 
   return (
     <header className={style.header}>
-      {apiData && apiData.result && apiData.result.length > 1 && ( 
         <div className={style.header__text}>
           <h1>
-            
-            <div>{apiData?.result?.[1]?.Banner?.BannerTitle}</div>
-            <div>{apiData?.result?.[1]?.Banner?.BannerSubtitle}</div>
+            <div>{apiData?.result?.[0]?.Banner?.BannerTitle}</div>
           </h1>
-          <p>{apiData?.result?.[1]?.MetaData?.Description}</p> 
+          <p>{apiData?.result?.[0]?.Banner?.BannerSubtitle}</p> 
           <div className={style.btnGroup}>
             <button>Get started</button>
             <button>Get a quote</button>
           </div>
         </div>
-      )}
         <div className={style.header__option}>
             <div className={style.optionWrapper}>
                 <div className={style.text}>
-                    <p style={{color:"#808080"}}>Trusted by the fastest growing companies</p>
+                    <p style={{color:"#ffffff"}}>{apiData?.result?.[0]?.Banner?.BannerLogoCaption}</p>
                 </div>
-                
-                <div className={style.logo}><img src={img1} alt="" /></div>
+                {apiData?.result?.[0]?.Banner?.BannerLogos.map(item => {
+                <div className={style.logo}><img src={item.Logo} alt={item.Logo} /></div>
+                })}
+                <div className={style.logo}><img src={img2} alt="" /></div>
+
+                {/* <div className={style.logo}><img src={img1} alt="" /></div>
                 <div className={style.logo}><img src={img2} alt="" /></div>
                 <div className={style.logo}><img src={img3} alt="" /></div>
                 <div className={style.logo}><img src={img4} alt="" /></div>
                 <div className={style.logo}><img src={img5} alt="" /></div>
-                <div className={style.logo}><img src={img6} alt="" /></div>
+                <div className={style.logo}><img src={img6} alt="" /></div> */}
             </div>
 
             <div className={style.specialLinkWrapper}>

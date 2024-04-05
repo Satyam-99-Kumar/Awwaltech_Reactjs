@@ -8,8 +8,15 @@ import img3 from "../../../assets/Home/Services/Window_Code_Block.png";
 import img4 from "../../../assets/Home/Services/Shopping_Cart_02.png";
 import img5 from "../../../assets/Home/Services/Monitor.png";
 import { BsChevronRight, BsArrowRight } from "react-icons/bs";
+import { useEffect, useState } from "react";
 
-function HomeService() {
+function HomeService({data}) {
+  const [apiData, setData] = useState(null);
+  useEffect(() => {
+    setData(data);
+    console.log("homeservice===>", data);
+  }, [data]);
+
   const settings = {
     infinite: true,
     slidesToShow: 5,
@@ -30,33 +37,33 @@ function HomeService() {
     <div className={style.services}>
       <div className={style.services__text}>
         <h1>
-          <div>
+          {/* <div>
             <span>Exclusive</span> Mobile App & Web
-          </div>
-          <div>Development Company</div>
+          </div> */}
+          <div>{apiData?.result?.[0]?.ServicesSection?.Title}</div>
         </h1>
-        <p>
-          Our complete spectrum of mobile app development and web solutions help
-          startups, small-medium enterprises, and organizations to create
-          outcome-focused solutions with enhanced agility that help them to
-          rapidly reshape, renew and build new capabilities for their business.
-        </p>
+        <p>{apiData?.result?.[0]?.ServicesSection?.Paragraph} </p>
       </div>
 
       <div className={style.services__all}>
         <Slider {...settings} className={style.slider}>
           {/* Slider 1 */}
-          <div className={style.service}>
-            <div className={style.service__content}>
-              <img src={img5} alt="" />
-              <h3><div>Mobile App</div><div>Development</div></h3>
-              <p>
-                Our complete spectrum of mobile app development and web
-                solutions help startups, small-medium enterprises, and
-                organizations to create outcome
-              </p>
-              <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
+          <div >
+            {/* {apiData?.result?.[0]?.ServicesSection.Services.map(item => {
+              <div className={style.service}>
+              <div className={style.service__content}>
+                <img src={img5} alt="" />
+                <h3><div>Mobile App</div><div>Development</div></h3>
+                <p>
+                  Our complete spectrum of mobile app development and web
+                  solutions help startups, small-medium enterprises, and
+                  organizations to create outcome
+                </p>
+                <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
+              </div>
             </div>
+            })} */}
+            
           </div>
           {/* Slider 2 */}
           <div className={style.service}>
@@ -126,7 +133,7 @@ function HomeService() {
         </Slider>
 
         <div className={style.globalLink}>
-        <Link to="/">Explore  all our services<span><BsChevronRight /></span></Link>
+          <Link to="/">Explore  all our services<span><BsChevronRight /></span></Link>
         </div>
       </div>
     </div>
