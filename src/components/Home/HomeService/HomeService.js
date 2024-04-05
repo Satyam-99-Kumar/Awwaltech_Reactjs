@@ -11,10 +11,9 @@ import { BsChevronRight, BsArrowRight } from "react-icons/bs";
 import { useEffect, useState } from "react";
 
 function HomeService({data}) {
-  const [apiData, setData] = useState(null);
+const [apiData, setData] = useState(null);
   useEffect(() => {
     setData(data);
-    console.log("homeservice===>", data);
   }, [data]);
 
   const settings = {
@@ -37,36 +36,35 @@ function HomeService({data}) {
     <div className={style.services}>
       <div className={style.services__text}>
         <h1>
-          {/* <div>
-            <span>Exclusive</span> Mobile App & Web
-          </div> */}
-          <div>{apiData?.result?.[0]?.ServicesSection?.Title}</div>
+        <div>{apiData?.result?.[0]?.ServicesSection?.Title}</div>
         </h1>
         <p>{apiData?.result?.[0]?.ServicesSection?.Paragraph} </p>
       </div>
 
       <div className={style.services__all}>
-        <Slider {...settings} className={style.slider}>
-          {/* Slider 1 */}
-          <div >
-            {/* {apiData?.result?.[0]?.ServicesSection.Services.map(item => {
-              <div className={style.service}>
+      <Slider {...settings} className={style.slider}>
+        {apiData?.result?.[0]?.ServicesSection.Services.map((item, index) => {
+          return (
+            <div className={style.service} key={`${item.ServiceName}_${index}`}>
               <div className={style.service__content}>
                 <img src={img5} alt="" />
-                <h3><div>Mobile App</div><div>Development</div></h3>
-                <p>
-                  Our complete spectrum of mobile app development and web
-                  solutions help startups, small-medium enterprises, and
-                  organizations to create outcome
-                </p>
+                <h3><div>{item.ServiceName}</div></h3>
+                <p>{item.Paragraph}</p>
                 <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
               </div>
             </div>
-            })} */}
-            
-          </div>
+          );
+        })}
+      </Slider>
+
+        {/* <Slider {...settings} className={style.slider}> */}
+          {/* Slider 1 */}
+        
+        {/**
+         * 
+         */}
           {/* Slider 2 */}
-          <div className={style.service}>
+          {/* <div className={style.service}>
             <div className={style.service__content}>
               <img src={img1} alt="" />
               <h3><div>Web</div><div>Development</div></h3>
@@ -77,9 +75,9 @@ function HomeService({data}) {
               </p>
               <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
             </div>
-          </div>
+          </div> */}
           {/* Slider 3 */}
-          <div className={style.service}>
+          {/* <div className={style.service}>
             <div className={style.service__content}>
               <img src={img2} alt="" />
               <h3><div>Enterprise</div><div>Devops</div></h3>
@@ -90,9 +88,9 @@ function HomeService({data}) {
               </p>
               <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
             </div>
-          </div>
+          </div> */}
           {/* Slider 4 */}
-          <div className={style.service}>
+          {/* <div className={style.service}>
             <div className={style.service__content}>
               <img src={img3} alt="" />
               <h3><div>Strategic UX</div><div>Development</div></h3>
@@ -103,9 +101,9 @@ function HomeService({data}) {
               </p>
               <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
             </div>
-          </div>
+          </div> */}
           {/* Slider 5 */}
-          <div className={style.service}>
+          {/* <div className={style.service}>
             <div className={style.service__content}>
               <img src={img4} alt="" />
               <h3><div>eCommerce</div><div>Development</div></h3>
@@ -116,9 +114,9 @@ function HomeService({data}) {
               </p>
               <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
             </div>
-          </div>
+          </div> */}
           {/* Slider 6 */}
-          <div className={style.service}>
+          {/* <div className={style.service}>
             <div className={style.service__content}>
               <img src={img5} alt="" />
               <h3><div>Mobile App</div><div>Development</div></h3>
@@ -129,11 +127,11 @@ function HomeService({data}) {
               </p>
               <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
             </div>
-          </div>
-        </Slider>
+          </div> */}
+        {/* </Slider> */}
 
         <div className={style.globalLink}>
-          <Link to="/">Explore  all our services<span><BsChevronRight /></span></Link>
+        <Link to="/">Explore  all our services<span><BsChevronRight /></span></Link>
         </div>
       </div>
     </div>

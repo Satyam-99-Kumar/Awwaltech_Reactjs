@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 // Components
 import Detail from "./Detail";
 // Assets
@@ -24,9 +24,10 @@ const settings2 = {
   slidesToScroll: 1,
 };
 
-function GlobalIndustries({ data }) {
+function GlobalIndustries({ data }, {apiData}) {
   const [option, setOption] = useState(1);
   const [animationActive, setAnimationActive] = useState(false);
+  const [fetchApiData, setData] = useState(null);
   const slider = useRef(null);
 
   const handleClick = (id) => {
@@ -38,10 +39,15 @@ function GlobalIndustries({ data }) {
     }, 2000);
   };
 
+  useEffect(() =>{
+    setData(fetchApiData);
+    console.log("homeservice===>", fetchApiData);
+  }, [fetchApiData])
+
   return (
     <div className={style.industries}>
       <div className={style.industries__text}>
-        <p>Driving Enterprise</p>
+        <p>{fetchApiData?.result?.[0]?.IndustriesSection?.Title1}</p>
         <h1>Industries We Serve</h1>
         <p>
           Empowering businesses across verticals by leveraging the power of
