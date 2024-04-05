@@ -1,21 +1,24 @@
-import React, { useState } from "react";
-// Assets
+import React, { useState, useEffect } from "react";
 import style from "./HomeClients.module.scss";
 import { AiOutlineCheck, AiOutlineHeart } from "react-icons/ai";
 import { RiCheckboxMultipleLine } from "react-icons/ri";
-// Components
+import Slider from "react-slick";
 import ClientsLogo from "./ClientsLogo";
-import { Data } from "./Data";
-import Slider from "react-slick/lib/slider";
 
-function HomeClients() {
+function HomeClients({ data }) {
+  const [apiData, setApiData] = useState(null);
   const [selected, setSelected] = useState(1);
   const [animationActive, setAnimationActive] = useState(false);
+
+  useEffect(() => {
+    if (data && data.result && data.result.length > 0) {
+      setApiData(data.result[0]);
+    }
+  }, [data]);
 
   const handleClick = (id) => {
     setAnimationActive(true);
     setSelected(id);
-
     setTimeout(() => {
       setAnimationActive(false);
     }, 1500);
@@ -34,186 +37,86 @@ function HomeClients() {
 
   return (
     <div className={style.clients}>
-      <div className={style.clients__text}>
-        <p>Driving Enterprise</p>
-        <h1>Clients We Care</h1>
-        <p>
-          From ideation and conceptualization to application development,
-          ready-to-deploy assets, marketing and support, Codiant delights
-          clients of all sizes through agile deliveries and simplified
-          solutions.
-        </p>
-      </div>
+      {apiData && (
+        <div className={style.clients__text}>
+          <p>{apiData.ClientsSection.Title1}</p>
+          <h1>{apiData.ClientsSection.Title2}</h1>
+          <p>{apiData.ClientsSection.Paragraph}</p>
+        </div>
+      )}
 
-      {/* /////////////////////////////////////// */}
-      {/* Options */}
-      {/* /////////////////////////////////////// */}
       <div className={style.options}>
         <div className={style.options__wrapper}>
-          <div
-            className={
-              selected === 1
-                ? `${style.option} ${style.active}`
-                : `${style.option}`
-            }
-            onClick={() => handleClick(1)}
-          >
-            <div>
-              <AiOutlineHeart />
-            </div>
-            <div>Large Enterprises</div>
-          </div>
-          <div
-            className={
-              selected === 2
-                ? `${style.option} ${style.active}`
-                : `${style.option}`
-            }
-            onClick={() => handleClick(2)}
-          >
-            <div>
-              <RiCheckboxMultipleLine />
-            </div>
-            <div>Small to Medium Enterprise (SME)</div>
-          </div>
-          <div
-            className={
-              selected === 3
-                ? `${style.option} ${style.active}`
-                : `${style.option}`
-            }
-            onClick={() => handleClick(3)}
-          >
-            <div>
-              <RiCheckboxMultipleLine />
-            </div>
-            <div>Small to Medium Enterprise (SME)</div>
-          </div>
-          <div
-            className={
-              selected === 4
-                ? `${style.option} ${style.active}`
-                : `${style.option}`
-            }
-            onClick={() => handleClick(4)}
-          >
-            <div>
-              <RiCheckboxMultipleLine />
-            </div>
-            <div>Startups</div>
-          </div>
+          {apiData &&
+            apiData.ClientsSection.Clients.map((client, index) => (
+              <div
+                key={client._id}
+                className={
+                  selected === index + 1
+                    ? `${style.option} ${style.active}`
+                    : `${style.option}`
+                }
+                onClick={() => handleClick(index + 1)}
+              >
+                <div>
+                  <AiOutlineHeart />
+                </div>
+                <div>{client.ClientName}</div>
+              </div>
+            ))}
         </div>
       </div>
 
-      {/* /////////////////////////////////////// */}
-      {/* Enterprizes */}
-      {/* /////////////////////////////////////// */}
-      <div className={
-        animationActive
-        ? `${style.enterprize} ${style.activeAnim}`
-        : `${style.enterprize}`
-      }>
+      <div
+        className={
+          animationActive
+            ? `${style.enterprize} ${style.activeAnim}`
+            : `${style.enterprize}`
+        }
+      >
         <div className={style.image}>
-          {/* <img src={Data[selected - 1].image} alt="" /> */}
-          <Slider {...settings} className={style.slider}>
-            {Data[selected - 1].imageSlide.map((image) => (
-              <div className={style.slider__container}>
-                <img src={image} alt="" />
-              </div>
-            ))}
-          </Slider>
+          {apiData && (
+            <Slider {...settings} className={style.slider}>
+              {apiData.ClientsSection.Clients.map((client, index) => (
+                <div className={style.slider__container} key={client._id}>
+                  {/* Replace this with your actual image URL */}
+                  <img src={client.Image} alt="" />
+                </div>
+              ))}
+            </Slider>
+          )}
         </div>
-        <div className={style.content}>
-          <h3>{Data[selected - 1].head}</h3>
-          <div className={style.contentWrapper}>
-            <div className={style.contentLeft}>
-              <h4>Make Difference with Codiant</h4>
-              <ul>
-                <li>
-                  <div>
-                    <AiOutlineCheck />
-                  </div>
-                  <div>Strategic Consulting</div>
-                </li>
-                <li>
-                  <div>
-                    <AiOutlineCheck />
-                  </div>
-                  <div>
-                    Intellectual property-based mobile technology solutions
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <AiOutlineCheck />
-                  </div>
-                  <div>Industry-focused mobility solutions</div>
-                </li>
-                <li>
-                  <div>
-                    <AiOutlineCheck />
-                  </div>
-                  <div>
-                    Custom apps connected to SAP, Salesforce, CRM and other
-                    ERP’s
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <AiOutlineCheck />
-                  </div>
-                  <div>Mobile test service</div>
-                </li>
-              </ul>
-            </div>
-            <div className={style.contentRight}>
-              <h4>Make Difference with Codiant</h4>
-              <ul>
-                <li>
-                  <div>
-                    <AiOutlineCheck />
-                  </div>
-                  <div>Strategic Consulting</div>
-                </li>
-                <li>
-                  <div>
-                    <AiOutlineCheck />
-                  </div>
-                  <div>
-                    Intellectual property-based mobile technology solutions
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <AiOutlineCheck />
-                  </div>
-                  <div>Industry-focused mobility solutions</div>
-                </li>
-                <li>
-                  <div>
-                    <AiOutlineCheck />
-                  </div>
-                  <div>Enterprise platforms</div>
-                </li>
-                <li>
-                  <div>
-                    <AiOutlineCheck />
-                  </div>
-                  <div>
-                    Custom apps connected to SAP, Salesforce, CRM and other
-                    ERP’s
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <AiOutlineCheck />
-                  </div>
-                  <div>Mobile test service</div>
-                </li>
-              </ul>
+        {apiData && (
+          <div className={style.content}>
+            <h3>{apiData.ClientsSection.Clients[selected - 1].ClientName}</h3>
+            <div className={style.contentWrapper}>
+              <div className={style.contentLeft}>
+                <h4>Make Difference with Codiant</h4>
+                <ul>
+                  <li>
+                    <div>
+                      <AiOutlineCheck />
+                    </div>
+                    <div>Strategic Consulting</div>
+                  </li>
+                  {/* Add more list items as needed */}
+                </ul>
+              </div>
+              <div className={style.contentRight}>
+                <h4>Make Difference with Codiant</h4>
+                <ul>
+                  <li>
+                    <div>
+                      <AiOutlineCheck />
+                    </div>
+                    <div>Strategic Consulting</div>
+                  </li>
+                  {/* Add more list items as needed */}
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
 
       <ClientsLogo />
