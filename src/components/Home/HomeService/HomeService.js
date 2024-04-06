@@ -38,8 +38,8 @@ function HomeService({ data }) {
   return (
     <div className={style.services}>
       <div className={style.services__text}>
-        <h1>
-          <div>{data?.result[0]?.ServicesSection?.Title}</div>
+        <h1 className={style.servicetexth1}>
+          <div className={style.servicediv}>{data?.result[0]?.ServicesSection?.Title}</div>
         </h1>
         <p>{data?.result[0]?.ServicesSection?.Paragraph} </p>
       </div>

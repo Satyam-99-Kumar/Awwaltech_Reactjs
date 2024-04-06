@@ -74,10 +74,11 @@
     }
 
     .option {
-      width: 20%;
+      // width: 20%;
+      margin-left: 20px;
       display: flex;
       align-items: center;
-      padding: 1rem 2rem;
+      padding: 10px 40px 10px 10px;
       background: linear-gradient(0deg, #ffffff, #ffffff), #0b2845;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       border: 1px solid transparent;
@@ -119,7 +120,7 @@
       padding-bottom: 15px;
     }
     .image {
-      width: 35%;
+      width: 25%;
       @include media("<=phone") {
         width: 100%;
         margin-bottom: 40px;
