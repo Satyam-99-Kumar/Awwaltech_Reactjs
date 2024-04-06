@@ -2,21 +2,21 @@ import style from "./BlogPosts.module.scss";
 import { Link } from "react-router-dom";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { CgArrowRight } from "react-icons/cg";
-import { data } from "./Data";
+// import { data } from "./Data";
 
 function BlogPosts({apiData}) {
   return (
     <div className={style.blogpost}>
 
       <div className={style.allposts}>
-        {data.map((prjct) => (
+        {apiData.MediaSection.map((prjct) => (
           <div className={style.post}>
             <div className={style.image}>
-              <img src={prjct.banner} alt="" />
+              <img src={prjct.Banner} alt="" />
             </div>
             <div className={style.text}>
-              <h4>{prjct.name}</h4>
-              <p>{prjct.text}</p>
+              <h4>{prjct.Name}</h4>
+              <p>{prjct.Text}</p>
               <Link to="/blog/1">
                 View more
                 <span>
