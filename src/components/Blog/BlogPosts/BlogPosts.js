@@ -4,7 +4,7 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { CgArrowRight } from "react-icons/cg";
 import { data } from "./Data";
 
-function BlogPosts() {
+function BlogPosts({apiData}) {
   return (
     <div className={style.blogpost}>
 

@@ -1,21 +1,17 @@
 import style from "./PortfolioHighlight.module.scss";
 import p2 from "../../../assets/Portfolio/p2.png";
 
-function PortfolioHighlight() {
+function PortfolioHighlight({apiData}) {
   return (
     <div className={style.highlights}>
       <div className={style.highlights__wrapper}>
         <div className={style.content}>
           {/* text */}
           <div className={style.content__text}>
-            <p>Clients</p>
-            <h1>Customer story highlight</h1>
-            <p>
-              From ideation and conceptualization to application development,
-              ready-to-deploy assets, marketing and support, Codiant delights
-              clients of all sizes through agile deliveries and simplified
-              solutions.
-            </p>
+            <p>{apiData.ClientsSection.Title1}</p>
+            <h1>{apiData.ClientsSection.Title2}</h1>
+            <p>{apiData.ClientsSection.Paragraph}</p>
+
           </div>
 
           {/* image */}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import PorfolioAproject from '../../components/Portfolio/PorfolioAproject/PorfolioAproject'
+// import PorfolioAproject from '../../components/Portfolio/PorfolioAproject/PorfolioAproject'
 import PortfolioBanner from '../../components/Portfolio/PortfolioBanner/PortfolioBanner'
-import PortfolioClients from '../../components/Portfolio/PortfolioClients/PortfolioClients'
+// import PortfolioClients from '../../components/Portfolio/PortfolioClients/PortfolioClients'
 import PortfolioHighlight from '../../components/Portfolio/PortfolioHighlight/PortfolioHighlight'
 import PortfolioProjects from '../../components/Portfolio/PortfolioProjects/PortfolioProjects'
 import PortfolioTalk from '../../components/Portfolio/PortfolioTalk/PortfolioTalk'
@@ -41,10 +41,10 @@ function Portfolio() {
     <>
         <Navbar />
         <PortfolioBanner data={apiData} />
-        <PortfolioClients  />
-        <PorfolioAproject data={apiData} />
-        <PortfolioProjects data={apiData} />
-        <PortfolioHighlight />
+        {/* <PortfolioClients  /> */}
+        {/* <PorfolioAproject data={apiData} /> */}
+        <PortfolioProjects apiData={apiData} />
+        <PortfolioHighlight apiData={apiData} />
         <HomeFeedback background={`#fff`} />
         <PortfolioTalk />
         <Footer />

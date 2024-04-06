@@ -4,18 +4,20 @@ import { CgArrowRight } from "react-icons/cg";
 import style from "./PortfolioProjects.module.scss";
 
 function Projects({ projects }) {
+  console.log("ppp===>",projects)
+
   return (
     <>
       <div className={style.allprojects}>
         {projects.map((prjct) => (
-          <div className={style.project}>
+          <div key={prjct._id} className={style.project}>
             <div className={style.image}>
-              <img src={prjct.banner} alt="" />
+              <img src={prjct.Banner} alt="" />
             </div>
             <div className={style.text}>
-              <h4>{prjct.name}</h4>
-              <p>{prjct.text}</p>
-              <Link to={`/portfolio/project/${prjct.id}`}>View full project <span><CgArrowRight/></span></Link>
+              <h4>{prjct.Name}</h4>
+              <p>{prjct.Text}</p>
+              <Link to={`/portfolio/project/${prjct._id}`}>View full project <span><CgArrowRight/></span></Link>
             </div>
           </div>
         ))}

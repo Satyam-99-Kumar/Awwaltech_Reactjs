@@ -1,18 +1,18 @@
 import style from "./BlogBanner.module.scss";
 import img1 from "../../../assets/Blog/frame.png";
 
-function BlogBanner() {
+function BlogBanner({apiData}) {
   return (
     <div className={style.banner}>
       <div className={style.banner__left}>
         <div>
-          <p>Blog</p>
+          <p>{apiData.Banner.TitleTag}</p>
           <h1 className={style.desktopViewHeading}>
-            <div>See how Minttask helps</div>
-            <div>teams achieve their goals</div>
+            <div>{apiData.Banner.Title1}</div>
+            <div>{apiData.Banner.Title2}</div>
           </h1>
           <h1 className={style.mobileViewHeading}>
-            See how Minttask helps teams achieve their goals
+          {apiData.Banner.Title1} {apiData.Banner.Title2}
           </h1>
         </div>
       </div>

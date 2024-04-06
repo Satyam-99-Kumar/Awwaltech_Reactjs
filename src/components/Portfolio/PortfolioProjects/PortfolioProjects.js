@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import style from "./PortfolioProjects.module.scss";
-import { data } from "./Data";
+// import { data } from "./Data";
 import Projects from "./Projects";
 
-function PortfolioProjects({data}) {
+function PortfolioProjects({apiData}) {
   const [active, setActive] = useState(1);
   const [filteredData, setFilteredData] = useState([]);
 
@@ -11,21 +11,23 @@ function PortfolioProjects({data}) {
     setActive(id);
 
     if (tp === "all") {
-      setFilteredData(data);
+      setFilteredData(apiData?.projectSection?.Projects);
+      console.log("all==>", apiData?.projectSection?.Projects)
     } else {
       let fd = [];
-      data.forEach((d) => {
-        if (d.type.includes(tp)) {
+      apiData?.projectSection?.Projects.forEach((d) => {
+        if (d.Type.includes(tp)) {
           fd.push(d);
         }
       });
+      console.log("fd==>", fd)
       setFilteredData(fd);
     }
   };
 
   useEffect(() => {
     filterData(1, "all");
-  }, []);
+  });
 
   return (
     <div className={style.projects}>
