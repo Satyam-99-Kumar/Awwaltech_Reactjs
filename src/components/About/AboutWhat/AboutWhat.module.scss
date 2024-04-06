@@ -11,8 +11,17 @@
     display: flex;
     padding: 100px;
     @include media("<=phone") {
-      padding: 15px;
+      padding: 30px 20px;
       flex-wrap: wrap;
+      gap: 60px;
+    }
+    @include media(">=tablet") {
+    
+      gap: 60px;
+    }
+    @include media(">=tablet") {
+    
+      padding: 100px 60px;
     }
 
     .head {
@@ -35,7 +44,15 @@
         margin-top: 1rem;
         color: #0b2845;
         @include media("<=phone") {
-          margin-bottom: 2rem;
+          margin-bottom: 0rem;
+          font-size: 27px;
+          letter-spacing: -0.54px;
+
+        }
+        @include media(">=tablet") {
+        
+          font-size: 28px;
+
         }
         div:not(:last-child) {
           @include media("<=phone") {
@@ -87,8 +104,12 @@
     margin-top: 60px;
     padding: 0 100px;
     @include media("<=phone") {
-      padding: 15px 0;
+      padding: 0 0!important;
       margin-top: 30px;
+    }
+    @include media("<=tablet") {
+      padding: 0 60px;
+     
     }
 
     .wrapper {
@@ -103,11 +124,20 @@
         padding-top: 16px;
         padding-bottom: 16px;
       }
+      @include media("<=tablet") {
+        display: block;
+      }
     }
 
     .image {
       width: 35%;
       @include media("<=phone") {
+        width: 100%;
+      }
+      @include media(">=LGdesktop") {
+        width: 13%;
+      }
+      @include media("<=tablet") {
         width: 100%;
       }
       img {
@@ -123,6 +153,14 @@
         width: 100%;
         padding-left: 15px;
       }
+      @include media(">=LGdesktop") {
+        width: 87%;
+      }
+      @include media("<=tablet") {
+        width: 100%;
+        margin-top: 40px;
+      }
+
       p.secondaryHead {
         color: var(--primary-color);
         font-weight: 500;
@@ -136,6 +174,18 @@
         line-height: 42px;
         letter-spacing: -0.34px;
         margin-top: 1rem;
+        @include media("<=tablet") {
+          font-size: 16px;
+          line-height: 36px;
+         
+        }
+        @include media("<=phone") {
+          font-size: 24px;
+          line-height: 35px;
+         
+        }
+      
+     
       }
       .missionVission {
         display: flex;
@@ -215,11 +265,14 @@
     padding-bottom: 6rem;
     margin-left: -4%;
     @include media("<=phone") {
-      width: 300%;
+      width: 318%;
       height: fit-content;
       padding-top: 2.5rem;
       padding-bottom: 3rem;
-      margin-left: -8%;
+     
+    }
+    @include media("<=tablet"){
+      padding-bottom: 1rem;
     }
 
     .option {
@@ -230,55 +283,90 @@
         height: 12vh;
         padding: 0 1rem;
       }
-      .wrap {
+      @include media(">=desktop") {
+        height: 38vh;
+      }
+      @include media(">=tablet") {
+        height: 55vh;
+      }
+    }
+
+    .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 6px;
+      padding: 1.3rem;
+      background: var(--white-color);
+      box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+      @include media("<=phone") {
+        height: 10vh;
+      }
+      @include media("<=tablet") {
+        padding: 0.8rem;
+      }
+      .left {
+        width: 80%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        border-radius: 6px;
-        padding: 1.3rem;
-        background: var(--white-color);
-        box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
-        @include media("<=phone") {
-          height: 10vh;
+        div {
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 42px;
+          @include media("<=phone") {
+            font-size: 20px;
+            line-height: 25px;
+          }
+          @include media(">=tablet") {
+            font-size: 14px;
+          }
+          @include media("<=tablet") {
+            font-size: 10px;
+          }
         }
-        .left {
-          width: 80%;
-          display: flex;
-          align-items: center;
-          div {
-            font-weight: 500;
+        div {
+          &:first-child {
+            font-weight: 600;
             font-size: 30px;
             line-height: 42px;
+            color: var(--primary-color);
+            margin-right: 1rem;
+            margin-top: 8px;
             @include media("<=phone") {
               font-size: 20px;
               line-height: 25px;
+              
             }
-          }
-          div {
-            &:first-child {
-              font-weight: 600;
-              font-size: 30px;
-              line-height: 42px;
-              color: var(--primary-color);
-              margin-right: 1rem;
-              margin-top: 8px;
-              @include media("<=phone") {
-                font-size: 20px;
-                line-height: 25px;
-              }
+            @include media(">=tablet") {
+              font-size: 24px;
+            }
+            @include media("<=tablet") {
+              font-size: 20px;
             }
           }
         }
-        .right {
-          width: 20%;
-          color: var(--primary-color);
-          font-weight: 500;
-          font-size: 36px;
-          line-height: 42px;
-          @include media("<=phone") {
-            font-size: 1.5rem;
-            line-height: 1.5rem;
-          }
+      }
+      .right {
+        width: 20%;
+        color: var(--primary-color);
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        @include media("<=phone") {
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+        }
+        @include media(">=desktop") {
+          width: 11%;
+        }
+        @include media(">=tablet") {
+          font-size: 21px;
+          width: 11%;
+        }
+       
+        @include media(">=tablet") {
+          font-size: 18px;
+          width: 10%;
         }
       }
     }
