@@ -5,16 +5,22 @@ import img1 from "../../../assets/About/f1.png";
 import img2 from "../../../assets/About/f2.png";
 import img3 from "../../../assets/About/f3.png";
 
-function AboutBanner() {
+function AboutBanner({data}) {
   return (
     <div className={style.aboutBanner}>
       <div className={style.aboutBanner__left}>
         <div>
-          <p>About us</p>
+          <p>{data?.Banner?.BannerTitle}</p>
           <h1>
-            <div>Your End-to-End</div>
-            <div>Software Development</div>
-            <div>Partner</div>
+            <div>
+            {data?.Banner?.Title1}
+              </div>
+              <div>
+            {data?.Banner?.Title2}
+              </div>
+              <div>
+            {data?.Banner?.Title3}
+              </div>
           </h1>
           <Link to='/about'>Get a quote</Link>
         </div>

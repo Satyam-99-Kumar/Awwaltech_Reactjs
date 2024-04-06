@@ -17,8 +17,8 @@ function About() {
     const fetchDataFromAPI = async () => { //call API 
       try {
         const result = await fetchAboutData();
-        console.log("about==>", result)
-        setData(result);
+        console.log("about==>", result.result[0])
+        setData(result.result[0]);
       } catch (error) {
         // Handle error
       }
@@ -32,9 +32,9 @@ function About() {
   return (
     <>
       <Navbar />
-      <AboutBanner />
-      <AboutWhat />
-      <AboutEnterprize />
+      <AboutBanner data={apiData} />
+      <AboutWhat data={apiData} />
+      <AboutEnterprize data={apiData} />
       <AboutInvestors />
       <GlobalContact />
       <Footer />
