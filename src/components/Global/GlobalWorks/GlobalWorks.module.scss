@@ -4,7 +4,7 @@
   width: 100%;
   min-height: 100vh;
   position: relative;
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
   @include media("<=phone") {
     padding-bottom: 37px;
     overflow: hidden;
@@ -76,7 +76,7 @@
         
         &__container {
           background: #fff;
-          height: 60vh;
+          // height: 60vh;
           border-radius: 8px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
           border: 1px solid transparent;
@@ -165,6 +165,7 @@
   }
 
   a.global {
+    padding-top: 3rem;
     text-decoration: none;
     display: flex;
     align-items: center;

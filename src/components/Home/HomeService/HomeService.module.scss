@@ -68,7 +68,7 @@
       .service {
         width: 20%;
         height: fit-content;
-        // padding: 2rem;
+        // padding: 1.5rem;
         @include media("<=phone") {
           padding: 10px;
         }
@@ -76,7 +76,7 @@
           width: 90%;
           height: fit-content;
           border-radius: 8px;
-          padding: 10px 25px;
+          padding: 1rem;
           background: #ffffff;
           box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
           border: 1px solid transparent;
@@ -95,7 +95,7 @@
             }
           }
           h3 {
-            font-size: 17px;
+            font-size: 21px;
             margin-bottom: 26px;
             font-weight: 500;
             letter-spacing: -0.00272em;
@@ -103,7 +103,7 @@
           }
           p {
             font-family: var(--font-secondary);
-            font-size: 13px;
+            font-size: 15px;
             line-height: 21px;
             font-weight: 400;
             text-align: left;
@@ -176,5 +176,20 @@
         }
       }
     }
+  }
+}
+
+.servicetexth1{
+  display: flex;
+  justify-content: center;
+}
+
+.servicediv{
+  width: 50%;
+}
+
+@include media("<=phone") {
+  .servicediv{
+    width: 100%;
   }
 }

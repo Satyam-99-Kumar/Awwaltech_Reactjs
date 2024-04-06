@@ -62,7 +62,7 @@
 }
 .optionWrapper2{
   width: 25%;
-  height: 47vh;
+  // height: 47vh;
   overflow: hidden;
   @include media("<=phone") {
     display: none;
@@ -71,7 +71,7 @@
 .content .optionWrapper2 .content__options {
   width: 100%;
   height: 47vh;
-  padding-right: 4rem;
+  // padding-right: 4rem;
   margin-top: -1rem;
   // display: none;
 }
@@ -138,8 +138,8 @@
 
 .industries .content .arrowButton {
   position: absolute;
-  top: 55vh;
-  left: 16rem;
+  top: 90vh;
+  left: 13rem;
   color: var(--primary-color);
   font-size: 1.2rem;
   cursor: pointer;
@@ -163,7 +163,7 @@
   min-height: 50vh;
   border-radius: 8px;
   background: #fff;
-  padding: 2rem;
+  padding: 1rem;
   @include media("<=phone") {
     padding: 20px;
   }

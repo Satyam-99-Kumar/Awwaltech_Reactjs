@@ -1,7 +1,7 @@
 @import "../../../styles/breakpoints.scss";
 
 .header {
-  min-height: 100vh;
+  min-height: 130vh;
   width: 100%;
   background: url(../../../assets/Home/unsplash_1lfI7wkGWZ4.png) no-repeat
     center center / cover;
@@ -12,7 +12,7 @@
 
   &__text {
     position: absolute;
-    top: 25%;
+    top: 17%;
     left: 50%;
     transform: translateX(-50%);
     @include media("<=phone") {
@@ -23,8 +23,8 @@
     h1 {
       text-align: center;
       color: #ffff;
-      font-size: 40px;
-      line-height: 56px;
+      font-size: 48px;
+      line-height: 58px;
       font-weight: 700;
       @include media("<=phone") {
         font-weight: 600;
@@ -120,6 +120,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      padding-top: 15px;
       @include media("<=phone") {
         width: 100%;
         margin-bottom: -0.1rem;
@@ -209,6 +210,6 @@
     }
   }
 }
-img{
+// img{
  
-}
+// }
