@@ -13,6 +13,11 @@
       padding: 15px;
       justify-content: space-between;
     }
+    @include media(">=tablet") {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
   }
   .logos div {
     width: 14%;

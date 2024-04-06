@@ -8,7 +8,18 @@
   @include media("<=phone") {
     padding: 63px 15px 15px 15px;
     flex-wrap: wrap;
+    padding: 80px 94px 80px 70px;
+
   }
+  @include media(">=tablet") {
+    padding: 80px 94px 80px 70px;
+
+  }
+  @include media("<=tablet") {
+    padding: 80px 60px 80px 44px;
+
+  }
+
 
   h3 {
     font-style: normal;
@@ -40,6 +51,9 @@
       @include media("<=phone") {
         width: 100%;
       }
+      @include media(">=tablet") {
+        font-size: 11px;
+      }
     }
     .info {
       margin-top: 18px;
@@ -67,7 +81,7 @@
     width: 23%;
     @include media("<=phone") {
       width: 100%;
-      margin-top: 18px;
+      margin-top: 27px;
     }
     a {
       display: block;
@@ -81,15 +95,19 @@
         color: #777;
       }
       @include media("<=phone") {
-        margin-top: 15px;
+        margin-top: 18px;
+        font-size: 11px;
       } 
+      @include media("<=tablet") {
+        font-size: 11px;
+      }
     }
   }
   &__three {
     width: 23%;
     @include media("<=phone") {
       width: 100%;
-      margin-top: 18px;
+      margin-top: 27px;
     }
     a {
       display: block;
@@ -103,15 +121,19 @@
         color: #777;
       }
       @include media("<=phone") {
-        margin-top: 15px;
+        margin-top: 18px;
+        font-size: 11px;
       } 
+      @include media(">=tablet") {
+        font-size: 11px;
+      }
     }
   }
   &__four {
     width: 23%;
     @include media("<=phone") {
       width: 100%;
-      margin-top: 18px;
+      margin-top: 27px;
     }
     a {
       display: block;
@@ -125,8 +147,13 @@
         color: #777;
       }
       @include media("<=phone") {
-        margin-top: 15px;
+        margin-top: 18px;
+        font-size: 11px;
       } 
+      @include media(">=tablet") {
+        font-size: 11px;
+        font-weight: 400;
+      }
     }
   }
 }
@@ -138,6 +165,12 @@
   @include media("<=phone") {
     padding: 15px;
     flex-wrap: wrap;
+  } 
+  @include media(">=tablet") {
+    padding: 32px 67px;
+  } 
+  @include media(">=tablet") {
+    padding: 32px 47px;
   } 
   .region {
     width: 25%;
@@ -159,6 +192,12 @@
       font-size: 14px;
       line-height: 20px;
       color: #000000;
+      @include media(">=tablet") {
+        font-size: 12px;
+      } 
+      @include media("<=tablet") {
+        font-size: 10px;
+      } 
     }
     span{
       color: #147bf3;
@@ -175,6 +214,6 @@
   font-size: 15px;
   font-family: var(--font-secondary);
   @include media("<=phone") {
-    text-align: left;
+    text-align: center;
   } 
 }
