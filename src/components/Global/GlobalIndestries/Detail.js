@@ -1,7 +1,8 @@
 import React from "react";
 import style from "./GlobalIndustries.module.scss";
 import { AiOutlineCheck } from "react-icons/ai";
-import { FaHeart } from "react-icons/fa";
+// import { FaHeart } from "react-icons/fa";
+import img1 from "../../../assets/Home/Industries/unsplash_jjhvyxm34nY.png";
 
 function Detail({ option, data }) {
   return (
@@ -13,7 +14,7 @@ function Detail({ option, data }) {
 
       <div className={style.elements}>
         <div className={style.image}>
-          <img src={data[option - 1].image} alt="" />
+          <img src={img1} alt="" />
         </div>
         <div className={style.text}>
           <p>{data[option - 1].text}</p>

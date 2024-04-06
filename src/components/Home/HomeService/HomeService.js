@@ -2,19 +2,22 @@ import Slider from "react-slick";
 import { Link } from "react-router-dom";
 // Assets
 import style from "./HomeService.module.scss";
-import img1 from "../../../assets/Home/Services/Monitor.png";
-import img2 from "../../../assets/Home/Services/Settings_Future.png";
-import img3 from "../../../assets/Home/Services/Window_Code_Block.png";
-import img4 from "../../../assets/Home/Services/Shopping_Cart_02.png";
-import img5 from "../../../assets/Home/Services/Monitor.png";
 import { BsChevronRight, BsArrowRight } from "react-icons/bs";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from 'react';
 
-function HomeService({data}) {
-const [apiData, setData] = useState(null);
+function HomeService({ data }) {
+  const [imagePaths, setImagePaths] = useState([]);
   useEffect(() => {
-    setData(data);
-  }, [data]);
+    // Define image paths
+    const imgPaths = [
+      require("../../../assets/Home/Services/Monitor.png"),
+      require("../../../assets/Home/Services/Settings_Future.png"),
+      require("../../../assets/Home/Services/Window_Code_Block.png"),
+      require("../../../assets/Home/Services/Shopping_Cart_02.png"),
+      require("../../../assets/Home/Services/Monitor.png")
+    ];
+    setImagePaths(imgPaths);
+  }, []);
 
   const settings = {
     infinite: true,
@@ -36,102 +39,31 @@ const [apiData, setData] = useState(null);
     <div className={style.services}>
       <div className={style.services__text}>
         <h1>
-        <div>{apiData?.result?.[0]?.ServicesSection?.Title}</div>
+          <div>{data?.result[0]?.ServicesSection?.Title}</div>
         </h1>
-        <p>{apiData?.result?.[0]?.ServicesSection?.Paragraph} </p>
+        <p>{data?.result[0]?.ServicesSection?.Paragraph} </p>
       </div>
 
       <div className={style.services__all}>
-      <Slider {...settings} className={style.slider}>
-        {apiData?.result?.[0]?.ServicesSection.Services.map((item, index) => {
-          return (
-            <div className={style.service} key={`${item.ServiceName}_${index}`}>
+        <Slider {...settings} className={style.slider}>
+          {data?.result[0]?.ServicesSection?.Services.map((service, index) => (
+            <div className={style.service} key={service._id}>
               <div className={style.service__content}>
-                <img src={img5} alt="" />
-                <h3><div>{item.ServiceName}</div></h3>
-                <p>{item.Paragraph}</p>
-                <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
+                {/* Assuming you have imagePaths array corresponding to each service */}
+                <img src={imagePaths[index]} alt="" />
+                <h3>
+                  <div>{service.Title1}</div>
+                  <div>{service.Title2}</div>
+                </h3>
+                <p>{service.Paragraph}</p>
+                <Link to={service.Link}>Explore  <span>More</span> <span><BsArrowRight /></span></Link>
               </div>
             </div>
-          );
-        })}
-      </Slider>
-
-        {/* <Slider {...settings} className={style.slider}> */}
-          {/* Slider 1 */}
-        
-        {/**
-         * 
-         */}
-          {/* Slider 2 */}
-          {/* <div className={style.service}>
-            <div className={style.service__content}>
-              <img src={img1} alt="" />
-              <h3><div>Web</div><div>Development</div></h3>
-              <p>
-                Our complete spectrum of mobile app development and web
-                solutions help startups, small-medium enterprises, and
-                organizations to create outcome
-              </p>
-              <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
-            </div>
-          </div> */}
-          {/* Slider 3 */}
-          {/* <div className={style.service}>
-            <div className={style.service__content}>
-              <img src={img2} alt="" />
-              <h3><div>Enterprise</div><div>Devops</div></h3>
-              <p>
-                Our complete spectrum of mobile app development and web
-                solutions help startups, small-medium enterprises, and
-                organizations to create outcome
-              </p>
-              <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
-            </div>
-          </div> */}
-          {/* Slider 4 */}
-          {/* <div className={style.service}>
-            <div className={style.service__content}>
-              <img src={img3} alt="" />
-              <h3><div>Strategic UX</div><div>Development</div></h3>
-              <p>
-                Our complete spectrum of mobile app development and web
-                solutions help startups, small-medium enterprises, and
-                organizations to create outcome
-              </p>
-              <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
-            </div>
-          </div> */}
-          {/* Slider 5 */}
-          {/* <div className={style.service}>
-            <div className={style.service__content}>
-              <img src={img4} alt="" />
-              <h3><div>eCommerce</div><div>Development</div></h3>
-              <p>
-                Our complete spectrum of mobile app development and web
-                solutions help startups, small-medium enterprises, and
-                organizations to create outcome
-              </p>
-              <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
-            </div>
-          </div> */}
-          {/* Slider 6 */}
-          {/* <div className={style.service}>
-            <div className={style.service__content}>
-              <img src={img5} alt="" />
-              <h3><div>Mobile App</div><div>Development</div></h3>
-              <p>
-                Our complete spectrum of mobile app development and web
-                solutions help startups, small-medium enterprises, and
-                organizations to create outcome
-              </p>
-              <Link to="/">Explore  <span>More</span> <span><BsArrowRight /></span></Link>
-            </div>
-          </div> */}
-        {/* </Slider> */}
+          ))}
+        </Slider>
 
         <div className={style.globalLink}>
-        <Link to="/">Explore  all our services<span><BsChevronRight /></span></Link>
+          <Link to="/">Explore  all our services<span><BsChevronRight /></span></Link>
         </div>
       </div>
     </div>

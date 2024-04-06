@@ -1,20 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import style from "./HomeClients.module.scss";
 import { AiOutlineCheck, AiOutlineHeart } from "react-icons/ai";
-import { RiCheckboxMultipleLine } from "react-icons/ri";
 import Slider from "react-slick";
 import ClientsLogo from "./ClientsLogo";
 
 function HomeClients({ data }) {
-  const [apiData, setApiData] = useState(null);
   const [selected, setSelected] = useState(1);
   const [animationActive, setAnimationActive] = useState(false);
-
-  useEffect(() => {
-    if (data && data.result && data.result.length > 0) {
-      setApiData(data.result[0]);
-    }
-  }, [data]);
 
   const handleClick = (id) => {
     setAnimationActive(true);
@@ -37,18 +29,15 @@ function HomeClients({ data }) {
 
   return (
     <div className={style.clients}>
-      {apiData && (
         <div className={style.clients__text}>
-          <p>{apiData.ClientsSection.Title1}</p>
-          <h1>{apiData.ClientsSection.Title2}</h1>
-          <p>{apiData.ClientsSection.Paragraph}</p>
+          <p>{data?.result[0]?.ClientsSection?.Title1}</p>
+          <h1>{data?.result[0]?.ClientsSection?.Title2}</h1>
+          <p>{data?.result[0]?.ClientsSection?.Paragraph}</p>
         </div>
-      )}
 
       <div className={style.options}>
         <div className={style.options__wrapper}>
-          {apiData &&
-            apiData.ClientsSection.Clients.map((client, index) => (
+            {data?.result[0]?.ClientsSection?.Clients.map((client, index) => (
               <div
                 key={client._id}
                 className={
@@ -75,48 +64,47 @@ function HomeClients({ data }) {
         }
       >
         <div className={style.image}>
-          {apiData && (
             <Slider {...settings} className={style.slider}>
-              {apiData.ClientsSection.Clients.map((client, index) => (
+              {data?.result[0]?.ClientsSection?.Clients.map((client, index) => (
                 <div className={style.slider__container} key={client._id}>
                   {/* Replace this with your actual image URL */}
                   <img src={client.Image} alt="" />
                 </div>
               ))}
             </Slider>
-          )}
         </div>
-        {apiData && (
           <div className={style.content}>
-            <h3>{apiData.ClientsSection.Clients[selected - 1].ClientName}</h3>
+            <h3>{data?.result[0]?.ClientsSection?.Clients[selected - 1].ClientName}</h3>
             <div className={style.contentWrapper}>
               <div className={style.contentLeft}>
                 <h4>Make Difference with Codiant</h4>
                 <ul>
+                {data?.result[0]?.ClientsSection?.Clients[selected - 1].List1.map((list, index) => (
                   <li>
                     <div>
                       <AiOutlineCheck />
                     </div>
-                    <div>Strategic Consulting</div>
+                    <div>{list.Name}</div>
                   </li>
-                  {/* Add more list items as needed */}
+                ))}
                 </ul>
               </div>
               <div className={style.contentRight}>
                 <h4>Make Difference with Codiant</h4>
                 <ul>
+                {data?.result[0]?.ClientsSection?.Clients[selected - 1].List2.map((list, index) => (
+
                   <li>
                     <div>
                       <AiOutlineCheck />
                     </div>
-                    <div>Strategic Consulting</div>
+                    <div>{list.Name}</div>
                   </li>
-                  {/* Add more list items as needed */}
+                ))}
                 </ul>
               </div>
             </div>
           </div>
-        )}
       </div>
 
       <ClientsLogo />

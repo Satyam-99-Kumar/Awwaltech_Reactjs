@@ -38,16 +38,16 @@ function AboutWhat() {
       {/* short desc */}
       <div className={style.what__identity}>
         <div className={style.head}>
-          <p>{apiData?.result?.[0]?.WhatIsMinttaskSection?.Title1}</p>
+          <p>{apiData?.result[0]?.WhatIsMinttaskSection?.Title1}</p>
           <h2>
-            <div>{apiData?.result?.[0]?.WhatIsMinttaskSection?.Title2}</div>
+            <div>{apiData?.result[0]?.WhatIsMinttaskSection?.Title2}</div>
           </h2>
         </div>
         <div className={style.text}>
-          <p>{apiData?.result?.[0]?.WhatIsMinttaskSection?.Paragraph}</p>
+          <p>{apiData?.result[0]?.WhatIsMinttaskSection?.Paragraph}</p>
         </div>
         <div className={style.text}>
-          <p>{apiData?.result?.[0]?.WhatIsMinttaskSection?.Paragraph1}</p>
+          <p>{apiData?.result[0]?.WhatIsMinttaskSection?.Paragraph1}</p>
         </div>
       </div>
 
@@ -58,21 +58,21 @@ function AboutWhat() {
             <img src={img1} alt="" />
           </div>
           <div className={style.text}>
-            <p className={style.secondaryHead}>{apiData?.result?.[0]?.EnterprisesSection?.Title}</p>
+            <p className={style.secondaryHead}>{apiData?.result[0]?.EnterprisesSection?.Title}</p>
             <h2>
-            {apiData?.result?.[0]?.EnterprisesSection?.MainTitle}
+            {apiData?.result[0]?.EnterprisesSection?.MainTitle}
             </h2>
 
             {/* mission & vission */}
             <div className={style.missionVission}>
               <div className={style.mission}>
-                <h4>{apiData?.result?.[0]?.EnterprisesSection?.Vision}</h4>
+                <h4>{apiData?.result[0]?.EnterprisesSection?.Vision}</h4>
                 <div className={style.textt}>
                   <div>
                     <AiOutlineCheck />
                   </div>
                   <div>MissionParagraph
-                  <div>{apiData?.result?.[0]?.EnterprisesSection?.VisionParagraph}</div>
+                  <div>{apiData?.result[0]?.EnterprisesSection?.VisionParagraph}</div>
                   </div>
                 </div>
               </div>
@@ -83,7 +83,7 @@ function AboutWhat() {
                     <AiOutlineCheck />
                   </div>
                   <div>
-                  {apiData?.result?.[0]?.EnterprisesSection?.MissionParagraph}
+                  {apiData?.result[0]?.EnterprisesSection?.MissionParagraph}
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@ function AboutWhat() {
             <div className={style.finalTxt}>
               
               <p>
-              {apiData?.result?.[0]?.EnterprisesSection?.Enterprises[0]?.EnterprisesName}
+              {apiData?.result[0]?.EnterprisesSection?.Enterprises[0]?.EnterprisesName}
               </p>
             </div>
           </div>

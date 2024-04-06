@@ -24,15 +24,15 @@ function AboutEnterprize() {
   return (
     <div className={style.enterprize}>
       <div className={style.enterprize__text}>
-        <p>{apiData?.result?.[0]?.DrivingEnterprisesSection?.Title1}</p>
+        <p>{apiData?.result[0]?.DrivingEnterprisesSection?.Title1}</p>
         <h1>
-          <div>{apiData?.result?.[0]?.DrivingEnterprisesSection?.Title2}</div>
+          <div>{apiData?.result[0]?.DrivingEnterprisesSection?.Title2}</div>
         </h1>
-        <p>{apiData?.result?.[0]?.DrivingEnterprisesSection?.Paragraph}</p>
+        <p>{apiData?.result[0]?.DrivingEnterprisesSection?.Paragraph}</p>
       </div>
 
       {/* Render Enterprises */}
-      {apiData?.result?.[0]?.DrivingEnterprisesSection?.DrivingEnterprises.map((enterprise, index) => (
+      {apiData?.result[0]?.DrivingEnterprisesSection?.DrivingEnterprises.map((enterprise, index) => (
         <div key={index} className={style.enterprise}>
           <img src={enterprise.Logo} alt={enterprise.EnterprisesName} />
           <Link to={enterprise.Link}>{enterprise.EnterprisesName}</Link>

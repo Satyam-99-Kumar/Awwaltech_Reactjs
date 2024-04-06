@@ -12,22 +12,33 @@ import Navbar from "../../components/Navbar/Navbar";
 import { Data } from "./IndustrySlideData";
 import { fetchHomeData } from '../../config/apiService';
 
-
 function Home() {
-  const [apiData, setData] = useState(null); 
+  const [apiData, setApiData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    window.scrollTo(0,0);
-    const fetchDataFromAPI = async () => { //call API 
+    window.scrollTo(0, 0);
+    const fetchDataFromAPI = async () => {
       try {
         const result = await fetchHomeData();
-        setData(result);
+        setApiData(result);
+        setLoading(false);
       } catch (error) {
-        console.log("Error", error);
+        setError(error);
+        setLoading(false);
       }
     };
     fetchDataFromAPI();
   }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
 
   return (
     <>
@@ -36,9 +47,9 @@ function Home() {
       <HomeService data={apiData} />
       <GlobalIndustries data={Data} apiData={apiData} />
       <HomeClients data={apiData} />
-      <GlobalWorks background={`#F5F5F7`} />
+      <GlobalWorks background={`#F5F5F7`} apiData={apiData} />
       <HomeAchievements  data={apiData}/>
-      <HomeFeedback background={`#F5F5F7`} />
+      <HomeFeedback background={`#F5F5F7`} apiData={apiData} />
       <GlobalContact data={apiData}/>
       <Footer data={apiData}/>
     </>

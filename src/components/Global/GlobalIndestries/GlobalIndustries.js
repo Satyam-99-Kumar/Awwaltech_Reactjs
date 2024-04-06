@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 // Components
 import Detail from "./Detail";
 // Assets
@@ -24,10 +24,9 @@ const settings2 = {
   slidesToScroll: 1,
 };
 
-function GlobalIndustries({ data }, {apiData}) {
+function GlobalIndustries({ data, apiData }) {
   const [option, setOption] = useState(1);
   const [animationActive, setAnimationActive] = useState(false);
-  const [fetchApiData, setData] = useState(null);
   const slider = useRef(null);
 
   const handleClick = (id) => {
@@ -39,21 +38,12 @@ function GlobalIndustries({ data }, {apiData}) {
     }, 2000);
   };
 
-  useEffect(() =>{
-    setData(fetchApiData);
-    console.log("homeservice===>", fetchApiData);
-  }, [fetchApiData])
-
   return (
     <div className={style.industries}>
       <div className={style.industries__text}>
-        <p>{fetchApiData?.result?.[0]?.IndustriesSection?.Title1}</p>
-        <h1>Industries We Serve</h1>
-        <p>
-          Empowering businesses across verticals by leveraging the power of
-          mobility that help accelerate innovation, reduce costs and improve
-          performance.
-        </p>
+        <p>{apiData?.result[0]?.IndustriesSection?.Title1}</p>
+        <h1>{apiData?.result[0]?.IndustriesSection?.Title2}</h1>
+        <p>{apiData?.result[0]?.IndustriesSection?.Paragraph}</p>
       </div>
 
       {/* //////////////////////////////////// */}
@@ -61,17 +51,19 @@ function GlobalIndustries({ data }, {apiData}) {
       {/* //////////////////////////////////// */}
       <div className={style.optionSliderForMobile}>
         <Slider {...settings2}>
-          {data.map((data) => (
+          {apiData?.result[0]?.IndustriesSection.Industries?.map((data, index) => (
             <div
+            key={`${data._id}_${index}`}
               className={
-                option === data.id
+                option === data._id
                   ? `${style.option} ${style.active}`
                   : `${style.option}`
               }
-              onClick={() => handleClick(data.id)}
+              onClick={() => handleClick(data._id)}
             >
               <div className={style.optionWrapper}>
-                <div className={style.logo}>{data.optionLogo}</div>
+                {/* <div className={style.logo}>eval{data.optionLogo}</div> */}
+                <div className={style.logo}>Icon</div>
                 <div className={style.text}>
                   <div>{data.optionName[0]}</div>
                   <div>{data.optionName[1]}</div>
@@ -88,17 +80,19 @@ function GlobalIndustries({ data }, {apiData}) {
         {/* //////////////////////////////////// */}
         <div className={style.optionWrapper2}>
           <Slider {...settings} className={style.content__options} ref={slider}>
-            {data.map((data) => (
-              <div
+            {apiData?.result[0]?.IndustriesSection.Industries?.map((data, index) => (
+              <div 
+                key={`${data.Title1}_${index}`}
                 className={
-                  option === data.id
+                  option === index
                     ? `${style.option} ${style.active}`
                     : `${style.option}`
                 }
-                onClick={() => handleClick(data.id)}
+                onClick={() => handleClick(index)}
               >
                 <div className={style.optionWrapper}>
-                  <div className={style.logo}>{data.optionLogo}</div>
+                  {/* <div className={style.logo}>{data.optionLogo}</div> */}
+                  <div className={style.logo}>Icon</div>
                   <div className={style.text}>
                     <div>{data.optionName[0]}</div>
                     <div>{data.optionName[1]}</div>
@@ -127,7 +121,7 @@ function GlobalIndustries({ data }, {apiData}) {
                 : `${style.wrapper}`
             }
           >
-            <Detail option={option} data={data} />
+            <Detail option={option} data={apiData?.result[0]?.IndustriesSection.Industries} />
           </div>
         </div>
       </div>
