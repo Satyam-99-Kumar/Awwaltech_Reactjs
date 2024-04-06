@@ -1,18 +1,18 @@
 import style from "./PortfolioBanner.module.scss";
 import img1 from "../../../assets/Services/frame.png";
 
-function PortfolioBanner() {
+function PortfolioBanner({data}) {
   return (
     <div className={style.banner}>
       <div className={style.banner__left}>
         <div>
-          <p>Mobile App Development</p>
+        <div>{data.Banner.TitleTag}</div>
           <h1 className={style.desktopViewHeading}>
-            <div>See how Minttask helps</div>
-            <div>teams achieve their goals</div>
+            <div>{data.Banner.Title1}</div>
+            <div>{data.Banner.Title2}</div>
           </h1>
           <h1 className={style.mobileViewHeading}>
-            See how Minttask helps teams achieve their goals
+          {data.Banner.Title1} {data.Banner.Title2}
           </h1>
         </div>
       </div>

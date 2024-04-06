@@ -3,7 +3,7 @@ import style from "./PortfolioProjects.module.scss";
 import { data } from "./Data";
 import Projects from "./Projects";
 
-function PortfolioProjects() {
+function PortfolioProjects({data}) {
   const [active, setActive] = useState(1);
   const [filteredData, setFilteredData] = useState([]);
 

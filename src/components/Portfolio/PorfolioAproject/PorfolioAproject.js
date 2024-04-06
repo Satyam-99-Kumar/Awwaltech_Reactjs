@@ -3,48 +3,50 @@ import p1 from "../../../assets/Portfolio/p1.png";
 import { Link } from "react-router-dom";
 import { CgArrowRight } from "react-icons/cg";
 
-function PorfolioAproject() {
+function PorfolioAproject({data}) {
   return (
     <div className={style.aproject}>
       <div className={style.wrapper}>
-        <div className={style.wrapper__left}>
+      {/* ==== start comment bcz figma design change */}
+        {/* <div className={style.wrapper__left}>
           <img src={p1} alt="" />
-        </div>
-        <div className={style.wrapper__right}>
-          <p>Mobile App Development Solutions</p>
+        </div> */}
+        {/* <div className={style.wrapper__right}> */}
+          {/* <p>{data?.projectSection?.TitleTag}</p> */}
           {/* desktop view */}
-          <h3 className={style.desktopView}>
-            <div>Android, iOS & Flutter App</div>
-            <div>Development</div>
-          </h3>
+          {/* <h3 className={style.desktopView}>
+          <p>{data?.projectSection?.Title1}</p>
+          <p>{data?.projectSection?.Title2}</p>
+          </h3> */}
           {/* mobile view */}
-          <h3 className={style.mobileView}>
+          {/* <h3 className={style.mobileView}>
             Android, iOS & Flutter App Development
           </h3>
-          <div className={style.line}></div>
+          <div className={style.line}></div> */}
 
           {/* desktop view */}
-          <p className={`${style.text} ${style.desktopView}`}>
+          {/* <p className={`${style.text} ${style.desktopView}`}>
             Being a rising name in the IT industry across the world, we deliver
             quality services in a timely <br /> fashion to help our clients gain
             a leading.
             <br />
             edge in this competitive market.
-          </p>
+          </p> */}
           {/* mobile view */}
-          <p className={`${style.text} ${style.mobileView}`}>
+          {/* <p className={`${style.text} ${style.mobileView}`}>
             Being a rising name in the IT industry across the world, we deliver
             quality services in a timely fashion to help our clients gain a
             leading edge in this competitive market.
-          </p>
+          </p> */}
 
-          <Link to="/portfolio">
+          {/* <Link to="/portfolio">
             View full project{" "}
             <span>
               <CgArrowRight />
             </span>
-          </Link>
-        </div>
+          </Link> */}
+        {/* </div> */}
+        {/* ==== end comment bcz figma design change */}
       </div>
     </div>
   );
