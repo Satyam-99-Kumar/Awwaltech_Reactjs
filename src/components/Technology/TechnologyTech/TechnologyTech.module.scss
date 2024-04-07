@@ -3,7 +3,7 @@
 .tech {
   width: 100%;
   min-height: 100vh;
-  padding: 150px 100px;
+  padding: 65px 100px 100px 100px;
   @include media("<=phone") {
     padding: 15px;
   }
