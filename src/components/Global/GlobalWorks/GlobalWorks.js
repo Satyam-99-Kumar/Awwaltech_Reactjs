@@ -40,7 +40,6 @@ function GlobalWorks({background, apiData}) {
         <Slider className={style.allworks} {...settings} ref={slider}>
         {apiData?.result[0]?.RecentWorkSection?.Projects.map((project, index) => (
                       <Work id={index} project={project} />
-
         ))}
           {/* <Work id={2} />
           <Work id={2} />

@@ -71,6 +71,17 @@
         }
       }
     }
+    @media (min-width: 280px) and (max-width: 900px) {
+      .head {
+      width: 100%;
+      }
+      h2{
+        margin-right: 0px !important;
+      }
+      .text{
+        width: 100% !important;
+      }
+    }
     .text {
       width: 50%;
       @include media("<=phone") {
@@ -176,10 +187,16 @@
         letter-spacing: -0.34px;
         margin-top: 1rem;
         margin-right: 180px;
+        width: 55%;
         @include media("<=tablet") {
           font-size: 16px;
           line-height: 36px;
          
+        }
+        @media (min-width: 280px) and (max-width: 900px) {
+          h2{
+            margin-right: 0px !important;
+          }
         }
         @include media("<=phone") {
           font-size: 24px;

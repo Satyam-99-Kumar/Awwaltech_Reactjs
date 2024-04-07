@@ -66,6 +66,7 @@
     }
     .block2 {
       width:48%;
+      margin-top: -20px;
       @include media("<=phone") {
         width: 100%;
         flex-wrap: wrap;
