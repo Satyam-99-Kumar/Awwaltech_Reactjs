@@ -7,7 +7,7 @@
     center center / cover;
   position: relative;
   @include media("<=phone") {
-    height: 105vh;
+    // height: 10vh;
   }
 
   &__text {
@@ -48,6 +48,8 @@
         margin-top: 10px;
       }
     }
+
+
 
     .btnGroup {
       display: flex;

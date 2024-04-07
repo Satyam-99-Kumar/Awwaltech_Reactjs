@@ -5,7 +5,7 @@ import Detail from "./Detail";
 import style from "./GlobalIndustries.module.scss";
 import { BsChevronDown } from "react-icons/bs";
 import Slider from "react-slick/lib/slider";
-
+import LibraryAddCheckIcon from '@mui/icons-material/LibraryAddCheck';
 const settings = {
   dots: false,
   arrows: false,
@@ -92,7 +92,7 @@ function GlobalIndustries({ data, apiData }) {
               >
                 <div className={style.optionWrapper}>
                   {/* <div className={style.logo}>{data.optionLogo}</div> */}
-                  <div className={style.logo}>Icon</div>
+                  <div className={style.logo}><LibraryAddCheckIcon/> </div>
                   <div className={style.text}>
                     <div>{data.optionName[0]}</div>
                     <div>{data.optionName[1]}</div>
