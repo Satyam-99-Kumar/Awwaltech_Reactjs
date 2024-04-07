@@ -1,7 +1,7 @@
 import style from "./ServiceEnterprize.module.scss";
 import { BsAward, BsCheckCircle } from "react-icons/bs";
 
-function ServiceEnterprize() {
+function ServiceEnterprize({ apiData }) {
   return (
     <div className={style.achievements}>
       {/* ///////////////////////////////////////////// */}
@@ -11,17 +11,13 @@ function ServiceEnterprize() {
           <div className={style.logo}>
             <BsAward />
           </div>
-          <p>Driving Enterprise</p>
+          <p>{apiData.DrivingSection.TitleTag}</p>
           <h1>
-            <div>Why to choose Minttask as your</div>
-            <div>Mobile App Development</div>
-            <div>Company ?</div>
+            <div>{apiData.DrivingSection.Title1}</div>
+            <div>{apiData.DrivingSection.Title2}</div>
+            <div>{apiData.DrivingSection.Title3}</div>
           </h1>
-          <p>
-            Empowering businesses across verticals by leveraging the power of
-            mobility that help accelerate innovation, reduce costs and improve
-            performance.
-          </p>
+          <p>{apiData.DrivingSection.Paragraph}</p>
         </div>
       </div>
 
@@ -30,60 +26,26 @@ function ServiceEnterprize() {
       <div className={style.achievements__achieves}>
         {/* column 1 */}
         <div className={style.block1}>
-          {/* -- 1 -- */}
-          <div className={style.achive}>
-            <BsCheckCircle />
-            <p>
-              Our complete spectrum of mobile app development and web solutions
-              help startups, small-medium enterprises reduce costs and improve
-              performance.
-            </p>
-          </div>
-          {/* -- 2 -- */}
-          <div className={style.achive}>
-            <BsCheckCircle />
-            <p>
-              Our complete spectrum of mobile app development and web solutions
-              help startups, small-medium enterprises reduce costs and improve
-              performance.
-            </p>
-          </div>
-          {/* -- 3 -- */}
-          <div className={style.achive}>
-            <BsCheckCircle />
-            <p>
-              Our complete spectrum of mobile app development and web solutions
-              help startups, small-medium enterprises reduce costs and improve
-              performance.
-            </p>
-          </div>
+          {apiData.DrivingSection.Services.slice(0, 3).map((item, index) => {
+            return (
+              <div className={style.achive} key={index}>
+                <BsCheckCircle />
+                <p>{item.Paragraph}</p>
+              </div>
+            )
+          })}
+
         </div>
         {/* column 2 */}
         <div className={style.block2}>
-          {/* -- 1 -- */}
-          <div className={style.achive}>
-            <BsCheckCircle />
-            <p>
-              Our complete spectrum of mobile app development and web solutions
-              help startups.
-            </p>
-          </div>
-          {/* -- 2 -- */}
-          <div className={style.achive}>
-            <BsCheckCircle />
-            <p>
-              Our complete spectrum of mobile app development and web solutions
-              help startups.
-            </p>
-          </div>
-          {/* -- 3 -- */}
-          <div className={style.achive}>
-            <BsCheckCircle />
-            <p>
-              Our complete spectrum of mobile app development and web solutions
-              help startups.
-            </p>
-          </div>
+          {apiData.DrivingSection.Services.slice(-3).map((item, index) => {
+            return (
+              <div className={style.achive} key={index}>
+                <BsCheckCircle />
+                <p>{item.Paragraph}</p>
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>

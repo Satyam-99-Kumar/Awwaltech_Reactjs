@@ -1,5 +1,5 @@
 import style from "./ServiceSolution.module.scss";
-import { AiOutlineCheck, AiOutlineMobile  } from "react-icons/ai";
+import { AiOutlineCheck, AiOutlineMobile } from "react-icons/ai";
 import { BsCart } from "react-icons/bs";
 import img from "../../../assets/Services/image.png";
 import Slider from "react-slick/lib/slider";
@@ -17,83 +17,31 @@ const settings = {
 };
 
 
-function ServiceSolution() {
+function ServiceSolution({ apiData }) {
   return (
     <div className={style.serviceSolution}>
       {/* ///////////////////////////////////// */}
-        {/* Content */}
-        {/* ///////////////////////////////////// */}
+      {/* Content */}
+      {/* ///////////////////////////////////// */}
       <div className={style.wrapper}>
         <div className={style.wrapper__left}>
           <img src={img} alt="" />
         </div>
         <div className={style.wrapper__right}>
-          <p>Our Solutions</p>
-          <h3>Our app development solutions</h3>
+          <p>{apiData.OurSolutionsSection.Title1}</p>
+          <h3>{apiData.OurSolutionsSection.Title2}</h3>
           <ul>
-            <li>
-              <div>
-                <AiOutlineCheck />
-              </div>
-              <div>
-                To be a first choice for extending your E-commerce team
-                offshore.  To be a first choice for extending
-              </div>
-            </li>
-            <li>
-              <div>
-                <AiOutlineCheck />
-              </div>
-              <div>
-                To provide customized E-commerce services from a dedicated
-                offshore team while maintaining superseding the requested Qua
-              </div>
-            </li>
-            <li>
-              <div>
-                <AiOutlineCheck />
-              </div>
-              <div>
-                To provide customized E-commerce services from a dedicated
-                offshore team while maintaining superseding the requested Qua
-              </div>
-            </li>
-            <li>
-              <div>
-                <AiOutlineCheck />
-              </div>
-              <div>
-                To provide customized E-commerce services from a dedicated
-                offshore team while maintaining superseding the requested Qua
-              </div>
-            </li>
-            <li>
-              <div>
-                <AiOutlineCheck />
-              </div>
-              <div>
-                To provide customized E-commerce services from a dedicated
-                offshore team while maintaining superseding the requested Qua
-              </div>
-            </li>
-            <li>
-              <div>
-                <AiOutlineCheck />
-              </div>
-              <div>
-                To be a first choice for extending your E-commerce team
-                offshore.  To be a first choice for extending
-              </div>
-            </li>
-            <li>
-              <div>
-                <AiOutlineCheck />
-              </div>
-              <div>
-                To provide customized E-commerce services from a dedicated
-                offshore team while maintaining superseding the requested Qua
-              </div>
-            </li>
+            {apiData.OurSolutionsSection.List.map(item => {
+              return (
+                <li>
+                  <div>
+                    <AiOutlineCheck />
+                  </div>
+                  <div>{item.Name} </div>
+                </li>
+              )
+            })}
+
           </ul>
         </div>
       </div>

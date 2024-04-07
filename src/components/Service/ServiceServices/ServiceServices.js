@@ -3,7 +3,7 @@ import { FiMonitor } from "react-icons/fi";
 import { BsCodeSquare, BsHexagon, BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-function ServiceServices() {
+function ServiceServices({ apiData }) {
   return (
     <div className={style.solve}>
       {/* ///////////////////////////////////// */}
@@ -11,31 +11,15 @@ function ServiceServices() {
       {/* ///////////////////////////////////// */}
       <div className={style.solve__identity}>
         <div className={style.head}>
-          <p>Mobile App Development Solutions</p>
+          <p>{apiData.MobileAppSolutionSection.Title1}</p>
           <h2>
-            <div>Android, iOS & Flutter App</div>
-            <div>Development</div>
-            <div className={style.headMobile}>
-              Android, iOS & Flutter App Development
-            </div>
+            <div>{apiData.MobileAppSolutionSection.Title2}</div>
+            <div>{apiData.MobileAppSolutionSection.Title3}</div>
+            <div className={style.headMobile}>{apiData.MobileAppSolutionSection.Title2} {apiData.MobileAppSolutionSection.Title2} {apiData.MobileAppSolutionSection.Title3}</div>
           </h2>
         </div>
         <div className={style.text}>
-          <p>
-            Being a rising name in the IT industry across the world, we deliver
-            quality services in a timely fashion to help our clients gain a
-            leading edge in this competitive market.
-          </p>
-          <p>
-            We are your one-stop solution provider for Android, iOS & Flutter
-            Mobile App development services. Leading Startups and Companies
-            hiring Android, iOS and Flutter App developers from Zignuts
-            Technolab to successfully drive and achieve their critical mobile
-            app development projects. As a leading Indian mobile app development
-            company with skiiled team of app developers in India, we help
-            building custom mobile apps that have most interactive and modern
-            interfaces.
-          </p>
+          <p>{apiData.MobileAppSolutionSection.Paragraph}</p>
         </div>
       </div>
 
@@ -45,45 +29,37 @@ function ServiceServices() {
       <div className={style.solve__solutions}>
         <div className={style.text}>
           <h1>
-            <div>Android, IOS & Flutter Mobile App</div>
+            <div>{apiData.MobileAppSolutionSection2.Title1}</div>
             <div>
-              Development <span>Services</span>
+              {apiData.MobileAppSolutionSection2.Title2} <span>{apiData.MobileAppSolutionSection2.Title3}</span>
             </div>
           </h1>
-          <p>
-            Custom mobile app development company with expert team of remote and
-            dedicated app developers in India
-          </p>
+          <p>{apiData.MobileAppSolutionSection2.Paragraph} </p>
         </div>
 
         <div className={style.solutionWrapper}>
           <div className={style.solutions}>
-            <div className={style.solution}>
-              <div className={style.logo}>
-                <FiMonitor />
-              </div>
-              <h4>
-                <div>Web</div>
-                <div>Development</div>
-              </h4>
-              <p>
-                Zignuts Technolab offers its iOS app development services in
-                designing and developing custom mobile apps for iPhone & iPad.
-                Hire iOS app developers who have skills and expertise in
-                everything ranging from iOS App development, app design, app
-                support and maintenance. While you can focus on your business,
-                our native iOS app development team combine in-depth research,
-                outstanding design, and impeccable development to create an
-                exceptional iOS application that fits your needs.
-              </p>
-              <Link to="/">
-                Explore <span>More</span>{" "}
-                <span>
-                  <BsArrowRight />
-                </span>
-              </Link>
-            </div>
-            <div className={style.solution}>
+            {apiData.MobileAppSolutionSection2.Services.map(item => {
+              return (
+                <div className={style.solution}>
+                  <div className={style.logo}>
+                    <FiMonitor />
+                  </div>
+                  <h4>
+                    <div>{item.Title1}</div>
+                    <div>{item.Title2}</div>
+                  </h4>
+                  <p>{item.Paragraph}</p>
+                  <Link to="/">
+                    Explore <span>More</span>{" "}
+                    <span>
+                      <BsArrowRight />
+                    </span>
+                  </Link>
+                </div>
+              )
+            })}
+            {/* <div className={style.solution}>
               <div className={style.logo}>
                 <BsCodeSquare />
               </div>
@@ -133,7 +109,7 @@ function ServiceServices() {
                   <BsArrowRight />
                 </span>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
