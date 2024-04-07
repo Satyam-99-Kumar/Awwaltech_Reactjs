@@ -9,17 +9,13 @@
     padding: 63px 15px 15px 15px;
     flex-wrap: wrap;
     padding: 80px 94px 80px 70px;
-
   }
   @include media(">=tablet") {
     padding: 80px 94px 80px 70px;
-
   }
   @include media("<=tablet") {
     padding: 80px 60px 80px 44px;
-
   }
-
 
   h3 {
     font-style: normal;
@@ -29,6 +25,14 @@
     letter-spacing: -3.12962e-5em;
     color: #147bf3;
     font-family: var(--font-primary);
+    @include media(">=desktop") {
+      font-size: 18px;
+    }
+
+    @include media(">=LGdesktop") {
+      font-size: 19px;
+    }
+
   }
 
   &__one {
@@ -42,6 +46,9 @@
       @include media("<=phone") {
         width: 80%;
       }
+      @include media(">=tablet") {
+        width: 50%;
+      }
     }
     p {
       width: 70%;
@@ -52,11 +59,26 @@
         width: 100%;
       }
       @include media(">=tablet") {
-        font-size: 11px;
+        line-height: 15px;
+        font-size: 13px;
       }
+      @include media(">=desktop") {
+        font-size: 14px;
+      }
+   
+      @include media(">=LGdesktop") {
+        font-size: 20px;
+        line-height: 32px;
+      }
+    
+ 
     }
     .info {
       margin-top: 18px;
+      @include media(">=LGdesktop") {
+        margin-top: 28px;
+      }
+
       h5 {
         font-weight: 600;
         font-size: 14px;
@@ -64,13 +86,25 @@
         letter-spacing: -3.12962e-5em;
         color: #000000;
         margin-bottom: 8px;
+        @include media(">=desktop") {
+          font-size: 17px;
+        }
       }
+
       p {
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
         color: #000000;
         font-family: var(--font-secondary);
+        @include media(">=desktop") {
+          font-size: 15px;
+        }
+        @include media(">=LGdesktop") {
+          font-size: 20px;
+        }
+    
+
         &:not(:last-child) {
           margin-bottom: 5px;
         }
@@ -91,16 +125,31 @@
       color: var(--black-color);
       font-family: var(--font-secondary);
       transition: 0.3s;
-      &:hover{
+      &:hover {
         color: #777;
       }
       @include media("<=phone") {
         margin-top: 18px;
         font-size: 11px;
-      } 
+      }
       @include media("<=tablet") {
         font-size: 11px;
       }
+      @include media(">=tablet") {
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 0px;
+      }
+      @include media(">=desktop") {
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      @include media(">=LGdesktop") {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+
     }
   }
   &__three {
@@ -108,6 +157,10 @@
     @include media("<=phone") {
       width: 100%;
       margin-top: 27px;
+    }
+
+    @include media (">=tablet"){
+      width: 27%;
     }
     a {
       display: block;
@@ -117,16 +170,30 @@
       color: var(--black-color);
       font-family: var(--font-secondary);
       transition: 0.3s;
-      &:hover{
+      &:hover {
         color: #777;
       }
       @include media("<=phone") {
         margin-top: 18px;
         font-size: 11px;
-      } 
+      }
       @include media(">=tablet") {
         font-size: 11px;
+
+        font-weight: 500;
+        letter-spacing: 0px;
       }
+      @include media(">=desktop") {
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+ 
+      @include media(">=LGdesktop") {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+
     }
   }
   &__four {
@@ -143,17 +210,29 @@
       color: var(--black-color);
       font-family: var(--font-secondary);
       transition: 0.3s;
-      &:hover{
+      &:hover {
         color: #777;
       }
       @include media("<=phone") {
         margin-top: 18px;
         font-size: 11px;
-      } 
+      }
       @include media(">=tablet") {
         font-size: 11px;
-        font-weight: 400;
+
+        font-weight: 500;
+        letter-spacing: 0px;
       }
+      @include media(">=desktop") {
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      @include media(">=LGdesktop") {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+
     }
   }
 }
@@ -165,13 +244,17 @@
   @include media("<=phone") {
     padding: 15px;
     flex-wrap: wrap;
-  } 
+  }
   @include media(">=tablet") {
     padding: 32px 67px;
-  } 
+  }
   @include media(">=tablet") {
     padding: 32px 47px;
-  } 
+  }
+  @include media(">=LGdesktop") {
+    padding: 32px 69px;
+  }
+
   .region {
     width: 25%;
     @include media("<=phone") {
@@ -186,22 +269,45 @@
       color: #000000;
       margin-bottom: 8px;
       margin-top: 10px;
+      line-height: 23px;
+      @include media(">=desktop") {
+        font-weight: 700;
+      }
+      @include media(">=LGdesktop") {
+        font-size: 19px;
+      }
+
     }
     p {
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
       color: #000000;
-      @include media(">=tablet") {
-        font-size: 12px;
-      } 
       @include media("<=tablet") {
         font-size: 10px;
-      } 
+        font-weight: 600;
+      }
+      @include media(">=tablet") {
+        font-size: 12px;
+      }
+      @include media(">=desktop") {
+        font-weight: 500;
+        font-size: 12px;
+      }
+ 
+      @include media(">=LGdesktop") {
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 500;
+      }
+
     }
-    span{
+    span {
       color: #147bf3;
       font-size: 20px;
+      @include media(">=LGdesktop") {
+        font-size: 25px;
+      }
     }
   }
 }
@@ -215,5 +321,5 @@
   font-family: var(--font-secondary);
   @include media("<=phone") {
     text-align: center;
-  } 
+  }
 }
