@@ -100,3 +100,17 @@ export const fetchHomeData = async (options = {}) => {
       throw error;
     }
   };
+
+  export const fetchClientFeedbackData = async (options = {}) => {
+    const url = `${API_URL}/home/clientfeedbackcontent`;
+    try {
+      const response = await fetch(url, options);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    } catch (error) {
+      console.error('There was a problem with the fetch operation:', error);
+      throw error;
+    }
+  };

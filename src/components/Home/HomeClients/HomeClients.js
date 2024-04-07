@@ -85,7 +85,7 @@ function HomeClients({ data }) {
               <h4>Make Difference with Codiant</h4>
               <ul>
                 {data?.result[0]?.ClientsSection?.Clients[selected - 1].List1.map((list, index) => (
-                  <li>
+                  <li key={index}>
                     <div>
                       <AiOutlineCheck />
                     </div>
@@ -99,7 +99,7 @@ function HomeClients({ data }) {
               <ul>
                 {data?.result[0]?.ClientsSection?.Clients[selected - 1].List2.map((list, index) => (
 
-                  <li>
+                  <li key={index}>
                     <div>
                       <AiOutlineCheck />
                     </div>

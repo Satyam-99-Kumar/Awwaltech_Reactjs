@@ -1,6 +1,6 @@
 import style from "./ServiceServices.module.scss";
 import { FiMonitor } from "react-icons/fi";
-import { BsCodeSquare, BsHexagon, BsArrowRight } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 function ServiceServices({ apiData }) {

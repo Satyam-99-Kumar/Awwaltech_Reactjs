@@ -49,7 +49,7 @@ function Home() {
       <HomeClients data={apiData} />
       <GlobalWorks background={`#F5F5F7`} apiData={apiData} />
       <HomeAchievements  data={apiData}/>
-      <HomeFeedback background={`#F5F5F7`} apiData={apiData} />
+      <HomeFeedback background={`#F5F5F7`} />
       <GlobalContact data={apiData}/>
       <Footer data={apiData}/>
     </>

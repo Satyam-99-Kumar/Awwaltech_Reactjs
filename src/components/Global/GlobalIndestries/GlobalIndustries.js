@@ -82,7 +82,7 @@ function GlobalIndustries({ data, apiData }) {
           <Slider {...settings} className={style.content__options} ref={slider}>
             {apiData?.result[0]?.IndustriesSection.Industries?.map((data, index) => (
               <div 
-                key={`${data.Title1}_${index}`}
+                key={`${data._id}_${index}`}
                 className={
                   option === index
                     ? `${style.option} ${style.active}`

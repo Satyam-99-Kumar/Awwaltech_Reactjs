@@ -4,7 +4,7 @@ import user from "../../../assets/Home/Feedback/user.png";
 
 function FeedBack({ id, item, background }) {
   return (
-    <div className={style.feedback} style={{background: background}}>
+    <div key={id} className={style.feedback} style={{background: background}}>
       <div className={style.feedback__container}>
         <div className={style.quote}>
           <FaQuoteLeft />
@@ -16,7 +16,7 @@ function FeedBack({ id, item, background }) {
           <div className={style.user__image}>
             <img src={user} alt="" />
           </div>
-          <div className={style.user__name}>Kianna Curtis</div>
+          <div className={style.user__name}>{item.Feedback}</div>
         </div>
       </div>
     </div>

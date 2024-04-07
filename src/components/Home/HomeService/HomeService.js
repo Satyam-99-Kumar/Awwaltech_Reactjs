@@ -38,8 +38,14 @@ function HomeService({ data }) {
   return (
     <div className={style.services}>
       <div className={style.services__text}>
-        <h1 className={style.servicetexth1}>
+        {/* <h1 className={style.servicetexth1}>
           <div className={style.servicediv}>{data?.result[0]?.ServicesSection?.Title}</div>
+        </h1> */}
+        <h1>
+          <div>
+            <span>{data?.result[0]?.ServicesSection?.Title1}</span> {data?.result[0]?.ServicesSection?.Title2}
+          </div>
+          <div>{data?.result[0]?.ServicesSection?.Title3}</div>
         </h1>
         <p>{data?.result[0]?.ServicesSection?.Paragraph} </p>
       </div>
@@ -49,7 +55,6 @@ function HomeService({ data }) {
           {data?.result[0]?.ServicesSection?.Services.map((service, index) => (
             <div className={style.service} key={service._id}>
               <div className={style.service__content}>
-                {/* Assuming you have imagePaths array corresponding to each service */}
                 <img src={imagePaths[index]} alt="" />
                 <h3>
                   <div>{service.Title1}</div>
@@ -61,7 +66,6 @@ function HomeService({ data }) {
             </div>
           ))}
         </Slider>
-
         <div className={style.globalLink}>
           <Link to="/">Explore  all our services<span><BsChevronRight /></span></Link>
         </div>
