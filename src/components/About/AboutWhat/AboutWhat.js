@@ -41,7 +41,7 @@ function AboutWhat({ data }) {
           </div>
           <div className={style.text}>
             <p className={style.secondaryHead}>{data?.EnterprisesSection?.Title}</p>
-            <h2>
+            <h2 className={style.max_size}>
               {data?.EnterprisesSection?.MainTitle}
             </h2>
 

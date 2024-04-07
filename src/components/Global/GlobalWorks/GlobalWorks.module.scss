@@ -66,7 +66,7 @@
         padding: 0 15px;
       }
       .work {
-        height: 70vh;
+        height: 100vh;
         border-radius: 8px;
         padding: 2rem;
         @include media("<=phone") {
@@ -165,7 +165,7 @@
   }
 
   a.global {
-    padding-top: 3rem;
+    // padding-top: 3rem;
     text-decoration: none;
     display: flex;
     align-items: center;

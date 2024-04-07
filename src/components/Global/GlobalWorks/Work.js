@@ -53,7 +53,7 @@ function Work({id, project}) {
             <div className={style.content}>
                 <h4>{project.ProjectName}</h4>
                 <p>{project.Paragraph}</p>
-                <Link to="/">{project.type}</Link>
+                <Link to="/">Healthcare & Telemedicine</Link>
             </div>
         </div>
     </div>
