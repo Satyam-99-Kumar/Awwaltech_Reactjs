@@ -167,7 +167,10 @@
     img {
       width: 605px;
       height: 605px;
-      @include media (">=phone"){
+      @include media ("<=phone"){
+        display: none;
+      }
+      @include media ("<=tablet"){
         display: none;
       }
       @include media(">=tablet") {
