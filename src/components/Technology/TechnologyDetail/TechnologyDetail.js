@@ -1,61 +1,55 @@
 import style from "./TechnologyDetail.module.scss";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react';
 
-import img1 from "../../../assets/Technologies/Startup.png";
-import img2 from "../../../assets/Technologies/netqorks.png";
-import img3 from "../../../assets/Technologies/enterprize.png";
-
-function TechnologyDetail() {
+function TechnologyDetail({ apiData }) {
+  const [imagePaths, setImagePaths] = useState([]);
+  useEffect(() => {
+    // Define image paths
+    const imgPaths = [
+      require("../../../assets/Technologies/Startup.png"),
+      require("../../../assets/Technologies/netqorks.png"),
+      require("../../../assets/Technologies/enterprize.png")
+    ];
+    setImagePaths(imgPaths);
+  }, []);
   return (
     <>
       <div className={style.detail}>
         <div className={style.head}>
-          <p>Mobile App Development Solutions</p>
+          <p>{apiData.WhatWeCanOfferSection.Title1}</p>
           <h2>
-            <div>What we can offer</div>
+            <div>{apiData.WhatWeCanOfferSection.Title2}</div>
           </h2>
         </div>
         <div className={style.text}>
-          <p>
-            We realize that any organization may encounter problems of choosing
-            the wrong technology or development approach. These issues may
-            appear tactical, but can also have wide ranging impact on the
-            successful and continuing operations of the overall business.
-          </p>
-          <p>
-            So before starting any project we carefully investigate your
-            company's niche features, compare already implemented solutions and
-            offer a stack of technologies that are most suitable for your
-            specific situation.
-          </p>
+          <p>{apiData.WhatWeCanOfferSection.Paragraph}</p>
         </div>
       </div>
 
       {/* /////////////////////////////////////// */}
       {/* /////////////////////////////////////// */}
       <div className={style.solutions}>
-        <div className={style.solution}>
-          <div className={style.logo}>
-            <img src={img3} alt="Enterprises" />
-          </div>
-          <h4>Enterprises</h4>
-          <p>
-            Enterprise software has its own specific set of requirements. The
-            architecture should be scalable, but cost-effective, safe, but
-            user-friendly, and, above all, it should provide high-quality user
-            services that produce results. Our high-quality engineers will help
-            your company to build powerful enterprise software.
-          </p>
-          <Link to="/">
-            Explore <span>More</span>{" "}
-            <span>
-              <BsArrowRight />
-            </span>
-          </Link>
-        </div>
+        {apiData.WhatWeCanOfferSection.Offer.map((item,index) => {
+          return (
+            <div className={style.solution}>
+              <div className={style.logo}>
+                <img src={imagePaths[index]}alt="Enterprises" />
+              </div>
+              <h4>{item.OfferName}</h4>
+              <p>{item.Paragraph} </p>
+              <Link to="/">
+                Explore <span>More</span>{" "}
+                <span>
+                  <BsArrowRight />
+                </span>
+              </Link>
+            </div>
+          )
+        })}
 
-        <div className={style.solution}>
+        {/* <div className={style.solution}>
           <div className={style.logo}>
             <img src={img2} alt="Tech Companies" />
           </div>
@@ -92,7 +86,7 @@ function TechnologyDetail() {
               <BsArrowRight />
             </span>
           </Link>
-        </div>
+        </div> */}
       </div>
     </>
   );

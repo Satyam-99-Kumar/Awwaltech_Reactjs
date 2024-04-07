@@ -1,16 +1,16 @@
 import style from './TechnologyBanner.module.scss';
 import img1 from "../../../assets/Technologies/banner.png"
 
-function TechnologyBanner() {
+function TechnologyBanner({apiData}) {
   return (
     <div className={style.banner}>
         <div className={style.banner__left}>
         <div>
-          <p>Technology Competence</p>
+          <p>{apiData.Banner.TitleTag}</p>
           <h1>
-            <div>Wide range of technologies</div>
-            <div> and the most efficient</div>
-            <div>development approaches</div>
+            <div>{apiData.Banner.Title1}</div>
+            <div> {apiData.Banner.Title2}</div>
+            <div>{apiData.Banner.Title3}</div>
           </h1>
         </div>
       </div>
