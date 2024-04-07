@@ -329,12 +329,13 @@
   }
 
   .options {
-    width: 110%;
+    width: 80% !important;
     padding-top: 5rem;
+    margin: auto;
     // margin-left: -4%;
 
     @include media("<=phone") {
-      width: 318%;
+      width: 318px;
       height: fit-content;
       padding-top: 2.5rem;
       padding-bottom: 3rem;
@@ -367,7 +368,7 @@
     .wrap {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      // justify-content: space-between;
       border-radius: 6px;
       // padding: .3rem;
       width: 315px;
