@@ -2,16 +2,17 @@
 
 .banner {
     width: 100%;
-    min-height: 80vh;
+    min-height: 60vh;
     background: var(--primary-color);
     display: flex;
+    padding-top: 5rem;
     @include media("<=phone") {
       min-height: 60vh;
       flex-wrap: wrap;
     }
   
     &__left {
-      width: 50%;
+      width: 60%;
       display: flex;
       align-items: center;
       color: #fff;
@@ -19,6 +20,7 @@
       @include media("<=phone") {
         width: 100%;
         padding-left: 15px;
+        padding-bottom: 20px;
       }
       p {
         font-weight: 600;
@@ -55,9 +57,9 @@
       .frame {
         position: absolute;
         top: 50%;
-        right: 100px;
+        right: 15px;
         transform: translateY(-50%);
-        width: 650px;
+        width: 620px;
       }
     }
   }

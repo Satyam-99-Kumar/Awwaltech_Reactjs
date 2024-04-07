@@ -1,6 +1,7 @@
 @import "../../../styles/breakpoints.scss";
 
 .faq {
+  background-color: #eee;
   padding: 80px 100px;
   width: 100%;
   @include media("<=phone") {
@@ -59,7 +60,10 @@
     background: #e9fcf9 !important;
     display: flex;
     align-items: center;
-    padding: 24px !important;
+    padding: 10px !important;
+    @include media("<=phone") {
+      padding: 24px !important;
+    }
     &::before{
         background: transparent !important;
     }
