@@ -7,7 +7,7 @@
   display: flex;
   @include media("<=phone") {
     flex-wrap: wrap;
-    min-height: 200vh;
+    // min-height: 100vh;
   }
   @include media(">=desktop") { 
     min-height: 90vh;
@@ -37,7 +37,7 @@
     }
     h1 {
       font-weight: 700;
-      font-size: 48px;
+      font-size: 42px;
       line-height: 56px;
       letter-spacing: 0.00014em;
       font-family: var(--font-primary);

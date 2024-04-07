@@ -4,7 +4,7 @@ import { BsCart } from "react-icons/bs";
 import style from "./AboutWhat.module.scss";
 import img1 from "../../../assets/About/discussion.png";
 
-function AboutWhat({data}) {
+function AboutWhat({ data }) {
 
   const settings = {
     dots: false,
@@ -42,7 +42,7 @@ function AboutWhat({data}) {
           <div className={style.text}>
             <p className={style.secondaryHead}>{data?.EnterprisesSection?.Title}</p>
             <h2>
-            {data?.EnterprisesSection?.MainTitle}
+              {data?.EnterprisesSection?.MainTitle}
             </h2>
 
             {/* mission & vission */}
@@ -65,7 +65,7 @@ function AboutWhat({data}) {
                     <AiOutlineCheck />
                   </div>
                   <div>
-                  {data?.EnterprisesSection?.MissionParagraph}
+                    {data?.EnterprisesSection?.MissionParagraph}
                   </div>
                 </div>
               </div>
@@ -73,9 +73,9 @@ function AboutWhat({data}) {
 
             {/* Final text */}
             <div className={style.finalTxt}>
-              
+
               <p>
-              {data?.EnterprisesSection?.Paragraph}
+                {data?.EnterprisesSection?.Paragraph}
               </p>
             </div>
           </div>
@@ -84,23 +84,23 @@ function AboutWhat({data}) {
 
       {/* Slide */}
       <Slider {...settings} className={style.options}>
-        
-        {data?.EnterprisesSection?.Enterprises?.map(item=> {
+
+        {data?.EnterprisesSection?.Enterprises?.map(item => {
           return (
             <div className={style.option}>
-            <div className={style.wrap}>
-              <div className={style.left}>
-                <div>
-                  <BsCart />
+              <div className={style.wrap}>
+                <div className={style.left}>
+                  <div>
+                    <BsCart />
+                  </div>
+                  <div className={style.size}>{item?.EnterprisesName}</div>
                 </div>
-                <div>{item?.EnterprisesName}</div>
+                <div className={style.right}>{item?.Percentage}</div>
               </div>
-              <div className={style.right}>{item?.Percentage}</div>
             </div>
-          </div>
           )
         })}
-        
+
       </Slider>
     </div>
   );
