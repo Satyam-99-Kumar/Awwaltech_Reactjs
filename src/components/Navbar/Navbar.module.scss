@@ -130,6 +130,7 @@
           display: flex;
           align-items: center;
           padding: 1rem;
+
           margin: 0;
           margin-bottom: 1rem;
           border-radius: 8px;
@@ -147,6 +148,7 @@
             color: var(--black-color);
             padding: 0;
             transition: 0.3s;
+            margin-right: 15px !important;
             &:nth-child(1) {
               color: var(--primary-color);
               font-size: 1.5rem;
