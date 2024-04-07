@@ -58,3 +58,17 @@ export const fetchHomeData = async (options = {}) => {
       throw error;
     }
   };
+
+  export const fetchHireData = async (options = {}) => {
+    const url = `${API_URL}/hire/content`;
+    try {
+      const response = await fetch(url, options);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    } catch (error) {
+      console.error('There was a problem with the fetch operation:', error);
+      throw error;
+    }
+  };
