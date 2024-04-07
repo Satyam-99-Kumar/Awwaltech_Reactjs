@@ -3,6 +3,7 @@ import logo from "../../assets/Footer/Group.svg";
 import { Link } from "react-router-dom";
 import { GoLocation } from "react-icons/go";
 
+
 function Footer() {
   return (
     <>

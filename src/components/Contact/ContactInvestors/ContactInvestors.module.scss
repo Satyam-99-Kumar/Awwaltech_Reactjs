@@ -8,6 +8,12 @@
     @include media("<=phone") {
       padding: 15px;
     }
+
+    @include media(">=phone") {
+      padding: 3rem 3rem;
+    }
+
+   
   
     h4 {
       display: block;
@@ -20,7 +26,22 @@
       @include media("<=phone") {
         margin-top: 30px;
         margin-bottom: 1.5rem;
+        font-size: 26px;
+
       }
+      @include media(">=LGdesktop") {
+        margin-bottom: 5rem;
+      }
+      @include media(">=desktop") {
+        margin-bottom: 4rem;
+      }
+      @include media(">=tablet") {
+        font-size: 27px;
+      }
+     
+
+     
+
     }
   
     .img {
