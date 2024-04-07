@@ -331,7 +331,7 @@
   .options {
     width: 110%;
     padding-top: 5rem;
-    margin-left: -4%;
+    // margin-left: -4%;
 
     @include media("<=phone") {
       width: 318%;
@@ -369,7 +369,8 @@
       align-items: center;
       justify-content: space-between;
       border-radius: 6px;
-      padding: .3rem;
+      // padding: .3rem;
+      width: 315px;
       background: var(--white-color);
       box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
 
