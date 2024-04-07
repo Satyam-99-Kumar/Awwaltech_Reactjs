@@ -218,7 +218,7 @@
   justify-content: space-between;
   align-items: center;
   color: #ffff;
-  margin-bottom: 24px;
+  // margin-bottom: 24px;
 }
 
 .content .content__detail .wrapper .heading h3 {
@@ -239,7 +239,7 @@
   display: flex !important;
 }
 
-@media (min-width: 370px) and (max-width: 900px) {
+@media (min-width: 280px) and (max-width: 900px) {
   .content .content__detail .wrapper .elements {
     display: block !important;
   }
@@ -271,6 +271,7 @@
 .content .content__detail .wrapper .elements .image img {
   width: 100%;
   height: 322px;
+  margin-top: 20px;
   // @include media("<=phone") {
   //   width: 110px;
   //   height: 247px;

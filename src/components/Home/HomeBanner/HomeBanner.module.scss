@@ -1,11 +1,11 @@
 @import "../../../styles/breakpoints.scss";
 
 .header {
-  min-height: 130vh;
+  min-height: 100vh;
   width: 100%;
-  background: url(../../../assets/Home/unsplash_1lfI7wkGWZ4.png) no-repeat
-    center center / cover;
+  background: url(../../../assets/Home/unsplash_1lfI7wkGWZ4.png) no-repeat center center / cover;
   position: relative;
+
   @include media("<=phone") {
     // height: 10vh;
   }
@@ -15,17 +15,20 @@
     top: 17%;
     left: 50%;
     transform: translateX(-50%);
+
     @include media("<=phone") {
-      top: 18%;
       width: 100%;
       padding: 20px;
     }
+
     h1 {
       text-align: center;
       color: #ffff;
       font-size: 48px;
       line-height: 58px;
+      margin-top: 80px;
       font-weight: 700;
+
       @include media("<=phone") {
         font-weight: 600;
         font-size: 26px;
@@ -33,12 +36,15 @@
         letter-spacing: -0.00304em;
       }
     }
+
     p {
       text-align: center;
       color: #ffff;
       font-size: 26px;
       font-weight: 700;
       margin-top: 20px;
+      margin-bottom: 40px;
+
       @include media("<=phone") {
         font-weight: 500;
         font-size: 21px;
@@ -55,6 +61,7 @@
       display: flex;
       justify-content: center;
       margin-top: 2rem;
+
       @include media("<=phone") {
         width: 100%;
         flex-wrap: wrap;
@@ -76,24 +83,29 @@
         font-weight: 600;
         font-family: var(--font-secondary);
         cursor: pointer;
+
         @include media("<=phone") {
           width: 100%;
           margin-right: 0;
           margin-bottom: 22px;
         }
+
         &:nth-child(1) {
           background-color: #175fff;
           color: #fff;
           transition: 0.3s;
+
           &:hover {
             background-color: #99b9ff;
           }
         }
+
         &:nth-child(2) {
           background-color: #e7f1fe;
           color: #175fff;
           border: 2px solid #175fff;
           transition: 0.3s;
+
           &:hover {
             background-color: #e7f1fe;
             border: 2px solid #99b9ff;
@@ -112,6 +124,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
     @include media("<=phone") {
       flex-wrap: wrap;
       bottom: 0;
@@ -123,6 +136,7 @@
       align-items: center;
       justify-content: flex-end;
       padding-top: 15px;
+
       @include media("<=phone") {
         width: 100%;
         margin-bottom: -0.1rem;
@@ -133,9 +147,14 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+
       @include media("<=phone") {
         width: 100%;
       }
+    }
+
+    .top {
+      margin-top: 15px !important;
     }
 
     .block {
@@ -143,42 +162,56 @@
       width: 10.5rem;
       padding: 2rem;
       cursor: pointer;
+
       @include media("<=phone") {
         width: 144px;
         height: 144px;
       }
+
       img {
         width: 1.5rem;
       }
+
       h4 {
         font-size: 1rem;
         margin-top: 1rem;
         font-family: var(--font-secondary);
+
         @include media("<=phone") {
           font-size: 15px;
           line-height: 21px;
         }
       }
+
       h4,
       svg {
         color: #fff !important;
       }
     }
+
+    .margin {
+      margin-top: 4px !important;
+    }
+
     .block.first {
       background: rgba(23, 95, 255, 1);
       color: #fff;
       transition: 0.3s;
+
       &:hover {
         background: rgba(23, 95, 255, 0.6);
       }
     }
+
     .block.second {
       background: #0b2845;
       transition: 0.3s;
+
       &:hover {
         background: #051526;
       }
     }
+
     .logo {
       height: 5rem;
       width: 5rem;
@@ -186,32 +219,58 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      img{
+
+      img {
         width: 2.5rem;
+        opacity: 40%;
         margin-right: 0;
+
         @include media("<=phone") {
           width: 1.5rem;
           margin-right: -70px;
-          
+
         }
-       
+
       }
-      
+
     }
-    
+
     .text {
       width: 20%;
       margin-right: 1rem;
-      color: #808080 !important;
+      color: white !important;
+
       @include media("<=phone") {
         display: none;
       }
+
       p {
         font-family: var(--font-secondary);
       }
     }
+
+    .caption {
+      color: #575757;
+    }
   }
 }
+
+@media (min-width: 280px) and (max-width: 900px) {
+  .header h1 {
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 370px) and (max-width: 375px) {
+  .header p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .header h1 {
+    margin-bottom: 0px;
+  }
+}
+
 // img{
- 
+
 // }

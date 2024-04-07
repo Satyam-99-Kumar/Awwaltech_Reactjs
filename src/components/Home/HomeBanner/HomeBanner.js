@@ -24,7 +24,7 @@ function HomeBanner({ data }) {
       <div className={style.header__option}>
         <div className={style.optionWrapper}>
           <div className={style.text}>
-            <p style={{ color: "#ffffff" }}>
+            <p className={style.caption}>
               {data?.result[0]?.Banner?.BannerLogoCaption}
             </p>
           </div>
@@ -34,23 +34,29 @@ function HomeBanner({ data }) {
               <img src={item.Logo} alt={item.Logo} />
             </div>
           ))} */}
-               <div className={style.logo}><img src={img1} alt="" /></div>
-                <div className={style.logo}><img src={img2} alt="" /></div>
-                <div className={style.logo}><img src={img3} alt="" /></div>
-                <div className={style.logo}><img src={img4} alt="" /></div>
-                <div className={style.logo}><img src={img5} alt="" /></div>
-                <div className={style.logo}><img src={img6} alt="" /></div>
+          <div className={style.logo}><img src={img1} alt="" /></div>
+          <div className={style.logo}><img src={img2} alt="" /></div>
+          <div className={style.logo}><img src={img3} alt="" /></div>
+          <div className={style.logo}><img src={img4} alt="" /></div>
+          <div className={style.logo}><img src={img5} alt="" /></div>
+          <div className={style.logo}><img src={img6} alt="" /></div>
         </div>
 
         <div className={style.specialLinkWrapper}>
           <div className={`${style.block} ${style.first}`}>
-            <RiFilePaper2Line />
-            <h4>Receive our Brochure</h4>
+            <div className={style.top}>
+              <RiFilePaper2Line />
+              <h4 className={style.margin}>Receive our Brochure</h4>
+            </div>
+
           </div>
           <div className={`${style.block} ${style.second}`}>
-            <BsFillPlayFill />
-            <h4>Watch Free Demo</h4>
+            <div className={style.top}>
+              <BsFillPlayFill />
+              <h4 className={style.margin}>Watch Free Demo</h4>
+            </div>
           </div>
+
         </div>
       </div>
     </header>

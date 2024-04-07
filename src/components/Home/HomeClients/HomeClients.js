@@ -69,17 +69,18 @@ function HomeClients({ data }) {
             {data?.result[0]?.ClientsSection?.Clients.map((client, index) => (
               <div className={style.slider__container} key={client._id}>
                 {/* Replace this with your actual image URL */}
-                <img src={client.Image} alt="" />
+                {/* <img src={client.Image} alt="" /> */}
+                <img src={img1} alt="" />
               </div>
             ))}
           </Slider>
         </div>
-        <img src={img1} alt="" />
+        {/* <img src={img1} alt="" /> */}
         <div className={style.content}>
-       
+
           <h3>{data?.result[0]?.ClientsSection?.Clients[selected - 1].ClientName}</h3>
           <div className={style.contentWrapper}>
-          
+
             <div className={style.contentLeft}>
               <h4>Make Difference with Codiant</h4>
               <ul>
