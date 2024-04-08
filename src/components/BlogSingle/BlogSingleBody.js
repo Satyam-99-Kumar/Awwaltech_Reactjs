@@ -78,13 +78,8 @@ function BlogSingleBody() {
             seconds, and a dynamic music library with 5k songs to set a piece of
             background music covering the video. Also, users are accessible to
             produce a series for each other’s edited-content and publish it on
-            their account. A replica of the video can post with multiple users
-            and with edits and can viral a thread. Users can identify
-            multi-edited videos. They need to observe Also, users are accessible
-            to produce a series for each other’s edited-content and publish it
-            on their account. A replica of the video can post with multiple
-            users and with edits and can viral a thread. Users can identify
-            multi-edited videos. They need to observe
+            
+            
           </p>
           <p className={style.txt}>
             Also, users are accessible to produce a series for each other’s
@@ -92,13 +87,12 @@ function BlogSingleBody() {
             video can post with multiple users and with edits and can viral a
             thread. Users can identify multi-edited videos. They need to observe
             a thumbnail image stacked in the bottom right corner of the main
-            video. Also, users are accessible to produce a series for each
-            other’s edited-content and publish it on their account. A replica of
-            the video can post with multiple users and with edits and can viral
-            a thread.
+            
           </p>
         </div>
       </div>
+        {/* =================== IMAGE =================== */}
+      <div className={`${style.imageBlock} ${style.imageBlock2}`}></div>
 
       {/* =================== TEXT =================== */}
       <div className={style.text}>
@@ -128,8 +122,7 @@ function BlogSingleBody() {
         </p>
       </div>
 
-      {/* =================== IMAGE =================== */}
-      <div className={`${style.imageBlock} ${style.imageBlock2}`}></div>
+    
 
       {/* A BLOG */}
       <div className={style.aproject}>
