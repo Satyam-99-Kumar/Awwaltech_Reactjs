@@ -2,7 +2,7 @@
 
 .banner {
   width: 100%;
-  min-height: 95vh;
+  min-height: 70vh;
   background: var(--primary-color);
   display: flex;
   @include media("<=phone") {
@@ -83,7 +83,7 @@
     .frame {
       position: absolute;
       bottom: 0;
-      right: 100px;
+      right: 169px;
       width: 450px;
     }
     @include media("<=phone") {

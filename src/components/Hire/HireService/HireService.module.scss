@@ -2,7 +2,7 @@
 
 .services {
   width: 100%;
-  min-height: 100vh;
+  min-height: 85vh;
   background: #f5f5f7;
   @include media("<=phone") {
     min-height: fit-content;
@@ -53,7 +53,7 @@
   &__all {
     width: 100%;
     margin-top: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 0rem;
     overflow: hidden;
     @include media("<=phone") {
       padding-bottom: 1.5rem;
@@ -152,7 +152,7 @@
     .globalLink {
       width: 100%;
       text-align: center;
-      padding: 2rem 0;
+      padding: 2rem 00px 0px 0px;
       a {
         text-decoration: none;
         display: flex;
