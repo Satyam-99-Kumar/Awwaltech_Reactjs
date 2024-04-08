@@ -2,6 +2,9 @@ import style from "./Footer.module.scss";
 import logo from "../../assets/Footer/Group.svg";
 import { Link } from "react-router-dom";
 import { GoLocation } from "react-icons/go";
+import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
+import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 
 
 function Footer() {
@@ -16,18 +19,28 @@ function Footer() {
           </p>
           <div className={style.info}>
             <h5>Email</h5>
-            <p className={style.infoTxt}>nfo@technologies.in</p>
+            <div className={style.icon}>
+              <EmailIcon fontSize="small" />
+              <p className={style.infoTxt}>nfo@technologies.in</p>
+            </div>
           </div>
           <div className={style.info}>
+
             <h5>Contact</h5>
-            <p className={style.infoTxt}>+1 452 123 2131</p>
-            <p className={style.infoTxt}>+1 452 123 2131</p>
+            <div className={style.icon}>
+              <CallIcon fontSize="small" />
+              <p className={style.infoTxt}>+1 452 123 2131</p>
+            </div>
+            {/* <p className={style.infoTxt}>+1 452 123 2131</p> */}
           </div>
 
           <div className={style.info}>
             <h5>Products</h5>
-            <p className={style.infoTxt}>Sit a at rhoncus a nisl.</p>
-            <p className={style.infoTxt}>Sit a at rhoncus a nisl.</p>
+            <div className={style.icon}>
+              <SportsSoccerIcon fontSize="small" />
+              <p className={style.infoTxt}>Sit a at rhoncus a nisl.</p>
+            </div>
+            {/* <p className={style.infoTxt}>Sit a at rhoncus a nisl.</p> */}
           </div>
         </div>
         <div className={style.footer__two}>
