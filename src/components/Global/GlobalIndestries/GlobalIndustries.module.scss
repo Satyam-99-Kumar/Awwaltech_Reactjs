@@ -73,7 +73,7 @@
 
 .optionWrapper2 {
   width: 25%;
-  height: 90vh;
+  height: 50vh;
   overflow: hidden;
 
   @include media("<=phone") {
@@ -106,6 +106,7 @@
   padding: 0.8rem;
   height: 16vh;
   width: 100%;
+  margin-bottom: -28px;
 
   @include media("<=phone") {
     height: fit-content;
@@ -159,11 +160,12 @@
 
 .slick-vertical .slick-slide {
   margin-bottom: 10px;
+  height: 300px !important;
 }
 
 .industries .content .arrowButton {
   position: absolute;
-  top: 88vh;
+  top: 60vh;
   left: 15rem;
   color: var(--primary-color);
   font-size: 1.2rem;
