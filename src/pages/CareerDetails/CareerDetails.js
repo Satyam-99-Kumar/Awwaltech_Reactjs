@@ -10,7 +10,8 @@ function CareerDetails() {
   const { name } = useParams();
   return (
     <>
-      <Navbar />
+     <div className={style.mainbanwrap}>
+     <Navbar />
       <div className={style.careerDetails}>
         <h1>{name}</h1>
         <p>
@@ -36,6 +37,7 @@ function CareerDetails() {
       </div>
       <PortfolioTalk />
       <Footer />
+     </div>
     </>
   );
 }

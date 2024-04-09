@@ -50,6 +50,9 @@
         font-size: 38px;
         line-height: 51px;
       }
+      @include media("<=phone") {
+        font-size: 30px;
+      }
     }
     h1.mobileViewHeading {
       @include media("<=phone") {

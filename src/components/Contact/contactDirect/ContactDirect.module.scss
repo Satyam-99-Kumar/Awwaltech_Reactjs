@@ -31,3 +31,10 @@ h1{
     margin-bottom: 8px;
     display: inline-block;
 }
+.gridmain{
+    margin-top: 40px;
+    @include media("<=phone") {
+        padding: 0px 30px;
+        margin-top: 0;
+      }
+}

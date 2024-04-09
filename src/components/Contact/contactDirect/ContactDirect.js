@@ -35,10 +35,10 @@ function ContactDirect() {
         <h1>Contact us Direct!</h1>
       </div>
 
-      <Grid container spacing={2} justifyContent={'center'} mt={5}>
+      <Grid className={style.gridmain} container spacing={2} justifyContent={'center'}>
        
         {contacts.map((contact, index) => (
-          <Grid item sm={3} key={index}>
+          <Grid item sm={3} xs={12} key={index}>
             <Card className={style.card}>
               <div>{contact.icon}</div>
               <div><span className={style.span}>{contact.title}</span></div>

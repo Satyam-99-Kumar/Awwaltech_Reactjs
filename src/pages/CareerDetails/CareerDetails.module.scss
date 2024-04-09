@@ -16,6 +16,9 @@
     line-height: 42px;
     letter-spacing: -0.34px;
     color: rgba(0, 0, 0, 0.8);
+    @include media("<=phone") {
+     font-size: 30px;
+    }
     // margin-bottom: 24px;
   }
   p {
@@ -48,7 +51,11 @@
       @include media("<=phone") {
         width: 100%;
         padding-left: 0;
+        padding-top: 90px;
       }
     }
   }
+}
+.mainbanwrap{
+  background-color: #eee;
 }

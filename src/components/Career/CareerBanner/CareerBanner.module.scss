@@ -33,6 +33,9 @@
         line-height: 56px;
         letter-spacing: 0.00014em;
         font-family: var(--font-primary);
+        @include media("<=phone") {
+          font-size: 30px;
+        }
       }
       h1.mobileViewHeading {
         @include media("<=phone") {
