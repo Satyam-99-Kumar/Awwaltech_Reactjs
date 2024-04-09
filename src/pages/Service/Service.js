@@ -15,30 +15,30 @@ function Service() {
   const [apiHomeData, setHomeApiData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
   useEffect(() => {
     window.scrollTo(0,0);
     const fetchDataFromAPI = async () => {
       try {
         const result = await fetchMobileAppServiceData();
         setApiData(result.result[0]);
-        setLoading(false);
       } catch (error) {
         setError(error);
-        setLoading(false);
       }
     };
-    fetchDataFromAPI();
 
     const fetchHomeDataFromAPI = async () => {
       try {
         const result = await fetchHomeData();
         setHomeApiData(result);
-        setLoading(false);
       } catch (error) {
         setError(error);
+      } finally {
         setLoading(false);
       }
     };
+
+    fetchDataFromAPI();
     fetchHomeDataFromAPI();
   }, []);
 
