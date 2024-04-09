@@ -13,6 +13,7 @@ import Technology from "./pages/Technology/Technology";
 import Hire from "./pages/Hire/Hire";
 import Career from "./pages/Career/Career";
 import CareerDetails from "./pages/CareerDetails/CareerDetails";
+import MobileApp from "./pages/MobileApp/MobileApp";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/service/mobile-app-development" element={<Service />} />
-        <Route path="/service/web-development" element={<Service />} />
+        <Route path="/service/mobileapp" element={<MobileApp />} />
         <Route path="/service/strategic-ux-development" element={<Service />} />
         <Route path="/service/eCommerce-development" element={<Service />} />
         <Route path="/service/enterprise-Devops" element={<Service />} />
