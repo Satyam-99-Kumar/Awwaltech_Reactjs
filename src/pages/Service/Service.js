@@ -4,14 +4,15 @@ import ServiceEnterprize from "../../components/Service/ServiceEnterprize/Servic
 import ServiceServices from "../../components/Service/ServiceServices/ServiceServices";
 import GlobalWorks from "../../components/Global/GlobalWorks/GlobalWorks";
 import ServiceSolution from "../../components/Service/ServiceSolution/ServiceSolution";
-import ServiceInvestors from "../../components/Service/ServiceInvestors/ServiceInvestors";
+// import ServiceInvestors from "../../components/Service/ServiceInvestors/ServiceInvestors";
 import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
-import { fetchMobileAppServiceData } from '../../config/apiService';
+import { fetchMobileAppServiceData, fetchHomeData } from '../../config/apiService';
 
 function Service() {
   const [apiData, setApiData] = useState(null);
+  const [apiHomeData, setHomeApiData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   useEffect(() => {
@@ -27,6 +28,18 @@ function Service() {
       }
     };
     fetchDataFromAPI();
+
+    const fetchHomeDataFromAPI = async () => {
+      try {
+        const result = await fetchHomeData();
+        setHomeApiData(result);
+        setLoading(false);
+      } catch (error) {
+        setError(error);
+        setLoading(false);
+      }
+    };
+    fetchHomeDataFromAPI();
   }, []);
 
   if (loading) {
@@ -43,9 +56,9 @@ function Service() {
       <ServiceBanner apiData={apiData} />
       <ServiceServices apiData={apiData} />
       <ServiceEnterprize apiData={apiData} />
-      <GlobalWorks background={`#fff`} />
+      <GlobalWorks background={`#fff`} apiData={apiHomeData} />
       <ServiceSolution apiData={apiData} />
-      <ServiceInvestors />
+      {/* <ServiceInvestors /> */}
       <GlobalContact />
       <Footer />
     </>

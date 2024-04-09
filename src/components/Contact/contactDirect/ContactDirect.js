@@ -4,27 +4,28 @@
 import React, { useState } from "react";
 import style from "./ContactDirect.module.scss";
 import { Card, Grid } from "@mui/material";
-import EmailIcon from "@mui/icons-material/Email";
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import { GrSkype } from "react-icons/gr";
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+
 
 function ContactDirect() {
   
-  const [contacts, setContacts] = useState([
+  const [contacts] = useState([
     {
-      icon: <EmailIcon className={style.mail} />,
+      icon: <MdEmail size={35} color="#165FFF" />,
       title: "Email",
-      info: "info@indi123gmail.com"
+      info: "info@minttask.com"
     },
     {
-      icon: <LocalPhoneIcon className={style.phone} />,
+      icon: <FaPhoneAlt size={30} color="#61C4E1" />,
       title: "Contact",
       info: "+123-234-456"
     },
     {
-      icon: <InstagramIcon className={style.insta} />,
-      title: "Instagram",
-      info: "i23-faizu_11"
+      icon: <GrSkype size={30} color="#00AFF0" />,
+      title: "Skype",
+      info: "minttask"
     }
   ]);
 
