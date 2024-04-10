@@ -14,7 +14,6 @@ import { fetchHomeData } from '../../config/apiService';
 
 function Home() {
   const [apiData, setApiData] = useState(null);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -23,18 +22,12 @@ function Home() {
       try {
         const result = await fetchHomeData();
         setApiData(result);
-        setLoading(false);
       } catch (error) {
         setError(error);
-        setLoading(false);
       }
     };
     fetchDataFromAPI();
   }, []);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
 
   if (error) {
     return <div>Error: {error.message}</div>;
@@ -43,15 +36,19 @@ function Home() {
   return (
     <>
       <Navbar />
-      <HomeBanner data={apiData}/>
-      <HomeService data={apiData} />
-      <GlobalIndustries data={Data} apiData={apiData} />
-      <HomeClients data={apiData} />
-      <GlobalWorks background={`#F5F5F7`} apiData={apiData} />
-      <HomeAchievements  data={apiData}/>
-      <HomeFeedback background={`#F5F5F7`} />
-      <GlobalContact data={apiData}/>
-      <Footer data={apiData}/>
+      {apiData && (
+        <>
+          <HomeBanner data={apiData}/>
+          <HomeService data={apiData} />
+          <GlobalIndustries data={Data} apiData={apiData} />
+          <HomeClients data={apiData} />
+          <GlobalWorks background={`#F5F5F7`} apiData={apiData} />
+          <HomeAchievements  data={apiData}/>
+          <HomeFeedback background={`#F5F5F7`} />
+          <GlobalContact data={apiData}/>
+          <Footer data={apiData}/>
+        </>
+      )}
     </>
   );
 }
