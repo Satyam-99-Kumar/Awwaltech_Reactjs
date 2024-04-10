@@ -10,7 +10,7 @@
     padding-top: 60px;
     padding-left: 100px;
     padding-right: 100px;
-    margin-top: 62px;
+    // margin-top: 62px;
     @include media("<=phone") {
       padding-left: 15px;
       padding-right: 15px;
@@ -116,7 +116,7 @@
     display: flex;
     padding-left: 140px;
     padding-right: 140px;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
     margin-top: 4rem;
     @include media("<=phone") {
       flex-wrap: wrap;

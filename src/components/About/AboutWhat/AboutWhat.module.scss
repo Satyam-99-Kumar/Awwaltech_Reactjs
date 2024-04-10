@@ -109,7 +109,6 @@
         line-height: 2rem;
         font-size: 14px;
         line-height: 21px;
-        font-weight: 100;
         letter-spacing: -0.041966px;
         font-family: var(--font-secondary);
 
@@ -314,7 +313,7 @@
       .finalTxt {
         p {
           font-style: normal;
-          font-weight: 100;
+          // font-weight: 100;
           font-size: 14px;
           line-height: 21px;
           font-family: var(--font-secondary);
@@ -460,7 +459,7 @@
         }
 
         @include media(">=tablet") {
-          font-size: 18px;
+          font-size: 32px;
           width: 10%;
         }
       }
