@@ -2,13 +2,17 @@
 
 .banner {
     width: 100%;
-    min-height: 60vh;
+    min-height: 80vh;
     background: var(--primary-color);
     display: flex;
     padding-top: 5rem;
     @include media("<=phone") {
       min-height: 60vh;
       flex-wrap: wrap;
+    }
+    @include media(">=desktop"){
+      min-height: 70vh;
+     
     }
   
     &__left {
@@ -60,7 +64,7 @@
       .frame {
         position: absolute;
         top: 50%;
-        right: 15px;
+        right: 80px;
         transform: translateY(-50%);
         width: 620px;
       }
