@@ -1,0 +1,47 @@
+.intro_section {
+    padding: 100px 100px;
+    display: flex;
+    gap: 100px;
+    border-top: 1px solid lightblue;
+    align-items: center;
+}
+   
+
+.intro {
+    flex: 4;
+    align-items: center;
+
+
+}
+
+.intro > h1 {
+    font-size: 25px;
+    margin-bottom: 50px;
+    font-weight: 600;
+   
+
+}
+
+.intro > p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    color: gray;
+   
+   
+}
+
+.img > img {
+    flex: 4;
+    width: 647px;
+    height: 458px;
+    border-radius: 10px;
+
+
+}
+.img  {
+    flex: 4;
+  
+
+
+}
