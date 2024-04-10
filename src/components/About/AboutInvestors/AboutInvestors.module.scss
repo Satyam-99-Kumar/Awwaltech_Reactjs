@@ -5,8 +5,9 @@
   padding: 2rem 10rem 6rem 10rem;
   position: relative;
   @include media("<=phone") {
-    padding: 0;
-    padding-top: 2rem;
+    // padding: 0;
+    // padding-top: 2rem;
+    padding: 2rem 0.5rem 6rem 0.5rem !important;
   }
   @include media("<=tablet") {
     padding: 2rem 2.5rem 6rem 2.5rem;

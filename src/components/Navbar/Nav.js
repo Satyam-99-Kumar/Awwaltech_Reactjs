@@ -6,7 +6,15 @@ import logoImage from "../../assets/Group.svg";
 import logoImage2 from "../../assets/Footer/Group.svg";
 import { BsChevronDown, BsCodeSquare, BsCart, BsHexagon } from "react-icons/bs";
 import { AiOutlineMobile } from "react-icons/ai";
+import { MdSettingsInputSvideo } from "react-icons/md";
+import { GoDeviceMobile } from "react-icons/go";
+import { MdPeopleOutline } from "react-icons/md";
+import { BsCloudy } from "react-icons/bs";
 import { FiMonitor } from "react-icons/fi";
+import { BsShieldCheck } from "react-icons/bs";
+import { CgScreen } from "react-icons/cg";
+import { IoMdPeople } from "react-icons/io";
+import { TiCloudStorage } from "react-icons/ti";
 // Components
 import DrawerTogglerButton from "./DrawerTogglerButton";
 
@@ -75,6 +83,41 @@ function Nav({ drawerToggleClickHnadler }) {
               <NavLink className={`${styles.menu}`} to="/service/enterprise-Devops">
                 <div><BsCodeSquare /></div>
                 <div>Enterprise Devops</div>
+              </NavLink>
+              <NavLink className={`${styles.menu}`} to="/service/Quality-Assurance">
+                <div><MdSettingsInputSvideo /></div>
+                <div>Quality Assurance & Testing</div>
+              </NavLink>
+              <NavLink className={`${styles.menu}`} to="/service/strategic-ux-development">
+                <div><BsHexagon /></div>
+                <div>Customer Software Developm.</div>
+              </NavLink>
+              <NavLink  className={`${styles.menu}`} to="/service/eCommerce-development">
+                <div><BsCloudy /></div>
+                <div>CRM Cloud Services</div>
+              </NavLink>
+              <NavLink  className={`${styles.menu}`} to="/service/eCommerce-development">
+                <div><MdPeopleOutline /></div>
+                <div>IT Consulting</div>
+              </NavLink>
+              <NavLink  className={`${styles.menu}`} to="/service/eCommerce-development">
+                <div><BsShieldCheck /></div>
+                <div>Cybersecurity Consulting</div>
+              </NavLink>
+              <NavLink  className={`${styles.menu}`} to="/service/eCommerce-development">
+                <div><IoMdPeople /></div>
+                <div>Dedicated Developm. Team</div>
+              </NavLink>
+              <NavLink  className={`${styles.menu}`} to="/service/eCommerce-development">
+              <div><TiCloudStorage /></div>
+                <div>Cloud Based Services</div>
+
+              </NavLink>
+              <NavLink  className={`${styles.menu}`} to="/service/eCommerce-development">
+                
+                <div><CgScreen /></div>
+                <div>Cloud Based Services</div>
+
               </NavLink>
             </div>
         </NavLink>
