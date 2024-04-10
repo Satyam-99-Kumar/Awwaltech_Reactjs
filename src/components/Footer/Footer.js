@@ -1,11 +1,13 @@
 import style from "./Footer.module.scss";
 import logo from "../../assets/Footer/Group.svg";
+import mail from "../../assets/Footer/Vector (1).png";
+import contact from "../../assets/Footer/Vector.png";
+import skype from "../../assets/Footer/Skype-Emblem 1.png";
 import { Link } from "react-router-dom";
 import { GoLocation } from "react-icons/go";
-import CallIcon from '@mui/icons-material/Call';
-import EmailIcon from '@mui/icons-material/Email';
-import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
-
+import CallIcon from "@mui/icons-material/Call";
+import EmailIcon from "@mui/icons-material/Email";
+import SportsSoccerIcon from "@mui/icons-material/SportsSoccer";
 
 function Footer() {
   return (
@@ -18,27 +20,27 @@ function Footer() {
             elementum, euismod neque hendrerit id varius ullamcorper.
           </p>
           <div className={style.info}>
-            <h5>Email</h5>
+           
+           <div className={style.icon}>
+           <img src={contact} alt=""></img>
+             <p className={style.infoTxt}>+1 452 123 2131</p>
+           </div>
+           {/* <p className={style.infoTxt}>+1 452 123 2131</p> */}
+         </div>
+          <div className={style.info}>
+           
             <div className={style.icon}>
-              <EmailIcon fontSize="small" />
+            <img src={mail} alt=""></img>
               <p className={style.infoTxt}>nfo@technologies.in</p>
             </div>
           </div>
-          <div className={style.info}>
 
-            <h5>Contact</h5>
-            <div className={style.icon}>
-              <CallIcon fontSize="small" />
-              <p className={style.infoTxt}>+1 452 123 2131</p>
-            </div>
-            {/* <p className={style.infoTxt}>+1 452 123 2131</p> */}
-          </div>
 
           <div className={style.info}>
-            <h5>Products</h5>
+            
             <div className={style.icon}>
-              <SportsSoccerIcon fontSize="small" />
-              <p className={style.infoTxt}>Sit a at rhoncus a nisl.</p>
+            <img className={style.skype} src={skype} alt=""></img>
+              <p className={style.infoTxt}>minttask</p>
             </div>
             {/* <p className={style.infoTxt}>Sit a at rhoncus a nisl.</p> */}
           </div>
@@ -75,28 +77,36 @@ function Footer() {
 
       <div className={style.regions}>
         <div className={style.region}>
-          <span><GoLocation /></span>
+          <span>
+            <GoLocation />
+          </span>
           <h5>USA</h5>
           <p>Iris Watson</p>
           <p>P.O. Box 283 8562 Fusce Rd.</p>
           <p>Frederick Nebraska 20620</p>
         </div>
         <div className={style.region}>
-          <span><GoLocation /></span>
+          <span>
+            <GoLocation />
+          </span>
           <h5>UK</h5>
           <p>Cecilia Chapman</p>
           <p>711-2880 Nulla St.</p>
           <p>Mankato Mississippi 96522</p>
         </div>
         <div className={style.region}>
-          <span><GoLocation /></span>
+          <span>
+            <GoLocation />
+          </span>
           <h5>IND</h5>
           <p>Celeste Slater</p>
           <p>606-3727 Ullamcorper. Street</p>
           <p>Roseville NH 11523</p>
         </div>
         <div className={style.region}>
-          <span><GoLocation /></span>
+          <span>
+            <GoLocation />
+          </span>
           <h5>IND</h5>
           <p>heodore Lowe</p>
           <p>Ap #867-859 Sit Rd.</p>
