@@ -7,6 +7,7 @@ import Footer from "../../components/Footer/Footer";
 import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Navbar from "../../components/Navbar/Navbar";
 import { fetchAboutData } from '../../config/apiService';
+import AboutInvestors from "../../components/About/AboutInvestors/AboutInvestors";
 
 function About() {
   const [apiData, setData] = useState(null); 
@@ -34,7 +35,7 @@ function About() {
       <AboutBanner data={apiData} />
       <AboutWhat data={apiData} />
       <AboutEnterprize data={apiData} />
-      {/* <AboutInvestors /> */}
+      <AboutInvestors />
       <GlobalContact />
       <Footer />
     </>

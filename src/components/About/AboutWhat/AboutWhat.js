@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import { AiOutlineCheck } from "react-icons/ai";
+import { AiOutlineCheck, AiOutlineMobile } from "react-icons/ai";
 import { BsCart } from "react-icons/bs";
 import style from "./AboutWhat.module.scss";
 import img1 from "../../../assets/About/discussion.png";
@@ -84,23 +84,50 @@ function AboutWhat({ data }) {
 
       {/* Slide */}
       <Slider {...settings} className={style.options}>
-
-        {data?.EnterprisesSection?.Enterprises?.map(item => {
-          return (
-            <div className={style.option}>
-              <div className={style.wrap}>
-                <div className={style.left}>
-                  <div>
-                    <BsCart />
-                  </div>
-                  <div className={style.size}>{item?.EnterprisesName}</div>
-                </div>
-                <div className={style.right}>{item?.Percentage}</div>
+        <div className={style.option}>
+          <div className={style.wrap}>
+            <div className={style.left}>
+              <div>
+                <BsCart />
               </div>
+              <div>Sales & Marketing</div>
             </div>
-          )
-        })}
-
+            <div className={style.right}>10%</div>
+          </div>
+        </div>
+        <div className={style.option}>
+          <div className={style.wrap}>
+            <div className={style.left}>
+              <div>
+                <AiOutlineMobile />
+              </div>
+              <div>Business Analytics</div>
+            </div>
+            <div className={style.right}>10%</div>
+          </div>
+        </div>
+        <div className={style.option}>
+          <div className={style.wrap}>
+            <div className={style.left}>
+              <div>
+                <AiOutlineMobile />
+              </div>
+              <div>Development</div>
+            </div>
+            <div className={style.right}>10%</div>
+          </div>
+        </div>
+        <div className={style.option}>
+          <div className={style.wrap}>
+            <div className={style.left}>
+              <div>
+                <AiOutlineMobile />
+              </div>
+              <div>Business Analytics</div>
+            </div>
+            <div className={style.right}>10%</div>
+          </div>
+        </div>
       </Slider>
     </div>
   );

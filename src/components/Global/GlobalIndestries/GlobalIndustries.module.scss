@@ -70,10 +70,13 @@
     padding: 0;
   }
 }
+.heading span{
+  color: #175FFF;
+}
 
 .optionWrapper2 {
   width: 25%;
-  height: 50vh;
+  height: 78vh;
   overflow: hidden;
 
   @include media("<=phone") {
@@ -104,7 +107,7 @@
 
 .option {
   padding: 0.8rem;
-  height: 16vh;
+  height: 20vh;
   width: 100%;
   margin-bottom: -28px;
 
@@ -168,7 +171,7 @@
 
 .industries .content .arrowButton {
   position: absolute;
-  top: 60vh;
+  top: 87vh;
   left: 15rem;
   color: var(--primary-color);
   font-size: 1.2rem;
