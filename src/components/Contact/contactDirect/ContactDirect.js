@@ -1,29 +1,28 @@
-
-
-
 import React, { useState } from "react";
 import style from "./ContactDirect.module.scss";
 import { Card, Grid } from "@mui/material";
 import { GrSkype } from "react-icons/gr";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
-
+import contact from  '../../../assets/Contact/contact.png';
+import skype from  '../../../assets/Contact/Skype-Emblem 1.png';
+import mail from  '../../../assets/Contact/mail.png';
 
 function ContactDirect() {
   
   const [contacts] = useState([
     {
-      icon: <MdEmail size={35} color="#165FFF" />,
+      icon: <img src={mail} alt="Email" />,
       title: "Email",
       info: "info@minttask.com"
     },
     {
-      icon: <FaPhoneAlt size={30} color="#61C4E1" />,
+      icon: <img src={contact} alt="Contact" />,
       title: "Contact",
       info: "+123-234-456"
     },
     {
-      icon: <GrSkype size={30} color="#00AFF0" />,
+      icon: <img src={skype} alt="Skype" />,
       title: "Skype",
       info: "minttask"
     }
