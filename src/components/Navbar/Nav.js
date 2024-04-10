@@ -57,7 +57,7 @@ function Nav({ drawerToggleClickHnadler }) {
                 <div className={styles.gap}>Mobile App Development</div>
               </NavLink>
               
-              <NavLink className={`${styles.menu}`} to="/service/web-development">
+              <NavLink className={`${styles.menu}`} to="/service/mobileapp">
                 <div><FiMonitor /></div>
                 <div>Web Development</div>
               </NavLink>

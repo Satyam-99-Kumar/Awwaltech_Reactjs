@@ -122,6 +122,9 @@
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.08);
   border-radius: 6px;
   margin-top: 5px;
+  @include media("<=phone") {
+   padding: 12px 14px 25px 14px;
+  }
 
 }
 

@@ -53,6 +53,7 @@ function Footer() {
           <Link to="/portfolio">Portfolio</Link>
           <Link to="/blog">Blog</Link>
           <Link to="/technologies">Technologies</Link>
+          <Link to="/career">Career</Link>
         </div>
         <div className={style.footer__three}>
           <h3>Services</h3>

@@ -6,6 +6,7 @@ import ContactMap from "../../components/Contact/ContactMap/ContactMap";
 import HomeFeedback from "../../components/Home/HomeFeedback/HomeFeedback";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
+import ContactDirect from "../../components/Contact/contactDirect/ContactDirect";
 
 function ContactUs() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function ContactUs() {
       <Navbar />
       <ContactBanner />
       <ContactForm />
+      <ContactDirect/>
       <ContactMap />
       <ContactInvestors />
       <HomeFeedback />

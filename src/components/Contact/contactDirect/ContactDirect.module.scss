@@ -1,0 +1,40 @@
+@import "../../../styles/breakpoints.scss";
+
+.title {
+  text-align: center;
+  
+}
+h1{
+    font-weight: 400;
+}
+.mail {
+  color: #165fff;
+}
+.card {
+  padding: 10px 10px;
+}
+.phone {
+  padding: 3px 0px;
+  font-size: 25px;
+  background-color: #61c4e1;
+  color: white;
+}
+.insta{
+    color: #FCAF45;
+}
+.wrapper{
+    background-color: #eee;
+    padding: 50px 0px;
+}
+.span{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.gridmain{
+    margin-top: 40px !important;
+    @include media("<=phone") {
+        padding: 0px 30px;
+        margin-top: 0;
+      }
+}
