@@ -7,8 +7,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-left: 5rem !important;
-    padding-right: 5rem !important;
+    padding-left: 5rem;
+    padding-right: 5rem;
     @include media("<=phone") {
       padding: 15px;
       justify-content: space-between;
@@ -17,16 +17,17 @@
       padding-left: 1rem;
       padding-right: 1rem;
     }
+    @include media(">=desktop") {
+      padding-left: 22rem;
+      padding-right: 22rem;
+  
+    }
     @include media(">=LGdesktop") {
       padding-left: 22rem;
       padding-right: 22rem;
   
     }
-    @include media(">=desktop") {
-      padding-left: 18rem;
-      padding-right: 18rem;
-  
-    }
+ 
    
    
   

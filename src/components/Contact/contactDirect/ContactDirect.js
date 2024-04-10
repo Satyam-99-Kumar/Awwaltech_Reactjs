@@ -42,7 +42,7 @@ function ContactDirect() {
             <Card className={style.card}>
               <div>{contact.icon}</div>
               <div><span className={style.span}>{contact.title}</span></div>
-              <div>{contact.info}</div>
+              <div className={style.span_info}>{contact.info}</div>
             </Card>
           </Grid>
         ))}

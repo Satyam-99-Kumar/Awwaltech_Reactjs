@@ -6,7 +6,7 @@ function PortfolioBanner({data}) {
     <div className={style.banner}>
       <div className={style.banner__left}>
         <div>
-        <div>{data.Banner.TitleTag}</div>
+        <div className={style.title_tag}>{data.Banner.TitleTag}</div>
           <h1 className={style.desktopViewHeading}>
             <div>{data.Banner.Title1}</div>
             <div>{data.Banner.Title2}</div>
