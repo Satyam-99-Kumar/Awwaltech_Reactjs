@@ -11,7 +11,7 @@
   }
 
   &__text {
-    padding: 6rem 10rem 0 10rem;
+    padding: 3rem 10rem 0 10rem;
     @include media("<=phone") {
       padding: 15px;
     }
@@ -66,7 +66,7 @@
         padding: 0 15px;
       }
       .work {
-        height: 75vh;
+        height: 84vh;
         border-radius: 8px;
         padding: 2rem;
         @include media("<=phone") {
