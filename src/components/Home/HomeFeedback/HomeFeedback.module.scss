@@ -10,12 +10,15 @@
 
   &__text {
     padding-top: 6rem;
-    padding-left: 100px;
-    padding-right: 100px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    // padding-left: 100px;
+    // padding-right: 100px;
     @include media("<=phone") {
       padding-top: 63px;
-      padding-left: 15px;
-      padding-right: 2px;
+      // padding-left: 15px;
+      // padding-right: 2px;
     }
     h1 {
       text-align: center;
@@ -49,6 +52,10 @@
         font-size: 14px;
         line-height: 20px;
       }
+    }
+    span{
+      font-size: 15px;
+      font-weight: 400;
     }
   }
 

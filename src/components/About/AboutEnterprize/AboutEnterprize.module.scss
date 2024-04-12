@@ -29,6 +29,7 @@
       color: #fff;
       font-size: 15px;
       line-height: 21px;
+      font-weight: 500;
     }
     p {
       width:55% !important;
@@ -119,6 +120,7 @@
         width: calc(100% - 49px);
         font-size: 18px;
         line-height: 22px;
+        font-weight: 400;
         font-family: var(--font-secondary);
         @include media("<=tablet") {
           font-size: 9px;

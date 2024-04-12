@@ -53,7 +53,7 @@ function HomeFeedback({background}) {
       <div className={style.feedback__text}>
         <p>{apiData?.ClientFeedbackSection?.Title1}</p>
         <h1>{apiData?.ClientFeedbackSection?.Title2}</h1>
-        <p>{apiData?.ClientFeedbackSection?.Paragraph}</p>
+        <span>{apiData?.ClientFeedbackSection?.Paragraph}</span>
       </div>
 
       <div className={style.slider}>

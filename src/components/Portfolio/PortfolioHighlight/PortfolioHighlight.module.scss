@@ -6,21 +6,32 @@
 
   &__wrapper {
     padding: 0 100px 0 100px;
+
     @include media("<=phone") {
       padding: 0;
     }
+
     .content {
       padding: 2rem;
       background: #f7f8fa;
       border-radius: 10px;
+
       @include media("<=phone") {
         padding: 0;
       }
+      .content__text {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+      }
       &__text {
         margin-bottom: 2rem;
+
         @include media("<=phone") {
           padding: 40px 15px 0 15px;
         }
+
         h1 {
           text-align: center;
           margin-bottom: 1rem;
@@ -28,26 +39,36 @@
           font-size: 36px;
           line-height: 42px;
         }
+
         p {
           width: 50%;
           margin: auto;
           margin-bottom: 1rem;
           text-align: center;
           font-size: 15px;
+          font-weight: 500;
           line-height: 21px;
           font-family: var(--font-secondary);
-          color: rgba(0,0,0,0.7);
-          &:nth-child(1){
+          color: rgba(0, 0, 0, 0.7);
+
+          &:nth-child(1) {
             color: #808080;
           }
+
           @include media("<=phone") {
             width: 100%;
           }
+        }
+
+        span {
+          font-size: 15px;
+          font-weight: 400;
         }
       }
 
       &__image {
         width: 100%;
+
         img {
           width: 100%;
         }
