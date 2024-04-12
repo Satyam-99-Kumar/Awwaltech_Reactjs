@@ -19,6 +19,8 @@ function Blog() {
       } catch (error) {
         setError(error);
       }
+      document.title = "Blog Us";
+      document.querySelector('meta[name="description"]').setAttribute("content", "Blog us for inquiries");
     };
     fetchDataFromAPI();
   }, []);

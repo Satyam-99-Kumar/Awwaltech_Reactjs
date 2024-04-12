@@ -25,6 +25,8 @@ function MobileApp() {
         const result = await fetchMobileAppServiceData();
         setApiData(result.result[0]);
         setLoading(false);
+        document.title = "Mobile";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Learn Mobile App");
       } catch (error) {
         setError(error);
         setLoading(false);

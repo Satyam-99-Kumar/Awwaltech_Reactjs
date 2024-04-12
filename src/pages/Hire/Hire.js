@@ -1,14 +1,9 @@
-import { useEffect, useState } from "react";
-// Components
+import React, { useEffect, useState } from "react";
 import Footer from "../../components/Footer/Footer";
-// import GlobalIndustries from "../../components/GlobalIndestries/GlobalIndustries";
 import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import HireBanner from "../../components/Hire/HireBanner/HireBanner";
 import HireService from "../../components/Hire/HireService/HireService";
 import Navbar from "../../components/Navbar/Navbar";
-
-// import {Data} from "./DrivingEnterprizeData";
-// import HireClients from "../../components/HireClients/HireClients";
 import HireExperience from "../../components/Hire/HireExperience/HireExperience";
 import HireFaq from "../../components/Hire/HireFaq/HireFaq";
 import HireExcecutionProcess from "../../components/Hire/HireExcecutionProcess/HireExcecutionProcess";
@@ -17,12 +12,15 @@ import { fetchHireData } from '../../config/apiService';
 function Hire() {
   const [apiData, setApiData] = useState(null);
   const [error, setError] = useState(null);
+
   useEffect(() => {
     window.scrollTo(0, 0);
     const fetchDataFromAPI = async () => {
       try {
         const result = await fetchHireData();
         setApiData(result.result[0]);
+        document.title = "Hire Us";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Hire Us for inquiries");
       } catch (error) {
         setError(error);
       }
@@ -44,8 +42,6 @@ function Hire() {
       <Navbar />
       <HireBanner apiData={apiData} />
       <HireService apiData={apiData} />
-      {/* <GlobalIndustries data={Data} /> */}
-      {/* <HireClients /> */}
       <HireExcecutionProcess  apiData={apiData} />
       <HireExperience apiData={apiData} />
       <HireFaq />

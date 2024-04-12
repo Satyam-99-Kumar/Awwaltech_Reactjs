@@ -19,6 +19,8 @@ function Technology() {
         const result = await fetchTechnologyData();
         setApiData(result.result[0]);
         setLoading(false);
+        document.title = "Technology";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Learn Technology");
       } catch (error) {
         setError(error);
         setLoading(false);
