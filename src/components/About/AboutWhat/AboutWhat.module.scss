@@ -109,6 +109,7 @@
         line-height: 2rem;
         font-size: 15px;
         line-height: 21px;
+        font-weight: 300;
         letter-spacing: -0.041966px;
         font-family: var(--font-secondary);
 
@@ -205,11 +206,13 @@
       .max_size {
         width: 65% !important;
       }
+
       @media (min-width: 280px) and (max-width: 900px) {
         .max_size {
-         width: 100% !important;
+          width: 100% !important;
         }
       }
+
       p.secondaryHead {
         color: var(--primary-color);
         font-weight: 500;
@@ -233,7 +236,7 @@
 
         }
 
-   
+
 
         @include media("<=phone") {
           font-size: 24px;

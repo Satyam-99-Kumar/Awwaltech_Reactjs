@@ -17,15 +17,15 @@ function Footer() {
             elementum, euismod neque hendrerit id varius ullamcorper.
           </p>
           <div className={style.info}>
-           
-           <div className={style.icon}>
-           <img src={contact} alt=""></img>
-             <p className={style.infoTxt}>+1 452 123 2131</p>
-           </div>
-           {/* <p className={style.infoTxt}>+1 452 123 2131</p> */}
-         </div>
+
+            <div className={style.icon}>
+              <img src={contact} alt=""></img>
+              <p className={style.infoTxt}>+1 452 123 2131</p>
+            </div>
+            {/* <p className={style.infoTxt}>+1 452 123 2131</p> */}
+          </div>
           <div className={style.info}>
-           
+
             <div className={style.icon2}>
               <img src={mail} alt=""></img>
               <p className={style.infoTxt}>nfo@technologies.in</p>
@@ -34,9 +34,9 @@ function Footer() {
 
 
           <div className={style.info}>
-            
+
             <div className={style.icon}>
-            <img className={style.skype} src={skype} alt=""></img>
+              <img className={style.skype} src={skype} alt=""></img>
               <p className={style.infoTxt}>minttask</p>
             </div>
             {/* <p className={style.infoTxt}>Sit a at rhoncus a nisl.</p> */}

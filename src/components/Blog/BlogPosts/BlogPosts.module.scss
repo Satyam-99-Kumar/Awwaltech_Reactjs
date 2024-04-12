@@ -2,66 +2,86 @@
 
 .blogpost {
   padding: 100px;
+
   @include media("<=phone") {
     padding: 15px;
   }
 }
+
 .allposts {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   .post {
     width: 30%;
     min-height: 30vh;
     margin-bottom: 3rem;
+    border: .1px solid rgb(226, 226, 226);
+    border-radius: 10px;
+
     @include media("<=phone") {
       width: 100%;
       margin-right: 0;
       margin-bottom: 1.5rem;
     }
+
     @include media("<=tablet") {
       width: 47%;
     }
+
     .image {
       width: 100%;
+
       img {
         width: 100%;
       }
     }
+
     .text {
       padding: 1.5rem 0;
+
       @include media("<=phone") {
         padding: 10px 0;
       }
+
       h4 {
         font-weight: 400;
         font-size: 15px;
         line-height: 21px;
         margin-bottom: 1rem;
+        margin-left: 10px;
         font-family: var(--font-secondary);
+
         @include media("<=phone") {
           margin: 0;
           margin-bottom: 10px;
         }
+
         @include media(">=LGdesktop") {
           font-size: 23px;
         }
       }
+
       p {
         font-weight: 400;
         font-size: 15px;
         line-height: 21px;
         margin-bottom: 1rem;
+        margin-left: 10px;
         font-family: var(--font-secondary);
         color: rgba(0, 0, 0, 0.7);
+
         @include media("<=phone") {
           font-size: 11px;
         }
+
         @include media(">=LGdesktop") {
           font-size: 21px;
           line-height: 31px;
         }
       }
+
       a {
         text-decoration: none;
         color: var(--primary-color);
@@ -70,16 +90,19 @@
         line-height: 20px;
         display: flex;
         align-items: center;
+        margin-left: 10px;
+
         @include media(">=LGdesktop") {
           font-size: 19px;
         }
+
         span {
           font-size: 1.3rem;
           margin-top: 5px;
-          margin-left: 10px;
           font-weight: bold;
           transition: all 0.3s;
         }
+
         &:hover span {
           color: var(--primary-color);
           transform: translateX(7px);
@@ -92,6 +115,7 @@
 .pagination {
   display: flex;
   justify-content: center;
+
   div {
     width: 33px;
     height: 32px;
@@ -99,6 +123,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 0.1rem;
+
     @include media(">=LGdesktop") {
       width: 60px;
     }
