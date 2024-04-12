@@ -245,11 +245,13 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.span{
+
+.span {
   color: #147BF3;
   font-size: 21px;
   font-weight: 500;
 }
+
 .maingridstl {
   margin: 4rem 6rem 0 6rem;
 
@@ -261,12 +263,12 @@
 .mbsrbtn {
   text-align: center;
   margin-top: 30px;
-
 }
 
 .mbsrbtn button {
   background-color: transparent;
   border: hidden;
-  font-size: 10px;
   color: blue;
+  font-weight: 600;
+  font-size: 18px;
 }
