@@ -4,6 +4,7 @@
   width: 100%;
   min-height: 85vh;
   background: #f5f5f7;
+  padding-bottom: 20px;
   @include media("<=phone") {
     min-height: fit-content;
   }

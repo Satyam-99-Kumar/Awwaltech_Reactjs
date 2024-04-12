@@ -24,7 +24,8 @@ function TechnologyDetail({ apiData }) {
           </h2>
         </div>
         <div className={style.text}>
-          <p>{apiData.WhatWeCanOfferSection.Paragraph}</p>
+          <p>{apiData.WhatWeCanOfferSection.Paragraph1}</p>
+          <p>{apiData.WhatWeCanOfferSection.Paragraph2}</p>
          
         </div>
       </div>

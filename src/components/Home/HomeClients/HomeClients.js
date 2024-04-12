@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import style from "./HomeClients.module.scss";
-import { AiOutlineCheck, AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineCheck } from "react-icons/ai";
+import { BiSelectMultiple } from "react-icons/bi";
 import Slider from "react-slick";
 import ClientsLogo from "./ClientsLogo";
 import img1 from "../../../assets/Home/Industries/unsplash_jjhvyxm34nY.png";
@@ -49,7 +50,7 @@ function HomeClients({ data }) {
               onClick={() => handleClick(index + 1)}
             >
               <div>
-                <AiOutlineHeart />
+                <BiSelectMultiple />
               </div>
               <div className={style.padding}>{client.ClientName}</div>
             </div>

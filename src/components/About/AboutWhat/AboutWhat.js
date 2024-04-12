@@ -29,7 +29,8 @@ function AboutWhat({ data }) {
           </h2>
         </div>
         <div className={style.text}>
-          <p>{data?.WhatIsMinttaskSection?.Paragraph}</p>
+          <p>{data?.WhatIsMinttaskSection?.Paragraph1}</p>
+          <p>{data?.WhatIsMinttaskSection?.Paragraph2}</p>
         </div>
       </div>
 

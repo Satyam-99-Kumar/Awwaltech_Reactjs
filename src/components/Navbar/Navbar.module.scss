@@ -110,11 +110,11 @@
       .menus {
         width: 35rem;
         position: absolute;
-        top: 5.9rem;
-        left:350px;
+        top: 3.9rem;
+        left:300px;
         transform: translateX(-50%);
         background: #fff;
-        padding: 1rem;
+        padding: 10px 5px;
         border-radius: 6px;
         display: flex;
         justify-content: space-between;
@@ -129,10 +129,10 @@
           height: fit-content;
           display: flex;
           align-items: center;
-          padding: 1rem;
+          padding: 10px;
 
           margin: 0;
-          margin-bottom: 1rem;
+          // margin-bottom: 1rem;
           border-radius: 8px;
           transition: 0.3s;
           &:hover div:nth-child(1) {

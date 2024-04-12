@@ -52,12 +52,12 @@
   .allprojects {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    justify-content: space-between;
+
     .project {
-      width: 29%;
+      width: 30%;
       min-height: 30vh;
       margin-bottom: 3rem;
-      margin-right: 3rem;
       border: 1px solid #0000001A;
       border-radius: 10px;
       @include media("<=phone") {

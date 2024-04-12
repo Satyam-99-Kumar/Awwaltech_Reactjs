@@ -76,6 +76,7 @@
     }
     .info {
       margin-top: 18px;
+      display: flex;
       @include media(">=LGdesktop") {
         margin-top: 28px;
       }
@@ -334,10 +335,15 @@
 
 .icon > img {
   width: 20px;
-  height: 20px;
+  height: 18px;
   margin-top: 2px;
 }
-
+.icon2 > img {
+  width: 20px;
+  height: 16px;
+  margin-top: 2px;
+  margin-right: 8px;
+}
 .skype {
   width: 25px!important;
   height: 25px!important;

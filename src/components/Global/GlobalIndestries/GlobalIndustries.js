@@ -55,11 +55,11 @@ function GlobalIndustries({ data, apiData }) {
             <div
             key={`${data._id}_${index}`}
               className={
-                option === data._id
+                option === index
                   ? `${style.option} ${style.active}`
                   : `${style.option}`
               }
-              onClick={() => handleClick(data._id)}
+              onClick={() => handleClick(index)}
             >
               <div className={style.optionWrapper}>
                 {/* <div className={style.logo}>eval{data.optionLogo}</div> */}
@@ -82,17 +82,16 @@ function GlobalIndustries({ data, apiData }) {
           <Slider {...settings} className={style.content__options} ref={slider}>
             {apiData?.result[0]?.IndustriesSection.Industries?.map((data, index) => (
               <div 
-                key={`${data._id}_${index}`}
+                key={index}
                 className={
                   option === index
                     ? `${style.option} ${style.active}`
                     : `${style.option}`
                 }
-                onClick={() => handleClick(index)}
-              >
+                onClick={() => handleClick(index)}>
                 <div className={style.optionWrapper}>
                   {/* <div className={style.logo}>{data.optionLogo}</div> */}
-                  <div className={style.logo}><LibraryAddCheckIcon/> </div>
+                  <div className={style.logo}><LibraryAddCheckIcon /> </div>
                   <div className={style.text}>
                     <div>{data.optionName[0]}</div>
                     <div>{data.optionName[1]}</div>

@@ -14,6 +14,7 @@ function HireService({ apiData }) {
       require("../../../assets/Home/Services/Settings_Future.png"),
       require("../../../assets/Home/Services/Window_Code_Block.png"),
       require("../../../assets/Home/Services/Shopping_Cart_02.png"),
+      require("../../../assets/Home/Services/Settings_Future.png"),
       require("../../../assets/Home/Services/Monitor.png")
     ];
     setImagePaths(imgPaths);

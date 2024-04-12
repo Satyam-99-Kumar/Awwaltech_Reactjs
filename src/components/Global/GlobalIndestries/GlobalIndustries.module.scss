@@ -76,7 +76,7 @@
 
 .optionWrapper2 {
   width: 25%;
-  height: 78vh;
+  height: 66vh;
   overflow: hidden;
 
   @include media("<=phone") {
@@ -107,7 +107,7 @@
 
 .option {
   padding: 0.8rem;
-  height: 20vh;
+  height: 17.19vh;
   width: 100%;
   margin-bottom: -28px;
 
@@ -171,7 +171,7 @@
 
 .industries .content .arrowButton {
   position: absolute;
-  top: 87vh;
+  top: 75vh;
   left: 15rem;
   color: var(--primary-color);
   font-size: 1.2rem;
@@ -263,7 +263,8 @@
 }
 
 .content .content__detail .wrapper .heading span {
-  width: 70px;
+  width: 30px;
+  font-size: 24px;
 }
 
 .content .content__detail .wrapper .elements {
@@ -301,7 +302,7 @@
 
 h4 {
   margin-top: 19px;
-  color: #052F61 !important;
+  // color: #052F61 !important;
   font-family: var(--font-secondary);
   font-size: 18px;
   line-height: 21px;

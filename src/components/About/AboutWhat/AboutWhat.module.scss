@@ -37,7 +37,7 @@
       p {
         color: var(--primary-color);
         font-weight: 500;
-        font-size: 18px;
+        font-size: 22px;
         line-height: 28px;
       }
 
@@ -48,7 +48,7 @@
         line-height: 42px;
         letter-spacing: -0.34px;
         margin-top: 1rem;
-        margin-right: 200px;
+        margin-right: 160px;
         color: #0b2845;
 
         @include media("<=phone") {
@@ -60,7 +60,7 @@
 
         @include media(">=tablet") {
 
-          font-size: 28px;
+          font-size: 30px;
 
         }
 
@@ -107,7 +107,7 @@
       p {
         margin-bottom: 2rem;
         line-height: 2rem;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 21px;
         letter-spacing: -0.041966px;
         font-family: var(--font-secondary);
@@ -328,16 +328,17 @@
   }
 
   .options {
-    width: 110% !important;
+    width: 110%;
     padding-top: 5rem;
     margin: auto;
     // margin-left: -4%;
 
     @include media("<=phone") {
-      width: 318px;
+      width: 1100px;
       height: fit-content;
       padding-top: 2.5rem;
       padding-bottom: 3rem;
+      display: none;
 
     }
 
@@ -378,6 +379,7 @@
 
       @include media("<=phone") {
         height: 10vh;
+        width: 354px;
       }
 
       @include media("<=tablet") {
@@ -445,7 +447,7 @@
         line-height: 42px;
 
         @include media("<=phone") {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           line-height: 1.5rem;
         }
 

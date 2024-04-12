@@ -1,6 +1,6 @@
 // const API_URL = 'http://nous-embauchons.com:3000/v1';
-const API_URL = 'http://15.207.175.144:3000/v1';
-// const API_URL = 'http://localhost:3000/v1';
+// const API_URL = 'http://15.207.175.144:3000/v1';
+const API_URL = 'http://localhost:3000/v1';
 
 
 export const fetchHomeData = async (options = {}) => {

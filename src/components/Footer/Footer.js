@@ -5,9 +5,6 @@ import contact from "../../assets/Footer/Vector.png";
 import skype from "../../assets/Footer/Skype-Emblem 1.png";
 import { Link } from "react-router-dom";
 import { GoLocation } from "react-icons/go";
-import CallIcon from "@mui/icons-material/Call";
-import EmailIcon from "@mui/icons-material/Email";
-import SportsSoccerIcon from "@mui/icons-material/SportsSoccer";
 
 function Footer() {
   return (
@@ -29,8 +26,8 @@ function Footer() {
          </div>
           <div className={style.info}>
            
-            <div className={style.icon}>
-            <img src={mail} alt=""></img>
+            <div className={style.icon2}>
+              <img src={mail} alt=""></img>
               <p className={style.infoTxt}>nfo@technologies.in</p>
             </div>
           </div>
