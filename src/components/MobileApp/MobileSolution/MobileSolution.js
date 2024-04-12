@@ -5,80 +5,80 @@ import img from "../../../assets/Services/image.png";
 import Slider from "react-slick/lib/slider";
 import { Card, Grid } from "@mui/material";
 import { useState } from "react";
-
+import { BsPatchCheck } from "react-icons/bs"
 
 
 
 function MobileSolution({ apiData }) {
-    const [contacts] = useState([
-        {
-          number:<AiOutlineCheck size={20}/>,
-          title: "Ecommerce, ",
-          info: "Retail & B2B"
-        },
-        {
-            number:<AiOutlineCheck size={20}/>,
-          title: "Health care",
-          info: "fitness"
-        },
-        {
-            number:<AiOutlineCheck size={20}/>,
-            title: "One Demand",
-            info: "Solutions"
-          },
-          {
-            number:<AiOutlineCheck size={20}/>,
-            title: "Transport and ",
-            info: "Automotive"
-          },
-          {
-            number:<AiOutlineCheck size={20}/>,
-            title: "Transport and ",
-            info: "Automotive"
-          },
-          {
-            number:<AiOutlineCheck size={20}/>,
-            title: "Ecommerce, ",
-            info: "Retail & B2B"
-          },
-          {
-            number:<AiOutlineCheck size={20}/>,
-          title: "Health care",
-          info: "fitness"
-        },
-        {
-            number:<AiOutlineCheck size={20}/>,
-            title: "One Demand",
-            info: "Solutions"
-          },
+  const [contacts] = useState([
+    {
+      number: <AiOutlineCheck size={20} />,
+      title: "Ecommerce, ",
+      info: "Retail & B2B"
+    },
+    {
+      number: <AiOutlineCheck size={20} />,
+      title: "Health care",
+      info: "fitness"
+    },
+    {
+      number: <AiOutlineCheck size={20} />,
+      title: "One Demand",
+      info: "Solutions"
+    },
+    {
+      number: <AiOutlineCheck size={20} />,
+      title: "Transport and ",
+      info: "Automotive"
+    },
+    {
+      number: <AiOutlineCheck size={20} />,
+      title: "Transport and ",
+      info: "Automotive"
+    },
+    {
+      number: <AiOutlineCheck size={20} />,
+      title: "Ecommerce, ",
+      info: "Retail & B2B"
+    },
+    {
+      number: <AiOutlineCheck size={20} />,
+      title: "Health care",
+      info: "fitness"
+    },
+    {
+      number: <AiOutlineCheck size={20} />,
+      title: "One Demand",
+      info: "Solutions"
+    },
 
-          {
-            number:<AiOutlineCheck size={20}/>,
-            title: "Transport and ",
-            info: "Automotive"
-          },
-          {
-            number:<AiOutlineCheck size={20}/>,
-            title: "Transport and ",
-            info: "Automotive"
-          },
-          {
-            number:<AiOutlineCheck size={20}/>,
-            title: "Transport and ",
-            info: "Automotive"
-          },
-          {
-            number:<AiOutlineCheck size={20}/>,
-            title: "Transport and ",
-            info: "Automotive"
-          },
-      ]);
+    {
+      number: <AiOutlineCheck size={20} />,
+      title: "Transport and ",
+      info: "Automotive"
+    },
+    {
+      number: <AiOutlineCheck size={20} />,
+      title: "Transport and ",
+      info: "Automotive"
+    },
+    {
+      number: <AiOutlineCheck size={20} />,
+      title: "Transport and ",
+      info: "Automotive"
+    },
+    {
+      number: <AiOutlineCheck size={20} />,
+      title: "Transport and ",
+      info: "Automotive"
+    },
+  ]);
   return (
     <div className={style.serviceSolution}>
       {/* ///////////////////////////////////// */}
       {/* Content */}
       {/* ///////////////////////////////////// */}
-      <div className={style.wrapper}>
+      {/* <div className={style.wrapper}>
         <div className={style.wrapper__left}>
           <img src={img} alt="" />
         </div>
@@ -99,27 +99,41 @@ function MobileSolution({ apiData }) {
 
           </ul>
         </div>
-      </div>
+      </div> */}
 
       <div className={style.maingridstl}>
-    <Grid className={style.gridmain} container spacing={2} justifyContent={'center'}>
-       
-       {contacts.map((contact, index) => (
-         <Grid item sm={2} xs={12} key={index}>
-           <Card className={style.card}>
-             <div className={style.number}>{contact.number}</div>
-             <div><span className={style.span}>{contact.title}</span></div>
-             <div>{contact.info}</div>
-           </Card>
-         </Grid>
-       ))}
-     </Grid>
-     <div className={style.mbsrbtn}>
-        <button>inquire now</button>
-     </div>
-    </div>
-     
-     
+        <Grid className={style.gridmain} container spacing={2} justifyContent={'center'}>
+
+          {contacts.map((contact, index) => (
+            <Grid item sm={2} xs={12} key={index}>
+              <Card className={style.card}>
+                <div className={style.number}>{contact.number}</div>
+                <div><span className={style.span}>{contact.title}</span></div>
+                <div>{contact.info}</div>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+        <div className={style.mbsrbtn}>
+          <button>inquire now</button>
+        </div>
+      </div>
+      <div className={style.key_back}>
+        <div className={style.key}>
+          <p>
+            <BsPatchCheck />
+          </p>
+          <h1>Key Technologies To Evolve Your
+            Retail Digital Experience</h1>
+          <p className={style.para}>Codiant backed with the seasoned team of e-commerce website developers empowers retails and brands by helping them
+            choose the right eCommerce platform that suits to their business requirements and accelerate their growth quickly with
+            increased sales and ROI.</p>
+        </div>
+        <Card>
+          
+        </Card>
+      </div>
+
     </div>
   );
 }

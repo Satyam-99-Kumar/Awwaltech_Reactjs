@@ -116,3 +116,58 @@
     }
   }
 }
+.Benefits{
+  margin-top: 50px;
+  display: flex;
+  // justify-content: space-around;
+  background-color: #F7F8FA;
+border-radius: 8px;
+}
+.Benefit{
+  width: 85%;
+  margin: auto;
+}
+.Benefit1{
+  background-color: #E5EDFF;
+  background: url("../../../assets/Services/back.jpg") no-repeat center center / cover;
+  height: auto;
+  width: 40%;
+  margin: 25px 20px 10px 20px;
+  // height: fit-content;
+}
+.Benefit2{
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.content{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.content div{
+  margin-left: 15px;
+}
+.content .icon{
+color: blue;
+margin-top: 20px;
+font-size: 25px !important;
+}
+.heading{
+  font-weight: 500;
+  font-size: 21px;
+  color: #175FFF;
+}
+.paragraph{
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.Fitness{
+  font-size: 16px;
+  font-weight: 500;
+}
+.smartphones{
+  font-size: 14px;
+  font-weight: 500;
+}

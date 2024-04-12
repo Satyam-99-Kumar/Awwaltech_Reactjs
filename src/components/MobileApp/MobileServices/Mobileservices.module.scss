@@ -10,6 +10,7 @@
     padding: 24px;
     margin: 6rem 6rem 0 6rem;
     background: #F7F8FA;
+
     @include media("<=phone") {
       width: calc(100% - 30px);
       margin: 15px 15px 25px 15px;
@@ -20,31 +21,35 @@
 
     .head {
       width: 50%;
+
       @include media("<=phone") {
         width: 100%;
       }
-      
-      div:not(:last-child){
+
+      div:not(:last-child) {
         @include media("<=phone") {
           display: none;
         }
       }
-      
-      .headMobile{
+
+      .headMobile {
         @include media("<=phone") {
           display: block;
           margin-bottom: 64px;
         }
+
         @include media(">=phone") {
           display: none;
         }
       }
+
       p {
         color: var(--primary-color);
         font-weight: 500;
         font-size: 22px;
         line-height: 28px;
       }
+
       h2 {
         font-weight: normal;
         font-weight: 500;
@@ -54,20 +59,24 @@
         margin-top: 1rem;
       }
     }
+
     .text {
       width: 50%;
+
       @include media("<=phone") {
         width: 100%;
       }
+
       p {
         margin-bottom: 2rem;
         font-size: 15px;
         line-height: 21px;
-        font-weight: 400;
+        font-weight: 500;
         font-family: var(--font-secondary);
 
         &:last-child {
           position: relative;
+
           &::after {
             content: "";
             position: absolute;
@@ -86,10 +95,12 @@
     width: 100%;
     position: relative;
     padding: 6rem 10rem;
+
     @include media("<=phone") {
       padding: 0;
       overflow: hidden;
     }
+
     .text {
       h1 {
         font-weight: 500;
@@ -97,10 +108,12 @@
         line-height: 42px;
         text-align: center;
         margin-bottom: 1rem;
+
         span {
           color: #175fff;
         }
       }
+
       p {
         width: 30%;
         margin: auto;
@@ -109,14 +122,16 @@
         font-size: 15px;
         line-height: 21px;
         font-family: var(--font-secondary);
+
         @include media("<=phone") {
           width: 100%;
         }
       }
     }
-    
-    .solutionWrapper{
+
+    .solutionWrapper {
       width: 100%;
+
       @include media("<=phone") {
         width: 100%;
         overflow-y: hidden;
@@ -124,7 +139,7 @@
         margin-bottom: 2rem;
       }
     }
-    
+
     .solutions {
       width: 100%;
       min-height: 55vh;
@@ -132,26 +147,31 @@
       justify-content: space-between;
       margin-top: 5rem;
       padding: 0 6rem;
+
       @include media("<=phone") {
         width: 320%;
-        
+
         padding: 0 15px;
       }
+
       .solution {
         width: 30%;
-        
+
         padding: 2rem;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         border-radius: 6px;
         transition: 0.3s;
         border: 1px solid transparent;
+
         &:hover {
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
+
         .logo {
           font-size: 3rem;
           color: #b2b2b2;
         }
+
         h4 {
           font-weight: 500;
           font-size: 21px;
@@ -159,6 +179,7 @@
           margin-bottom: 1rem;
           color: rgba(0, 0, 0, 0.7);
         }
+
         p {
           width: 100%;
           text-align: left;
@@ -168,36 +189,41 @@
           font-family: var(--font-secondary);
           color: rgba(0, 0, 0, 0.7);
         }
+
         a {
           text-decoration: none;
-            display: flex;
-            align-items: center;
-            color: #175fff;
-            font-size: 14px;
-            line-height: 20px;
-            font-weight: 600;
-            margin-top: 22px;
-            span {
-              &:first-child {
-                opacity: 0;
-                margin-left: 8px;
-                transition: all 0.4s;
-              }
-              &:last-child {
-                margin-left: -2rem;
-                font-size: 1.5rem;
-                transition: all 0.3s;
-              }
+          display: flex;
+          align-items: center;
+          color: #175fff;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 600;
+          margin-top: 22px;
+
+          span {
+            &:first-child {
+              opacity: 0;
+              margin-left: 8px;
+              transition: all 0.4s;
             }
+
+            &:last-child {
+              margin-left: -2rem;
+              font-size: 1.5rem;
+              transition: all 0.3s;
+            }
+          }
         }
 
         &:hover {
           border: 1px solid var(--primary-color);
           cursor: pointer;
         }
+
         &:hover a span:first-child {
           opacity: 1;
         }
+
         &:hover a span:last-child {
           margin-left: 8px;
         }
@@ -205,34 +231,42 @@
     }
   }
 }
-.number{
-    padding: 5px 8px;
-    background-color: #e7f1fe;
-    display: inline-block;
-   margin-bottom: 5px;
-   font-weight: 700;
-    border-radius: 5px;
-    font-size: 12px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-.maingridstl{
-    margin: 4rem 6rem 0 6rem;
-    .card{
-        padding: 10px 10px;
-    }
-}
-.mbsrbtn{
-    text-align: center;
-    margin-top: 30px;
 
+.number {
+  padding: 5px 8px;
+  background-color: #e7f1fe;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
-.mbsrbtn button{
-    background-color: transparent;
-    border: hidden;
-    font-size: 16px;
-    color: blue;
+.span{
+  color: #147BF3;
+  font-size: 21px;
+  font-weight: 500;
+}
+.maingridstl {
+  margin: 4rem 6rem 0 6rem;
+
+  .card {
+    padding: 10px 10px;
+  }
 }
 
+.mbsrbtn {
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.mbsrbtn button {
+  background-color: transparent;
+  border: hidden;
+  font-size: 10px;
+  color: blue;
+}
