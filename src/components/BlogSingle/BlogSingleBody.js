@@ -61,37 +61,34 @@ function BlogSingleBody() {
 
       {/* =================== DIVIDER =================== */}
       <div className={style.divider}>
-        <div className={style.divider__image}>
-          <img src={img3} alt="" />
-        </div>
-        <div className={style.divider__text}>
-          <h4>
-            <div>Creation of entertaining videos, with</div>
-            <div>advanced multiple social-editing features</div>
-          </h4>
-          <p className={style.txt}>
-            In the present era, social video-sharing apps are in high demand.
-            Our development team had made enough research and analysis on the
-            video-sharing app market demand and built a unique app with advanced
-            social editing features. Here, the users can get multiple filters
-            like AR filters and effects, an extended timeframe which is up to 60
-            seconds, and a dynamic music library with 5k songs to set a piece of
-            background music covering the video. Also, users are accessible to
-            produce a series for each other’s edited-content and publish it on
-            
-            
-          </p>
-          <p className={style.txt}>
-            Also, users are accessible to produce a series for each other’s
-            edited-content and publish it on their account. A replica of the
-            video can post with multiple users and with edits and can viral a
-            thread. Users can identify multi-edited videos. They need to observe
-            a thumbnail image stacked in the bottom right corner of the main
-            
-          </p>
-        </div>
+        {/* <div className={style.div}> */}
+          <div className={style.divider__image}>
+            <img src={img3} alt="" />
+          </div>
+          <div className={style.divider__text}>
+            <h4>
+              <div>Creation of entertaining videos, with</div>
+              <div>advanced multiple social-editing features</div>
+            </h4>
+            <p className={style.txt}>
+              In the present era, social video-sharing apps are in high demand.
+              Our development team had made enough research and analysis on the
+              video-sharing app market demand and built a unique app with advanced
+              social editing features. Here, the users can get multiple filters
+              like AR filters and effects, an extended timeframe which is up to 60
+              seconds, and a dynamic music library with 5k songs to set a piece of
+              background music covering the video. Also, users are accessible to
+              produce a series for each other’s edited-content and publish it on</p>
+            <p className={style.txt}>
+              Also, users are accessible to produce a series for each other’s
+              edited-content and publish it on their account. A replica of the
+              video can post with multiple users and with edits and can viral a
+              thread. Users can identify multi-edited videos. They need to observe
+              a thumbnail image stacked in the bottom right corner of the main </p>
+          </div>
+        {/* </div> */}
       </div>
-        {/* =================== IMAGE =================== */}
+      {/* =================== IMAGE =================== */}
       <div className={`${style.imageBlock} ${style.imageBlock2}`}></div>
 
       {/* =================== TEXT =================== */}
@@ -122,7 +119,7 @@ function BlogSingleBody() {
         </p>
       </div>
 
-    
+
 
       {/* A BLOG */}
       <div className={style.aproject}>
