@@ -109,7 +109,7 @@
         line-height: 2rem;
         font-size: 15px;
         line-height: 21px;
-        font-weight: 300;
+        font-weight: 400;
         letter-spacing: -0.041966px;
         font-family: var(--font-secondary);
 
@@ -216,7 +216,7 @@
       p.secondaryHead {
         color: var(--primary-color);
         font-weight: 500;
-        font-size: 18px;
+        font-size: 21px;
         line-height: 26px;
       }
 
@@ -316,8 +316,8 @@
       .finalTxt {
         p {
           font-style: normal;
-          // font-weight: 100;
-          font-size: 14px;
+          font-weight: 500;
+          font-size: 15px;
           line-height: 21px;
           font-family: var(--font-secondary);
           color: rgba(0, 0, 0, 0.7);
@@ -400,7 +400,7 @@
           line-height: 42px;
           padding-left: 12px;
           font-family: manrope;
-          font-weight: 400;
+          font-weight: 500;
 
           @include media("<=phone") {
             font-size: 20px;

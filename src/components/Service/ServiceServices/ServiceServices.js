@@ -19,7 +19,8 @@ function ServiceServices({ apiData }) {
           </h2>
         </div>
         <div className={style.text}>
-          <p>{apiData.MobileAppSolutionSection.Paragraph}</p>
+          <p>{apiData.MobileAppSolutionSection.Paragraph1}</p>
+          <p>{apiData.MobileAppSolutionSection.Paragraph2}</p>
         </div>
       </div>
 

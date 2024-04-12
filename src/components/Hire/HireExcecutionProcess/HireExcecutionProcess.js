@@ -7,7 +7,7 @@ function HireExcecutionProcess({apiData}) {
       <div className={style.heprocess__text}>
         <p>{apiData.DrivingSection.TitleTag}</p>
         <h1>{apiData.DrivingSection.Title}</h1>
-        <p>{apiData.DrivingSection.Paragraph}</p>
+        <span>{apiData.DrivingSection.Paragraph}</span>
       </div>
 
       <div className={style.heprocess__blocks}>

@@ -4,7 +4,7 @@ import style from "./HireFaq.module.scss";
 function HireFaq() {
   return (
     <div className={style.faq}>
-      <h3>FAQ</h3>
+      <h3 className={style.faq1}>FAQ</h3>
       <h1>Listed questions and answers</h1>
       
       

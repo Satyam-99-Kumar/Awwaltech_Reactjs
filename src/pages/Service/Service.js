@@ -13,7 +13,7 @@ import { fetchMobileAppServiceData, fetchHomeData } from '../../config/apiServic
 function Service() {
   const [apiData, setApiData] = useState(null);
   const [apiHomeData, setHomeApiData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ function Service() {
       } catch (error) {
         setError(error);
       } finally {
-        setLoading(false);
+        // setLoading(false);
       }
     };
 
@@ -42,12 +42,16 @@ function Service() {
     fetchHomeDataFromAPI();
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+  // if (loading) {
+  //   return <div>Loading...</div>;
+  // }
 
   if (error) {
     return <div>Error: {error.message}</div>;
+  }
+  // Check if apiData is still null, meaning the API call hasn't completed yet
+  if (apiData === null) {
+    return null; // or any other placeholder while waiting for the API call to complete
   }
 
   return (

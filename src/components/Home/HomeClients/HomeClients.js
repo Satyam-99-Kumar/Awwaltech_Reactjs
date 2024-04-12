@@ -34,7 +34,7 @@ function HomeClients({ data }) {
       <div className={style.clients__text}>
         <p>{data?.result[0]?.ClientsSection?.Title1}</p>
         <h1>{data?.result[0]?.ClientsSection?.Title2}</h1>
-        <p>{data?.result[0]?.ClientsSection?.Paragraph}</p>
+        <span>{data?.result[0]?.ClientsSection?.Paragraph}</span>
       </div>
 
       <div className={style.options}>
