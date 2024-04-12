@@ -23,6 +23,8 @@ function ContactUs() {
         setError(error);
         setLoading(false);
       }
+      document.title = "Blog Us";
+      document.querySelector('meta[name="description"]').setAttribute("content", "Blog us for inquiries");
     };
     fetchDataFromAPI();
   }, []);

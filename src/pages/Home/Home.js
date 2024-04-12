@@ -25,6 +25,8 @@ function Home() {
       } catch (error) {
         setError(error);
       }
+      document.title = "Home";
+      document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
     };
     fetchDataFromAPI();
   }, []);

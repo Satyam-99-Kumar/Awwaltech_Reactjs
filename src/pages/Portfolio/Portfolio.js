@@ -21,6 +21,8 @@ function Portfolio() {
         const result = await fetchPortfolioData();
         setApiData(result.result[0]);
         setLoading(false);
+        document.title = "Portfolio";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Learn Portfolio");
       } catch (error) {
         setError(error);
         setLoading(false);
