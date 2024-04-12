@@ -19,10 +19,10 @@
       padding-top: 60px;
     }
     h1 {
-      font-size: 2.2rem;
+      font-size: 36px;
       line-height: 2.8rem;
       text-align: center;
-      font-weight: 600;
+      font-weight: 500;
       margin-bottom: 1rem;
       @include media("<=phone") {
         font-size: 26px;

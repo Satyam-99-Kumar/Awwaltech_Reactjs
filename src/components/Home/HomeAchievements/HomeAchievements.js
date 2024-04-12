@@ -16,7 +16,7 @@ function HomeAchievements({ data }) {
           </div>
           <p>{data?.result[0]?.AchievementsSection?.Title1}</p>
           <h1>{data?.result[0]?.AchievementsSection?.Title2}</h1>
-          <p>{data?.result[0]?.AchievementsSection?.Paragraph}</p>
+          <span>{data?.result[0]?.AchievementsSection?.Paragraph}</span>
         </div>
       </div>
 

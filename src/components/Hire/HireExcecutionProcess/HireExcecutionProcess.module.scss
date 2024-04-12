@@ -5,15 +5,18 @@
   min-height: fit-content;
   position: relative;
   background: #f5f5f7;
+
   &__text {
     // padding-top: 60px;
-    padding-left: 100px;
-    padding-right: 100px;
+    width: 50%;
+    margin: auto;
+
     @include media("<=phone") {
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 0;
     }
+
     h1 {
       text-align: center;
       margin-bottom: 1rem;
@@ -21,12 +24,14 @@
       line-height: 42px;
       font-weight: 600px;
       letter-spacing: -0.34px;
+
       @include media("<=phone") {
         font-size: 26px;
         line-height: 36px;
         letter-spacing: -1px;
       }
     }
+
     p {
       width: 50%;
       margin: auto;
@@ -34,8 +39,9 @@
       text-align: center;
       font-size: 15px;
       line-height: 21px;
-      font-weight: 400;
+      font-weight: 500;
       font-family: var(--font-secondary);
+
       @include media("<=phone") {
         width: 100%;
         font-weight: 400;
@@ -44,11 +50,17 @@
         margin-bottom: 24px;
       }
     }
+
+    span {
+      font-size: 15px;
+      font-weight: 400;
+    }
   }
 
   &__blocks {
     width: 100%;
     padding: 40px 100px 80px 100px;
+
     @include media("<=phone") {
       padding: 15px;
     }
@@ -57,13 +69,16 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       @include media("<=phone") {
         flex-wrap: wrap;
         margin-bottom: 0;
       }
-      &:not(:last-child){
-          margin-bottom: 24px;
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
       }
+
       .item {
         width: calc(33.33% - 24px);
         background: #fff;
@@ -71,16 +86,20 @@
         background: linear-gradient(0deg, #ffffff, #ffffff), #0b2845;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
         border-radius: 6px;
+
         @include media("<=phone") {
           width: 100%;
           margin-bottom: 1rem;
         }
-        &:not(:last-child){
-            margin-right: 24px;
-            @include media("<=phone") {
-              margin-right: 0;
-            }
+
+        &:not(:last-child) {
+          margin-right: 24px;
+
+          @include media("<=phone") {
+            margin-right: 0;
+          }
         }
+
         h4 {
           margin-bottom: 12px;
           font-weight: 400;
@@ -89,10 +108,12 @@
           letter-spacing: -0.01em;
           color: rgba(0, 0, 0, 0.7);
           font-family: var(--font-secondary);
+
           @include media("<=phone") {
             margin: 10px 0;
           }
         }
+
         p {
           font-family: var(--font-secondary);
           font-weight: 400;
@@ -101,7 +122,8 @@
           letter-spacing: -0.000793565em;
           color: #333333;
           padding-left: 12px;
-          border-left: 1px solid rgba(0, 0, 0, 0.2);;
+          border-left: 1px solid rgba(0, 0, 0, 0.2);
+          ;
         }
       }
     }

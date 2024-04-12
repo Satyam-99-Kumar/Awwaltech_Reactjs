@@ -51,6 +51,7 @@
     color: rgba(0, 0, 0, 0.7);
     width: 45%;
     margin: auto;
+    font-weight: 400;
     @include media("<=phone") {
       width: 100%;
       font-weight: 400;
@@ -183,10 +184,10 @@
             margin-right: 10px;
           }
           &:nth-child(2) {
-            font-weight: 600;
+            font-weight: 500;
             font-size: 30px;
             line-height: 42px;
-            color: var(--primary-color);
+            color: black;
             margin-right: 1rem;
             margin-top: 8px;
             @include media("<=phone") {
