@@ -42,8 +42,9 @@
   text-align: center;
   color: rgba(0, 0, 0, 0.7);
   ;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 21px;
+  font-weight: 300;
   font-family: var(--font-secondary);
 
   @include media("<=phone") {
@@ -146,7 +147,7 @@
 .option .optionWrapper .logo,
 .option .optionWrapper .text {
   color: rgba(0, 0, 0, 0.7);
-  font-size: 18px;
+  font-size: 21px;
   line-height: 21px;
   font-weight: 500;
   font-family: var(--font-secondary);

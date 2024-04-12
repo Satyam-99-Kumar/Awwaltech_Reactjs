@@ -4,18 +4,20 @@
   width: 100%;
   min-height: 100vh;
   background: #f5f5f7;
-  @include media("<=phone") {
-  }
+
+  @include media("<=phone") {}
 
   &__text {
     padding-top: 8rem;
     padding-left: 10rem;
     padding-right: 10rem;
+
     @include media("<=phone") {
       padding-left: 20px;
       padding-right: 20px;
       padding-top: 60px;
     }
+
     h1 {
       font-size: 2.2rem;
       line-height: 2.8rem;
@@ -28,18 +30,22 @@
         line-height: 36px;
         letter-spacing: -1px;
       }
+
       span {
         color: #175fff;
       }
     }
+
     p {
       width: 50%;
       margin: auto;
       text-align: center;
-      font-size: 15px;
+      font-size: 13px;
+      font-weight: 250;
       line-height: 21px;
       color: var(--black-color);
       font-family: var(--font-secondary);
+
       @include media("<=phone") {
         width: 100%;
         font-weight: 400;
@@ -54,24 +60,30 @@
     margin-top: 5rem;
     padding-bottom: 3rem;
     overflow: hidden;
+
     @include media("<=phone") {
       padding-bottom: 1.5rem;
       margin-top: 2rem;
     }
+
     .slider {
       width: 120%;
       margin-left: -8%;
+
       @include media("<=phone") {
         width: 250%;
         margin-left: -75%;
       }
+
       .service {
         width: 20%;
         height: fit-content;
+
         // padding: 1.5rem;
         @include media("<=phone") {
           padding: 10px;
         }
+
         &__content {
           width: 90%;
           height: fit-content;
@@ -81,6 +93,7 @@
           box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
           border: 1px solid transparent;
           transition: all 0.3s;
+
           @include media("<=phone") {
             padding: 1rem;
           }
@@ -89,28 +102,33 @@
             width: 3rem;
             margin-bottom: 24px;
             transition: 0.3s;
+
             @include media("<=phone") {
               width: 4rem;
               margin-bottom: 20px;
             }
           }
+
           h3 {
-            font-size: 21px;
+            font-size: 20px;
             margin-bottom: 26px;
-            font-weight: 500;
+            font-weight: 400;
             letter-spacing: -0.00272em;
             margin-bottom: 14px;
+            color: #5a5757;
           }
+
           p {
             font-family: var(--font-secondary);
-            font-size: 15px;
+            font-size: 14px;
             line-height: 21px;
-            font-weight: 400;
+            color: #5a5757;
+            font-weight: 300;
             text-align: left;
-            @include media("<=phone") {
-              
-            }
+
+            @include media("<=phone") {}
           }
+
           a {
             text-decoration: none;
             display: flex;
@@ -120,12 +138,14 @@
             line-height: 20px;
             font-weight: 600;
             margin-top: 22px;
+
             span {
               &:first-child {
                 opacity: 0;
                 margin-left: 8px;
                 transition: all 0.4s;
               }
+
               &:last-child {
                 margin-left: -2rem;
                 font-size: 1.5rem;
@@ -138,22 +158,27 @@
             border: 1px solid var(--primary-color);
             cursor: pointer;
           }
+
           &:hover a span:first-child {
             opacity: 1;
           }
+
           &:hover a span:last-child {
             margin-left: 8px;
           }
+
           &:hover img {
             transform: scale(0.85);
           }
         }
       }
     }
+
     .globalLink {
       width: 100%;
       text-align: center;
       padding: 2rem 0;
+
       a {
         text-decoration: none;
         display: flex;
@@ -164,6 +189,7 @@
         line-height: 21px;
         letter-spacing: -0.01em;
         color: #325ce8;
+
         span {
           font-size: 1.2rem;
           margin-top: 5px;
@@ -171,6 +197,7 @@
           font-weight: bold;
           transition: all 0.3s;
         }
+
         &:hover span {
           transform: translateX(7px);
         }
@@ -179,17 +206,17 @@
   }
 }
 
-.servicetexth1{
+.servicetexth1 {
   display: flex;
   justify-content: center;
 }
 
-.servicediv{
+.servicediv {
   width: 50%;
 }
 
 @include media("<=phone") {
-  .servicediv{
+  .servicediv {
     width: 100%;
   }
 }
