@@ -10,23 +10,24 @@ import { fetchAboutData } from '../../config/apiService';
 import AboutInvestors from "../../components/About/AboutInvestors/AboutInvestors";
 
 function About() {
-  const [apiData, setData] = useState(null); 
-
+  const [apiData, setApiData] = useState(null);
+  const [error, setError] = useState(null);
   useEffect(() => {
-    window.scrollTo(0,0);
-
-    const fetchDataFromAPI = async () => { //call API 
+    window.scrollTo(0, 0);
+    const fetchDataFromAPI = async () => {
       try {
         const result = await fetchAboutData();
-        setData(result.result[0]);
+        setApiData(result.result[0]);
       } catch (error) {
-        // Handle error
+        setError(error);
       }
     };
-
     fetchDataFromAPI();
-
   }, []);
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
 
 
   return (

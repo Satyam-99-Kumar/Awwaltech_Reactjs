@@ -6,10 +6,8 @@ import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import { fetchBlogData } from '../../config/apiService';
 
-
-function ContactUs() {
+function Blog() {
   const [apiData, setApiData] = useState(null);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -18,21 +16,22 @@ function ContactUs() {
       try {
         const result = await fetchBlogData();
         setApiData(result.result[0]);
-        setLoading(false);
       } catch (error) {
         setError(error);
-        setLoading(false);
       }
     };
     fetchDataFromAPI();
   }, []);
-  if (loading) {
-    return <div>Loading...</div>;
-  }
 
   if (error) {
     return <div>Error: {error.message}</div>;
   }
+
+  // Check if apiData is still null, meaning the API call hasn't completed yet
+  if (apiData === null) {
+    return null; // or any other placeholder while waiting for the API call to complete
+  }
+
   return (
     <>
       <Navbar />
@@ -44,4 +43,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default Blog;
