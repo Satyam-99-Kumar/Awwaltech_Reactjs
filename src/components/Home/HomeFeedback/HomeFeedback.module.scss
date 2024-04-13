@@ -8,6 +8,12 @@
   padding-bottom: 70px;
   overflow: hidden;
 
+ 
+  @include media(">=LGdesktop") {
+    width: 80%;
+    min-height: 60vh;
+  }
+
   &__text {
     padding-top: 6rem;
     width: 50%;

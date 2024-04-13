@@ -19,8 +19,13 @@
     @include media(">=tablet") {
       // padding: 6rem 70px 5rem 70px;
       padding: 2rem 20px 2rem 20px;
-      ;
+      
     }
+    @include media(">=LGdesktop") {
+      width: 40%;
+      
+    }
+  
     // @include media("<=tablet") {
     //   padding: 6rem 35px 5rem 35px;
     // }

@@ -8,6 +8,9 @@
   @include media("<=phone") {
     flex-wrap: wrap;
   }
+  @include media(">=LGdesktop") {
+    min-height: 50vh;
+  }
 
   .title_tag {
     font-size: 26px;
@@ -40,6 +43,9 @@
       font-family: var(--font-primary);
       @include media("<=phone") {
         font-size: 30px;
+      }
+      @include media("<=phone") {
+        font-size: 52px;
       }
     }
     h1.mobileViewHeading {

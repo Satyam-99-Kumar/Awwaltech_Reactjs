@@ -3,6 +3,9 @@
 .highlights {
   width: 100%;
   position: relative;
+  @include media(">=LGdesktop") {
+    width: 80%;
+  }
 
   &__wrapper {
     padding: 0 100px 0 100px;
@@ -10,6 +13,8 @@
     @include media("<=phone") {
       padding: 0;
     }
+
+    
 
     .content {
       padding: 2rem;
@@ -24,6 +29,12 @@
         margin: auto;
         margin-bottom: 20px;
         text-align: center;
+        @include media(">=LGdesktop") {
+          margin-bottom: 50px;
+        }
+
+
+
       }
       &__text {
         margin-bottom: 2rem;
