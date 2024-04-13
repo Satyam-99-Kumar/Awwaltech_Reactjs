@@ -7,6 +7,10 @@
   @include media("<=phone") {
     padding: 15px;
   }
+  @include media(">=LGdesktop") {
+    width: 80%;
+    min-height: 60vh;
+  }
 
   .text {
     div.logo {
@@ -72,6 +76,9 @@
         line-height: 21px;
         letter-spacing: -0.0419664px;
         margin: 10px 0;
+        @include media(">=LGdesktop") {
+          line-height: 25px;
+        }
       }
       h4 {
         font-family: var(--font-secondary);

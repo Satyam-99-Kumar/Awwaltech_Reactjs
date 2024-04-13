@@ -12,6 +12,10 @@
     padding: 15px;
     flex-wrap: wrap;
   }
+  @include media(">=LGdesktop"){
+    width: calc(80% - 13rem);
+  }
+
 
   .head {
     width: 50%;
@@ -31,6 +35,9 @@
       line-height: 42px;
       letter-spacing: -0.34px;
       margin-top: 1rem;
+      @include media(">=LGdesktop") {
+        font-weight: 500;
+      }
     }
   }
   .text {
@@ -44,6 +51,9 @@
       line-height: 21px;
       font-weight: 400;
       font-family: var(--font-secondary);
+      @include media(">=LGdesktop") {
+        font-size: 17px;
+      }
 
       &:last-child {
         position: relative;
@@ -73,6 +83,11 @@
     margin-top: 24px;
     padding: 15px;
   }
+  @include media(">=LGdesktop"){
+    width: 80%;
+    min-height: 33vh;
+
+  }
   .solution {
     width: 32%;
     height: fit-content;
@@ -99,6 +114,9 @@
       line-height: 26px;
       margin-bottom: 1rem;
       color: #747474;
+      @include media(">=LGdesktop") {
+        font-size: 23px;
+      }
     }
     p {
       width: 100%;
@@ -108,6 +126,9 @@
       font-size: 15px;
       line-height: 21px;
       font-family: var(--font-secondary);
+      @include media(">=LGdesktop") {
+        font-size: 16px;
+      }
     }
     a {
       text-decoration: none;

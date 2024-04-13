@@ -21,6 +21,9 @@
   @include media(">=desktop") {
     min-height: 80vh;
   }
+  @include media(">=LGdesktop") {
+    min-height: 50vh;
+  }
 
   &__left {
     width: 50%;
@@ -88,6 +91,9 @@
   &__right {
     width: 50%;
     position: relative;
+    @include media(">=LGdesktop") {
+      width: 30%;
+    }
     .frame {
       position: absolute;
       top: 50%;
@@ -110,6 +116,11 @@
       @include media(">=desktop") {
         top: 50%;
         width: 494px;
+        right: 100px;
+      }
+      @include media(">=LGdesktop") {
+        top: 50%;
+        width: 520px;
         right: 100px;
       }
     }

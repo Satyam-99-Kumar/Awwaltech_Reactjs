@@ -14,6 +14,10 @@
       min-height: 70vh;
      
     }
+    @include media(">=LGdesktop"){
+      min-height: 50vh;
+     
+    }
   
     &__left {
       width: 60%;
@@ -43,6 +47,11 @@
         @include media("<=phone") {
           font-size: 30px;
         }
+        @include media(">=LGdesktop") {
+          font-weight: 600;
+        }
+
+       
       }
       a {
         display: inline-block;
@@ -60,6 +69,10 @@
       @include media("<=phone") {
         width: 100%;
         display: none;
+      }
+      @include media(">=LGdesktop") {
+        width: 20%;
+
       }
       .frame {
         position: absolute;

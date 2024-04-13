@@ -6,6 +6,9 @@
   @include media("<=phone") {
     padding: 15px;
   }
+  @include media(">=LGdesktop") {
+   width: 80%;
+  }
 }
 
 .allposts {
@@ -44,9 +47,12 @@
       @include media("<=phone") {
         padding: 10px 0;
       }
+      @include media(">=LGdesktop") {
+        padding-left: 8px;
+      }
 
       h4 {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 15px;
         line-height: 21px;
         margin-bottom: 1rem;
@@ -59,7 +65,8 @@
         }
 
         @include media(">=LGdesktop") {
-          font-size: 23px;
+          font-weight: 600;
+          font-size: 20px;
         }
       }
 
@@ -77,8 +84,9 @@
         }
 
         @include media(">=LGdesktop") {
-          font-size: 21px;
+          font-size: 18px;
           line-height: 31px;
+          font-weight: 500;
         }
       }
 

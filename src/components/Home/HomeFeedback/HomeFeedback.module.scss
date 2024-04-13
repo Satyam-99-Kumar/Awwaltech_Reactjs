@@ -10,7 +10,7 @@
 
  
   @include media(">=LGdesktop") {
-    width: 80%;
+    width: 100%;
     min-height: 60vh;
   }
 
@@ -25,6 +25,12 @@
       padding-top: 63px;
       // padding-left: 15px;
       // padding-right: 2px;
+    }
+    @include media(">=LGdesktop") {
+      width: 30%;
+      text-align: center;
+      margin: auto 0px auto 585px;
+      
     }
     h1 {
       text-align: center;
@@ -72,6 +78,9 @@
     @include media("<=phone") {
       width: 250%;
       margin-left: -75%;
+    }
+    @include media(">=LGdesktop") {
+      width: 80%;
     }
     .allFeedBacks {
       margin-top: 4rem;
