@@ -18,6 +18,9 @@
       padding-right: 15px;
       padding-top: 60px;
     }
+    @include media(">=LGdesktop") {
+      padding-top: 8rem;
+    }
     h1 {
       font-size: 36px;
       line-height: 2.8rem;
@@ -48,6 +51,9 @@
         line-height: 20px;
         margin-bottom: 24px;
       }
+      @include media(">=LGdesktop") {
+       width: 48%;
+      }
     }
   }
 
@@ -59,6 +65,9 @@
     @include media("<=phone") {
       padding-bottom: 1.5rem;
       margin-top: 2rem;
+    }
+    @include media(">=LGdesktop") {
+      margin-top: 5rem;
     }
     .slider {
       width: 120%;
@@ -154,6 +163,9 @@
       width: 100%;
       text-align: center;
       padding: 2rem 00px 0px 0px;
+      @include media(">=LGdesktop") {
+        padding-top: 3rem;
+      }
       a {
         text-decoration: none;
         display: flex;

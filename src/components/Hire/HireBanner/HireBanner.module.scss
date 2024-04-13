@@ -9,6 +9,9 @@
     flex-wrap: wrap;
     min-height: 60vh;
   }
+  @include media(">=LGdesktop") {
+    height: 80vh;
+  }
 
   &__left {
     width: 50%;
@@ -20,6 +23,9 @@
     @include media("<=phone") {
       width: 100%;
       padding: 15px;
+    }
+    @include media(">=LGdesktop") {
+      padding-top: 0px;
     }
     p {
       font-weight: 600;
@@ -88,6 +94,10 @@
       bottom: 0;
       right: 169px;
       width: 450px;
+      @include media(">=LGdesktop") {
+        width: 650px;
+        right: 100px;
+      }
     }
     @include media("<=phone") {
       width: 100%;

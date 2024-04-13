@@ -121,6 +121,7 @@
 
   @include media(">=LGdesktop") {
     height: 12vh;
+    width: 85% !important;
   }
   
 }
