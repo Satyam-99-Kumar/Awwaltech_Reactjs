@@ -82,6 +82,10 @@
   @include media("<=phone") {
     display: none;
   }
+
+  @include media(">=LGdesktop") {
+    height: 46vh;
+  }
 }
 
 .content .optionWrapper2 .content__options {
@@ -114,6 +118,11 @@
   @include media("<=phone") {
     height: fit-content;
   }
+
+  @include media(">=LGdesktop") {
+    height: 12vh;
+  }
+  
 }
 
 .option .optionWrapper {
@@ -181,6 +190,10 @@
   @include media("<=phone") {
     display: none;
   }
+
+  @include media(">=LGdesktop") {
+    top: 55vh;
+  }
 }
 
 // ////////////////////////////////////////////////////////////////
@@ -204,6 +217,10 @@
 
   @include media("<=phone") {
     padding: 20px;
+  }
+
+  @include media(">=LGdesktop") {
+    height: 66vh;
   }
 }
 
@@ -287,11 +304,20 @@
   //   object-fit: cover;
   //   border-radius: 6px;
   // }
+
+  @include media(">=LGdesktop") {
+    height: 450px;
+    margin-top: 30px;
+  }
 }
 
 .content .content__detail .wrapper .elements .text {
   width: 70%;
   padding: 1rem;
+
+  @include media(">=LGdesktop") {
+   padding: 2rem;
+  }
 }
 
 .elements .text p {

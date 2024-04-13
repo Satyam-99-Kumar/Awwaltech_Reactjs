@@ -43,6 +43,9 @@
         li {
           display: flex;
           margin-bottom: 10px;
+          @include media(">=LGdesktop") {
+           margin-bottom: 34px;
+          }
           div {
             &:first-child {
               width: 40px;

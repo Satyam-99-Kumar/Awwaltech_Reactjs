@@ -52,6 +52,11 @@
         font-size: 14px;
         line-height: 20px;
       }
+
+      @include media(">=LGdesktop") {
+        width: 45%;
+        font-size: 15px;
+      }
     }
   }
 
@@ -64,6 +69,10 @@
     @include media("<=phone") {
       padding-bottom: 1.5rem;
       margin-top: 2rem;
+    }
+
+    @include media(">=LGdesktop") {
+      margin-top: 8rem;
     }
 
     .slider {
@@ -96,6 +105,10 @@
 
           @include media("<=phone") {
             padding: 1rem;
+          }
+
+          @include media(">=LGdesktop") {
+            padding: 2rem;
           }
 
           img {
@@ -178,6 +191,10 @@
       width: 100%;
       text-align: center;
       padding: 2rem 0;
+
+      @include media(">=LGdesktop") {
+        padding-top: 4rem;
+      }
 
       a {
         text-decoration: none;

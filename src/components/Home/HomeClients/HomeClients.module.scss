@@ -63,6 +63,9 @@
   .padding {
     font-weight: 400;
     font-size: 18px;
+    @include media(">=LGdesktop") {
+      margin-left: 33px;
+    }
   }
 
   .options {
@@ -118,6 +121,10 @@
 
       @include media("<=phone") {
         width: 24%;
+      }
+
+      @include media(">=LGdesktop") {
+        padding: 25px 40px 25px 40px;
       }
 
       div:first-child {

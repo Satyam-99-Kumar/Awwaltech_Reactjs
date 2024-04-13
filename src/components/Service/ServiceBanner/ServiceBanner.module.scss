@@ -77,17 +77,26 @@
       top:50%;
       left: 6rem;
       transform: translateY(-50%);
+      @include media(">=LGdesktop") {
+       left: 12rem;
+      }
     }
     .iphone1 {
       position: absolute;
       bottom: 0px;
       right:4rem;
       width: 55%;
+      @include media(">=LGdesktop") {
+        right: 2rem;
+      }
     }
     .iphone2 {
       position: absolute;
       bottom: 0px;
-      left: -150px
+      left: -150px;
+      @include media(">=LGdesktop") {
+        left: 0px !important;
+      }
     }
     .iphone3 {
       position: absolute;
