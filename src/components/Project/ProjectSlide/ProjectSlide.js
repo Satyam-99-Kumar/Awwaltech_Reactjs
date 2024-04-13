@@ -5,6 +5,7 @@ import { CgArrowRight } from "react-icons/cg";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import Slider from "react-slick/lib/slider";
 import { useRef } from "react";
+import Card from '@mui/material/Card';
 
 const settings = {
   dots: false,
@@ -25,21 +26,23 @@ function ProjectSlide() {
       <Slider {...settings} className={style.slider} ref={slider}>
         {Data.map((data) => (
           <div className={style.slider__container}>
-            <div className={style.post}>
-              <div className={style.image}>
-                <img src={data.banner} alt="" />
+            <Card>
+              <div className={style.post}>
+                <div className={style.image}>
+                  <img src={data.banner} alt="" />
+                </div>
+                <div className={style.text}>
+                  <h4>{data.name}</h4>
+                  <p>{data.text}</p>
+                  <Link to="/portfolio/project/10">
+                    View more
+                    <span>
+                      <CgArrowRight />
+                    </span>
+                  </Link>
+                </div>
               </div>
-              <div className={style.text}>
-                <h4>{data.name}</h4>
-                <p>{data.text}</p>
-                <Link to="/portfolio/project/10">
-                  View more
-                  <span>
-                    <CgArrowRight />
-                  </span>
-                </Link>
-              </div>
-            </div>
+            </Card>
           </div>
         ))}
       </Slider>

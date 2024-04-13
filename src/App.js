@@ -14,7 +14,7 @@ import Hire from "./pages/Hire/Hire";
 import Career from "./pages/Career/Career";
 import CareerDetails from "./pages/CareerDetails/CareerDetails";
 import MobileApp from "./pages/MobileApp/MobileApp";
-import PortfolioDetails from "./pages/PortfolioDetails/PortfolioDetails";
+// import PortfolioDetails from "./pages/PortfolioDetails/PortfolioDetails";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
         <Route path="/service/eCommerce-development" element={<Service />} />
         <Route path="/service/enterprise-Devops" element={<Service />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/portfoliodetails" element={<PortfolioDetails />} />
+        {/* <Route path="/portfoliodetails" element={<PortfolioDetails />} />s */}
         <Route path="/portfolio/project/:id" element={<Project />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/blog" element={<Blog />} />
