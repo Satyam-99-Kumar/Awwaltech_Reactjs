@@ -8,6 +8,10 @@
     padding: 15px;
     overflow: hidden;
   }
+  @include media(">=LGdesktop") {
+    width: 80%;
+  }
+  
 
   .options {
     margin-bottom: 4rem;
@@ -65,11 +69,17 @@
         margin-right: 0;
         margin-bottom: 1.5rem;
       }
+    
       .image {
         width: 100%;
         img {
           width: 100%;
+          @include media(">=LGdesktop") {
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+          }
         }
+       
       }
       .text {
         padding: 1.5rem 16px;

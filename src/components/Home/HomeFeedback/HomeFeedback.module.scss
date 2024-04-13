@@ -11,6 +11,12 @@
    padding-bottom: 52px;
   }
 
+ 
+  @include media(">=LGdesktop") {
+    width: 80%;
+    min-height: 60vh;
+  }
+
   &__text {
     padding-top: 6rem;
     width: 50%;

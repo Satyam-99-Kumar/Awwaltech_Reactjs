@@ -18,12 +18,10 @@
     }
 
     @include media(">=tablet") {
-
       gap: 60px;
     }
 
     @include media(">=tablet") {
-
       padding: 80px 100px;
     }
 
@@ -32,6 +30,9 @@
 
       @include media("<=phone") {
         width: 100%;
+      }
+      @include media(">=LGdesktop") {
+        width: 30%;
       }
 
       p {
@@ -55,13 +56,10 @@
           margin-bottom: 0rem;
           font-size: 27px;
           letter-spacing: -0.54px;
-
         }
 
         @include media(">=tablet") {
-
           font-size: 30px;
-
         }
 
         div:not(:last-child) {
@@ -103,6 +101,9 @@
       @include media("<=phone") {
         width: 10%;
       }
+      @include media(">=LGdesktop") {
+        width: 40%;
+      }
 
       p {
         margin-bottom: 2rem;
@@ -112,6 +113,9 @@
         font-weight: 400;
         letter-spacing: -0.041966px;
         font-family: var(--font-secondary);
+        @include media(">=LGdesktop") {
+          font-size: 18px;
+        }
 
         &:last-child {
           position: relative;
@@ -141,7 +145,6 @@
 
     @include media("<=tablet") {
       padding: 0 60px;
-
     }
 
     .wrapper {
@@ -161,6 +164,9 @@
       @include media("<=tablet") {
         display: block;
       }
+      @include media(">=LGdesktop") {
+        width: 77%;
+      }
     }
 
     .image {
@@ -170,12 +176,11 @@
         width: 100%;
       }
 
-      @include media(">=LGdesktop") {
-        width: 13%;
-      }
-
       @include media("<=tablet") {
         width: 100%;
+      }
+      @include media(">=LGdesktop") {
+        width: 45%;
       }
 
       img {
@@ -194,13 +199,12 @@
         padding-left: 15px;
       }
 
-      @include media(">=LGdesktop") {
-        width: 87%;
-      }
-
       @include media("<=tablet") {
         width: 100%;
         margin-top: 40px;
+      }
+      @include media(">=LGdesktop") {
+        width: 85%;
       }
 
       .max_size {
@@ -233,18 +237,12 @@
         @include media("<=tablet") {
           font-size: 16px;
           line-height: 36px;
-
         }
-
-
 
         @include media("<=phone") {
           font-size: 24px;
           line-height: 35px;
-
         }
-
-
       }
 
       .missionVission {
@@ -307,6 +305,9 @@
                 font-size: 14px;
                 line-height: 20px;
                 color: rgba(0, 0, 0, 0.6);
+                @include media(">=LGdesktop") {
+                  font-size: 16px;
+                }
               }
             }
           }
@@ -321,6 +322,10 @@
           line-height: 21px;
           font-family: var(--font-secondary);
           color: rgba(0, 0, 0, 0.7);
+          @include media(">=LGdesktop") {
+            font-size: 16px;
+            line-height: 24px;
+          }
 
           &:first-child {
             margin-bottom: 1.5rem;
@@ -342,7 +347,6 @@
       padding-top: 2.5rem;
       padding-bottom: 3rem;
       display: none;
-
     }
 
     @include media("<=tablet") {
@@ -359,14 +363,19 @@
         height: 12vh;
         padding: 0 1rem;
       }
+      
+      @include media(">=tablet") {
+        // height: 55vh;
+      }
 
       @include media(">=desktop") {
         // height: 38vh;
       }
-
-      @include media(">=tablet") {
-        // height: 55vh;
+      @include media(">=LGdesktop") {
+    
+      height: 12vh;
       }
+
     }
 
     .wrap {
@@ -428,7 +437,6 @@
             @include media("<=phone") {
               font-size: 20px;
               line-height: 25px;
-
             }
 
             @include media(">=tablet") {
