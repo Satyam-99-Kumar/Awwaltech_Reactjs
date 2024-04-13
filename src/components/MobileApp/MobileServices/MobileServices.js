@@ -72,54 +72,18 @@ function MobileServices({ apiData }) {
            <Card className={style.card}>
              <div className={style.number}>{contact.number}</div>
              <div><span className={style.span}>{contact.title}</span></div>
-             <div>{contact.info}</div>
+             <div className={style.span}>{contact.info}</div>
            </Card>
          </Grid>
        ))}
      </Grid>
      <div className={style.mbsrbtn}>
-        <button>inquire now</button>
+        <button>Inquire now  </button>
      </div>
     </div>
 
 
-      {/* <div className={style.solve__solutions}>
-        <div className={style.text}>
-          <h1>
-            <div>{apiData.MobileAppSolutionSection2.Title1}</div>
-            <div>
-              {apiData.MobileAppSolutionSection2.Title2} <span>{apiData.MobileAppSolutionSection2.Title3}</span>
-            </div>
-          </h1>
-          <p>{apiData.MobileAppSolutionSection2.Paragraph} </p>
-        </div>
-
-        <div className={style.solutionWrapper}>
-          <div className={style.solutions}>
-            {apiData.MobileAppSolutionSection2.Services.map(item => {
-              return (
-                <div className={style.solution}>
-                  <div className={style.logo}>
-                    <FiMonitor />
-                  </div>
-                  <h4>
-                    <div>{item.Title1}</div>
-                    <div>{item.Title2}</div>
-                  </h4>
-                  <p>{item.Paragraph}</p>
-                  <Link to="/">
-                    Explore <span>More</span>{" "}
-                    <span>
-                      <BsArrowRight />
-                    </span>
-                  </Link>
-                </div>
-              )
-            })}
-
-          </div>
-        </div>
-      </div> */}
+     
     </div>
   );
 }

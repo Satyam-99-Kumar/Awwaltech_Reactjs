@@ -7,7 +7,6 @@
   
     .head {
       width: 100%;
-      padding: 100px;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -17,7 +16,8 @@
         font-weight: 500;
         font-size: 15px;
         line-height: 20px;
-        text-align: center;
+        // text-align: center;
+        margin-bottom: 10px;
         letter-spacing: -0.02px;
         color: #E5E5E5;
       }

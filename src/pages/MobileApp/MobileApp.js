@@ -60,9 +60,10 @@ function MobileApp() {
       <Navbar />
       <ServiceBanner apiData={apiData} />
       <MobileServices apiData={apiData} />
-      <MobileEnterprizes apiData={apiData} />
-      {/* <GlobalWorks background={`#fff`} apiData={apiHomeData} /> */}
+      <MobileEnterprizes apiData={apiData} />  
       <MobileSolution apiData={apiData} />
+      <GlobalWorks background={`#fff`} apiData={apiHomeData} />
+    
       {/* <Mobiletechnology/> */}
       {/* <ServiceInvestors /> */}
       <GlobalContact />
