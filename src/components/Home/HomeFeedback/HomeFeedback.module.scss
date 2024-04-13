@@ -30,14 +30,7 @@
       // padding-right: 2px;
     }
     @include media(">=LGdesktop") {
-<<<<<<< HEAD
-      width: 30%;
-      text-align: center;
-      margin: auto 0px auto 585px;
-      
-=======
      width: 44%;
->>>>>>> 3ee7808e78c8c497c8042131f455cd2b29608e16
     }
     h1 {
       text-align: center;
@@ -87,7 +80,7 @@
       margin-left: -75%;
     }
     @include media(">=LGdesktop") {
-      width: 80%;
+      width: auto;
     }
     .allFeedBacks {
       margin-top: 4rem;
