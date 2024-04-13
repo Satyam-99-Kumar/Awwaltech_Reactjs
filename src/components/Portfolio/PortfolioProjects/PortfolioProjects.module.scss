@@ -9,7 +9,7 @@
     overflow: hidden;
   }
   @include media(">=LGdesktop") {
-    width: 80%;
+   
   }
   
 
@@ -69,15 +69,15 @@
         margin-right: 0;
         margin-bottom: 1.5rem;
       }
+      @include media(">=LGdesktop") {
+        margin-right: 3rem;
+      }
     
       .image {
         width: 100%;
         img {
           width: 100%;
-          @include media(">=LGdesktop") {
-            border-bottom-left-radius: 0px;
-            border-bottom-right-radius: 0px;
-          }
+        
         }
        
       }

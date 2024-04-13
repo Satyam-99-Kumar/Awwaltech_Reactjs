@@ -32,7 +32,7 @@
         width: 100%;
       }
       @include media(">=LGdesktop") {
-        width: 30%;
+        width: 50%;
       }
 
       p {
@@ -102,7 +102,7 @@
         width: 10%;
       }
       @include media(">=LGdesktop") {
-        width: 40%;
+        width: 50%;
       }
 
       p {
@@ -165,7 +165,7 @@
         display: block;
       }
       @include media(">=LGdesktop") {
-        width: 77%;
+        
       }
     }
 
@@ -180,7 +180,7 @@
         width: 100%;
       }
       @include media(">=LGdesktop") {
-        width: 45%;
+        
       }
 
       img {
@@ -204,7 +204,7 @@
         margin-top: 40px;
       }
       @include media(">=LGdesktop") {
-        width: 85%;
+        width: 65%;
       }
 
       .max_size {
@@ -351,6 +351,9 @@
 
     @include media("<=tablet") {
       padding-bottom: 1rem;
+    }
+    @include media(">=LGdesktop") {
+      padding-bottom: 5rem;
     }
 
     .option {

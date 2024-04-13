@@ -15,7 +15,7 @@
      
     }
     @include media(">=LGdesktop"){
-      min-height: 50vh;
+      min-height: 80vh;
      
     }
   
@@ -71,15 +71,15 @@
         display: none;
       }
       @include media(">=LGdesktop") {
-        width: 20%;
+      
 
       }
       .frame {
         position: absolute;
         top: 50%;
-        right: 80px;
+        right: 100px;
         transform: translateY(-50%);
-        width: 620px;
+        width: 650px;
       }
     }
   }

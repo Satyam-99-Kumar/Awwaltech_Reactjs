@@ -7,7 +7,7 @@
     padding: 15px;
   }
   @include media(">=LGdesktop") {
-   width: 80%;
+  
   }
 }
 
@@ -48,7 +48,7 @@
         padding: 10px 0;
       }
       @include media(">=LGdesktop") {
-        padding-left: 8px;
+       
       }
 
       h4 {
@@ -65,8 +65,7 @@
         }
 
         @include media(">=LGdesktop") {
-          font-weight: 600;
-          font-size: 20px;
+          
         }
       }
 
@@ -84,9 +83,7 @@
         }
 
         @include media(">=LGdesktop") {
-          font-size: 18px;
-          line-height: 31px;
-          font-weight: 500;
+        
         }
       }
 
@@ -101,7 +98,7 @@
         margin-left: 10px;
 
         @include media(">=LGdesktop") {
-          font-size: 19px;
+         
         }
 
         span {
@@ -133,7 +130,7 @@
     margin: 0 0.1rem;
 
     @include media(">=LGdesktop") {
-      width: 60px;
+      
     }
 
     &:nth-child(2) {

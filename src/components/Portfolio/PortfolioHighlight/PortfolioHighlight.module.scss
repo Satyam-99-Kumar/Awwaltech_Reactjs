@@ -4,7 +4,7 @@
   width: 100%;
   position: relative;
   @include media(">=LGdesktop") {
-    width: 80%;
+   
   }
 
   &__wrapper {
@@ -30,7 +30,7 @@
         margin-bottom: 20px;
         text-align: center;
         @include media(">=LGdesktop") {
-          margin-bottom: 50px;
+         
         }
 
 

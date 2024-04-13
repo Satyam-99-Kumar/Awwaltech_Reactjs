@@ -13,9 +13,8 @@
    
   }
   @include media(">=LGdesktop") {
-    padding: 7rem  32rem 6rem 2rem;
-  text-align: center;
-   
+ 
+    padding: 6rem 10rem;
   }
   &__text {
     h1 {
