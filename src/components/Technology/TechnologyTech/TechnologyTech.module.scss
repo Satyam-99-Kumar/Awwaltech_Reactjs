@@ -3,12 +3,12 @@
 .tech {
   width: 100%;
   min-height: 100vh;
-  padding: 65px 100px 100px 100px;
+  padding: 120px 80px;
   @include media("<=phone") {
     padding: 15px;
   }
   @include media(">=LGdesktop") {
-   
+   padding: 150px 100px;
   }
 
   .text {

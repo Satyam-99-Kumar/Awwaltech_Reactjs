@@ -14,6 +14,10 @@
     padding-right: 15px;
     justify-content: space-between;
   }
+  @include media(">=LGdesktop"){
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .logos div {
   width: 14%;
@@ -51,6 +55,10 @@
   
     // margin: 0;
     // margin-bottom: 40px;
+  }
+  @include media(">=LGdesktop") {
+    height: 4rem;
+
   }
 }
 .logos div img {

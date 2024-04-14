@@ -16,9 +16,13 @@
   
     padding: 170px 100px 120px 100px;
   }
+  
   @include media(">=tablet") {
   
     padding: 130px 100px 100px 100px;
+  }
+  @include media(">=LGdesktop") {
+    padding: 207px 100px 120px;
   }
 
 
@@ -49,12 +53,9 @@
         margin: 5px 0;
         line-height: 44px;
       }
-     
-
-      
-    
-
- 
+      @include media(">=LGdesktop") {
+        font-size: 48px;
+      }
 
     }
     p {

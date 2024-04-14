@@ -84,7 +84,7 @@
   }
 
   @include media(">=LGdesktop") {
-    height: 46vh;
+    height: 47vh;
   }
 }
 
@@ -194,6 +194,8 @@
 
   @include media(">=LGdesktop") {
     top: 55vh;
+    left: 16rem;
+
   }
 }
 
@@ -214,14 +216,15 @@
   min-height: 50vh;
   border-radius: 8px;
   background: #fff;
-  padding: 1rem;
+  padding: 2rem;
 
   @include media("<=phone") {
     padding: 20px;
   }
 
   @include media(">=LGdesktop") {
-    height: 66vh;
+    height: 58vh;
+    padding: 2rem 1rem 2rem 2rem;
   }
 }
 
@@ -283,6 +286,9 @@
 .content .content__detail .wrapper .heading span {
   width: 30px;
   font-size: 24px;
+  @include media(">=LGdesktop") {
+    font-size: 1.2rem;
+  }
 }
 
 .content .content__detail .wrapper .elements {

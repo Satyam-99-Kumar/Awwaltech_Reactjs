@@ -59,6 +59,9 @@
           font-size: 16px;
           padding: 15px 15px;
         }
+        @include media(">=LGdesktop") {
+          font-size: 14px;
+        }
   
       }
     }
@@ -88,6 +91,9 @@
       @include media(">=desktop") {
         font-size: 16px;
         padding: 15px 15px;
+      }
+      @include media(">=LGdesktop") {
+        font-size: 14px;
       }
 
     
@@ -132,7 +138,11 @@
         width: 174px;
         height: 54px;
       }
-
+      @include media(">=LGdesktop") {
+        font-size: 18px;
+        width: 162px;
+        height: 50px;
+      }
 
     
  
@@ -158,7 +168,11 @@
       right: -90px;
      
     }
+    @include media(">=LGdesktop") {
 
+      top: -6rem;
+      right: 0px;
+    }
 
 
 
@@ -181,6 +195,10 @@
       @include media(">=desktop") {
         width: 550px;
         height: 550px;
+      }
+      @include media(">=LGdesktop"){
+        width: 605px;
+      height: 605px;
       }
  
     }
