@@ -65,12 +65,18 @@
       flex-wrap: wrap;
     }
     @include media(">=LGdesktop") {
-      width: 45%;
+      width: 56%;
+      padding: 60px 60px;
+      display: flex;
+      justify-content: space-around;
     }
     .block1 {
       width: 49%;
       @include media("<=phone") {
         width: 100%;
+      }
+      @include media(">=LGdesktop") {
+       width: 42%;
       }
     }
     .block2 {
@@ -78,6 +84,10 @@
       @include media("<=phone") {
         width: 100%;
       }
+
+      @include media(">=LGdesktop") {
+        width: 42%;
+       }
     }
     .achive {
       width: 100%;

@@ -36,7 +36,6 @@
         letter-spacing: -0.00304em;
       }
     }
-
     p {
       text-align: center;
       color: #ffff;
@@ -190,7 +189,7 @@
     }
 
     .margin {
-      margin-top: 4px !important;
+      // margin-top: 4px !important;
     }
 
     .block.first {
@@ -219,7 +218,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
+      @include media("<=LGdesktop") {
+        margin-right: 4rem;
+      }
       img {
         width: 2.5rem;
         opacity: 40%;

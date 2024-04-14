@@ -13,7 +13,8 @@ function HomeBanner({ data }) {
     <header className={style.header}>
       <div className={style.header__text}>
         <h1>
-          <div>{data?.result[0]?.Banner?.BannerTitle}</div>
+          <div>{data?.result[0]?.Banner?.Title1}</div>
+          <div>{data?.result[0]?.Banner?.Title2}</div>
         </h1>
         <p>{data?.result[0]?.Banner?.BannerSubtitle}</p>
         <div className={style.btnGroup}>

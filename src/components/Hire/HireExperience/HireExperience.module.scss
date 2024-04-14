@@ -4,6 +4,9 @@
   width: 100%;
   overflow: hidden;
   background-color: #eee;
+  @include media(">=LGdesktop") {
+    background-color: #ffffff;
+  }
 }
 .hireexperience {
   width: 100%;

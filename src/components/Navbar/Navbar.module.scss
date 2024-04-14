@@ -65,8 +65,11 @@
       padding: 0.5rem 1.5rem;
       cursor: pointer;
       span {
-        margin-left: 10px;
+        margin-left: 1rem;
         margin-top: 3px;
+      }
+      @include media(">=LGdesktop"){
+        margin-left: 0.8rem;
       }
       @include media("<=desktop") {
         margin-left: 0.5rem;
