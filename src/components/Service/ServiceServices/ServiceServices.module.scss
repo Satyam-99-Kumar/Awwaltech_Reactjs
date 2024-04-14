@@ -142,14 +142,15 @@
       }
       .solution {
         width: 30%;
-        
         padding: 2rem;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         border-radius: 6px;
         transition: 0.3s;
         border: 1px solid transparent;
         @include media(">=LGdesktop") {
-          padding: 2rem 2rem 12px 2rem;
+          // padding: 2rem 2rem 12px 2rem;
+          height: 57vh;
+          padding: 2rem;
         }
         &:hover {
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
