@@ -27,6 +27,9 @@
     @include media("<=phone") {
       display: none;
     }
+    @include media(">=LGdesktop") {
+      margin-bottom: 50px;
+    }
   }
 
   .img {
