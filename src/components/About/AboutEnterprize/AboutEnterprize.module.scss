@@ -36,7 +36,7 @@
       font-weight: 500;
     }
     p {
-      width:55% !important;
+      width:50%;
       margin: auto;
       margin-bottom: 1rem;
       text-align: center;
@@ -50,6 +50,9 @@
       }
       @include media(">=tablet") {
         width: 100%;
+      }
+      @include media(">=LGdesktop") {
+        width: 50%;
       }
 
     }
