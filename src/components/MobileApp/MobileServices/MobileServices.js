@@ -1,10 +1,5 @@
 import style from "./Mobileservices.module.scss";
-import { FiMonitor } from "react-icons/fi";
-import { BsArrowRight } from "react-icons/bs";
-import { Link } from "react-router-dom";
-import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
-import { GrSkype } from "react-icons/gr";
+import { BsChevronRight } from "react-icons/bs";
 import { Card, Grid } from "@mui/material";
 import { useState } from "react";
 
@@ -100,7 +95,9 @@ function MobileServices({ apiData }) {
           ))}
         </Grid>
         <div className={style.mbsrbtn}>
-          <button>Inquire now </button>
+          <button>Inquire now <span>
+          <BsChevronRight />
+        </span></button>
         </div>
       </div>
     </div>

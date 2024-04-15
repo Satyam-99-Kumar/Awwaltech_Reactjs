@@ -57,7 +57,7 @@ function GlobalWorks({background, apiData}) {
       </div>
 
       <Link className={style.global} to="/">
-        Veiw all projects{" "}
+        View all projects{" "}
         <span>
           <BsChevronRight />
         </span>
