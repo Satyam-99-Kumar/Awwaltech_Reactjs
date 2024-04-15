@@ -193,7 +193,7 @@
   }
 
   @include media(">=LGdesktop") {
-    top: 55vh;
+    top: 66vh;
     left: 16rem;
 
   }
@@ -223,7 +223,7 @@
   }
 
   @include media(">=LGdesktop") {
-    height: 58vh;
+    height: 62vh;
     padding: 2rem 1rem 2rem 2rem;
   }
 }
@@ -313,8 +313,9 @@
   // }
 
   @include media(">=LGdesktop") {
-    height: 450px;
-    margin-top: 30px;
+    height: 442px;
+    width: 352px;
+    margin-top: 25px;
   }
 }
 
@@ -323,7 +324,7 @@
   padding: 1rem;
 
   @include media(">=LGdesktop") {
-   padding: 2rem;
+   padding: 28px 30px;
   }
 }
 

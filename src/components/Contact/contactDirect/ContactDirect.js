@@ -34,7 +34,7 @@ function ContactDirect() {
         <h1>Contact us Direct!</h1>
       </div>
 
-      <Grid className={style.gridmain} container spacing={2} justifyContent={'center'}>
+      <Grid className={style.gridmain} container spacing={2}gap={9} justifyContent={"center"}>
        
         {contacts.map((contact, index) => (
           <Grid item sm={3} xs={12} key={index}>

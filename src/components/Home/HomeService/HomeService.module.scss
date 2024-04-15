@@ -24,11 +24,17 @@
       font-weight: 600;
       margin-bottom: 1rem;
       font-size: 36px;
-
+      
       @include media("<=phone") {
         font-size: 26px;
         line-height: 36px;
         letter-spacing: -1px;
+      }
+      @include media(">=LGdesktop"){
+        width: 472px;
+        margin: auto;
+        line-height: 45px;
+        font-size: 35px;
       }
 
       span {
@@ -57,6 +63,7 @@
         width: 50%;
         font-size: 15px;
         font-weight: 400;
+        margin-top: 16px;
       }
     }
   }
@@ -73,7 +80,7 @@
     }
 
     @include media(">=LGdesktop") {
-      margin-top: 8rem;
+      margin-top: 7rem;
     }
 
     .slider {
