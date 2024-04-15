@@ -27,10 +27,6 @@
         margin-top: 30px;
         margin-bottom: 1.5rem;
         font-size: 26px;
-
-      }
-      @include media(">=LGdesktop") {
-        margin-bottom: 5rem;
       }
       @include media(">=desktop") {
         margin-bottom: 4rem;
@@ -38,7 +34,9 @@
       @include media(">=tablet") {
         font-size: 27px;
       }
-     
+     @include media(">=LGdesktop") {
+        font-size: 34px;
+      }
 
      
 

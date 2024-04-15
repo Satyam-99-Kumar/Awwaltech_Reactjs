@@ -1,16 +1,16 @@
 import React from "react";
 import style from "./GlobalIndustries.module.scss";
 import { AiOutlineCheck } from "react-icons/ai";
-import { FaHeart } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
 import img1 from "../../../assets/Home/Industries/unsplash_jjhvyxm34nY.png";
 
 function Detail({ option, data }) {
   return (
     <>
       <div className={style.heading}>
-        <h3>{data.head}</h3>
+        <h3>{data[option - 1].head}</h3>
         {/* <span>{data[option - 1].optionLogo}</span> */}
-        <span><FaHeart /></span>
+        <span><FaRegHeart /></span>
       </div>
 
       <div className={style.elements}>

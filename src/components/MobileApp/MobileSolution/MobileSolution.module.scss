@@ -144,21 +144,14 @@
 }
 
 .number {
-  padding: 2px 5px;
-  display: inline-block;
-  margin-bottom: 5px;
-  font-weight: 700;
-  border: 1px solid #175fff;
+  font-size: 30px;
   color: #175fff;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  
 }
 
 .maingridstl {
   margin: 4rem 6rem 0 6rem;
+  padding-bottom: 80px;
 
   .card {
     padding: 10px 10px;

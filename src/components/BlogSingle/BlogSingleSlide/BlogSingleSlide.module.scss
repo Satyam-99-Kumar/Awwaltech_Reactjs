@@ -1,3 +1,5 @@
+@import "../../../styles/breakpoints.scss";
+
 .sliderWrapper {
   width: 100%;
   height: fit-content;
@@ -124,5 +126,15 @@
         transform: translateX(7px);
       }
     }
+  }
+}
+@media (min-width: 280px) and (max-width: 700px) {
+  h3{
+    font-size: 20px !important;
+    margin-top: 50px;
+   
+  }
+  .sliderWrapper {
+    padding: 50px 20px;
   }
 }

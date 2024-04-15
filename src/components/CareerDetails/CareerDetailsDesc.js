@@ -1,8 +1,10 @@
 import style from "./CareerDetailsDesc.module.scss";
 
+
 function CareerDetailsDesc() {
   return (
     <>
+         
       <div className={style.desc}>
         <h4>Job Description</h4>
         <p>

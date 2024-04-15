@@ -21,6 +21,10 @@
       padding: 20px;
     }
 
+    @include media(">=LGdesktop") {
+      top: 15.7%;
+     }
+
     h1 {
       text-align: center;
       color: #ffff;
@@ -52,6 +56,9 @@
         color: #e5e5e5;
         margin-top: 10px;
       }
+      @include media(">=LGdesktop") {
+       margin-bottom: 30px;
+       }
     }
 
 
@@ -140,6 +147,9 @@
         width: 100%;
         margin-bottom: -0.1rem;
       }
+      @include media(">=LGdesktop") {
+        padding-top: 0px ;
+       }
     }
 
     .specialLinkWrapper {
@@ -166,6 +176,9 @@
         width: 144px;
         height: 144px;
       }
+      @include media(">=LGdesktop") {
+        padding: 1rem 2rem 2rem 2rem;
+       }
 
       img {
         width: 1.5rem;
@@ -196,6 +209,9 @@
       background: rgba(23, 95, 255, 1);
       color: #fff;
       transition: 0.3s;
+      @include media(">=LGdesktop") {
+        background-color: #175efb;
+       }
 
       &:hover {
         background: rgba(23, 95, 255, 0.6);

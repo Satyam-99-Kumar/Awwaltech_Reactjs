@@ -23,6 +23,9 @@
     &__right {
       width: 60%;
       // padding-left: 2rem;
+      @include media(">=LGdesktop") {
+        padding-left: 2rem;
+      }
       p {
         font-size: 21px;
         line-height: 26px;
@@ -44,7 +47,7 @@
           display: flex;
           margin-bottom: 10px;
           @include media(">=LGdesktop") {
-           margin-bottom: 34px;
+           margin-bottom: 1.2rem;
           }
           div {
             &:first-child {

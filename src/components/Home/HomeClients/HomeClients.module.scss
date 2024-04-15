@@ -124,7 +124,10 @@
       }
 
       @include media(">=LGdesktop") {
-        padding: 25px 40px 25px 40px;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 1rem 2rem;
+        width: 20%;
       }
 
       div:first-child {
@@ -319,6 +322,9 @@
     flex-wrap: wrap;
     margin: 0;
     margin-bottom: 40px;
+  }
+  @include media(">=LGdesktop") {
+    height: 4rem;
   }
 }
 

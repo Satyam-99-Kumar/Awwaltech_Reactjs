@@ -65,7 +65,7 @@
       flex-wrap: wrap;
     }
     @include media(">=LGdesktop") {
-      width: 56%;
+      width: 44%;
       padding: 60px 60px;
       display: flex;
       justify-content: space-around;
@@ -76,7 +76,7 @@
         width: 100%;
       }
       @include media(">=LGdesktop") {
-       width: 42%;
+       width: 45%;
       }
     }
     .block2 {
@@ -86,7 +86,7 @@
       }
 
       @include media(">=LGdesktop") {
-        width: 42%;
+        width: 45%;
        }
     }
     .achive {
