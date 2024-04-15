@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import style from "./CareerDetails.module.scss";
 import CareerDetailsDesc from "../../components/CareerDetails/CareerDetailsDesc";
 import CareerDetailForm from "../../components/CareerDetails/CareerDetailForm";
+import img1 from "../../assets/Career/unsplash_jDdkEddFuBI.png"
 
 function CareerDetails() {
   const { name } = useParams();
@@ -12,6 +13,9 @@ function CareerDetails() {
     <>
      <div className={style.mainbanwrap}>
      <Navbar />
+     <div className={style.banner__right}>
+        <img src={img1} alt="" className={style.frame} />
+      </div>
       <div className={style.careerDetails}>
         <h1>{name}</h1>
         <p>

@@ -62,6 +62,7 @@
 
     .text {
       width: 50%;
+      margin-top: -32px;
 
       @include media("<=phone") {
         width: 100%;

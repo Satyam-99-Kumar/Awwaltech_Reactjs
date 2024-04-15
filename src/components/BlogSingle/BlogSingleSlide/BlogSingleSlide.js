@@ -5,6 +5,7 @@ import { CgArrowRight } from "react-icons/cg";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import Slider from "react-slick/lib/slider";
 import { useRef } from "react";
+import { Grid } from "@mui/material";
 
 const settings = {
   dots: false,
@@ -22,6 +23,8 @@ function BlogSingleSlide() {
   return (
     <div className={style.sliderWrapper}>
       <h3>View more Blogs</h3>
+     <Grid container spacing={2}>
+      <Grid item sm={4}lg={12}xs={12} md={4}>
       <Slider {...settings} className={style.slider} ref={slider}>
         {Data.map((data) => (
           <div className={style.slider__container}>
@@ -65,6 +68,8 @@ function BlogSingleSlide() {
           </span>
         </Link>
       </div>
+      </Grid>
+     </Grid>
     </div>
   );
 }
