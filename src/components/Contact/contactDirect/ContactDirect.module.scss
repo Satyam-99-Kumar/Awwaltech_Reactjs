@@ -12,6 +12,12 @@ h1{
 }
 .card {
   padding: 10px 10px;
+  width: 406px;
+  height: 145px;
+  @include media("<=phone"){
+    
+    background-color: red;
+  }
 }
 .phone {
   padding: 3px 0px;
