@@ -10,7 +10,7 @@
   &__left {
     width: 55%;
     background: #175fff;
-    padding: 4rem 4rem 4rem 6rem !important;
+    padding: 4rem 4rem 4rem 6rem;
     @include media("<=phone") {
       width: 100%;
       padding: 1rem 1rem 1rem 1rem !important;
@@ -22,7 +22,7 @@
       
     }
     @include media(">=LGdesktop") {
-     
+     padding: 6rem 110px 5rem;
       
     }
   
