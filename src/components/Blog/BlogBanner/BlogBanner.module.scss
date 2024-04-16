@@ -14,8 +14,7 @@
     padding: 86px 0px;
   }
   @include media(">=tablet") {
-    height: fit-content;
-    padding: 131px 0px;
+   
   }
 
   @include media(">=desktop") {
@@ -36,20 +35,19 @@
       padding: 15px;
     }
     p {
-      // font-weight: 600;
+      color: #e5e5e5;
+      font-family: var(--font-primary);
       font-size: 26px;
+      font-weight: 600;
       line-height: 36px;
       margin-bottom: 10px;
-      font-family: var(--font-primary);
-      color: #e5e5e5;
-      font-weight: 600;
     }
     h1 {
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 56px;
-      letter-spacing: 0.00014em;
-      font-family: var(--font-primary);
+      font-family: var(--font-secondary);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      margin-bottom: 1rem;
       @include media("<=phone") {
         font-size: 30px;
       }
@@ -61,8 +59,11 @@
        
       }
       @include media(">=LGdesktop") {
-        font-size: 48px;
-        font-weight: 700;
+        font-family: var(--font-secondary);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        margin-bottom: 1rem;
       }
    
     }
@@ -95,9 +96,7 @@
   &__right {
     width: 50%;
     position: relative;
-    @include media(">=LGdesktop") {
-      
-    }
+   
     .frame {
       position: absolute;
       top: 50%;
