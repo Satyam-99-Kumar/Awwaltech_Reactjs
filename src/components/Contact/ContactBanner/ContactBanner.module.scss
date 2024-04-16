@@ -1,12 +1,14 @@
 @import "../../../styles/breakpoints.scss";
 
 .banner {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: space-between;
   background: var(--primary-color);
-  padding: 207px 100px 120px 100px;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: space-between;
+  padding: 207px 100px 120px;
+  width: 100%;
   @include media("<=phone") {
     flex-wrap: wrap;
     padding: 100px 15px 60px 15px;
@@ -14,15 +16,28 @@
   }
   @include media(">=desktop") {
   
-    padding: 170px 100px 120px 100px;
+    background: var(--primary-color);
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    justify-content: space-between;
+    padding: 207px 100px 120px;
+    width: 100%;
   }
   
   @include media(">=tablet") {
   
-    padding: 130px 100px 100px 100px;
   }
   @include media(">=LGdesktop") {
+    background: var(--primary-color);
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    justify-content: space-between;
     padding: 207px 100px 120px;
+    width: 100%;
   }
 
 
@@ -69,7 +84,7 @@
         font-size: 12px;
       }
       @include media(">=tablet") {
-  
+        line-height: 21px;
         font-size: 15px;
       }
 
@@ -87,23 +102,23 @@
       display: none;
     }
     a {
-      text-decoration: none;
-      width: 199px;
-      height: 66px;
-      display: none;
       align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      line-height: 21px;
-      font-family: var(--font-secondary);
-      font-weight: 600;
-      border-radius: 4px;
       background-color: #e7f1fe;
-      color: #175fff;
       border: 2px solid #175fff;
-      transition: 0.3s;
+      border-radius: 4px;
+      color: #175fff;
+      display: flex;
+      font-family: var(--font-secondary);
+      font-size: 18px;
+      font-weight: 600;
+      height: 66px;
+      justify-content: center;
+      line-height: 21px;
+      text-decoration: none;
+      transition: .3s;
+      width: 199px;
       @include media (">=LGdesktop"){
-        display: none;
+      
       }
       &:hover {
         background-color: #e7f1fe;
