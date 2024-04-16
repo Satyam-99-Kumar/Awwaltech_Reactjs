@@ -2,7 +2,7 @@
 
 .banner {
   width: 100%;
-  min-height: 70vh;
+  min-height: 80vh;
   background: var(--primary-color);
   display: flex;
   @include media("<=phone") {
@@ -19,13 +19,13 @@
     align-items: center;
     color: #fff;
     padding-left: 100px;
-    padding-top: 50px;
+   
     @include media("<=phone") {
       width: 100%;
       padding: 15px;
     }
     @include media(">=LGdesktop") {
-      padding-top: 0px;
+     
     }
     p {
       font-weight: 600;
