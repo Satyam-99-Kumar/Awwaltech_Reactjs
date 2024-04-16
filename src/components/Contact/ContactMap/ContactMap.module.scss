@@ -1,11 +1,11 @@
 @import "../../../styles/breakpoints.scss";
 
 .map {
-  width: 100%;
   height: fit-content;
-  margin-top: 7rem;
   margin-bottom: 2rem;
+  margin-top: 7rem;
   position: relative;
+  width: 100%;
   @include media("<=phone") {
     margin-top: 2rem;
   }
