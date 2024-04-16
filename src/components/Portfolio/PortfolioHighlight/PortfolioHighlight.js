@@ -10,7 +10,7 @@ function PortfolioHighlight({apiData}) {
           <div className={style.content__text}>
             <p>{apiData.ClientsSection.Title1}</p>
             <h1>{apiData.ClientsSection.Title2}</h1>
-            <span>{apiData.ClientsSection.Paragraph}</span>
+            <p>{apiData.ClientsSection.Paragraph}</p>
 
           </div>
 

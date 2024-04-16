@@ -57,11 +57,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 2rem;
 
     .project {
-      width: 30%;
-      min-height: 30vh;
       margin-bottom: 3rem;
+      margin-right: 3rem;
+      min-height: 30vh;
+      width: 30%;
       border: 1px solid #0000001A;
       border-radius: 10px;
       @include media("<=phone") {
@@ -70,7 +72,11 @@
         margin-bottom: 1.5rem;
       }
       @include media(">=LGdesktop") {
+        margin-bottom: 3rem;
         margin-right: 3rem;
+        min-height: 30vh;
+        width: 30%;
+    }
       }
     
       .image {
@@ -82,16 +88,17 @@
        
       }
       .text {
-        padding: 1.5rem 16px;
+        padding: 1.5rem 15px;
+
         @include media("<=phone") {
           padding: 10px 0;
         }
         h4 {
-          font-weight: 400;
+          font-family: var(--font-secondary);
           font-size: 15px;
+          font-weight: 400;
           line-height: 21px;
-          margin: 0;
-          margin-bottom: 1rem;
+          margin: 0 0 1rem;
           font-family: var(--font-secondary);
           @include media("<=phone") {
             margin: 0;
@@ -116,10 +123,10 @@
           align-items: center;
           span {
             font-size: 1.3rem;
-            margin-top: 5px;
+            font-weight: 700;
             margin-left: 10px;
-            font-weight: bold;
-            transition: all 0.3s;
+            margin-top: 5px;
+            transition: all .3s;
           }
           &:hover span {
             transform: translateX(7px);
@@ -157,4 +164,4 @@
       }
     }
   }
-}
+
