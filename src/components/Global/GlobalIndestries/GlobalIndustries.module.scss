@@ -53,6 +53,10 @@
     line-height: 20px;
     margin-bottom: 24px;
   }
+  @include media (">=LGdesktop"){
+    width: 49%;
+    
+  }
 }
 
 .industries .industries__text p:nth-child(1) {
@@ -324,7 +328,8 @@
   padding: 1rem;
 
   @include media(">=LGdesktop") {
-   padding: 28px 30px;
+   padding: 22px 30px;
+    
   }
 }
 
