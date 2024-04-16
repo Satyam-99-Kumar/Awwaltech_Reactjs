@@ -2,11 +2,10 @@
 
 .investors {
   width: 100%;
-  padding: 2rem 10rem 6rem 10rem;
+  padding: 2rem 10rem 6rem;
   position: relative;
   @include media("<=phone") {
-    // padding: 0;
-    // padding-top: 2rem;
+
     padding: 2rem 0.5rem 6rem 0.5rem !important;
   }
   @include media("<=tablet") {
@@ -20,10 +19,10 @@
 
   h4 {
     display: block;
-    text-align: center;
-    font-weight: 600;
     font-size: 36px;
-    line-height: 143px;
+    font-weight: 600;
+    line-height: 243px;
+    text-align: center;
     @include media("<=phone") {
       display: none;
     }
