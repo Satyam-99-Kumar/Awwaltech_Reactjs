@@ -20,7 +20,7 @@
     }
   
     &__left {
-      width: 60%;
+      width: 50%;
       display: flex;
       align-items: center;
       color: #fff;
@@ -31,12 +31,12 @@
         padding-bottom: 20px;
       }
       p {
-        // font-weight: 400; 
+        color: #e5e5e5;
+        font-family: var(--font-primary);
         font-size: 26px;
+        font-weight: 600;
         line-height: 36px;
         margin-bottom: 10px;
-        font-family: var(--font-primary);
-        color: #E5E5E5;
       }
       h1 {
         // font-weight: 600;
