@@ -5,6 +5,7 @@
   min-height: 20vh;
   padding: 80px 160px;
   width: 100%;
+  height: 52.42vh;
   @include media("<=phone") {
     // padding: 63px 15px 15px 15px;
     padding: 32px 60px 30px 15px !important;
