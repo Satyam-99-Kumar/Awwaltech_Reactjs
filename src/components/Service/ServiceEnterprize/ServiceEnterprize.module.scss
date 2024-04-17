@@ -101,6 +101,10 @@
         @include media("<=phone") {
           margin-bottom: 24px;
         }
+        @include media(">=LGdesktop") {
+          margin-bottom: 4rem;
+         }
+        
       }
 
       &:hover {

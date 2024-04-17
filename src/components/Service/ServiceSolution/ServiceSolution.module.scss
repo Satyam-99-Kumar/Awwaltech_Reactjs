@@ -59,6 +59,9 @@
               font-size: 15px;
               line-height: 22px;
               color: rgba(0, 0, 0, 0.6);
+              @include media(">=LGdesktop") {
+                
+               }
             }
           }
         }
