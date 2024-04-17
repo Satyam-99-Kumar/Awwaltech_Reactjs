@@ -8,7 +8,7 @@
   }
 
   &__wrapper {
-    padding: 0 100px 0 100px;
+    padding: 0 100px;
 
     @include media("<=phone") {
       padding: 0;
@@ -25,10 +25,7 @@
         padding: 0;
       }
       .content__text {
-        width: 70%;
-        margin: auto;
-        margin-bottom: 20px;
-        text-align: center;
+        margin-bottom: 2rem;
         @include media(">=LGdesktop") {
           margin-bottom: 2rem;
         }
@@ -52,15 +49,13 @@
         }
 
         p {
-          width: 50%;
-          margin: auto;
-          margin-bottom: 1rem;
-          text-align: center;
-          font-size: 15px;
-          font-weight: 500;
-          line-height: 21px;
+          color: rgba(0, 0, 0, .7);
           font-family: var(--font-secondary);
-          color: rgba(0, 0, 0, 0.7);
+          font-size: 15px;
+          line-height: 21px;
+          margin: auto auto 1rem;
+          text-align: center;
+          width: 50%;
 
           &:nth-child(1) {
             color: #808080;
@@ -72,8 +67,13 @@
         }
 
         span {
+          color: rgba(0, 0, 0, .7);
+          font-family: var(--font-secondary);
           font-size: 15px;
-          font-weight: 400;
+          line-height: 21px;
+          margin: auto auto 1rem;
+          text-align: center;
+          width: 50%;
         }
       }
 

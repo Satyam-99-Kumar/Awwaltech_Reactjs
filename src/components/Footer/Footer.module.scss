@@ -1,10 +1,10 @@
 @import "../../styles/breakpoints.scss";
 
 .footer {
-  width: 100%;
-  min-height: 20vh;
   display: flex;
-  padding: 80px 120px 80px 100px !important;
+  min-height: 20vh;
+  padding: 80px 160px;
+  width: 100%;
   @include media("<=phone") {
     // padding: 63px 15px 15px 15px;
     padding: 32px 60px 30px 15px !important;
@@ -19,8 +19,7 @@
   }
 
   @include media(">=LGdesktop") {
-    padding: 87px 160px !important;
-   
+    padding: 80px 160px !important;
   }
 
   h3 {
@@ -36,7 +35,7 @@
     }
 
     @include media(">=LGdesktop") {
-      font-size: 15px;
+      font-size: 14px;
     }
 
   }
@@ -79,7 +78,7 @@
    
       @include media(">=LGdesktop") {
         font-size: 15px;
-        line-height: 20px;
+        line-height: 32px;
       }
     
  
@@ -89,7 +88,8 @@
       display: flex;
       flex-direction: column;
       @include media(">=LGdesktop") {
-        margin-top: 28px;
+        margin-top: 24px;
+
       }
 
       h5 {
@@ -165,16 +165,17 @@
       }
       @include media(">=tablet") {
         font-size: 11px;
-        font-weight: 500;
+       
         letter-spacing: 0px;
       }
       @include media(">=desktop") {
         font-size: 0.9rem;
-        font-weight: 500;
+        
       }
       @include media(">=LGdesktop") {
-        font-size: 15px;
-        font-weight: 500;
+    
+        font-size: 1rem;
+        font-family: var(--font-secondary);
       }
 
 
@@ -189,6 +190,9 @@
 
     @include media (">=tablet"){
       width: 27%;
+    }
+    @include media (">=LGdesktop"){
+      width: 23%;
     }
     a {
       display: block;
@@ -208,17 +212,17 @@
       @include media(">=tablet") {
         font-size: 11px;
 
-        font-weight: 500;
+        
         letter-spacing: 0px;
       }
       @include media(">=desktop") {
         font-size: 0.9rem;
-        font-weight: 500;
+        
       }
  
       @include media(">=LGdesktop") {
-        font-size: 15px;
-        font-weight: 500;
+        font-size: 1rem;
+      font-family: var(--font-secondary);
       }
 
 
@@ -248,16 +252,16 @@
       @include media(">=tablet") {
         font-size: 11px;
 
-        font-weight: 500;
+        
         letter-spacing: 0px;
       }
       @include media(">=desktop") {
         font-size: 0.9rem;
-        font-weight: 500;
+        
       }
       @include media(">=LGdesktop") {
-        font-size: 15px;
-        font-weight: 500;
+        font-size: 1rem;
+        font-family: var(--font-secondary);
       }
 
 
@@ -299,7 +303,7 @@
       margin-top: 10px;
       line-height: 23px;
       @include media(">=desktop") {
-        font-weight: 700;
+        font-weight: 600;
       }
 
       @include media(">=LGdesktop") {
@@ -325,9 +329,10 @@
       }
  
       @include media(">=LGdesktop") {
+        color: #000;
         font-size: 14px;
-      
-        font-weight: 500;
+        font-weight: 400;
+        line-height: 20px;
       }
 
     }
@@ -335,7 +340,7 @@
       color: #147bf3;
       font-size: 20px;
       @include media(">=LGdesktop") {
-        font-size: 25px;
+        font-size: 20px;
       }
     }
    

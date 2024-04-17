@@ -13,7 +13,7 @@
     padding: 4rem 4rem 4rem 6rem;
     @include media("<=phone") {
       width: 100%;
-      padding: 1rem 1rem 1rem 1rem !important;
+      padding: 1rem 1rem 1rem 1rem ;
       // padding: 6rem 70px 5rem 70px;
     }
     @include media(">=tablet") {
@@ -95,26 +95,25 @@
         }
       }
       button {
-        height: 50px;
-        width: 162px;
-        outline: none;
-        border: none;
-        margin-top: 24px;
-        font-family: var(--font-secondary);
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: center;
-        letter-spacing: -0.01em;
-        cursor: pointer;
-        border-radius: 4px;
-        display: flex;
         align-items: center;
-        justify-content: center;
         background-color: #e7f1fe;
-        color: #175fff;
         border: 2px solid #175fff;
-        transition: 0.3s;
+        border-radius: 4px;
+        color: #175fff;
+        cursor: pointer;
+        display: flex;
+        font-family: var(--font-secondary);
+        font-size: 18px;
+        font-weight: 500;
+        height: 50px;
+        justify-content: center;
+        letter-spacing: -.01em;
+        line-height: 21px;
+        margin-top: 24px;
+        outline: none;
+        text-align: center;
+        transition: .3s;
+        width: 162px;
         &:hover {
           background-color: #e7f1fe;
           border: 2px solid #99b9ff;
@@ -132,11 +131,11 @@
       height: 20vh;
     }
     @include media(">=tablet") {
-      width: 50%;
+      width: 45%;
     }
 
     @include media(">=LGdesktop") {
-     height: 50rem;
+      width: 45%;
     }
   }
 }

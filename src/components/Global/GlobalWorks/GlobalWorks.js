@@ -32,6 +32,7 @@ function GlobalWorks({background, apiData}) {
       <div className={style.works__text}>
         <h1>
           {apiData?.result[0]?.RecentWorkSection?.Title1}
+          <span> {apiData?.result[0]?.RecentWorkSection?.Title2}</span>
         </h1>
         <p>{apiData?.result[0]?.RecentWorkSection?.Paragraph}</p>
       </div>
@@ -57,7 +58,7 @@ function GlobalWorks({background, apiData}) {
       </div>
 
       <Link className={style.global} to="/">
-        Veiw all projects{" "}
+        View all projects{" "}
         <span>
           <BsChevronRight />
         </span>

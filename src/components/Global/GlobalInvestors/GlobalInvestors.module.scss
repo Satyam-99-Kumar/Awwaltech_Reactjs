@@ -15,13 +15,20 @@
     justify-content: space-between;
   }
   @include media(">=LGdesktop"){
-    width: 90%;
-    margin: 0 auto;
-  }
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 20vh;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    width: 100%;
 }
+  }
+
 .logos div {
   width: 14%;
-  height: 3rem;
+  height: 4rem;
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
@@ -53,8 +60,6 @@
    
    
   
-    // margin: 0;
-    // margin-bottom: 40px;
   }
   @include media(">=LGdesktop") {
     height: 4rem;

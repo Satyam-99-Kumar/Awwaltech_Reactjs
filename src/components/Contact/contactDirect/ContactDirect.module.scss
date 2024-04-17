@@ -2,52 +2,79 @@
 
 .title {
   text-align: center;
-  
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: -0.3400000035762787px;
+    text-align: center;
+  }
 }
-h1{
-    font-weight: 400;
-}
+
+
+
 .mail {
   color: #165fff;
 }
+
 .card {
-  padding: 10px 10px;
+  padding: 20px 20px;
   width: 406px;
-  height: 145px;
-  @include media("<=phone"){
-    
+  height: 144px;
+  gap: 20px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+  box-shadow: 2px 4px 12px 0px #00000014 !important;
+
+  @include media("<=phone") {
     background-color: red;
   }
 }
+
 .phone {
   padding: 3px 0px;
   font-size: 25px;
   background-color: #61c4e1;
   color: white;
 }
-.insta{
-    color: #FCAF45;
+
+.insta {
+  color: #FCAF45;
 }
-.wrapper{
-    background-color: #eee;
-    padding: 50px 0px;
+
+.wrapper {
+  background-color: #eee;
+  padding: 50px 0px;
+
+  @include media("<=LGdesktop") {
+    margin: 6rem 0rem;
+  }
 }
-.span{
-    margin-top: 8px;
-    margin-bottom: 8px;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 500;
+
+.span {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.0027em;
+  text-align: left;
 }
 
 .span_info {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.0027em;
+  text-align: left;
 }
-.gridmain{
-    margin-top: 40px !important;
-    @include media("<=phone") {
-        padding: 0px 30px;
-        margin-top: 0;
-      }
+
+.gridmain {
+  margin-top: 40px !important;
+
+  @include media("<=phone") {
+    padding: 0px 30px;
+    margin-top: 0;
+  }
 }

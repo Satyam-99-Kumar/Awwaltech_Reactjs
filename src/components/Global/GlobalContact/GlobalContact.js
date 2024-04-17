@@ -28,7 +28,7 @@ function GlobalContact() {
                 <input type="text" value={phone} placeholder="Your Phone" onChange={(e) => setPhone(e.target.value)} />
                 <input type="text" value={budget}  placeholder="Your Budget"onChange={(e) => setBudget(e.target.value)} />
             </div>
-            <textarea rows={5} placeholder="Message" />
+            <textarea rows={10} placeholder="Message" />
             <button>Submit</button>
         </form>
       </div>
