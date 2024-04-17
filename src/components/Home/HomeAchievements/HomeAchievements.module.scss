@@ -70,11 +70,11 @@
 
     @include media(">=LGdesktop") {
       width: 40%;
-      padding: 70px 18px;
+      padding: 65px 18px;
       display: flex;
       margin-left: 45px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
     .block1 {
       width: 45%;
@@ -83,7 +83,7 @@
         flex-wrap: wrap;
       }
       @include media(">=LGdesktop") {
-        width: 44%;
+        width: 43%;
       }
     }
     .block2 {
@@ -94,7 +94,7 @@
         flex-wrap: wrap;
       }
       @include media(">=LGdesktop") {
-        width: 44%;
+        width: 43%;
       }
     }
     .achive {

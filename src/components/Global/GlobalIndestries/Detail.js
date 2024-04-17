@@ -51,3 +51,4 @@ function Detail({ option, data }) {
 }
 
 export default Detail;
+
