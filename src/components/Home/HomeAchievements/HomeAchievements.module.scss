@@ -53,6 +53,7 @@
         width: 95%;
         display: inline-block;
         color: #b2b2b2;
+        font-weight: 500;
       }
     }
   }
@@ -69,12 +70,11 @@
     }
 
     @include media(">=LGdesktop") {
-      width: 40%;
-      padding: 65px 18px;
       display: flex;
-      margin-left: 45px;
-      display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
+      padding: 70px 100px;
+      width: 45%;
+
     }
     .block1 {
       width: 45%;
@@ -83,7 +83,7 @@
         flex-wrap: wrap;
       }
       @include media(">=LGdesktop") {
-        width: 43%;
+        width: 47%;
       }
     }
     .block2 {
@@ -94,7 +94,7 @@
         flex-wrap: wrap;
       }
       @include media(">=LGdesktop") {
-        width: 43%;
+        width: 47%;
       }
     }
     .achive {
