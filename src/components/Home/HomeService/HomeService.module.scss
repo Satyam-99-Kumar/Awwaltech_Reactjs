@@ -34,7 +34,7 @@
         width: 472px;
         margin: auto;
         line-height: 45px;
-        font-size: 35px;
+        font-size: 35.1px;
       }
 
       span {
@@ -117,6 +117,7 @@
 
           @include media(">=LGdesktop") {
             padding: 2rem;
+            width: 86%;
           }
 
           img {

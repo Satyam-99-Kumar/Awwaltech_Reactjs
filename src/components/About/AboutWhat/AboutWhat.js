@@ -26,6 +26,8 @@ function AboutWhat({ data }) {
           <p>{data?.WhatIsMinttaskSection?.Title1}</p>
           <h2>
             <div>{data?.WhatIsMinttaskSection?.Title2}</div>
+            <div>{data?.WhatIsMinttaskSection?.Title3}</div>
+            <div>{data?.WhatIsMinttaskSection?.Title4}</div>
           </h2>
         </div>
         <div className={style.text}>
@@ -43,7 +45,9 @@ function AboutWhat({ data }) {
           <div className={style.text}>
             <p className={style.secondaryHead}>{data?.EnterprisesSection?.Title}</p>
             <h2 className={style.max_size}>
-              {data?.EnterprisesSection?.MainTitle}
+              <div>{data?.EnterprisesSection?.Title1}</div>
+              <div>{data?.EnterprisesSection?.Title2}</div>
+              <div>{data?.EnterprisesSection?.Title3}</div>
             </h2>
 
             {/* mission & vission */}

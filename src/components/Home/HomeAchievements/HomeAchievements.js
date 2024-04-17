@@ -25,7 +25,7 @@ function HomeAchievements({ data }) {
       <div className={style.achievements__achieves}>
       {/* column 1 */}
       <div className={style.block1}>
-        {data?.result[0]?.AchievementsSection?.Achievements.map((achievement, index) => (
+        {data?.result[0]?.AchievementsSection?.Achievements.slice(0,3).map((achievement, index) => (
           <div key={index} className={style.achive}>
             <BsCheckCircle />
             <p>{achievement.Paragraph}</p>
@@ -34,7 +34,7 @@ function HomeAchievements({ data }) {
       </div>
       {/* column 2 */}
       <div className={style.block2}>
-        {data?.result[0]?.AchievementsSection?.Achievements.map((achievement, index) => (
+        {data?.result[0]?.AchievementsSection?.Achievements.slice(-3).map((achievement, index) => (
           <div key={index} className={style.achive}>
             <BsCheckCircle />
             <p>{achievement.Paragraph}</p>

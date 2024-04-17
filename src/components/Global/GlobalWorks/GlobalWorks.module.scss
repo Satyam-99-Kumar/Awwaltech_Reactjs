@@ -197,6 +197,9 @@
     @include media("<=phone") {
       margin-top: 2rem;
     }
+    @include media (">=LGdesktop"){
+      margin-top: -49px;
+    }
     
     span {
       font-size: 1.2rem;

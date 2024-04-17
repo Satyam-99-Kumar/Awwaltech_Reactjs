@@ -22,7 +22,7 @@
     }
 
     @include media(">=LGdesktop") {
-      top: 15.7%;
+      top: 16.9%;
      
      }
 
@@ -42,7 +42,7 @@
         letter-spacing: -0.00304em;
       }
       @include media(">=LGdesktop") {
-        line-height: 57px;
+        line-height: 56px;
        }
     }
     p {
@@ -99,6 +99,10 @@
           width: 100%;
           margin-right: 0;
           margin-bottom: 22px;
+        }
+        @include media(">=LGdesktop") {
+          margin-top: 1px;
+          
         }
 
         &:nth-child(1) {
