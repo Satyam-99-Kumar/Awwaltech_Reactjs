@@ -55,6 +55,7 @@
   }
   @include media (">=LGdesktop"){
     width: 49%;
+    font-weight: normal;
     
   }
 }
@@ -227,8 +228,8 @@
   }
 
   @include media(">=LGdesktop") {
-    height: 62vh;
-    padding: 2rem 1rem 2rem 2rem;
+    height: 56vh;
+    // padding: 2rem 1rem 2rem 2rem;
   }
 }
 
