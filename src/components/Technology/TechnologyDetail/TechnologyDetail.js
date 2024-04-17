@@ -8,9 +8,9 @@ function TechnologyDetail({ apiData }) {
   useEffect(() => {
     // Define image paths
     const imgPaths = [
-      require("../../../assets/Technologies/Startup.png"),
+      require("../../../assets/Technologies/enterprize.png"),
       require("../../../assets/Technologies/netqorks.png"),
-      require("../../../assets/Technologies/enterprize.png")
+      require("../../../assets/Technologies/Startup.png")
     ];
     setImagePaths(imgPaths);
   }, []);
