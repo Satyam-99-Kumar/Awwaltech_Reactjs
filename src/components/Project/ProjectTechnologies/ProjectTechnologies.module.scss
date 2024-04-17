@@ -1,3 +1,6 @@
+@import "../../../styles/breakpoints.scss";
+
+
 .tech {
   width: 100%;
   min-height: fit-content;
@@ -22,9 +25,18 @@
       line-height: 21px;
       font-weight: 400;
       font-family: var(--font-secondary);
+      @include media(">=LGdesktop") {
+        font-family: var(--font-secondary);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        margin: auto auto 1rem;
+        text-align: center;
+        width: 45%;
+      }
     }
     @media (min-width: 280px) and (max-width: 700px) {
-      p{
+      p {
         width: 100%;
       }
     }
@@ -36,11 +48,17 @@
     margin-top: 123px;
     margin-bottom: 123px;
     margin-left: -4%;
+    @include media(">=LGdesktop"){
+     
+    }
     .slide {
       width: 100%;
       // padding: 0 2rem;
       display: flex;
       justify-content: center;
+      @include media (">=LGdesktop"){
+        padding: 0px 2.5rem;
+      }
       .wrap {
         width: calc(100% - 13px);
         border: 2px solid rgba(0, 0, 0, 0.2);
@@ -49,6 +67,17 @@
         flex-direction: column;
         align-items: center;
         padding: 12px 0;
+        @include media (">=LGdesktop"){
+          align-items: center;
+          border: 2px solid rgba(0, 0, 0, .2);
+          border-radius: 9px;
+          display: flex;
+          flex-direction: column;
+          padding: 24px 0;
+          // width: calc(100% - 13px);
+          width: 323px;
+          height: 215px;
+        }
         .image {
           width: 100px;
           height: 100px;

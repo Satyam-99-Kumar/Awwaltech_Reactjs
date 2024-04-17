@@ -64,30 +64,31 @@
       padding: 15px;
       flex-wrap: wrap;
     }
-    @include media(">=LGdesktop") {
-      width: 45%;
-      padding: 60px 60px;
-      display: flex;
+    @include media (">=LGdesktop"){
+      width: 40%;
+      margin-left: 49px;
       justify-content: space-around;
+      
+      
     }
     .block1 {
       width: 49%;
       @include media("<=phone") {
         width: 100%;
+        margin-top: -20px;
       }
-      @include media(">=LGdesktop") {
-       width: 47%;
+      @include media (">=LGdesktop"){
+        width: 44%;
       }
     }
     .block2 {
-      width:49%;
+      width:47%;
       @include media("<=phone") {
         width: 100%;
       }
-
-      @include media(">=LGdesktop") {
-        width: 47%;
-       }
+      @include media (">=LGdesktop"){
+        width: 44%;
+      }
     }
     .achive {
       width: 100%;
@@ -97,14 +98,13 @@
       transition: 0.3s;
 
       &:not(:last-child) {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         @include media("<=phone") {
           margin-bottom: 24px;
         }
-        @include media(">=LGdesktop") {
-          margin-bottom: 4rem;
-         }
-        
+        @include media (">=LGdesktop"){
+          padding: 1.5rem 1.5rem 2.5rem;
+        }
       }
 
       &:hover {
