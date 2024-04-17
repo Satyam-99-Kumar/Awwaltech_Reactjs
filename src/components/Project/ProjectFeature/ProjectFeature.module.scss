@@ -1,3 +1,5 @@
+@import "../../../styles/breakpoints.scss";
+
 .feature {
   width: 100%;
   min-height: fit-content;
@@ -26,6 +28,16 @@
       line-height: 21px;
       font-weight: 400;
       font-family: var(--font-secondary);
+      @include media(">=LGdesktop") {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 15px;
+        line-height: 21px;
+        font-weight: 400;
+        font-family: var(--font-secondary);
+      }
     }
   }
 
@@ -33,12 +45,16 @@
     width: 90%;
     // padding: 80px 100px;
     margin: auto;
+    @include media (">=LGdesktop"){
+      padding: 80px 100px;
+      width: 100%;
+    }
 
     .block {
       display: flex;
       align-items: center;
       justify-content: space-between;
-     
+
       &:not(:last-child) {
         margin-bottom: 24px;
       }
@@ -73,26 +89,20 @@
           color: #333333;
           padding-left: 12px;
           border-left: 1px solid rgba(0, 0, 0, 0.2);
-
         }
       }
 
       @media (min-width: 280px) and (max-width: 700px) {
-
-
         .item {
-
           width: calc(100%);
         }
       }
     }
-
   }
-
 }
 
 @media (min-width: 280px) and (max-width: 700px) {
-  .block{
+  .block {
     display: block !important;
   }
 }
