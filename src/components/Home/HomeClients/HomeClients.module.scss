@@ -7,9 +7,9 @@
   background: #f5f5f7;
 
   &__text {
+    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 60px;
-    width: 50%;
-    margin: auto;
 
     // margin-top: 62px;
     @include media("<=phone") {
@@ -23,7 +23,6 @@
       margin-bottom: 1rem;
       font-size: 36px;
       line-height: 42px;
-      font-weight: 600px;
       letter-spacing: -0.34px;
 
       @include media("<=phone") {
@@ -31,22 +30,19 @@
         line-height: 36px;
         letter-spacing: -1px;
       }
-      @include media (">=LGdesktop"){
+      @include media(">=LGdesktop") {
         font-weight: 700;
       }
     }
 
     p {
-      width: 60%;
-      margin: auto;
-      margin-bottom: 1rem;
-      text-align: center;
-      font-size: 15px;
-      line-height: 21px;
-      font-weight: 500;
-      color: #808080;
-
       font-family: var(--font-secondary);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      margin: auto auto 1rem;
+      text-align: center;
+      width: 50%;
 
       @include media("<=phone") {
         width: 100%;
@@ -55,27 +51,27 @@
         line-height: 20px;
         margin-bottom: 24px;
       }
-      
     }
 
-    span {
+    p {
+      font-family: var(--font-secondary);
       font-size: 15px;
       font-weight: 400;
-    }
-    @include media (">=LGdesktop"){
-      width: 43%;
+      line-height: 21px;
+      margin: auto auto 1rem;
       text-align: center;
-      font-weight: 600;
-      
-      
+      width: 50%;
+      display: block;
+    }
+    @include media(">=LGdesktop") {
     }
   }
 
   .padding {
-    font-weight: 400;
-    font-size: 18px;
+    // font-size: 18px;
+    // line-height: 21px;
     @include media(">=LGdesktop") {
-      margin-left: 18px;
+      
     }
   }
 
@@ -108,26 +104,24 @@
       @include media("<=phone") {
         width: 350%;
       }
-      @include media (">=LGdesktop"){
-        gap: 75px;
+      @include media(">=LGdesktop") {
       }
     }
 
     .option {
-      width: 25%;
-      margin-left: 20px;
-      display: flex;
       align-items: center;
-      padding: 10px 40px 10px 10px;
-      background: linear-gradient(0deg, #ffffff, #ffffff), #0b2845;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(0deg, #fff, #fff), #0b2845;
       border: 1px solid transparent;
       border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      display: flex;
       font-family: var(--font-secondary);
       font-size: 18px;
       line-height: 21px;
-      cursor: pointer;
+      padding: 1rem 2rem;
       transition: 0.3s;
+      width: 20%;
 
       &:hover {
         border: 1px solid rgba(0, 0, 0, 0.2);
@@ -138,23 +132,17 @@
       }
 
       @include media(">=LGdesktop") {
-        font-size: 18px;
-        line-height: 21px;
-        padding: 1rem 2rem;
-        width: 21%;
       }
 
       div:first-child {
-        display: flex;
         align-items: center;
+        display: flex;
+        font-size: 18px;
         justify-content: center;
-        margin-right: 5px;
-        font-size: 30px;
-        @include media (">=LGdesktop"){
-          font-size: 20px;
+        margin-right: 24px;
+        @include media(">=LGdesktop") {
         }
       }
-      
     }
 
     .option.active {
@@ -164,11 +152,10 @@
 
   .enterprize {
     display: flex;
-    padding-left: 140px;
-    padding-right: 140px;
-    padding-bottom: 8rem;
     margin-top: 4rem;
-
+    padding-bottom: 4rem;
+    padding-left: 100px;
+    padding-right: 100px;
     @include media("<=phone") {
       flex-wrap: wrap;
       padding-left: 15px;
@@ -185,7 +172,8 @@
       }
 
       .slider {
-        width: 100%;
+        height: 35vh;
+    width: 80%;
 
         // height: 25vh;
         @include media("<=phone") {
@@ -193,11 +181,9 @@
         }
 
         &__container {
-
-          // height: 35vh;
+          height: 35vh;
           img {
-
-            // height: 35vh;
+            height: 35vh;
             @include media("<=phone") {
               height: 35vh;
               width: 100%;
@@ -215,19 +201,18 @@
 
     .content {
       width: 75%;
-      margin-left: 25px;
+      
 
       @include media("<=phone") {
         width: 100%;
       }
 
       h3 {
-        font-size: 21px;
         color: #175fff;
-        margin-bottom: 24px;
         font-size: 21px;
         font-weight: 500;
         line-height: 26px;
+        margin-bottom: 24px;
 
         @include media("<=phone") {
           margin-bottom: 0;
@@ -253,11 +238,14 @@
           }
 
           h4 {
-            font-size: 18px !important;
-            line-height: 21px;
-            font-weight: 500;
+            color: rgba(0, 0, 0, .7) !important;
+            font-size: 18px;
             font-size: var(--font-secondary);
-            color: rgba(0, 0, 0, 0.7) !important;
+            font-weight: 500;
+            line-height: 21px;
+            font-family: var(--fonr-secondary);
+            font-style: normal;
+            letter-spacing: -.01em;
 
             @include media("<=phone") {
               margin: -10px 0 10px 0;
