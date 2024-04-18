@@ -27,14 +27,15 @@ ul {
   margin-top: 10px;
   list-style: none;
   li {
+    color: rgba(0, 0, 0, .6);
     font-family: var(--fonr-primary);
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    // line-height: 44px;
-    letter-spacing: -3.12962e-5em;
-    color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 1px;
+    letter-spacing: -.0000312962em;
+    line-height: 44px;
+    margin-bottom: 5px;
+}
 
     @include media(">=LGdesktop") {
       margin-bottom: 5px;
@@ -42,7 +43,7 @@ ul {
   }
 
 
-}
+
 .desc {
   margin-bottom: 36px;
 }
