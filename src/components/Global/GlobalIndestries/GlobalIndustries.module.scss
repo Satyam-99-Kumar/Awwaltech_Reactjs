@@ -99,6 +99,10 @@
   // padding-right: 4rem;
   margin-top: -1rem;
   // display: none;
+  @include media(">=LGdesktop") {
+    height: 47vh;
+
+  }
 }
 
 .optionSliderForMobile {
@@ -198,7 +202,7 @@
   }
 
   @include media(">=LGdesktop") {
-    top: 66vh;
+    top: 65vh;
     left: 16rem;
 
   }
@@ -228,7 +232,7 @@
   }
 
   @include media(">=LGdesktop") {
-    height: 56vh;
+    height: 59.8vh;
     // padding: 2rem 1rem 2rem 2rem;
   }
 }

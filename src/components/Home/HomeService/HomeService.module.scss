@@ -31,10 +31,11 @@
         letter-spacing: -1px;
       }
       @include media(">=LGdesktop"){
-        width: 472px;
-        margin: auto;
-        line-height: 45px;
-        font-size: 35.1px;
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 2.8rem;
+        margin-bottom: 1rem;
+        text-align: center;
       }
 
       span {
@@ -85,7 +86,7 @@
 
     .slider {
       width: 120%;
-      margin-left: -8%;
+      margin-left: -6.3%;
 
       @include media("<=phone") {
         width: 250%;
@@ -117,7 +118,8 @@
 
           @include media(">=LGdesktop") {
             padding: 2rem;
-            width: 86%;
+            width: 85.99%;
+            margin-bottom: 10px;
           }
 
           img {
@@ -137,14 +139,14 @@
             font-weight: 500;
             letter-spacing: -0.00272em;
             margin-bottom: 14px;
-            color: #5a5757;
+            color: #231F20;
           }
 
           p {
             font-family: var(--font-secondary);
             font-size: 15px;
             line-height: 21px;
-            color: #5a5757;
+            color: #231F20;
             font-weight: 400;
             text-align: left;
 
