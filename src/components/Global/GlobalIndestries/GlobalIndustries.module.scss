@@ -301,10 +301,10 @@
 }
 
 .content .content__detail .wrapper .heading span {
-  width: 30px;
-  font-size: 24px;
+  font-size: 1.2rem;
+  font-family: var(--font-primary);
   @include media(">=LGdesktop") {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
