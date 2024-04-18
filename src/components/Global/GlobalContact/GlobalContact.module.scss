@@ -52,6 +52,10 @@
       @include media("<=phone") {
         width: 100%;
       }
+      @include media("<=LGdesktop"){
+        font-size: 15px;
+        line-height: 21px;
+      }
     }
     form {
       width: 100%;
