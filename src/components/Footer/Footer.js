@@ -19,27 +19,34 @@ function Footer() {
           <div className={style.info}>
 
             <div className={style.icon}>
-              <img src={contact} alt=""></img>
-              <p className={style.infoTxt}>+1 452 123 2131</p>
+              {/* <img src={contact} alt=""></img>
+              <p className={style.infoTxt}>+1 452 123 2131</p> */}
             </div>
-            {/* <p className={style.infoTxt}>+1 452 123 2131</p> */}
+            <span>Email</span>
+            <p className={style.infoTxt}>nfo@technologies.in</p>
           </div>
           <div className={style.info}>
 
-            <div className={style.icon2}>
+            {/* <div className={style.icon2}>
               <img src={mail} alt=""></img>
               <p className={style.infoTxt}>nfo@technologies.in</p>
-            </div>
+            </div> */}
+
+            <span>Contact</span>
+            <p className={style.infoTxt}>+1 452 123 2131</p>
+            <p className={style.infoTxt}>+1 452 123 2131</p>
           </div>
 
 
           <div className={style.info}>
 
-            <div className={style.icon}>
+            {/* <div className={style.icon}>
               <img className={style.skype} src={skype} alt=""></img>
               <p className={style.infoTxt}>minttask</p>
-            </div>
-            {/* <p className={style.infoTxt}>Sit a at rhoncus a nisl.</p> */}
+            </div> */}
+            <span>Products</span>
+            <p className={style.infoTxt}>Sit a at rhoncus a nisl.</p>
+            <p className={style.infoTxt}>Sit a at rhoncus a nisl.</p>
           </div>
         </div>
         <div className={style.footer__two}>
@@ -50,7 +57,7 @@ function Footer() {
           <Link to="/portfolio">Portfolio</Link>
           <Link to="/blog">Blog</Link>
           <Link to="/technologies">Technologies</Link>
-          <Link to="/career">Career</Link>
+          {/* <Link to="/career">Career</Link> */}
         </div>
         <div className={style.footer__three}>
           <h3>Services</h3>
