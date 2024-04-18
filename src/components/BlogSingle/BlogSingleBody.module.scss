@@ -1,3 +1,5 @@
+@import "../.././styles/breakpoints.scss";
+
 .blogBody {
   width: 100%;
   overflow: hidden;
@@ -11,6 +13,10 @@
     letter-spacing: -0.34px;
     color: #000000;
     margin-bottom: 20px;
+    @include media (">=LGdesktop"){
+      // margin-bottom: 25px;
+      margin-bottom: 24px;
+    }
   }
 
   p.txt {
@@ -22,28 +28,48 @@
     letter-spacing: -0.000793565em;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
+    @include media(">=LGdesktop") {
+      color: rgba(0, 0, 0, 0.7);
+      font-family: var(--font-secondary);
+      font-size: 13.9px;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: -0.000793565em;
+      line-height: 23px;
+      width: 113%;
+      margin-bottom: 16px;
+      // margin-bottom: 20px;
+      
+    }
   }
 
   //   TEXT BLOCK
   .text {
     width: 90%;
-    margin: 100px auto;
-
+   padding: 100px;
+    @include media(">=LGdesktop") {
+      
+      
+    }
   }
-  
 
   //   IMAGE BLOCK
   .imageBlock {
     width: 100%;
     height: 80vh;
+    @include media(">=LGdesktop"){
+      height: 85vh;
+    }
   }
 
   .imageBlock1 {
-    background: url(../../assets/Blog/Single/2.png) no-repeat center center / cover;
+    background: url(../../assets/Blog/Single/2.png) no-repeat center center /
+      cover;
   }
 
   .imageBlock2 {
-    background: url(../../assets/Blog/Single/4.png) no-repeat center center / cover;
+    background: url(../../assets/Blog/Single/4.png) no-repeat center center /
+      cover;
     margin-top: 40px;
   }
 
@@ -55,16 +81,28 @@
     margin: auto;
     gap: 51px;
     padding-bottom: 50px;
-
+    @include media (">=LGdesktop"){
+      display: flex;
+      justify-content: space-between;
+      padding: 0 100px;
+      width: 100%;
+    }
 
     // padding: 0 100px;
     &__image {
       width: calc(50%);
       margin: 10px;
+      @include media (">=LGdesktop"){
+        width: calc(50% - 32px);
+      }
 
       img {
         width: 100%;
         margin-top: 30px;
+        @include media (">=LGdesktop"){
+          width: 100%;
+          margin-top: 0;
+        }
       }
     }
 
@@ -72,20 +110,30 @@
       width: calc(50%);
       margin-top: 10px;
       font-size: 30px;
+      @include media (">=LGdesktop"){
+        width: calc(50% - 32px);
+      }
     }
+  }
+  .divider h4{
+    font-family: var(--font-primary);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -.34px;
+    line-height: 42px;
   }
 
   @media (min-width: 280px) and (max-width: 700px) {
-    .imageBlock{
+    .imageBlock {
       height: 35vh;
     }
-    .text{
+    .text {
       margin: 50px auto;
     }
     .divider {
       width: 100%;
       display: block;
-      
 
       &__image {
         width: calc(100%);
@@ -106,14 +154,24 @@
 
 // A PROJECT
 .aproject {
-  width: 90%;
-  margin: auto;
+  // width: 90%;
+  padding: 100px;
+  @include media(">=LGdesktop"){
+    padding: 100px;
+    margin-top: -100px;
+  }
 
   .wrapper {
     width: 100%;
     padding: 2rem 0rem;
     display: flex;
     background: #f7f8fa;
+    @include media (">=LGdesktop"){
+      background: #f7f8fa;
+      display: flex;
+      padding: 2rem;
+      width: 100%;
+    }
 
     &__left {
       width: 40%;
@@ -161,6 +219,10 @@
         font-size: 15px;
         line-height: 21px;
         font-family: var(--font-secondary);
+        @include media (">=LGdesktop"){
+         
+          width: 100%;
+        }
       }
 
       a {
@@ -179,8 +241,6 @@
         }
       }
     }
-
-
   }
 
   @media (min-width: 280px) and (max-width: 700px) {
