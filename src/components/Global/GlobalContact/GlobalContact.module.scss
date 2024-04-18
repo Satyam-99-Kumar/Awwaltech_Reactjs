@@ -22,8 +22,8 @@
       
     }
     @include media(">=LGdesktop") {
-     padding: 6rem 110px 5rem;
-     width: 60%;
+      padding: 6rem 110px 5rem;
+      width: 55%;
       
     }
   
@@ -44,11 +44,11 @@
       }
     }
     p {
-      width: 80%;
-      font-size: 20px;
-      line-height: 23px;
       color: #f2f2f2;
       font-family: var(--font-secondary);
+      font-size: 20px;
+      line-height: 23.5px;
+      width: 80%;
       @include media("<=phone") {
         width: 100%;
       }
