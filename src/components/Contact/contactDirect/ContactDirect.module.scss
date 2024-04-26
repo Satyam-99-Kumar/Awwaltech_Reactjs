@@ -75,6 +75,7 @@
   justify-content: center;
   gap: 70px;
   margin: auto;
+
   
 
   @include media("<=phone") {
@@ -87,6 +88,15 @@
   flex-basis: 25%;
   flex-grow: 0;
   max-width: 30%;
+  @include media("<=phone") {
+    max-width: 100%;
+  }
+  @include media(">=tablet") {
+    max-width: 50%;
+  }
+  @include media(">=LGdesktop") {
+    max-width: 30%;
+  }
 }
 
 // box-sizing: border-box;

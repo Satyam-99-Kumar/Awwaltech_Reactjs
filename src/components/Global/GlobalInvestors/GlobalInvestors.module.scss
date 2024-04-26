@@ -14,6 +14,11 @@
     padding-right: 15px;
     justify-content: space-between;
   }
+  @include media (">=tablet"){
+
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
   @include media(">=LGdesktop"){
     align-items: center;
     display: flex;

@@ -59,14 +59,15 @@
       font-weight: bold;
       color: var(--white-color);
       margin: 21px 0;
-      @include media(">=tablet") {
-  
-        font-size: 45px;
-      }
+    
       @include media("<=phone") {
         font-size: 28px;
         margin: 5px 0;
         line-height: 44px;
+      }
+      @include media(">=tablet") {
+  
+        font-size: 48px;
       }
       @include media(">=LGdesktop") {
         font-size: 48px;
