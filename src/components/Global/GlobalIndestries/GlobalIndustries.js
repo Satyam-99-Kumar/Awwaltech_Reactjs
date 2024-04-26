@@ -82,13 +82,13 @@ function GlobalIndustries({ data, apiData }) {
           <Slider {...settings} className={style.content__options} ref={slider}>
             {apiData?.result[0]?.IndustriesSection.Industries?.map((data, index) => (
               <div 
-                key={index}
+                key={index+1}
                 className={
-                  option === index
+                  option === index+1
                     ? `${style.option} ${style.active}`
                     : `${style.option}`
                 }
-                onClick={() => handleClick(index)}>
+                onClick={() => handleClick(index+1)}>
                 <div className={style.optionWrapper}>
                   {/* <div className={style.logo}>{data.optionLogo}</div> */}
                   <div className={style.logo}><LibraryAddCheckIcon /> </div>

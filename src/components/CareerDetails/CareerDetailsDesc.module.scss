@@ -5,13 +5,15 @@ h4 {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
-  letter-spacing: -.01em;
   line-height: 21px;
-  margin-top: 35px;
-  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+  color: rgba(0, 0, 0, 0.8);
+  // margin-bottom: 24px;
+  @include media(">=LGdesktop") {
+    margin-top: 35px;
+    margin-bottom: 24px;
+  }
 }
-
 p {
   font-family: var(--fonr-secondary);
   font-style: normal;
@@ -25,21 +27,22 @@ ul {
   margin-top: 10px;
   list-style: none;
   li {
-    color: rgba(0, 0, 0, 0.6);
     font-family: var(--fonr-primary);
-    font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    letter-spacing: -0.0000312962em;
-    line-height: 44px;
-    margin-bottom: 5px;
+    font-size: 14px;
+    // line-height: 44px;
+    letter-spacing: -3.12962e-5em;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 1px;
+
+    @include media(">=LGdesktop") {
+      margin-bottom: 11px;
+    }
   }
 
-  @include media(">=LGdesktop") {
-  
-  }
+
 }
-
 .desc {
   margin-bottom: 36px;
 }

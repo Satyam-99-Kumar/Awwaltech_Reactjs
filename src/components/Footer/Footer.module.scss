@@ -79,7 +79,7 @@
       @include media(">=LGdesktop") {
         font-size: 15px;
         line-height: 21px;
-        width: 73%;
+        width: 68%;
       }
     
  
@@ -108,6 +108,13 @@
         }
       }
 
+      span {
+        font-weight: 700;
+        @include media(">=LGdesktop") {
+          font-size: 13px;
+        }
+      }
+
       .icon , .icon2{
         display: flex !important;
         gap: 6px !important;
@@ -125,7 +132,8 @@
           font-size: 15px;
         }
         @include media(">=LGdesktop") {
-          font-size: 15px;
+          font-size: 12px;
+          padding-top: 3px;
         }
     
 
@@ -357,6 +365,16 @@
   @include media("<=phone") {
     text-align: center;
   }
+
+  p{
+      @include media(">=LGdesktop") {
+    font-size: 11px !important;
+  }
+  }
+
+  // @include media(">=LGdesktop") {
+  //   font-size: 5px !important;
+  // }
 }
 
 .icon > img {
