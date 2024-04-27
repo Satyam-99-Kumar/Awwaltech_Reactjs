@@ -1,41 +1,31 @@
-import React, { useEffect, useState } from "react";
-// import PorfolioAproject from '../../components/Portfolio/PorfolioAproject/PorfolioAproject'
-import PortfolioBanner from "../../components/Portfolio/PortfolioBanner/PortfolioBanner";
-// import PortfolioClients from '../../components/Portfolio/PortfolioClients/PortfolioClients'
-import PortfolioHighlight from "../../components/Portfolio/PortfolioHighlight/PortfolioHighlight";
-import PortfolioProjects from "../../components/Portfolio/PortfolioProjects/PortfolioProjects";
-import PortfolioTalk from "../../components/Portfolio/PortfolioTalk/PortfolioTalk";
-import HomeFeedback from "../../components/Home/HomeFeedback/HomeFeedback";
-import Footer from "../../components/Footer/Footer";
+import React, { Suspense, lazy, useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
+import PortfolioBanner from "../../components/Portfolio/PortfolioBanner/PortfolioBanner";
+import PortfolioProjects from "../../components/Portfolio/PortfolioProjects/PortfolioProjects";
+import HomeFeedback from "../../components/Home/HomeFeedback/HomeFeedback";
+import PortfolioTalk from "../../components/Portfolio/PortfolioTalk/PortfolioTalk";
+import Footer from "../../components/Footer/Footer";
 import { fetchPortfolioData } from "../../config/apiService";
+
+// Import PortfolioHighlight using React.lazy
+const PortfolioHighlight = lazy(() => import("../../components/Portfolio/PortfolioHighlight/PortfolioHighlight"));
 
 function Portfolio() {
   const [apiData, setApiData] = useState(null);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
   useEffect(() => {
-    window.scrollTo(0, 0);
-    const fetchDataFromAPI = async () => {
-      try {
-        const result = await fetchPortfolioData();
-        setApiData(result.result[0]);
-        setLoading(false);
-        document.title = "Portfolio";
-        document
-          .querySelector('meta[name="description"]')
-          .setAttribute("content", "Learn Portfolio");
-      } catch (error) {
-        setError(error);
-        setLoading(false);
-      }
-    };
     fetchDataFromAPI();
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+  const fetchDataFromAPI = async () => {
+    try {
+      const result = await fetchPortfolioData();
+      setApiData(result?.result[0]);
+    } catch (error) {
+      setError(error);
+    }
+  };
 
   if (error) {
     return <div>Error: {error.message}</div>;
@@ -44,14 +34,19 @@ function Portfolio() {
   return (
     <>
       <Navbar />
-      <PortfolioBanner data={apiData} />
-      {/* <PortfolioClients  /> */}
-      {/* <PorfolioAproject data={apiData} /> */}
-   <PortfolioProjects apiData={apiData} />
-   <PortfolioHighlight apiData={apiData} />
-      <HomeFeedback background={`#fff`} />
-       <PortfolioTalk />
-       <Footer />
+      {apiData && (
+        <>
+          <PortfolioBanner data={apiData} />
+          <PortfolioProjects apiData={apiData} />
+          {/* Wrap PortfolioHighlight with Suspense and fallback */}
+          <Suspense fallback={<div>Loading...</div>}>
+            <PortfolioHighlight apiData={apiData} />
+          </Suspense>
+          <HomeFeedback background={`#fff`} />
+          <PortfolioTalk />
+          <Footer />
+        </>
+      )}
     </>
   );
 }

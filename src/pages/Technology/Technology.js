@@ -1,12 +1,7 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
-// import { data } from "../../components/Technology/TechnologyTech/Data";
-import TechnologyBanner from "../../components/Technology/TechnologyBanner/TechnologyBanner";
-import TechnologyDetail from "../../components/Technology/TechnologyDetail/TechnologyDetail";
-import TechnologyTech from "../../components/Technology/TechnologyTech/TechnologyTech";
 import PortfolioTalk from '../../components/Portfolio/PortfolioTalk/PortfolioTalk';
-import { fetchTechnologyData } from '../../config/apiService';
 
 function Technology() {
   const [apiData, setApiData] = useState(null);
@@ -16,6 +11,8 @@ function Technology() {
     window.scrollTo(0,0);
     const fetchDataFromAPI = async () => {
       try {
+        // Dynamically import the fetchTechnologyData function
+        const { fetchTechnologyData } = await import('../../config/apiService');
         const result = await fetchTechnologyData();
         setApiData(result.result[0]);
         setLoading(false);
@@ -37,12 +34,19 @@ function Technology() {
     return <div>Error: {error.message}</div>;
   }
 
+  // Dynamically import components using React.lazy
+  const TechnologyBanner = React.lazy(() => import("../../components/Technology/TechnologyBanner/TechnologyBanner"));
+  const TechnologyDetail = React.lazy(() => import("../../components/Technology/TechnologyDetail/TechnologyDetail"));
+  const TechnologyTech = React.lazy(() => import("../../components/Technology/TechnologyTech/TechnologyTech"));
+
   return (
     <>
       <Navbar />
-      <TechnologyBanner apiData={apiData} />
-      <TechnologyDetail apiData={apiData} />
-      { apiData.TechnologyTech.map(tech => <TechnologyTech key={tech._id} tech={tech} />)}
+      <React.Suspense fallback={<div>Loading...</div>}>
+        <TechnologyBanner apiData={apiData} />
+        <TechnologyDetail apiData={apiData} />
+        {apiData.TechnologyTech.map(tech => <TechnologyTech key={tech._id} tech={tech} />)}
+      </React.Suspense>
       <PortfolioTalk />
       <Footer />
     </>

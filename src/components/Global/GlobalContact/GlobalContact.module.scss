@@ -17,8 +17,8 @@
       // padding: 6rem 70px 5rem 70px;
     }
     @include media(">=tablet") {
-      // padding: 6rem 70px 5rem 70px;
-      padding: 2rem 20px 2rem 20px;
+      padding: 6rem 110px 5rem;
+      width: 55%;
       
     }
     @include media(">=LGdesktop") {

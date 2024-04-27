@@ -1,15 +1,13 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import Slider from "react-slick/lib/slider";
 import FeedBack from "./FeedBack";
 import style from "./HomeFeedback.module.scss";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import "./slickStyle.scss";
-import { useState, useEffect } from "react";
 import { fetchClientFeedbackData } from '../../../config/apiService';
 
-function HomeFeedback({background}) {
+function HomeFeedback({ background }) {
   const [apiData, setApiData] = useState(null);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const slider = useRef(null);
   const settings = {
@@ -23,44 +21,46 @@ function HomeFeedback({background}) {
     centerMode: true,
     centerPadding: "0",
   };
+
   useEffect(() => {
-    window.scrollTo(0, 0);
+    let isMounted = true; // Flag to track whether the component is mounted
     const fetchDataFromAPI = async () => {
       try {
         const result = await fetchClientFeedbackData();
-        setApiData(result?.result[0]);
-        setLoading(false);
+        if (isMounted) {
+          setApiData(result?.result[0]);
+        }
       } catch (error) {
-        setError(error);
-        setLoading(false);
+        if (isMounted) {
+          setError(error);
+        }
       }
     };
-    fetchDataFromAPI();
-  }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+    fetchDataFromAPI();
+
+    return () => {
+      isMounted = false; // Set the flag to false when component is unmounted
+    };
+  }, []);
 
   if (error) {
     return <div>Error: {error.message}</div>;
   }
 
-
-
   return (
-    <div className={style.feedback} style={{background: background}}>
+    <div className={style.feedback} style={{ background: background }}>
       <div className={style.feedback__text}>
-        <p>{apiData?.ClientFeedbackSection?.Title1}</p>
+        <p>{apiData?.ClientFeedbackSection?.TitleTag}</p>
         <h1>{apiData?.ClientFeedbackSection?.Title2}</h1>
         <p>{apiData?.ClientFeedbackSection?.Paragraph}</p>
       </div>
 
       <div className={style.slider}>
         <Slider className={style.allFeedBacks} {...settings} ref={slider}>
-        {apiData?.ClientFeedbackSection?.CilentFeedback?.map((item, index) => (
-          <FeedBack item={item} background={background} />
-        ))}
+          {apiData?.ClientFeedbackSection?.CilentFeedback?.map((item, index) => (
+            <FeedBack key={index} item={item} background={background} />
+          ))}
         </Slider>
 
         <div
