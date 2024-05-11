@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 // Styles
 import styles from "./Navbar.module.scss";
-import logoImage from "../../assets/Group.svg";
-import logoImage2 from "../../assets/Footer/Group.svg";
+import logoImage from "../../assets/logo.png";
+import logoImage2 from "../../assets/logo.png";
 import { BsChevronDown, BsCodeSquare, BsCart, BsHexagon } from "react-icons/bs";
 import { AiOutlineMobile } from "react-icons/ai";
 import { MdSettingsInputSvideo } from "react-icons/md";
@@ -47,7 +47,7 @@ function Nav({ drawerToggleClickHnadler }) {
   return (
     <div className={!open ? `${styles.nav}` : `${styles.nav} ${styles.navOpen}`}>
       <div className={styles.nav__brand}>
-        <Link to="/">{!open ? <img src={logoImage} alt="" /> : <img src={logoImage2} alt="" /> }</Link>
+        <Link to="/">{!open ? <img src={logoImage} alt="" width={200} /> : <img src={logoImage2} alt="" width={200} /> }</Link>
       </div>
 
       <div className={styles.nav__links}>
@@ -125,7 +125,7 @@ function Nav({ drawerToggleClickHnadler }) {
         <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/hire">
           <div className={styles.barier}>Hire Developers</div>
         </NavLink>
-        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/about">
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/aboutus">
           <div className={styles.barier}>About us</div>
         </NavLink>
         <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/portfolio">
@@ -137,7 +137,7 @@ function Nav({ drawerToggleClickHnadler }) {
         <NavLink className={(navData) => (navData.isActive ? styles.activeLink : ``)} to="/technologies">
           <div className={styles.barier}>Technologies</div>
         </NavLink>
-        <NavLink className={(navData) => (navData.isActive ? styles.activeLinkContact : ``)} to="/contact">
+        <NavLink className={(navData) => (navData.isActive ? styles.activeLinkContact : ``)} to="/contactus">
         <div className={styles.barier}>Contact</div>
         </NavLink>
         <DrawerTogglerButton click={drawerToggleClickHnadler} />

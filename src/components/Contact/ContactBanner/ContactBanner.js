@@ -8,7 +8,7 @@ function ContactBanner() {
         <h3>Contact us</h3>
         <h1>
           <div>Get started</div>
-          <div>with Minttask</div>
+          <div>with Awwaltech</div>
         </h1>
         <p>
           Wish to connect with us? We will be happy to hear from you. Fill this
@@ -17,7 +17,7 @@ function ContactBanner() {
       </div>
 
       <div className={style.banner__right}>
-          <Link to="/contact">Get a quote</Link>
+          <Link to="/contactus">Get a quote</Link>
       </div>
     </div>
   );

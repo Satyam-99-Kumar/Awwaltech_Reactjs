@@ -76,7 +76,7 @@ function AboutEnterprize({data}) {
       </div>
 
       <div className={style.globalLink}>
-        <Link to="/about">Lets work together</Link>
+        <Link to="/aboutus">Lets work together</Link>
       </div>
     </div>
   );

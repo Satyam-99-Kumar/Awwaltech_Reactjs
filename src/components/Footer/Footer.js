@@ -1,8 +1,5 @@
 import style from "./Footer.module.scss";
-import logo from "../../assets/Footer/Group.svg";
-import mail from "../../assets/Footer/Vector (1).png";
-import contact from "../../assets/Footer/Vector.png";
-import skype from "../../assets/Footer/Skype-Emblem 1.png";
+import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import { GoLocation } from "react-icons/go";
 
@@ -13,8 +10,7 @@ function Footer() {
         <div className={style.footer__one}>
           <img src={logo} alt="" />
           <p>
-            Suspendisse lobortis ullamcorper sit condimentum. Amet, orci
-            elementum, euismod neque hendrerit id varius ullamcorper.
+          Awwaltech is a Prime and well recognized IT Solution Provider, which is a competitive global leader in Digital Transformation & Emerging Technologies, engaged in handling the service requests from the reputed clients across the Globe.
           </p>
           <div className={style.info}>
 
@@ -23,37 +19,26 @@ function Footer() {
               <p className={style.infoTxt}>+1 452 123 2131</p> */}
             </div>
             <span>Email</span>
-            <p className={style.infoTxt}>nfo@technologies.in</p>
+            <p className={style.infoTxt}>info@awwaltech.com</p>
           </div>
           <div className={style.info}>
-
-            {/* <div className={style.icon2}>
-              <img src={mail} alt=""></img>
-              <p className={style.infoTxt}>nfo@technologies.in</p>
-            </div> */}
-
             <span>Contact</span>
-            <p className={style.infoTxt}>+1 452 123 2131</p>
-            <p className={style.infoTxt}>+1 452 123 2131</p>
+            <p className={style.infoTxt}>+91 91932 99275</p>
           </div>
 
 
           <div className={style.info}>
 
-            {/* <div className={style.icon}>
-              <img className={style.skype} src={skype} alt=""></img>
-              <p className={style.infoTxt}>minttask</p>
-            </div> */}
             <span>Products</span>
-            <p className={style.infoTxt}>Sit a at rhoncus a nisl.</p>
-            <p className={style.infoTxt}>Sit a at rhoncus a nisl.</p>
+            <p className={style.infoTxt}>Everlio</p>
+            <p className={style.infoTxt}>HiTech Mentor</p>
           </div>
         </div>
         <div className={style.footer__two}>
           <h3>Company</h3>
           <Link to="/">Services</Link>
           <Link to="/hire">Hire Developers</Link>
-          <Link to="/about">About us</Link>
+          <Link to="/aboutus">About us</Link>
           <Link to="/portfolio">Portfolio</Link>
           <Link to="/blog">Blog</Link>
           <Link to="/technologies">Technologies</Link>
@@ -85,42 +70,45 @@ function Footer() {
           <span>
             <GoLocation />
           </span>
+          <h5>India</h5>
+          <p>FF-91, Gaur City Center</p>
+          <p>Sector 4, Greater Noida West</p>
+          <p>Uttar Pradesh 203207</p>
+        </div>
+        <div className={style.region}>
+          <span>
+            <GoLocation />
+          </span>
+          <h5>India</h5>
+          <p>Ground Floor, Awwal Manzil</p>
+          <p>Near Govt. Hospital,</p>
+          <p> Moradabad, Uttar Paradesh 244411</p>
+        </div>
+        <div className={style.region}>
+          <span>
+            <GoLocation />
+          </span>
           <h5>USA</h5>
-          <p>Iris Watson</p>
-          <p>P.O. Box 283 8562 Fusce Rd.</p>
-          <p>Frederick Nebraska 20620</p>
+          <p>Coming Soon!!</p>
+        </div>
+        <div className={style.region}>
+          <span>
+            <GoLocation />
+          </span>
+          <h5>Dubai</h5>
+          <p>Coming Soon!!</p>
         </div>
         <div className={style.region}>
           <span>
             <GoLocation />
           </span>
           <h5>UK</h5>
-          <p>Cecilia Chapman</p>
-          <p>711-2880 Nulla St.</p>
-          <p>Mankato Mississippi 96522</p>
-        </div>
-        <div className={style.region}>
-          <span>
-            <GoLocation />
-          </span>
-          <h5>IND</h5>
-          <p>Celeste Slater</p>
-          <p>606-3727 Ullamcorper. Street</p>
-          <p>Roseville NH 11523</p>
-        </div>
-        <div className={style.region}>
-          <span>
-            <GoLocation />
-          </span>
-          <h5>IND</h5>
-          <p>heodore Lowe</p>
-          <p>Ap #867-859 Sit Rd.</p>
-          <p>Azusa New York 39531</p>
+          <p>Coming Soon!!</p>
         </div>
       </div>
 
       <div className={style.copyright}>
-        <p>Copyright © 2022 technology Pvt. Ltd. All Rights Reserved</p>
+        <p>Copyright © 2019-2024 Awwaltech Pvt. Ltd. All Rights Reserved</p>
       </div>
     </>
   );

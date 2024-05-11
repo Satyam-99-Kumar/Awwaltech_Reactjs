@@ -1,7 +1,7 @@
 import { Link, NavLink} from "react-router-dom";
 // Styles
 import Style from "./Navbar.module.scss";
-import logoImage from "../../assets/Group.png";
+import logoImage from "../../assets/logo.png";
 import { BsChevronDown } from "react-icons/bs";
 import { useState } from "react";
 
@@ -25,12 +25,12 @@ const SideDrawer = ({ show }) => {
     <>
       <nav className={drawerClass}>
         <div className={Style.Drawerheading}>
-          <Link to="/"><img src={logoImage} alt="" /></Link>
+          <Link to="/"><img src={logoImage} alt="" width={200}/></Link>
         </div>
         <div className={Style.drawerLink}>
           <div className={Style.up}>
           <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/hire">Hire Developers</NavLink>
-          <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/about">About us</NavLink>
+          <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/aboutus">About us</NavLink>
           <NavLink className={(navData) => navData.isActive ? Style.activeLink : Style.olink } to="/service" onClick={handleClick}>
             <div className={Style.link}>Service <BsChevronDown /></div>
             {
@@ -58,7 +58,7 @@ const SideDrawer = ({ show }) => {
           <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/portfolio">Portfolio</NavLink>
           <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/blog">Blog</NavLink>
           <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/technologies">Technologies</NavLink>
-          <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/contact">Contact</NavLink>
+          <NavLink className={(navData) => navData.isActive ? Style.activeLink : `` } to="/contactus">Contact</NavLink>
           </div>
         </div>
       </nav>

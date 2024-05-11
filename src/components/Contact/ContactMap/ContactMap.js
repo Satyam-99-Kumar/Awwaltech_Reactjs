@@ -1,5 +1,5 @@
 import style from './ContactMap.module.scss';
-import mapImage from "../../../assets/Contact/map.png"
+import mapImage from "../../../assets/Contact/map-image.svg"
 
 function ContactMap() {
   return (

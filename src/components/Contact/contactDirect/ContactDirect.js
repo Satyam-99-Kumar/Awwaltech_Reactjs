@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import style from "./ContactDirect.module.scss";
 import { Card, Grid } from "@mui/material";
-import { GrSkype } from "react-icons/gr";
-import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
 import contact from  '../../../assets/Contact/contact.png';
 import skype from  '../../../assets/Contact/Skype-Emblem 1.png';
 import mail from  '../../../assets/Contact/mail.png';
@@ -14,17 +11,17 @@ function ContactDirect() {
     {
       icon: <img src={mail} alt="Email" />,
       title: "Email",
-      info: "info@minttask.com"
+      info: "info@awwaltech.com"
     },
     {
       icon: <img src={contact} alt="Contact" />,
       title: "Contact",
-      info: "+123-234-456"
+      info: "+91 91932 99275"
     },
     {
       icon: <img src={skype} alt="Skype" />,
       title: "Skype",
-      info: "minttask"
+      info: "awwaltech"
     }
   ]);
 

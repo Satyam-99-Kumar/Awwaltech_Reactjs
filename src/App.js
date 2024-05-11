@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/aboutus" element={<About />} />
         <Route path="/service/mobile-app-development" element={<Service />} />
         <Route path="/service/mobileapp" element={<MobileApp />} />
         <Route path="/service/strategic-ux-development" element={<Service />} />
@@ -30,7 +30,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         {/* <Route path="/portfoliodetails" element={<PortfolioDetails />} />s */}
         <Route path="/portfolio/project/:id" element={<Project />} />
-        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/contactus" element={<ContactUs />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogSingle />} />
         <Route path="/technologies" element={<Technology />} />
