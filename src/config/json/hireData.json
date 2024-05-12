@@ -1,0 +1,109 @@
+{
+    "MetaData": {
+        "Title": "Hire Main Title",
+        "Description": "Hire page Description"
+    },
+    "Banner": {
+        "TitleTag": "Hire Our Dedicated Virtual Team",
+        "Title1": "Hire Dedicated",
+        "Title2": "Developer",
+        "BannerBgImage": "",
+        "BannerOtherImages": []
+    },
+    "ServicesSection": {
+        "Title1": "Our Hire",
+        "Title2": "IOT Developer",
+        "Title3": "Services",
+        "Paragraph": "Our remote Hire IOT Developers deliver reliable IoT solutions that cater to the goals and requirements of your business irrespective of its size, location or industry vertical. Our Hire IOT Developers services are centered around optimally leveraging the robust app development framework to build scalable and secure mobile applications for global clients.",
+        "Services": [
+            {
+                "Title1": " Mobile App",
+                "Title2": " Development",
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome",
+                "Icon": "",
+                "Link": ""
+            },
+            {
+                "Title1": " Web App",
+                "Title2": " Development",
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome",
+                "Icon": "",
+                "Link": ""
+            },
+            {
+                "Title1": " Enterprise App",
+                "Title2": " Devops",
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome",
+                "Icon": "",
+                "Link": ""
+            },
+            {
+                "Title1": " Strategic UX",
+                "Title2": " Development",
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome",
+                "Icon": "",
+                "Link": ""
+            },
+             {
+                "Title1": " Web App",
+                "Title2": " Development",
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome",
+                "Icon": "",
+                "Link": ""
+            },
+            {
+                "Title1": " eCommerce",
+                "Title2": " Development",
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome",
+                "Icon": "",
+                "Link": ""
+            }
+        ]
+    },
+    "DrivingSection": {
+        "TitleTag": "Driving Enterprise",
+        "Title": "Our Execution Process",
+        "Paragraph": "From ideation and conceptualization to application development, ready-to-deploy assets, marketing and support, Codiant delights clients of all sizes through agile deliveries and simplified solutions.",
+        "Services": [
+            {
+                "Title": "Discovery Workshop",
+                "Paragraph": "Here, we understand your business, goals, and priorities. These brainstorming sessions help us to understand your future goals.",
+                "Link": ""
+            },
+            {
+                "Title": " Strategy and Solution",
+                "Paragraph": "Here, we understand your business, goals, and priorities. These brainstorming sessions help us to understand your future goals.",
+                "Link": ""
+            },
+            {
+                "Title": " Development Progress",
+                "Paragraph": "Here, we understand your business, goals, and priorities. These brainstorming sessions help us to understand your future goals.",
+                "Link": ""
+            },
+            {
+                "Title": " Testing and QA Process",
+                "Paragraph": "Here, we understand your business, goals, and priorities. These brainstorming sessions help us to understand your future goals.",
+                "Link": ""
+            },
+            {
+                "Title": " Launch and Maintenance",
+                "Paragraph": "Here, we understand your business, goals, and priorities. These brainstorming sessions help us to understand your future goals.",
+                "Link": ""
+            },
+            {
+                "Title": " Customer Service",
+                "Paragraph": "Here, we understand your business, goals, and priorities. These brainstorming sessions help us to understand your future goals.",
+                "Link": ""
+            }
+        ]
+    },
+    "GetReadySection": {
+        "TitleTag": "Experienced software company",
+        "Title": "Ready To Get Started?",
+        "Paragraph": "Be it any innovation using IoT technology or need for advanced Hire IOT Developers, we, being a 17+ years experienced software company, always ready to serve our best-in-class services to our clients that help them grow across the world.",
+        "ManYearExp": "200 +",
+        "YearsExp": "6 +",
+        "SatisfiedCustomers": "25 +",
+        "ClientRetention": "97%"
+    }
+}

@@ -2,6 +2,20 @@
 const API_URL = 'http://15.207.175.144:3000/v1';
 // const API_URL = 'http://localhost:3000/v1';
 
+// export const fetchHomeData = async () => {
+//   try {
+//     const response = await fetch('./json/homeData.json');
+
+//     if (!response.ok) {
+//       throw new Error('Network response was not ok');
+//     }
+
+//     return response.json();
+//   } catch (error) {
+//     console.error('There was a problem with reading the JSON file:', error);
+//     throw error;
+//   }
+// };
 
 export const fetchHomeData = async (options = {}) => {
     const url = `${API_URL}/home/content`;

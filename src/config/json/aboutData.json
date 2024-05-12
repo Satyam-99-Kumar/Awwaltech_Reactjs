@@ -1,0 +1,148 @@
+{
+    "MetaData": {
+        "Title": "Main Tital",
+        "Description": "About page Description"
+    },
+    "Banner": {
+        "BannerImage": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618",
+        "BannerTitle": "About us",
+        "Title1": "Your End-to-End",
+        "Title2": "Software Development",
+        "Title3": "Partner",
+        "BannerImages": [
+            {
+                "Images": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            },
+            {
+                "Images": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            },
+            {
+                "Images": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            },
+            {
+                "Images": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            },
+            {
+                "Images": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            }
+        ]
+    },
+   
+    "WhatIsMinttaskSection": {
+        "Title1": "What is Awwaltech",
+        "Title2": "With Awwaltech, you can create",
+        "Title3": "live online events that are",
+        "Title4": "interactive and personal",
+        "Paragraph1": "When we started designing Awwaltech a few years ago, our aim was to give organizers the ability to recreate the in-person event experience as closely as possible, but online and all in one place.",
+        "Paragraph2": "Nothing like this existed and we knew it would be a tall order. But over time, we have come up with a few innovative features that help you accomplish this."
+    },
+    "EnterprisesSection": {
+        "Title": "Large Enterprises",
+        "Title1": "One stop comprehensive",
+        "Title2": "solutions for your web, mobile &",
+        "Title3": "customsoftware",
+        "Vision": "Our Vision",
+        "VisionParagraph": "To be a first choice for extending your E-commerce team offshore.",
+        "Mission": "Our Mission",
+        "MissionParagraph": "To provide customized E-commerce services from a dedicated offshore team while maintaining/superseding the requested Quality and Communication.",
+        "image": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618",
+        "Paragraph":"When we started designing Awwaltech a few years ago, our aim was to give organizers the ability to recreate the in-person event experience as closely as possible, but online and all in one place.Nothing like this existed and we knew it would be a tall order. But over time, we have come up with a few innovative features that help you accomplish this.",
+        "Enterprises": [
+            {
+                "EnterprisesName": "Buseness Development",
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Percentage": 12,
+                "Link": "https://www.example.com/innovatetech"
+            },
+            {
+                "EnterprisesName": "Buseness Development1",
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Percentage": 15,
+                "Link": "https://www.example.com/innovatetech"
+            },
+            {
+                "EnterprisesName": "Buseness Development2",
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Percentage": 25,
+                "Link": "https://www.example.com/innovatetech"
+            },
+             {
+                "EnterprisesName": "Buseness Development3",
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Percentage": 25,
+                "Link": "https://www.example.com/innovatetech"
+            }
+        ]
+    },
+    "DrivingEnterprisesSection": {
+        "TitleTag": "Driving Enterprise",
+        "Title1": "This is one movement you",
+        "Title2": "don't want to miss",
+        "Paragraph": "Codiant is a one-stop solution for your IT & software development needs. Our advanced services in the field of Enterprise Mobility, Mobile App Development, Custom Web Product Development, and UI/UX Development services help you address evolving market challenges by defining, designing and building applications tailored to meet your specific business requirements. As a key player in technology industry, we strive to develop smart solutions that augments human capabilities, foster innovation, and create more effective processes at lower cost.",
+        "DrivingEnterprises": [
+            {
+                "Title1": "Healthcare",
+                "Title2": "& Fitness",
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Link": "https://www.example.com/techgenius"
+            },
+            {
+                "Title1": "On-Demand ",
+                "Title2": "Solutions",
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Link": "https://www.example.com/techgenius"
+            },
+            {
+                "Title1": "Transport ",
+                "Title2": "& Automation",
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Link": "https://www.example.com/techgenius"
+            },
+            {
+                "Title1": "Enterprise ",
+                "Title2": "Mobility",
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Link": "https://www.example.com/techgenius"
+            },
+             {
+                 "Title1": "Food ",
+                "Title2": "& Restaurant",
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Link": "https://www.example.com/techgenius"
+            } 
+        ]
+    },
+    "InvestorSection": {
+        "Title1": "Our Investors",
+        "Investor": [
+            {
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Link": "xyz"
+            },
+            {
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Link": "xyz"
+            },
+            {
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Link": "xyz"
+            },
+            {
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Link": "xyz"
+            },
+            {
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Link": "xyz"
+            },
+            {
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Link": "xyz"
+            },
+            {
+                "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+                "Link": "xyz"
+            }
+        ]
+    }
+}

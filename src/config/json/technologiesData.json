@@ -1,0 +1,314 @@
+{
+    "MetaData": {
+        "Title": "Main Title",
+        "Description": "Technologies page Description"
+    },
+    "Banner": {
+        "BannerImage": "https://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.png",
+        "TitleTag": "Technology Competence",
+        "Title1": "Wide range of technologies",
+        "Title2": "and the most efficient",
+        "Title3": "development approaches",
+        "BannerOtherImages": []
+    },
+    "WhatWeCanOfferSection": {
+        "Title1": "Mobile App Development Solutions",
+        "Title2": "What we can offer",
+        "Paragraph1": "We realize that any organization may encounter problems of choosing the wrong technology or development approach. These issues may appear tactical, but can also have wide ranging impact on the successful and continuing operations of the overall business.",
+        "Paragraph2": "So before starting any project we carefully investigate your company's niche features, compare already implemented solutions and offer a stack of technologies that are most suitable for your specific situation.",
+        "Offer": [
+            {
+                "Logo": "",
+                "OfferName": "Enterprises",
+                "Paragraph": "Enterprise software has its own specific set of requirements. The architecture should be scalable, but cost-effective, safe, but user-friendly, and, above all, it should provide high-quality user services that produce results. Our high-quality engineers will help your company to build powerful enterprise software.",
+                "Link": "https://www.example.com/innovatetech"
+            },
+            {
+                "Logo": "",
+                "OfferName": "Tech Companies",
+                "Paragraph": "The development of high-tech solutions requires highly qualified specialists with the necessary niche work experience. Sometimes tech companies are facing with a lack of experts on location. Our team is ready to scale your IT department and bring innovations, relying on the most relevant technologies.",
+                "Link": "https://www.example.com/innovatetech"
+            },
+            {
+                "Logo": "",
+                "OfferName": "Startups",
+                "Paragraph": "Startup companies may face many challenges during early development. A wide range of technologies can help them with a fast start and a successful market entry. Besides, the use of cross-platform technologies can significantly reduce the MVP release time.",
+                "Link": "https://www.example.com/innovatetech"
+            }
+        ]
+    },
+    "TechnologyTech": [
+        {
+            "backgroundColor": "#0B2845",
+            "slideBackground": "#243D57",
+            "color": "#ffffff",
+            "h3Color": "#e5e5e5",
+            "h1Color": "#fcfcfc",
+            "pColor": "#b2b2b2",
+            "h4Color": "#ffffff",
+            "toolH3Color": "#fcfcfc",
+            "toolPColor": "#cccccc",
+            "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+            "Title1": "Development",
+            "Title2": "Back-end Development",
+            "Paragraph": "The back end of a website consists of a server, an application, and a database. A back-end developer builds and maintains the technology that powers those components which, together, enable the user-facing side of the website to even exist in the first place. In order to make the server, application, and database communicate with each other, back-end devs use server-side languages like PHP, Python, Java, and .Net to build an application, and tools like MySQL, Oracle, and SQL Server to find, save, or change data and serve it back to the user in front-end code.",
+            "Developments": [
+                {
+                    "Logo": "",
+                    "DevelopementName": "PHP",
+                    "Paragraph": "PHP is open-source, and all features and updates are free to use. PHP is still the most common language for server-side development. Since it was designed specifically for the web, developers need less time to create websites with dynamic features.",
+                    "ListTitle": "Can be used for:",
+                    "List": [
+                        {
+                            "Name": "Web applications"
+                        },
+                        {
+                            "Name": "CMS development"
+                        },
+                        {
+                            "Name": "Social networks"
+                        }
+                    ],
+                    "Link": "https://www.example.com/techgenius"
+                },
+                {
+                    "Logo": "",
+                    "DevelopementName": "NODE.JS",
+                    "Paragraph": "A relatively young technology that is gaining popularity recently. This allows achieving high performance without the use of multithreading. Having a single language on the stack breaks down communication barriers in a team and makes software easier to maintain.",
+                    "ListTitle": "Can be used for:",
+                    "List": [
+                        {
+                            "Name": "Web Developing programs for OS."
+                        },
+                        {
+                            "Name": "CMS API formation"
+                        },
+                        {
+                            "Name": "Web and mobile applications."
+                        }
+                    ],
+                    "Link": "https://www.example.com/techgenius"
+                },
+                {
+                    "Logo": "",
+                    "DevelopementName": "C# (.NET CORE)",
+                    "Paragraph": "C # is a programming language that follows OOPs and is used for desktop, mobile, and enterprise applications. Due to developed infrastructure and excellent integration with the desktop infrastructure, Azure allows you to run highly loaded applications in a short time.",
+                    "ListTitle": "Can be used for:",
+                    "List": [
+                        {
+                            "Name": "Web services and applications."
+                        },
+                        {
+                            "Name": "Mobile applications"
+                        },
+                        {
+                            "Name": "Any Windows program."
+                        }
+                    ],
+                    "Link": "https://www.example.com/techgenius"
+                },
+                {
+                    "Logo": "",
+                    "DevelopementName": "JAVA",
+                    "Paragraph": "Java is fast, highly protected, and reliable. Despite the growing popularity of Go and Python, Java has remained at the top of the list for more than a decade. And it’s everywhere – from laptops to data centers, from game consoles to supercomputers used for scientific research, etc.",
+                    "ListTitle": "Can be used for:",
+                    "List": [
+                        {
+                            "Name": "Android applications"
+                        },
+                        {
+                            "Name": "Software products"
+                        },
+                        {
+                            "Name": "POS, Financial programs."
+                        }
+                    ],
+                    "Link": "https://www.example.com/techgenius"
+                }
+            ]
+        },
+        {
+            "backgroundColor": "#ffffff",
+            "slideBackground": "#ffffff",
+            "color": "#000000",
+            "h3Color": "rgba(0, 0, 0, 0.9)",
+            "h1Color": "rgba(0, 0, 0, 0.99)",
+            "pColor": "rgba(0, 0, 0, 0.7)",
+            "h4Color": "rgba(0, 0, 0, 0.9)",
+            "toolH3Color": "rgba(0, 0, 0, 0.9)",
+            "toolPColor": "rgba(0, 0, 0, 0.6)",
+            "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+            "Title1": "Development",
+            "Title2": "Front-end Development",
+            "Paragraph": "The front end of a website is the part that users interact with. Everything that you see when you're navigating around the Internet, from fonts and colours to dropdown menus and sliders, is a combo of HTML, CSS, and JavaScript being controlled by your computer's browser. Front-end developers are responsible for a website's user-facing code and the architecture of its immersive user experiences. What is more, front-end devs need to be familiar with frameworks like Bootstrap, Foundation, ReactJS, AngularJS, and VueJS, which ensure great-looking content no matter the device, and libraries like jQuery, which package code into a more useful, time-saving form.",
+            "Developments": [
+                {
+                    "Logo": "",
+                    "DevelopementName": "PHP",
+                    "Paragraph": "PHP is open-source, and all features and updates are free to use. PHP is still the most common language for server-side development. Since it was designed specifically for the web, developers need less time to create websites with dynamic features.",
+                    "ListTitle": "Can be used for:",
+                    "List": [
+                        {
+                            "Name": "Web applications"
+                        },
+                        {
+                            "Name": "CMS development"
+                        },
+                        {
+                            "Name": "Social networks"
+                        }
+                    ],
+                    "Link": "https://www.example.com/techgenius"
+                },
+                {
+                    "Logo": "",
+                    "DevelopementName": "NODE.JS",
+                    "Paragraph": "A relatively young technology that is gaining popularity recently. This allows achieving high performance without the use of multithreading. Having a single language on the stack breaks down communication barriers in a team and makes software easier to maintain.",
+                    "ListTitle": "Can be used for:",
+                    "List": [
+                        {
+                            "Name": "Web Developing programs for OS."
+                        },
+                        {
+                            "Name": "CMS API formation"
+                        },
+                        {
+                            "Name": "Web and mobile applications."
+                        }
+                    ],
+                    "Link": "https://www.example.com/techgenius"
+                },
+                {
+                    "Logo": "",
+                    "DevelopementName": "C# (.NET CORE)",
+                    "Paragraph": "C # is a programming language that follows OOPs and is used for desktop, mobile, and enterprise applications. Due to developed infrastructure and excellent integration with the desktop infrastructure, Azure allows you to run highly loaded applications in a short time.",
+                    "ListTitle": "Can be used for:",
+                    "List": [
+                        {
+                            "Name": "Web services and applications."
+                        },
+                        {
+                            "Name": "Mobile applications"
+                        },
+                        {
+                            "Name": "Any Windows program."
+                        }
+                    ],
+                    "Link": "https://www.example.com/techgenius"
+                },
+                {
+                    "Logo": "",
+                    "DevelopementName": "JAVA",
+                    "Paragraph": "Java is fast, highly protected, and reliable. Despite the growing popularity of Go and Python, Java has remained at the top of the list for more than a decade. And it’s everywhere – from laptops to data centers, from game consoles to supercomputers used for scientific research, etc.",
+                    "ListTitle": "Can be used for:",
+                    "List": [
+                        {
+                            "Name": "Android applications"
+                        },
+                        {
+                            "Name": "Software products"
+                        },
+                        {
+                            "Name": "POS, Financial programs."
+                        }
+                    ],
+                    "Link": "https://www.example.com/techgenius"
+                }
+            ]
+        },
+        {
+            "backgroundColor": "#0B2845",
+            "slideBackground": "#243D57",
+            "color": "#ffffff",
+            "h3Color": "#e5e5e5",
+            "h1Color": "#fcfcfc",
+            "pColor": "#b2b2b2",
+            "h4Color": "#fcfcfc",
+            "toolH3Color": "#fcfcfc",
+            "toolPColor": "#cccccc",
+            "Logo": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+            "Title1": "Development",
+            "Title2": "Mobile Development",
+            "Paragraph": "Mobile development is one of the most intriguing parts of software development because it presents a unique opportunity for a development team to build a usable and meaningful app in a relatively short period of time. The development process includes creating software bundles, implementing backend services, and testing the application on target devices.",
+            "Developments": [
+                {
+                    "Logo": "",
+                    "DevelopementName": "PHP",
+                    "Paragraph": "PHP is open-source, and all features and updates are free to use. PHP is still the most common language for server-side development. Since it was designed specifically for the web, developers need less time to create websites with dynamic features.",
+                    "ListTitle": "Can be used for:",
+                    "List": [
+                        {
+                            "Name": "Web applications"
+                        },
+                        {
+                            "Name": "CMS development"
+                        },
+                        {
+                            "Name": "Social networks"
+                        }
+                    ],
+                    "Link": "https://www.example.com/techgenius"
+                },
+                {
+                    "Logo": "",
+                    "DevelopementName": "NODE.JS",
+                    "Paragraph": "A relatively young technology that is gaining popularity recently. This allows achieving high performance without the use of multithreading. Having a single language on the stack breaks down communication barriers in a team and makes software easier to maintain.",
+                    "ListTitle": "Can be used for:",
+                    "List": [
+                        {
+                            "Name": "Web Developing programs for OS."
+                        },
+                        {
+                            "Name": "CMS API formation"
+                        },
+                        {
+                            "Name": "Web and mobile applications."
+                        }
+                    ],
+                    "Link": "https://www.example.com/techgenius"
+                },
+                {
+                    "Logo": "",
+                    "DevelopementName": "C# (.NET CORE)",
+                    "Paragraph": "C # is a programming language that follows OOPs and is used for desktop, mobile, and enterprise applications. Due to developed infrastructure and excellent integration with the desktop infrastructure, Azure allows you to run highly loaded applications in a short time.",
+                    "ListTitle": "Can be used for:",
+                    "List": [
+                        {
+                            "Name": "Web services and applications."
+                        },
+                        {
+                            "Name": "Mobile applications"
+                        },
+                        {
+                            "Name": "Any Windows program."
+                        }
+                    ],
+                    "Link": "https://www.example.com/techgenius"
+                },
+                {
+                    "Logo": "",
+                    "DevelopementName": "JAVA",
+                    "Paragraph": "Java is fast, highly protected, and reliable. Despite the growing popularity of Go and Python, Java has remained at the top of the list for more than a decade. And it’s everywhere – from laptops to data centers, from game consoles to supercomputers used for scientific research, etc.",
+                    "ListTitle": "Can be used for:",
+                    "List": [
+                        {
+                            "Name": "Android applications"
+                        },
+                        {
+                            "Name": "Software products"
+                        },
+                        {
+                            "Name": "POS, Financial programs."
+                        }
+                    ],
+                    "Link": "https://www.example.com/techgenius"
+                }
+            ]
+        }
+    ],
+    "TalkToUsSection": {
+        "Title1": "Talk to us",
+        "Paragraph": "Wish to connect with us? We will be happy to hear from you. Fill this form so we can learn more about your requirements.",
+        "image": "https://media.istockphoto.com/id/1091858450/photo/contact-us-sign-on-a-wooden-desk.jpg?s=2048x2048&w=is&k=20&c=lGivkcCOZD-k50DK3QbcSLWBiNL-q-gGxT3D3qBUtiE="
+    }
+}

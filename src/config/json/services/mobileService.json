@@ -1,0 +1,147 @@
+{
+    "MetaData": {
+        "Title": "Mobile App Services Title",
+        "Description": "Mobile App page Description"
+    },
+    "Banner": {
+        "TitleTag": "Mobile App Development",
+        "Title1": "Native & Cross Platform",
+        "Title2": "Mobile App Development",
+        "Title3": "Company",
+        "BannerBgImage": "",
+        "BannerOtherImages": []
+    },
+     "MobileAppSolutionSection": {
+        "Title1": "Mobile App Development Solutions",
+        "Title2": "Android, iOS & Flutter App",
+        "Title3": "Development",
+        "Title4": "Services",
+        "Paragraph1": "Being a rising name in the IT industry across the world, we deliver quality services in a timely fashion to help our clients gain a leading edge in this competitive market.",
+        "Paragraph2": "We are your one-stop solution provider for Android, iOS & Flutter Mobile App development services. Leading Startups and Companies hiring Android, iOS and Flutter App developers from Zignuts Technolab to successfully drive and achieve their critical mobile app development projects. As a leading Indian mobile app development company with skiiled team of app developers in India, we help building custom mobile apps that have most interactive and modern interfaces.",
+        "Services": [
+            {
+                "Title1": "Android, IOS & Flutter Mobile App",
+                "Title2": " Development",
+                "Title3": " Services",
+                "Paragraph": "Custom mobile app development company with expert team of remote and dedicated app developers in India",
+                "Icon": "",
+                "Link": ""
+            },
+            {
+                "Title1": " Web App",
+                "Title2": " Development",
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome",
+                "Icon": "",
+                "Link": ""
+            },
+            {
+                "Title1": " Enterprise App",
+                "Title2": " DevOps",
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome",
+                "Icon": "",
+                "Link": ""
+            },
+            {
+                "Title1": " Strategic UX",
+                "Title2": " Development",
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome",
+                "Icon": "",
+                "Link": ""
+            }
+        ]
+    },
+    "MobileAppSolutionSection2": {
+        "Title1": "Android, iOS & Flutter Mobile App",
+        "Title2": "Development",
+        "Title3": "Services",
+        "Paragraph": "Custom mobile app development company with expert team of remote and dedicated app developers in India",
+        "Services": [
+            {
+                "Title1": "Web",
+                "Title2": " Development",
+                "Paragraph": "Zignuts Technolab offers its iOS app development services in designing and developing custom mobile apps for iPhone & iPad. Hire iOS app developers who have skills and expertise in everything ranging from iOS App development, app design, app support and maintenance. While you can focus on your business, our native iOS app development team combine in-depth research, outstanding design, and impeccable development to create an exceptional iOS application that fits your needs.",
+                "Icon": "",
+                "Link": ""
+            },
+            {
+                "Title1": " Enterprise",
+                "Title2": "DevOps",
+                "Paragraph": "Don’t have to spend time building your own Android developers team, instead start working on your Android project right away with Zignuts Technolab to save time – a top rateted Android application development company. We offer custom, end-to-end, full-stack Android app development services. Our skilled and experts team specialises in customised and scalable applications for Android devices, including smartphones, tablets, Android TVs, and more. Book your risk-free trial of 2 weeks, retaining the rights to your code if you cancel the partnership.",
+                "Icon": "",
+                "Link": ""
+            },
+            {
+                "Title1": " Strategic UX",
+                "Title2": " Development",
+                "Paragraph": "Flutter enables building and deploying apps for iOS and Android using a single code base. It reduces the app’s time-to-market and its development costs. Are you wondering how to choose the best Flutter app development company for your cross-platform project? Our team consists of top Flutter app developers, who can build your beautiful native app with Flutter in record time. Try us for 2 weeks, retaining the rights to your code if you cancel the partnership.",
+                "Icon": "",
+                "Link": ""
+            }
+        ]
+    },
+    "DrivingSection": {
+        "TitleTag": "Driving Enterprise",
+        "Title1": "Why to choose Awwaltech as your",
+        "Title2": "Mobile App Development",
+        "Title3": "Company?",
+        "Paragraph": "Empowering businesses across verticals by leveraging the power of mobility that help accelerate innovation, reduce costs and improve performance.",
+        "Services": [
+            {
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises",
+                "Link": ""
+            },
+            {
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises",
+                "Link": ""
+            },
+            {
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises",
+                "Link": ""
+            },
+            {
+                "Paragraph": "Here, we understand your business, goals, and priorities. These brainstorming sessions help us to understand your future goals.",
+                "Link": ""
+            },
+            {
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups.",
+                "Link": ""
+            },
+            {
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups.",
+                "Link": ""
+            },
+             {
+                "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups.",
+                "Link": ""
+            }
+        ]
+    },
+    "OurSolutionsSection": {
+        "Title1": "Our Solutions",
+        "Title2": "Our app development solutions",
+        "Image": "",
+        "List": [
+            {
+                "Name":"To be a first choice for extending your E-commerce team offshore."
+            },
+            {
+                "Name":"To provide customized E-commerce services from a dedicated offshore team while maintaining superseding the requested Qua"
+            },
+            {
+                "Name":"To provide customized E-commerce services from a dedicated offshore team while maintaining superseding the requested Qua"
+            },
+            {
+                "Name":"To provide customized E-commerce services from a dedicated offshore team while maintaining superseding the requested Qua"
+            },
+            {
+                "Name":"To provide customized E-commerce services from a dedicated offshore team while maintaining superseding the requested Qua"
+            },
+            {
+                "Name":"To be a first choice for extending your E-commerce team offshore."
+            },
+            {
+                "Name":"To provide customized E-commerce services from a dedicated offshore team while maintaining superseding the requested Qua"
+            }
+        ]
+    }
+}

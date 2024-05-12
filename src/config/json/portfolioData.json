@@ -1,0 +1,113 @@
+{
+    "MetaData": {
+        "Title": "Main Tital",
+        "Description": "Portfolio Description"
+    },
+    "Banner": {
+        "BannerImage": "https://www.shutterstock.com/image-photo/text-portfolio-on-brown-paper-book-387456811",
+        "TitleTag": "Mobile App Development",
+        "Title1": "See how Awwaltech helps",
+        "Title2": " teams achieve their goals",
+        "BannerImages": [
+            {
+                "Image": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            },
+            {
+                "Image": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            },
+            {
+                "Image": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            },
+            {
+                "Image": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            },
+            {
+                "Image": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            }
+        ]
+    },
+    
+    "MinttaskLogoSection": {
+        "Tital": "Businesses that use Awwaltech to build",
+        "Logo": [
+            "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
+            "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg"
+        ]
+    },
+    "projectSection": {
+        "TitleTag": "Mobile App Development Solutions",
+        "Title1": "Android, iOS & Flutter App",
+        "Title2": "Development",
+        "Paragraph": "Being a rising name in the IT industry across the world, we deliver quality services in a timely fashion to help our clients gain a leading.edge in this competitive market.",
+        "Image": "https://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.png",
+        "Projects": [
+            {
+                "Name": "Madelia ",
+                "Text": "Developed a comprehensive branding identity including logo design, color palette, and brand guidelines for Awwaltechpvt ltd.",
+                "Banner": "https://sandips2.sg-host.com/static/media/p12.33ccaedaf61d10f6dd67.png",
+                "Type": ["app", "expertise"],
+                "Link": "https://www.google.com/search?client=opera&q=brnading+identify+image&sourceid=opera&ie=UTF-8&oe=UTF-8#vhid=egQ3bjouODZOcM&vssid=l"
+            },
+            {
+                "Name": "Madelia2 ",
+                "Text": "Developed a comprehensive branding identity including logo design, color palette, and brand guidelines for Awwaltechpvt ltd.",
+                "Banner": "https://sandips2.sg-host.com/static/media/p2.6fa727cf4be4aaca46dc.png",
+                "Type": ["mobile", "app"],
+                "Link": "https://www.google.com/search?client=opera&q=brnading+identify+image&sourceid=opera&ie=UTF-8&oe=UTF-8#vhid=egQ3bjouODZOcM&vssid=l"
+            },
+            {
+                "Name": "Madelia 3",
+                "Text": "Developed a comprehensive branding identity including logo design, color palette, and brand guidelines for Awwaltechpvt ltd.",
+                "Banner": "https://sandips2.sg-host.com/static/media/p3.2ad7a56b8d8f7701944e.png",
+                "Type": ["web", "app"],
+                "Link": "https://www.google.com/search?client=opera&q=brnading+identify+image&sourceid=opera&ie=UTF-8&oe=UTF-8#vhid=egQ3bjouODZOcM&vssid=l"
+            },
+              {
+                "Name": "Madelia 4",
+                "Text": "Developed a comprehensive branding identity including logo design, color palette, and brand guidelines for Awwaltechpvt ltd.",
+                "Banner": "https://sandips2.sg-host.com/static/media/p6.c040905b6811a0ca483c.png",
+                "Type": ["mobile", "app", "expertise"],
+                "Link": "https://www.google.com/search?client=opera&q=brnading+identify+image&sourceid=opera&ie=UTF-8&oe=UTF-8#vhid=egQ3bjouODZOcM&vssid=l"
+            },
+             {
+                "Name": "Madelia 5",
+                "Text": "Developed a comprehensive branding identity including logo design, color palette, and brand guidelines for Awwaltechpvt ltd.",
+                "Banner": "https://sandips2.sg-host.com/static/media/p10.fbe0a7f451a695363d38.png",
+                "Type": ["mobile"],
+                "Link": "https://www.google.com/search?client=opera&q=brnading+identify+image&sourceid=opera&ie=UTF-8&oe=UTF-8#vhid=egQ3bjouODZOcM&vssid=l"
+            },
+             {
+                "Name": "Madelia 5",
+                "Text": "Developed a comprehensive branding identity including logo design, color palette, and brand guidelines for Awwaltechpvt ltd.",
+                "Banner": "https://sandips2.sg-host.com/static/media/p10.fbe0a7f451a695363d38.png",
+                "Type": ["mobile"],
+                "Link": "https://www.google.com/search?client=opera&q=brnading+identify+image&sourceid=opera&ie=UTF-8&oe=UTF-8#vhid=egQ3bjouODZOcM&vssid=l"
+            }
+        ]
+    },
+    "ClientsSection": {
+        "Title1": "Clients",
+        "Title2": "Customer story highlight",
+        "Paragraph": "From ideation and conceptualization to application development, ready-to-deploy assets, marketing and support, Codiant delights clients of all sizes through agile deliveries and simplified solutions.",
+        "Image": "https://media.istockphoto.com/id/1319763433/photo/multiethnic-couple-handshake-with-consultant-at-home.jpg?s=2048x2048&w=is&k=20&c=dw_5JcuCJ5z4cRm3O-IZTESNrfW15FzqDmiUTtS9AKw="
+    },
+    "ClientFeedbackSection": {
+        "Title1": "Why Choose us",
+        "Title2": "Client Feedbacks",
+        "Paragraph": "From ideation and conceptualization to application development, ready-to-deploy assets, marketing and support, Codiant delights clients of all sizes through agile deliveries and simplified solutions.",
+        "CilentFeedback": [
+            {
+                "Logo": "https://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.png",
+                "Feedback": "Amazing work! Highly recommended.",
+                "Paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "Image": "https://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.png",
+                "Link": "xhttps://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.pngyz"
+            }
+        ]
+    },
+    "TalkToUsSection": {
+        "Title1": "Talk to us",
+        "Paragraph": "Wish to connect with us? We will be happy to hear from you. Fill this form so we can learn more about your requirements..",
+        "Image": "https://media.istockphoto.com/id/1091858450/photo/contact-us-sign-on-a-wooden-desk.jpg?s=2048x2048&w=is&k=20&c=lGivkcCOZD-k50DK3QbcSLWBiNL-q-gGxT3D3qBUtiE="
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "MetaData": {
+        "Title1": "Contact us",
+        "Title2": "Get started with Awwaltech",
+        "Description": "Wish to connect with us? We will be happy to hear from you. Fill this form so we can learn more about your requirements."
+    },
+    "Banner": {
+        "BannerImage": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618",
+        "BannerTitle": "Contact us",
+        "BannerSubtitle": "Get started with Awwaltech",
+        "Description": "Wish to connect with us? We will be happy to hear from you. Fill this form so we can learn more about your requirements."
+    },
+    "WishToConnectSection": {
+        "Title1": "What is Awwaltech",
+        "Image": "Image"
+    },
+    "BusinessessSection": {
+        "Title1": "Businesses that use Awwaltech to build    ",
+        "Logo": [
+            "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg"
+        ]
+    },
+    "ClientFeedbackSection": {
+        "Title1": "Why Choose us",
+        "Title2": "Client Feedbacks",
+        "Paragraph": "From ideation and conceptualization to application development, ready-to-deploy assets, marketing and support, Codiant delights clients of all sizes through agile deliveries and simplified solutions.",
+        "ClientFeedbackSection": {
+            "Title1": "Why Choose us",
+            "Title2": "Client Feedbacks",
+            "Paragraph": "From ideation and conceptualization to application development, ready-to-deploy assets, marketing and support, Codiant delights clients of all sizes through agile deliveries and simplified solutions.",
+            "CilentFeedback": [
+                {
+                    "Logo": "https://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.png",
+                    "Feedback": "Amazing work! Highly recommended.",
+                    "Paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "Image": "https://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.png",
+                    "Link": "xhttps://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.pngyz"
+                }
+            ]
+        }
+    }
+}
+

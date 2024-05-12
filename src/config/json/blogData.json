@@ -1,0 +1,102 @@
+{
+    "MetaData": {
+        "Title": "Main Title",
+        "Description": "Blog page Description "
+    },
+    "Banner": {
+        "TitleTag": "Blog",
+        "Title1": "See how Awwaltech helps",
+        "Title2": " teams achieve their goals",
+        "BannerImage": "https://www.shutterstock.com/image-photo/text-portfolio-on-brown-paper-book-387456811",
+        "BannerImages": [
+            {
+                "Image": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            },
+            {
+                "Image": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            },
+            {
+                "Image": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            },
+            {
+                "Image": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            },
+            {
+                "Image": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"
+            }
+        ]
+    },
+    "MediaSection": [
+        {
+            "Name": "Business",
+            "Text": "We create immersive experiences that     bridge the gap between blueprint + reality.",
+            "Details": "Being a rising name in the IT industry across the world, we deliver quality services in a timely fashion to help our clients gain a leading.edge in this competitive market.",
+            "Banner": "https://sandips2.sg-host.com/static/media/p12.33ccaedaf61d10f6dd67.png",
+            "Type": [
+                "app",
+                "expertise"
+            ],
+            "Link": "xhttps://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.pngyz"
+        },
+        {
+            "Name": "Media",
+            "Text": "We create immersive experiences that     bridge the gap between blueprint + reality.",
+            "Details": "Being a rising name in the IT industry across the world, we deliver quality services in a timely fashion to help our clients gain a leading.edge in this competitive market.",
+            "Banner": "https://sandips2.sg-host.com/static/media/p2.6fa727cf4be4aaca46dc.png",
+            "Type": [
+                "app",
+                "expertise"
+            ],
+            "Link": "xhttps://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.pngyz"
+        },
+        {
+            "Name": " Business2",
+            "Text": "We create immersive experiences that     bridge the gap between blueprint + reality.",
+            "Details": "Being a rising name in the IT industry across the world, we deliver quality services in a timely fashion to help our clients gain a leading.edge in this competitive market.",
+            "Banner": "https://sandips2.sg-host.com/static/media/p3.2ad7a56b8d8f7701944e.png",
+            "Type": [
+                "app",
+                "expertise"
+            ],
+            "Link": "xhttps://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.pngyz"
+        },
+        {
+            "Name": "Sep 26, 2020 | Business",
+            "Text": "We create immersive experiences that     bridge the gap between blueprint + reality.",
+            "Details": "Being a rising name in the IT industry across the world, we deliver quality services in a timely fashion to help our clients gain a leading.edge in this competitive market.",
+            "Banner": "https://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.png",
+            "Type": [
+                "app",
+                "expertise"
+            ],
+            "Link": "xhttps://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.pngyz"
+        },
+        {
+            "Name": "Small Business",
+            "Text": "We create immersive experiences that     bridge the gap between blueprint + reality.",
+            "Details": "Being a rising name in the IT industry across the world, we deliver quality services in a timely fashion to help our clients gain a leading.edge in this competitive market.",
+            "Banner": "https://sandips2.sg-host.com/static/media/p6.c040905b6811a0ca483c.png",
+            "Type": [
+                "mobile",
+                "expertise"
+            ],
+            "Link": "xhttps://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.pngyz"
+        },
+        {
+            "Name": "Small Business2",
+            "Text": "We create immersive experiences that     bridge the gap between blueprint + reality.",
+            "Details": "Being a rising name in the IT industry across the world, we deliver quality services in a timely fashion to help our clients gain a leading.edge in this competitive market.",
+            "Banner": "https://sandips2.sg-host.com/static/media/p6.c040905b6811a0ca483c.png",
+            "Type": [
+                "mobile",
+                "expertise"
+            ],
+            "Link": "xhttps://reviewgrower.com/wp-content/uploads/2022/10/feedback-sign-hanging-on-a-wire.pngyz"
+        }
+    ],
+    "TalkToUsSection": {
+        "Title1": "Talk to us",
+        "Paragraph": "Wish to connect with us? We will be happy to hear from you. Fill this form so we can learn more about your requirements..",
+        "Image": "https://media.istockphoto.com/id/1091858450/photo/contact-us-sign-on-a-wooden-desk.jpg?s=2048x2048&w=is&k=20&c=lGivkcCOZD-k50DK3QbcSLWBiNL-q-gGxT3D3qBUtiE="
+    }
+}
