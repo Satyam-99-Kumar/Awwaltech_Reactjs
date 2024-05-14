@@ -12,7 +12,7 @@ import node from "../../../assets/Technologies/node.png"
 import net from "../../../assets/Technologies/net.png"
 import java from "../../../assets/Technologies/java.png"
 
-function MobileSolution({ apiData }) {
+function MobileSolution({ data }) {
   const [contacts] = useState([
     {
       number:<BsCheck2Circle />,
@@ -86,10 +86,10 @@ function MobileSolution({ apiData }) {
           <img src={img} alt="" />
         </div>
         <div className={style.wrapper__right}>
-          <p>{apiData.OurSolutionsSection.Title1}</p>
-          <h3>{apiData.OurSolutionsSection.Title2}</h3>
+          <p>{data.OurSolutionsSection.Title1}</p>
+          <h3>{data.OurSolutionsSection.Title2}</h3>
           <ul>
-            {apiData.OurSolutionsSection.List.map(item => {
+            {data.OurSolutionsSection.List.map(item => {
               return (
                 <li>
                   <div>

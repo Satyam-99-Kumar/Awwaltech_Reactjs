@@ -1,31 +1,24 @@
-import { Link } from 'react-router-dom'
-// Assets
-import style from './AboutBanner.module.scss'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import style from './AboutBanner.module.scss';
 import img1 from "../../../assets/About/f1.png";
 import img2 from "../../../assets/About/f2.png";
 import img3 from "../../../assets/About/f3.png";
 
-function AboutBanner({data}) {
+function AboutBanner({ data }) {
   return (
     <div className={style.aboutBanner}>
       <div className={style.aboutBanner__left}>
         <div>
           <p>{data?.Banner?.BannerTitle}</p>
           <h1>
-            <div>
-            {data?.Banner?.Title1}
-              </div>
-              <div>
-            {data?.Banner?.Title2}
-              </div>
-              <div>
-            {data?.Banner?.Title3}
-              </div>
+            <div>{data?.Banner?.Title1}</div>
+            <div>{data?.Banner?.Title2}</div>
+            <div>{data?.Banner?.Title3}</div>
           </h1>
           <Link to='/about'>Get a quote</Link>
         </div>
       </div>
-
 
       <div className={style.aboutBanner__right}>
         <div className={style.frame1}>
@@ -39,7 +32,7 @@ function AboutBanner({data}) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default AboutBanner
+export default AboutBanner;

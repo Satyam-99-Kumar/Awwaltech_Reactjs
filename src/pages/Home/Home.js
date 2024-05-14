@@ -10,22 +10,11 @@ import HomeFeedback from "../../components/Home/HomeFeedback/HomeFeedback";
 import HomeService from "../../components/Home/HomeService/HomeService";
 import Navbar from "../../components/Navbar/Navbar";
 import { Data } from "./IndustrySlideData";
-import { fetchHomeData } from '../../config/apiService';
+
 import jsonData from '../../json/homeData.json'
-// import homeserviceData from "../../json/services/mobileService.json"
+
 function Home() {
-  const [data, setdata] = useState(null);
-  const [error, setError] = useState(null);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const fetchData = async () => {
-      setdata(jsonData);
-     console.log("===home>", jsonData)
-    };
-
-    fetchData();
-  }, []);
 
 
   return (

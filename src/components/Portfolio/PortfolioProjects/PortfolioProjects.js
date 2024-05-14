@@ -2,7 +2,7 @@ import React, { useEffect, useState, useMemo } from "react";
 import style from "./PortfolioProjects.module.scss";
 import Projects from "./Projects";
 
-function PortfolioProjects({ apiData }) {
+function PortfolioProjects({ data }) {
   const [active, setActive] = useState(1);
   const [filteredData, setFilteredData] = useState([]);
 
@@ -23,15 +23,15 @@ function PortfolioProjects({ apiData }) {
   
   const memoizedFilteredData = useMemo(() => {
     if (active === 1) {
-      return apiData?.projectSection?.Projects || [];
+      return data?.projectSection?.Projects || [];
     } else {
       return (
-        apiData?.projectSection?.Projects?.filter((project) =>
+        data?.projectSection?.Projects?.filter((project) =>
           project.Type.includes(getCategory(active))
         ) || []
       );
     }
-  }, [apiData, active]);
+  }, [data, active]);
 
   useEffect(() => {
     setFilteredData(memoizedFilteredData);

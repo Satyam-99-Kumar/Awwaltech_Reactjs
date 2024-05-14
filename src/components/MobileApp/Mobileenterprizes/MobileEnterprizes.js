@@ -1,7 +1,7 @@
 import style from "./Mobileenterprizes.module.scss";
 import { BsAward, BsCheckCircle } from "react-icons/bs";
 import { AiOutlineCheck, AiOutlineMobile } from "react-icons/ai";
-function MobileEnterprizes({ apiData }) {
+function MobileEnterprizes({ data }) {
   return (
     <div>
       <div className={style.achievements}>
@@ -12,13 +12,13 @@ function MobileEnterprizes({ apiData }) {
             <div className={style.logo}>
               <BsAward />
             </div>
-            <p>{apiData.DrivingSection.TitleTag}</p>
+            <p>{data.DrivingSection.TitleTag}</p>
             <h1>
-              <div>{apiData.DrivingSection.Title1}</div>
-              <div>{apiData.DrivingSection.Title2}</div>
-              <div>{apiData.DrivingSection.Title3}</div>
+              <div>{data.DrivingSection.Title1}</div>
+              <div>{data.DrivingSection.Title2}</div>
+              <div>{data.DrivingSection.Title3}</div>
             </h1>
-            <p>{apiData.DrivingSection.Paragraph}</p>
+            <p>{data.DrivingSection.Paragraph}</p>
           </div>
         </div>
 
@@ -27,7 +27,7 @@ function MobileEnterprizes({ apiData }) {
         <div className={style.achievements__achieves}>
           {/* column 1 */}
           <div className={style.block1}>
-            {apiData.DrivingSection.Services.slice(0, 3).map((item, index) => {
+            {data.DrivingSection.Services.slice(0, 3).map((item, index) => {
               return (
                 <div className={style.achive} key={index}>
                   <BsCheckCircle />
@@ -39,7 +39,7 @@ function MobileEnterprizes({ apiData }) {
           </div>
           {/* column 2 */}
           <div className={style.block2}>
-            {apiData.DrivingSection.Services.slice(-3).map((item, index) => {
+            {data.DrivingSection.Services.slice(-3).map((item, index) => {
               return (
                 <div className={style.achive} key={index}>
                   <BsCheckCircle />

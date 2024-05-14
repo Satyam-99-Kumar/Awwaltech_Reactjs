@@ -44,7 +44,7 @@
     padding-right: 5rem;
     @include media("<=phone") {
       padding: 15px;
-      justify-content: space-between;
+      justify-content: center;
     }
     @include media(">=tablet") {
       padding-left: 1rem;

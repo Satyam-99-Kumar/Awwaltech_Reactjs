@@ -8,6 +8,7 @@
   @include media("<=phone") {
     flex-wrap: wrap;
     min-height: 60vh;
+   
   }
   @include media(">=phone") {
     height: fit-content;
@@ -33,6 +34,7 @@
     @include media("<=phone") {
       width: 100%;
       padding: 15px;
+      margin-top: 30px;
     }
     p {
       color: #e5e5e5;

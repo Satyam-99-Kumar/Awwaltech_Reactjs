@@ -62,6 +62,7 @@
         @include media("<=phone") {
           margin: 0;
           margin-bottom: 10px;
+          margin-left: 10px;
         }
 
         @include media(">=LGdesktop") {

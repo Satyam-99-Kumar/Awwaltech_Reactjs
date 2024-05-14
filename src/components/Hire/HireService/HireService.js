@@ -5,7 +5,7 @@ import style from "./HireService.module.scss";
 import { BsChevronRight, BsArrowRight } from "react-icons/bs";
 import { useState, useEffect } from 'react';
 
-function HireService({ apiData }) {
+function HireService({ data }) {
   const [imagePaths, setImagePaths] = useState([]);
   useEffect(() => {
     // Define image paths
@@ -39,14 +39,14 @@ function HireService({ apiData }) {
     <div className={style.services}>
       <div className={style.services__text}>
         <h1>
-          {apiData.ServicesSection.Title1} <span>{apiData.ServicesSection.Title2}</span> {apiData.ServicesSection.Title3}
+          {data.ServicesSection.Title1} <span>{data.ServicesSection.Title2}</span> {data.ServicesSection.Title3}
         </h1>
-        <p>{apiData.ServicesSection.Paragraph}</p>
+        <p>{data.ServicesSection.Paragraph}</p>
       </div>
 
       <div className={style.services__all}>
         <Slider {...settings} className={style.slider}>
-          {apiData.ServicesSection.Services.map((item, index) => {
+          {data.ServicesSection.Services.map((item, index) => {
             return (
               <div className={style.service}>
                 <div className={style.service__content}>

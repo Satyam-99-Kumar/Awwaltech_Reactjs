@@ -25,6 +25,8 @@
 
   @include media("<=phone") {
     background-color: red;
+    width: 307px;
+    
   }
 }
 

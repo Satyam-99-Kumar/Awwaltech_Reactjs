@@ -4,12 +4,12 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { CgArrowRight } from "react-icons/cg";
 // import { data } from "./Data";
 
-function BlogPosts({apiData}) {
+function BlogPosts({data}) {
   return (
     <div className={style.blogpost}>
 
       <div className={style.allposts}>
-        {apiData.MediaSection.map((prjct) => (
+        {data.MediaSection.map((prjct) => (
           <div className={style.post}>
             <div className={style.image}>
               <img src={prjct.Banner} alt="" />

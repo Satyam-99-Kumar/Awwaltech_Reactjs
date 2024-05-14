@@ -3,7 +3,7 @@ import { BsChevronRight } from "react-icons/bs";
 import { Card, Grid } from "@mui/material";
 import { useState } from "react";
 
-function MobileServices({ apiData }) {
+function MobileServices({ data }) {
   const [contacts] = useState([
     {
       number: "1.",
@@ -43,19 +43,19 @@ function MobileServices({ apiData }) {
       {/* ///////////////////////////////////// */}
       <div className={style.solve__identity}>
         <div className={style.head}>
-          <p>{apiData.MobileAppSolutionSection.Title1}</p>
+          <p>{data.MobileAppSolutionSection.Title1}</p>
           <h2>
-            <div>{apiData.MobileAppSolutionSection.Title2}</div>
-            <div>{apiData.MobileAppSolutionSection.Title3}</div>
+            <div>{data.MobileAppSolutionSection.Title2}</div>
+            <div>{data.MobileAppSolutionSection.Title3}</div>
             <div className={style.headMobile}>
-              {apiData.MobileAppSolutionSection.Title2}{" "}
-              {apiData.MobileAppSolutionSection.Title2}{" "}
-              {apiData.MobileAppSolutionSection.Title3}
+              {data.MobileAppSolutionSection.Title2}{" "}
+              {data.MobileAppSolutionSection.Title2}{" "}
+              {data.MobileAppSolutionSection.Title3}
             </div>
           </h2>
         </div>
         <div className={style.text}>
-          <p>{apiData.MobileAppSolutionSection.Paragraph}</p>
+          <p>{data.MobileAppSolutionSection.Paragraph}</p>
           <p>
             Being a rising name in the IT industry across the world, we deliver
             quality services in a timely fashion to help our clients gain a

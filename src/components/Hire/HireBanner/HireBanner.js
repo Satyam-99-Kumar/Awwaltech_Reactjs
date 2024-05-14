@@ -2,17 +2,17 @@ import style from "./HireBanner.module.scss";
 import img1 from "../../../assets/Hire/banner.png";
 import { Link } from "react-router-dom";
 
-function HireBanner({apiData}) {
+function HireBanner({data}) {
   return (
     <div className={style.banner}>
       <div className={style.banner__left}>
         <div>
-          <p>{apiData.Banner.TitleTag}</p>
+          <p>{data.Banner.TitleTag}</p>
           <h1 className={style.desktopViewHeading}>
-            <div>{apiData.Banner.Title1}</div>
-            <div>{apiData.Banner.Title2}</div>
+            <div>{data.Banner.Title1}</div>
+            <div>{data.Banner.Title2}</div>
           </h1>
-          <h1 className={style.mobileViewHeading}>{apiData.Banner.Title1} {apiData.Banner.Title2}</h1>
+          <h1 className={style.mobileViewHeading}>{data.Banner.Title1} {data.Banner.Title2}</h1>
           <Link to="/hire">Contact Us</Link>
         </div>
       </div>

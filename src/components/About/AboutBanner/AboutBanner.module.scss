@@ -28,6 +28,7 @@
     @include media("<=phone") {
       width: 100%;
       padding: 15px;
+      margin-top: 20px;
     }
     @include media(">=LGdesktop") {
       width: 50%;

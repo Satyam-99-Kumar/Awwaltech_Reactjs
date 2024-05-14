@@ -17,32 +17,32 @@ const settings = {
   centerPadding: "0",
 };
 
-function HireExperience({apiData}) {
+function HireExperience({data}) {
   return (
     <div className={style.hireExpWrapper}>
       <div className={style.hireexperience}>
         <div className={style.hireexperience__image}>
           <img src={img1} alt="" />
         </div>
-        <p>{apiData?.GetReadySection?.TitleTag}</p>
-        <h1>{apiData?.GetReadySection?.Title}</h1>
-        <p className={style.secondText}>{apiData?.GetReadySection?.Paragraph}</p>
+        <p>{data?.GetReadySection?.TitleTag}</p>
+        <h1>{data?.GetReadySection?.Title}</h1>
+        <p className={style.secondText}>{data?.GetReadySection?.Paragraph}</p>
 
         <div className={style.infos}>
           <div className={style.info}>
-            <h2>{apiData.GetReadySection.ManYearExp}</h2>
+            <h2>{data.GetReadySection.ManYearExp}</h2>
             <p>MAN-YEAR-EXPERIENCE</p>
           </div>
           <div className={style.info}>
-            <h2>{apiData.GetReadySection.YearsExp}</h2>
+            <h2>{data.GetReadySection.YearsExp}</h2>
             <p>YEARS EXPERIENCE</p>
           </div>
           <div className={style.info}>
-            <h2>{apiData.GetReadySection.SatisfiedCustomers}</h2>
+            <h2>{data.GetReadySection.SatisfiedCustomers}</h2>
             <p>SATISFIED CUSTOMERS</p>
           </div>
           <div className={style.info}>
-            <h2>{apiData.GetReadySection.ClientRetention}</h2>
+            <h2>{data.GetReadySection.ClientRetention}</h2>
             <p>CLIENT RETENTION</p>
           </div>
         </div>

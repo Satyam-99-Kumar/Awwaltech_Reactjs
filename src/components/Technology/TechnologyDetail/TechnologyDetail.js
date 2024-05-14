@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 
-function TechnologyDetail({ apiData }) {
+function TechnologyDetail({ data }) {
   const [imagePaths, setImagePaths] = useState([]);
   useEffect(() => {
     // Define image paths
@@ -18,14 +18,14 @@ function TechnologyDetail({ apiData }) {
     <>
       <div className={style.detail}>
         <div className={style.head}>
-          <p>{apiData.WhatWeCanOfferSection.Title1}</p>
+          <p>{data.WhatWeCanOfferSection.Title1}</p>
           <h2>
-            <div>{apiData.WhatWeCanOfferSection.Title2}</div>
+            <div>{data.WhatWeCanOfferSection.Title2}</div>
           </h2>
         </div>
         <div className={style.text}>
-          <p>{apiData.WhatWeCanOfferSection.Paragraph1}</p>
-          <p>{apiData.WhatWeCanOfferSection.Paragraph2}</p>
+          <p>{data.WhatWeCanOfferSection.Paragraph1}</p>
+          <p>{data.WhatWeCanOfferSection.Paragraph2}</p>
          
         </div>
       </div>
@@ -33,7 +33,7 @@ function TechnologyDetail({ apiData }) {
       {/* /////////////////////////////////////// */}
       {/* /////////////////////////////////////// */}
       <div className={style.solutions}>
-        {apiData.WhatWeCanOfferSection.Offer.map((item,index) => {
+        {data.WhatWeCanOfferSection.Offer.map((item,index) => {
           return (
             <div className={style.solution}>
               <div className={style.logo}>

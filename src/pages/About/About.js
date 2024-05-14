@@ -5,41 +5,23 @@ import AboutWhat from "../../components/About/AboutWhat/AboutWhat";
 import Footer from "../../components/Footer/Footer";
 import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Navbar from "../../components/Navbar/Navbar";
-import { fetchAboutData } from '../../config/apiService';
+import jsonData from "../../json/aboutData.json";
 import AboutInvestors from "../../components/About/AboutInvestors/AboutInvestors";
 
 function About() {
-  const [apiData, setApiData] = useState(null);
-  const [error, setError] = useState(null);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const fetchDataFromAPI = async () => {
-      try {
-        const result = await fetchAboutData();
-        setApiData(result.result[0]);
-        document.title = "About Us";
-        document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
-      } catch (error) {
-        setError(error);
-      }
-    };
-    fetchDataFromAPI();
-  }, []);
-
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
-
-
   return (
     <>
       <Navbar />
-      <AboutBanner data={apiData} />
-      <AboutWhat data={apiData} />
-      <AboutEnterprize data={apiData} />
-      <AboutInvestors />
-      <GlobalContact />
-      <Footer />
+      {jsonData && (
+        <>
+          <AboutBanner data={jsonData} />
+          <AboutWhat data={jsonData} />
+          <AboutEnterprize data={jsonData} />
+          <AboutInvestors />
+          <GlobalContact />
+          <Footer />
+        </>
+      )}
     </>
   );
 }
