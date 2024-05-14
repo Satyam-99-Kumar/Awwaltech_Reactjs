@@ -11,44 +11,37 @@ import HomeService from "../../components/Home/HomeService/HomeService";
 import Navbar from "../../components/Navbar/Navbar";
 import { Data } from "./IndustrySlideData";
 import { fetchHomeData } from '../../config/apiService';
-
+import jsonData from '../../json/homeData.json'
+// import homeserviceData from "../../json/services/mobileService.json"
 function Home() {
-  const [apiData, setApiData] = useState(null);
+  const [data, setdata] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    const fetchDataFromAPI = async () => {
-      try {
-        const result = await fetchHomeData();
-        setApiData(result);
-      } catch (error) {
-        setError(error);
-      }
-      document.title = "Home";
-      document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
+    const fetchData = async () => {
+      setdata(jsonData);
+     console.log("===home>", jsonData)
     };
-    fetchDataFromAPI();
+
+    fetchData();
   }, []);
 
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
 
   return (
     <>
       <Navbar />
-      {apiData && (
+      {jsonData && (
         <>
-          <HomeBanner data={apiData}/>
-          <HomeService data={apiData} />
-          <GlobalIndustries data={Data} apiData={apiData} />
-          <HomeClients data={apiData} />
-          <GlobalWorks background={`#F5F5F7`} apiData={apiData} />
-          <HomeAchievements  data={apiData}/>
+          <HomeBanner data={jsonData}/>
+          <HomeService data={jsonData} />
+          <GlobalIndustries data={Data} apiData={jsonData} />
+          <HomeClients data={jsonData} />
+          <GlobalWorks background={`#F5F5F7`} data={jsonData} />
+          <HomeAchievements  data={jsonData}/>
           <HomeFeedback background={`#F5F5F7`} />
-          <GlobalContact data={apiData}/>
-          <Footer data={apiData}/>
+          <GlobalContact data={jsonData}/>
+          <Footer data={jsonData}/>
         </>
       )}
     </>

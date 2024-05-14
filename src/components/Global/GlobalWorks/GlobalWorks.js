@@ -5,7 +5,7 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 
-function GlobalWorks({background, apiData}) {
+function GlobalWorks({background, data}) {
   const slider = useRef(null);
 
   const settings = {
@@ -31,15 +31,15 @@ function GlobalWorks({background, apiData}) {
     <div className={style.works} style={{background: background}}>
       <div className={style.works__text}>
         <h1>
-          {apiData?.result[0]?.RecentWorkSection?.Title1}
-          <span> {apiData?.result[0]?.RecentWorkSection?.Title2}</span>
+          {data.RecentWorkSection?.Title1}
+          <span> {data.RecentWorkSection?.Title2}</span>
         </h1>
-        <p>{apiData?.result[0]?.RecentWorkSection?.Paragraph}</p>
+        <p>{data.RecentWorkSection?.Paragraph}</p>
       </div>
 
       <div className={style.slider}>
         <Slider className={style.allworks} {...settings} ref={slider}>
-        {apiData?.result[0]?.RecentWorkSection?.Projects.map((project, index) => (
+        {data.RecentWorkSection?.Projects.map((project, index) => (
                       <Work id={index} project={project} />
         ))}
           {/* <Work id={2} />

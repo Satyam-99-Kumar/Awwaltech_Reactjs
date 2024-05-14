@@ -14,9 +14,9 @@ function HomeAchievements({ data }) {
           <div className={style.logo}>
             <BsPatchCheck />
           </div>
-          <p>{data?.result[0]?.AchievementsSection?.Title1}</p>
-          <h1>{data?.result[0]?.AchievementsSection?.Title2}</h1>
-          <span>{data?.result[0]?.AchievementsSection?.Paragraph}</span>
+          <p>{data.AchievementsSection?.Title1}</p>
+          <h1>{data.AchievementsSection?.Title2}</h1>
+          <span>{data.AchievementsSection?.Paragraph}</span>
         </div>
       </div>
 
@@ -25,7 +25,7 @@ function HomeAchievements({ data }) {
       <div className={style.achievements__achieves}>
       {/* column 1 */}
       <div className={style.block1}>
-        {data?.result[0]?.AchievementsSection?.Achievements.slice(0,3).map((achievement, index) => (
+        {data.AchievementsSection?.Achievements.slice(0,3).map((achievement, index) => (
           <div key={index} className={style.achive}>
             <BsCheckCircle />
             <p>{achievement.Paragraph}</p>
@@ -34,7 +34,7 @@ function HomeAchievements({ data }) {
       </div>
       {/* column 2 */}
       <div className={style.block2}>
-        {data?.result[0]?.AchievementsSection?.Achievements.slice(-3).map((achievement, index) => (
+        {data.AchievementsSection?.Achievements.slice(-3).map((achievement, index) => (
           <div key={index} className={style.achive}>
             <BsCheckCircle />
             <p>{achievement.Paragraph}</p>

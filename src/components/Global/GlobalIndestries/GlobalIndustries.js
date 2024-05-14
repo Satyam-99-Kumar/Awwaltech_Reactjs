@@ -41,9 +41,9 @@ function GlobalIndustries({ data, apiData }) {
   return (
     <div className={style.industries}>
       <div className={style.industries__text}>
-        <p>{apiData?.result[0]?.IndustriesSection?.Title1}</p>
-        <h1>{apiData?.result[0]?.IndustriesSection?.Title2}</h1>
-        <p>{apiData?.result[0]?.IndustriesSection?.Paragraph}</p>
+        <p>{apiData.IndustriesSection?.Title1}</p>
+        <h1>{apiData.IndustriesSection?.Title2}</h1>
+        <p>{apiData.IndustriesSection?.Paragraph}</p>
       </div>
 
       {/* //////////////////////////////////// */}
@@ -51,7 +51,7 @@ function GlobalIndustries({ data, apiData }) {
       {/* //////////////////////////////////// */}
       <div className={style.optionSliderForMobile}>
         <Slider {...settings2}>
-          {apiData?.result[0]?.IndustriesSection.Industries?.map((data, index) => (
+          {apiData.IndustriesSection.Industries?.map((data, index) => (
             <div
             key={`${data._id}_${index}`}
               className={
@@ -80,7 +80,7 @@ function GlobalIndustries({ data, apiData }) {
         {/* //////////////////////////////////// */}
         <div className={style.optionWrapper2}>
           <Slider {...settings} className={style.content__options} ref={slider}>
-            {apiData?.result[0]?.IndustriesSection.Industries?.map((data, index) => (
+            {apiData.IndustriesSection.Industries?.map((data, index) => (
               <div 
                 key={index+1}
                 className={
@@ -120,7 +120,7 @@ function GlobalIndustries({ data, apiData }) {
                 : `${style.wrapper}`
             }
           >
-            <Detail option={option} data={apiData?.result[0]?.IndustriesSection.Industries} />
+            <Detail option={option} data={apiData.IndustriesSection.Industries} />
           </div>
         </div>
       </div>

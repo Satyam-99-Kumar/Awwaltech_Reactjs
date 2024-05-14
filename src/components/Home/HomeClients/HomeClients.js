@@ -32,14 +32,14 @@ function HomeClients({ data }) {
   return (
     <div className={style.clients}>
       <div className={style.clients__text}>
-        <p>{data?.result[0]?.ClientsSection?.Title1}</p>
-        <h1>{data?.result[0]?.ClientsSection?.Title2}</h1>
-        <p>{data?.result[0]?.ClientsSection?.Paragraph}</p>
+        <p>{data.ClientsSection?.Title1}</p>
+        <h1>{data.ClientsSection?.Title2}</h1>
+        <p>{data.ClientsSection?.Paragraph}</p>
       </div>
 
       <div className={style.options}>
         <div className={style.options__wrapper}>
-          {data?.result[0]?.ClientsSection?.Clients.map((client, index) => (
+          {data.ClientsSection?.Clients.map((client, index) => (
             <div
               key={client._id}
               className={
@@ -67,7 +67,7 @@ function HomeClients({ data }) {
       >
         <div className={style.image}>
           <Slider {...settings} className={style.slider}>
-            {data?.result[0]?.ClientsSection?.Clients.map((client, index) => (
+            {data.ClientsSection?.Clients.map((client, index) => (
               <div className={style.slider__container} key={client._id}>
                 {/* Replace this with your actual image URL */}
                 {/* <img src={client.Image} alt="" /> */}
@@ -79,13 +79,13 @@ function HomeClients({ data }) {
         {/* <img src={img1} alt="" /> */}
         <div className={style.content}>
 
-          <h3>{data?.result[0]?.ClientsSection?.Clients[selected - 1].ClientName}</h3>
+          <h3>{data.ClientsSection?.Clients[selected - 1].ClientName}</h3>
           <div className={style.contentWrapper}>
 
             <div className={style.contentLeft}>
               <h4>Make Difference with Codiant</h4>
               <ul>
-                {data?.result[0]?.ClientsSection?.Clients[selected - 1].List1.map((list, index) => (
+                {data.ClientsSection?.Clients[selected - 1].List1.map((list, index) => (
                   <li key={index}>
                     <div>
                       <AiOutlineCheck />
@@ -98,7 +98,7 @@ function HomeClients({ data }) {
             <div className={style.contentRight}>
               <h4>Make Difference with Codiant</h4>
               <ul>
-                {data?.result[0]?.ClientsSection?.Clients[selected - 1].List2.map((list, index) => (
+                {data.ClientsSection?.Clients[selected - 1].List2.map((list, index) => (
 
                   <li key={index}>
                     <div>

@@ -9,14 +9,15 @@ import img5 from "../../../assets/Home/Technologies/Microsoft.png";
 import img6 from "../../../assets/Home/Technologies/Terminal.png";
 
 function HomeBanner({ data }) {
+  console.log("===>",data)
   return (
     <header className={style.header}>
       <div className={style.header__text}>
         <h1>
-          <div>{data?.result[0]?.Banner?.Title1}</div>
-          <div>{data?.result[0]?.Banner?.Title2}</div>
+          <div>{data.Banner?.Title1}</div>
+          <div>{data.Banner?.Title2}</div>
         </h1>
-        <p>{data?.result[0]?.Banner?.BannerSubtitle}</p>
+        <p>{data.Banner?.BannerSubtitle}</p>
         <div className={style.btnGroup}>
           <button>Get started</button>
           <button>Get a quote</button>
@@ -26,11 +27,11 @@ function HomeBanner({ data }) {
         <div className={style.optionWrapper}>
           <div className={style.text}>
             <p className={style.caption}>
-              {data?.result[0]?.Banner?.BannerLogoCaption}
+              {data.Banner?.BannerLogoCaption}
             </p>
           </div>
           {/* Rendering logos */}
-          {/* {data?.result[0]?.Banner?.BannerLogos.map((item, index) => (
+          {/* {data.Banner?.BannerLogos.map((item, index) => (
             <div className={style.logo} key={`${item.Logo}_${index}`}>
               <img src={item.Logo} alt={item.Logo} />
             </div>

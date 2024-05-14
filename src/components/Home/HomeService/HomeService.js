@@ -6,6 +6,7 @@ import { BsChevronRight, BsArrowRight } from "react-icons/bs";
 import { useState, useEffect } from 'react';
 
 function HomeService({ data }) {
+  console.log("....homeservicedta===>",data)
   const [imagePaths, setImagePaths] = useState([]);
   useEffect(() => {
     // Define image paths
@@ -41,20 +42,20 @@ function HomeService({ data }) {
     <div className={style.services}>
       <div className={style.services__text}>
         {/* <h1 className={style.servicetexth1}>
-          <div className={style.servicediv}>{data?.result[0]?.ServicesSection?.Title}</div>
+          <div className={style.servicediv}>{data.ServicesSection?.Title}</div>
         </h1> */}
         <h1>
           <div>
-            <span>{data?.result[0]?.ServicesSection?.Title1}</span> {data?.result[0]?.ServicesSection?.Title2}
+            <span>{data.ServicesSection?.Title1}</span> {data.ServicesSection?.Title2}
           </div>
-          <div>{data?.result[0]?.ServicesSection?.Title3}</div>
+          <div>{data.ServicesSection?.Title3}</div>
         </h1>
-        <p>{data?.result[0]?.ServicesSection?.Paragraph} </p>
+        <p>{data.ServicesSection?.Paragraph} </p>
       </div>
 
       <div className={style.services__all}>
         <Slider {...settings} className={style.slider}>
-          {data?.result[0]?.ServicesSection?.Services.map((service, index) => (
+          {data.ServicesSection?.Services.map((service, index) => (
             <div className={style.service} key={service._id}>
               <div className={style.service__content}>
                 <img src={imagePaths[index]} alt="" />

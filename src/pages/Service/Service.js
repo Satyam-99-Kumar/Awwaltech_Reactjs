@@ -9,6 +9,7 @@ import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import { fetchMobileAppServiceData, fetchHomeData } from '../../config/apiService';
+const homedata = `./json/homeData.json`;
 
 function Service() {
   const [apiData, setApiData] = useState(null);
@@ -31,7 +32,11 @@ function Service() {
 
     const fetchHomeDataFromAPI = async () => {
       try {
-        const result = await fetchHomeData();
+        const response = await fetch(homedata);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const result = await response.json();
         setHomeApiData(result);
       } catch (error) {
         setError(error);

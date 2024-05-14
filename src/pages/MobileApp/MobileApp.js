@@ -12,6 +12,7 @@ import MobileServices from "../../components/MobileApp/MobileServices/MobileServ
 import MobileEnterprizes from "../../components/MobileApp/Mobileenterprizes/MobileEnterprizes";
 import MobileSolution from "../../components/MobileApp/MobileSolution/MobileSolution";
 import Mobiletechnology from "../../components/MobileApp/Mobiletechnology/Mobiletechnology";
+const homedata = `./json/homeData.json`;
 
 function MobileApp() {
   const [apiData, setApiData] = useState(null);
@@ -36,7 +37,11 @@ function MobileApp() {
 
     const fetchHomeDataFromAPI = async () => {
       try {
-        const result = await fetchHomeData();
+        const response = await fetch(homedata);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const result = await response.json();
         setHomeApiData(result);
         setLoading(false);
       } catch (error) {
