@@ -1,7 +1,7 @@
 import style from "./ServiceEnterprize.module.scss";
 import { BsAward, BsCheckCircle } from "react-icons/bs";
 
-function ServiceEnterprize({ apiData }) {
+function ServiceEnterprize(data) {
   return (
     <div className={style.achievements}>
       {/* ///////////////////////////////////////////// */}
@@ -11,13 +11,13 @@ function ServiceEnterprize({ apiData }) {
           <div className={style.logo}>
             <BsAward />
           </div>
-          <p>{apiData.DrivingSection.TitleTag}</p>
+          <p>{data.apiData.DrivingSection.TitleTag}</p>
           <h1>
-            <div>{apiData.DrivingSection.Title1}</div>
-            <div>{apiData.DrivingSection.Title2}</div>
-            <div>{apiData.DrivingSection.Title3}</div>
+            <div>{data.apiData.DrivingSection.Title1}</div>
+            <div>{data.apiData.DrivingSection.Title2}</div>
+            <div>{data.apiData.DrivingSection.Title3}</div>
           </h1>
-          <p>{apiData.DrivingSection.Paragraph}</p>
+          <p>{data.apiData.DrivingSection.Paragraph}</p>
         </div>
       </div>
 
@@ -26,7 +26,7 @@ function ServiceEnterprize({ apiData }) {
       <div className={style.achievements__achieves}>
         {/* column 1 */}
         <div className={style.block1}>
-          {apiData.DrivingSection.Services.slice(0, 3).map((item, index) => {
+          {data.apiData.DrivingSection.Services.slice(0, 3).map((item, index) => {
             return (
               <div className={style.achive} key={index}>
                 <BsCheckCircle />
@@ -38,7 +38,7 @@ function ServiceEnterprize({ apiData }) {
         </div>
         {/* column 2 */}
         <div className={style.block2}>
-          {apiData.DrivingSection.Services.slice(-3).map((item, index) => {
+          {data.apiData.DrivingSection.Services.slice(-3).map((item, index) => {
             return (
               <div className={style.achive} key={index}>
                 <BsCheckCircle />

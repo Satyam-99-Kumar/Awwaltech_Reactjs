@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import PortfolioTalk from "../../components/Portfolio/PortfolioTalk/PortfolioTalk";
 import Footer from "../../components/Footer/Footer";
@@ -9,6 +10,11 @@ import img1 from "../../assets/Career/unsplash_jDdkEddFuBI.png"
 
 function CareerDetails() {
   const { name } = useParams();
+  useEffect(() => {
+    window.scrollTo(0,0);
+    document.title = "Career Detail - Awwaltech Pvt. Ltd.";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
+  }, []);
   return (
     <>
      <div className={style.mainbanwrap}>

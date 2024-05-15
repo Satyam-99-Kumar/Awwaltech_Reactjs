@@ -14,7 +14,11 @@ import { Data } from "./IndustrySlideData";
 import jsonData from '../../json/homeData.json'
 
 function Home() {
-
+  useEffect(() => {
+    window.scrollTo(0,0);
+    document.title = "Home - Awwaltech Pvt. Ltd.";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
+  }, []);
 
 
   return (

@@ -17,7 +17,7 @@ const settings = {
 };
 
 
-function ServiceSolution({ apiData }) {
+function ServiceSolution(data ) {
   return (
     <div className={style.serviceSolution}>
       {/* ///////////////////////////////////// */}
@@ -28,10 +28,10 @@ function ServiceSolution({ apiData }) {
           <img src={img} alt="" />
         </div>
         <div className={style.wrapper__right}>
-          <p>{apiData.OurSolutionsSection.Title1}</p>
-          <h3>{apiData.OurSolutionsSection.Title2}</h3>
+          <p>{data.apiData.OurSolutionsSection.Title1}</p>
+          <h3>{data.apiData.OurSolutionsSection.Title2}</h3>
           <ul>
-            {apiData.OurSolutionsSection.List.map(item => {
+            {data.apiData.OurSolutionsSection.List.map(item => {
               return (
                 <li>
                   <div>

@@ -3,7 +3,7 @@ import { FiMonitor } from "react-icons/fi";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-function ServiceServices({ apiData }) {
+function ServiceServices(data) {
   return (
     <div className={style.solve}>
       {/* ///////////////////////////////////// */}
@@ -11,16 +11,16 @@ function ServiceServices({ apiData }) {
       {/* ///////////////////////////////////// */}
       <div className={style.solve__identity}>
         <div className={style.head}>
-          <p>{apiData.MobileAppSolutionSection.Title1}</p>
+          <p>{data.apiData.MobileAppSolutionSection.Title1}</p>
           <h2>
-            <div>{apiData.MobileAppSolutionSection.Title2}</div>
-            <div>{apiData.MobileAppSolutionSection.Title3}</div>
-            <div className={style.headMobile}>{apiData.MobileAppSolutionSection.Title2} {apiData.MobileAppSolutionSection.Title2} {apiData.MobileAppSolutionSection.Title3}</div>
+            <div>{data.apiData.MobileAppSolutionSection.Title2}</div>
+            <div>{data.apiData.MobileAppSolutionSection.Title3}</div>
+            <div className={style.headMobile}>{data.apiData.MobileAppSolutionSection.Title2} {data.apiData.MobileAppSolutionSection.Title2} {data.apiData.MobileAppSolutionSection.Title3}</div>
           </h2>
         </div>
         <div className={style.text}>
-          <p>{apiData.MobileAppSolutionSection.Paragraph1}</p>
-          <p>{apiData.MobileAppSolutionSection.Paragraph2}</p>
+          <p>{data.apiData.MobileAppSolutionSection.Paragraph1}</p>
+          <p>{data.apiData.MobileAppSolutionSection.Paragraph2}</p>
         </div>
       </div>
 
@@ -30,17 +30,17 @@ function ServiceServices({ apiData }) {
       <div className={style.solve__solutions}>
         <div className={style.text}>
           <h1>
-            <div>{apiData.MobileAppSolutionSection2.Title1}</div>
+            <div>{data.apiData.MobileAppSolutionSection2.Title1}</div>
             <div>
-              {apiData.MobileAppSolutionSection2.Title2} <span>{apiData.MobileAppSolutionSection2.Title3}</span>
+              {data.apiData.MobileAppSolutionSection2.Title2} <span>{data.apiData.MobileAppSolutionSection2.Title3}</span>
             </div>
           </h1>
-          <p>{apiData.MobileAppSolutionSection2.Paragraph} </p>
+          <p>{data.apiData.MobileAppSolutionSection2.Paragraph} </p>
         </div>
 
         <div className={style.solutionWrapper}>
           <div className={style.solutions}>
-            {apiData.MobileAppSolutionSection2.Services.map(item => {
+            {data.apiData.MobileAppSolutionSection2.Services.map(item => {
               return (
                 <div className={style.solution}>
                   <div className={style.logo}>

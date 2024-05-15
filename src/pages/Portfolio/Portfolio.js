@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useState, useEffect } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import PortfolioBanner from "../../components/Portfolio/PortfolioBanner/PortfolioBanner";
 import PortfolioProjects from "../../components/Portfolio/PortfolioProjects/PortfolioProjects";
@@ -11,7 +11,11 @@ import jsonData from "../../json/portfolioData.json"
 const PortfolioHighlight = lazy(() => import("../../components/Portfolio/PortfolioHighlight/PortfolioHighlight"));
 
 function Portfolio() {
-
+  useEffect(() => {
+    window.scrollTo(0,0);
+    document.title = "Portfolio - Awwaltech Pvt. Ltd.";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
+  }, []);
 
   return (
     <>

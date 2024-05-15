@@ -5,6 +5,11 @@ import PortfolioTalk from "../../components/Portfolio/PortfolioTalk/PortfolioTal
 import jsonData from "../../json/technologiesData.json";
 
 function Technology() {
+  useEffect(() => {
+    window.scrollTo(0,0);
+    document.title = "Technologies - Awwaltech Pvt. Ltd.";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
+  }, []);
   // Dynamically import components using React.lazy
   const TechnologyBanner = React.lazy(() =>
     import("../../components/Technology/TechnologyBanner/TechnologyBanner")

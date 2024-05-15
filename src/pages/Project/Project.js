@@ -7,7 +7,9 @@ import PortfolioTalks from "../../components/Portfolio/PortfolioTalk/PortfolioTa
 
 function Project() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0,0);
+    document.title = "Project - Awwaltech Pvt. Ltd.";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
   }, []);
 
   return (

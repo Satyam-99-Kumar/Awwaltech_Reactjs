@@ -15,6 +15,11 @@ import Mobiletechnology from "../../components/MobileApp/Mobiletechnology/Mobile
 import homeData from "../../json/homeData.json"
 
 function MobileApp() {
+  useEffect(() => {
+    window.scrollTo(0,0);
+    document.title = "Mobile App Development - Awwaltech Pvt. Ltd.";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
+  }, []);
   return (
     <>
       <Navbar />

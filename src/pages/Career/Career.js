@@ -8,6 +8,8 @@ import Navbar from "../../components/Navbar/Navbar";
 function Career() {
   useEffect(() => {
     window.scrollTo(0,0);
+    document.title = "Career - Awwaltech Pvt. Ltd.";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
   }, []);
 
 

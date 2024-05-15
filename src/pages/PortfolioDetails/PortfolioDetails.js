@@ -12,6 +12,11 @@ import PortfolioDetailstech from '../../components/PortfolioDetails/PortfolioDet
 import PortfolioDetailsIntegrate from '../../components/PortfolioDetails/PortfolioDetailsIntegrate/PortfolioDetailsIntegrate'
 import PortfolioDetailsProjects from '../../components/PortfolioDetails/PortfolioDetailsProjects/PortfolioDetailsProjects'
 export default function PortfolioDetails() {
+  useEffect(() => {
+    window.scrollTo(0,0);
+    document.title = "Portfolio Details - Awwaltech Pvt. Ltd.";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
+  }, []);
   return (
     <>
     <Navbar />

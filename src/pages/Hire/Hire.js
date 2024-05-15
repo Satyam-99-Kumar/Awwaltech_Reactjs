@@ -10,6 +10,11 @@ import HireExcecutionProcess from "../../components/Hire/HireExcecutionProcess/H
 import jsonData from "../../json/hireData.json";
 
 function Hire() {
+  useEffect(() => {
+    window.scrollTo(0,0);
+    document.title = "Hire Developers - Awwaltech Pvt. Ltd.";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
+  }, []);
   return (
     <>
       <Navbar />

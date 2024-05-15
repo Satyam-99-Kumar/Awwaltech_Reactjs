@@ -7,6 +7,8 @@ import Navbar from "../../components/Navbar/Navbar";
 function BlogSingle() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Blog Detail - Awwaltech Pvt. Ltd.";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
   }, []);
 
   return (

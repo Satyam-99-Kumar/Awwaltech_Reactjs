@@ -10,7 +10,9 @@ import ContactDirect from "../../components/Contact/contactDirect/ContactDirect"
 
 function ContactUs() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0,0);
+    document.title = "Contact Us - Awwaltech Pvt. Ltd.";
+    document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
   }, []);
 
   return (
