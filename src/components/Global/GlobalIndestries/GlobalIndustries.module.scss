@@ -156,6 +156,17 @@
 
 }
 
+.tabs {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.tab_btn {
+  padding: 0 12px;
+}
+
 .option .optionWrapper:hover {
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -217,8 +228,8 @@
 // ////////////////////////////////////////////////////////////////
 // ////////////////////////////////////////////////////////////////
 .content .content__detail {
-  width: 75%;
-  padding-left: 50px;
+  width: 100%;
+
 
   @include media("<=phone") {
     width: 100%;

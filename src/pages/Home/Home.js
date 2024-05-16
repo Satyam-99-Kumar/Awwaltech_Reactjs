@@ -32,7 +32,7 @@ function Home() {
           <HomeClients data={jsonData} />
           <GlobalWorks background={`#F5F5F7`} data={jsonData} />
           <HomeAchievements  data={jsonData}/>
-          <HomeFeedback background={`#F5F5F7`} />
+          <HomeFeedback background={`#F5F5F7`} data={jsonData} />
           <GlobalContact data={jsonData}/>
           <Footer data={jsonData}/>
         </>

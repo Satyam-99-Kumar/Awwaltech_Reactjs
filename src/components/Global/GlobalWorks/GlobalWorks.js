@@ -7,6 +7,7 @@ import { useRef } from "react";
 
 function GlobalWorks({background, data}) {
   const slider = useRef(null);
+  console.log("hello", data)
 
   const settings = {
     dots: false,
