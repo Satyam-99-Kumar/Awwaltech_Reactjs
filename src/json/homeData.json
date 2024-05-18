@@ -1,3 +1,4 @@
+
 {
     "MetaData": {
         "Title": "Main Title",
@@ -478,7 +479,7 @@
         "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome-focused solutions with enhanced agility that help them to rapidly reshape, renew and build new capabilities for their business.",
         "Projects": [
             {
-                "ProjectName": "Click DRS",
+                "ProjectName": "Go",
                 "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome-focused solutions with enhanced agility that help them to rapidly reshape, renew and build new capabilities for their business.",
                 "Image": "../../../assets/Global/Projects/gomedii-app.png",
                 "Link": "xyzzzzzz"
@@ -486,7 +487,7 @@
              {
                 "ProjectName": "Click DRS",
                 "Paragraph": "",
-                "Image": "../../../assets/Global/Projects/aws.png",
+                "Image": "",
                 "Link": "xyzzzzzz"
             },
              {

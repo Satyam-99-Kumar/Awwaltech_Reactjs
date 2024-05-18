@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useMemo } from "react";
 import style from "./PortfolioProjects.module.scss";
 import Projects from "./Projects";
+import { Data } from "./Data"; // Adjust the path as necessary
 
-function PortfolioProjects({ data }) {
+function PortfolioProjects() {
   const [active, setActive] = useState(1);
   const [filteredData, setFilteredData] = useState([]);
 
-  
   const getCategory = (active) => {
     switch (active) {
       case 2:
@@ -20,24 +20,20 @@ function PortfolioProjects({ data }) {
     }
   };
 
-  
   const memoizedFilteredData = useMemo(() => {
     if (active === 1) {
-      return data?.projectSection?.Projects || [];
+      return Data;
     } else {
-      return (
-        data?.projectSection?.Projects?.filter((project) =>
-          project.Type.includes(getCategory(active))
-        ) || []
+      return Data.filter((project) =>
+        project.type.includes(getCategory(active))
       );
     }
-  }, [data, active]);
+  }, [active]);
 
   useEffect(() => {
     setFilteredData(memoizedFilteredData);
   }, [memoizedFilteredData]);
 
- 
   const filterData = (id) => {
     setActive(id);
   };
@@ -73,7 +69,7 @@ function PortfolioProjects({ data }) {
         </div>
       </div>
 
-      <Projects projects={filteredData} />
+      <Projects Data={filteredData} />
     </div>
   );
 }

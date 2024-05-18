@@ -2,22 +2,27 @@ import { Link } from "react-router-dom";
 import { GoChevronRight, GoChevronLeft } from "react-icons/go";
 import { CgArrowRight } from "react-icons/cg";
 import style from "./PortfolioProjects.module.scss";
-
-function Projects({ projects }) {
-  console.log("ppp===>",projects)
+import { Data } from "./Data";
+function Projects({ Data }) {
+ 
 
   return (
     <>
       <div className={style.allprojects}>
-        {projects.map((prjct) => (
-          <div key={prjct._id} className={style.project}>
+        {Data.map((prjct) => (
+          <div key={prjct.id} className={style.project}>
             <div className={style.image}>
-              <img src={prjct.Banner} alt="" />
+              <img src={prjct.banner} alt={prjct.name} />
             </div>
             <div className={style.text}>
-              <h4>{prjct.Name}</h4>
-              <p>{prjct.Text}</p>
-              <Link to={`/portfolio/project/${prjct._id}`}>View full project <span><CgArrowRight/></span></Link>
+              <h4>{prjct.name}</h4>
+              <p>{prjct.text}</p>
+              <a href={prjct.link} target="_blank" rel="noopener noreferrer">
+                View full project
+                <span>
+                  <CgArrowRight />
+                </span>
+              </a>
             </div>
           </div>
         ))}
