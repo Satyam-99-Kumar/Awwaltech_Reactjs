@@ -23,7 +23,7 @@ function Nav({ drawerToggleClickHnadler }) {
 
   const handleScroll = () => {
     const position = window.pageYOffset;
-    if (position > 150) {
+    if (position > 20) {
       setOpen(true);
     } else {
       setOpen(false);
@@ -79,63 +79,66 @@ function Nav({ drawerToggleClickHnadler }) {
               <div>
                 <AiOutlineMobile />
               </div>
-              <div className={styles.gap}>Website Design</div>
+              <div className={styles.gap}>Mobile App Development</div>
             </NavLink>
 
-            <NavLink className={`${styles.menu}`} to="/service/mobileapp">
+            <NavLink className={`${styles.menu}`} to="/service/webapp-development">
               <div>
                 <FiMonitor />
               </div>
-              <div>Website Development</div>
+              <div>Web Development</div>
             </NavLink>
 
-            <NavLink
-              className={`${styles.menu}`}
-              to="/service/strategic-ux-development"
-            >
-              <div>
-                <BsHexagon />
-              </div>
-              <div>Content Management</div>
-            </NavLink>
+            <NavLink className={`${styles.menu}`} to="/service/strategic-ux-development">
+                <div><BsHexagon /></div>
+                <div>Strategic UX Development</div>
+              </NavLink>
 
-            <NavLink
-              className={`${styles.menu}`}
-              to="/service/eCommerce-development"
-            >
-              <div>
-                <BsCart />
-              </div>
-              <div>Digital Marketing</div>
-            </NavLink>
+              <NavLink  className={`${styles.menu}`} to="/service/eCommerce-development">
+                <div><BsCart /></div>
+                <div>eCommerce Development</div>
+              </NavLink>
 
-            <NavLink
-              className={`${styles.menu}`}
-              to="/service/enterprise-Devops"
-            >
-              <div>
-                <BsCodeSquare />
-              </div>
-              <div>Report & Analysis</div>
-            </NavLink>
+              <NavLink className={`${styles.menu}`} to="/service/enterprise-Devops">
+                <div><BsCodeSquare /></div>
+                <div>Enterprise Devops</div>
+              </NavLink>
+              <NavLink className={`${styles.menu}`} to="/service/Quality-Assurance">
+                <div><MdSettingsInputSvideo /></div>
+                <div>Quality Assurance & Testing</div>
+              </NavLink>
+              <NavLink className={`${styles.menu}`} to="/service/customer-software-development">
+                <div><BsHexagon /></div>
+                <div>Customer Software Development</div>
+              </NavLink>
+              <NavLink  className={`${styles.menu}`} to="/service/crm-cloud-services">
+                <div><BsCloudy /></div>
+                <div>CRM Cloud Services</div>
+              </NavLink>
+              <NavLink  className={`${styles.menu}`} to="/service/IT-Consulting">
+                <div><MdPeopleOutline /></div>
+                <div>IT Consulting</div>
+              </NavLink>
+              <NavLink  className={`${styles.menu}`} to="/service/cybersecurity-consulting">
+                <div><BsShieldCheck /></div>
+                <div>Cybersecurity Consulting</div>
+              </NavLink>
+              <NavLink  className={`${styles.menu}`} to="/service/dedicated-development-team">
+                <div><IoMdPeople /></div>
+                <div>Dedicated Developm. Team</div>
+              </NavLink>
+              <NavLink  className={`${styles.menu}`} to="/service/cloud-based-services">
+              <div><TiCloudStorage /></div>
+                <div>Cloud Based Services</div>
 
-            <NavLink
-              className={`${styles.menu}`}
-              to="/service/strategic-ux-development"
-            >
-              <div>
-                <BsHexagon />
-              </div>
-              <div>Customer Support</div>
-            </NavLink>
+              </NavLink>
+              <NavLink  className={`${styles.menu}`} to="/service/lms-based-services">
+              
+                <div><CgScreen /></div>
+                <div>LMS Based Services</div>
+
+              </NavLink>
           </div>
-        </NavLink>
-
-        <NavLink
-          className={(navData) => (navData.isActive ? styles.activeLink : ``)}
-          to="/hire"
-        >
-          <div className={styles.barier}>Hire Developers</div>
         </NavLink>
         <NavLink
           className={(navData) => (navData.isActive ? styles.activeLink : ``)}
@@ -149,6 +152,15 @@ function Nav({ drawerToggleClickHnadler }) {
         >
           <div className={styles.barier}>Portfolio</div>
         </NavLink>
+
+        <NavLink
+          className={(navData) => (navData.isActive ? styles.activeLink : ``)}
+          to="/hire"
+        >
+          <div className={styles.barier}>Hire Developers</div>
+        </NavLink>
+     
+       
         <NavLink
           className={(navData) => (navData.isActive ? styles.activeLink : ``)}
           to="/blog"

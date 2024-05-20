@@ -92,7 +92,7 @@ function GlobalIndustries({ data, apiData }) {
         <div className={style.content__detail}>
           <Box
             className={`${style.tabs}`}
-            sx={{ width: "100%", bgcolor: "background.paper" }}
+            sx={{ width: "100%" }}
           >
             <Tabs
               value={value}
@@ -101,6 +101,7 @@ function GlobalIndustries({ data, apiData }) {
               scrollButtons
               allowScrollButtonsMobile
               aria-label="scrollable force tabs example"
+              className="tabs_bg"
             >
               {apiData.IndustriesSection.Industries?.map((data, index) => (
                 <Tab

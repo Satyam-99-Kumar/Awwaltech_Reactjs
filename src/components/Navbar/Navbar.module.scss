@@ -100,7 +100,7 @@
         border: 1px solid var(--white-color);
         display: flex;
         align-items: center;
-        justify-content: center;
+        
         @include media("<=phone") {
           display: none;
         }
@@ -196,9 +196,7 @@
     a,
     div {
       color: var(--black-color);
-      &:nth-child(7) {
-        border: 1px solid var(--black-color);
-      }
+     
     }
     a.activeLinkContact {
       background: rgba(0, 0, 0, 0.1);

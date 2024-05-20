@@ -27,6 +27,8 @@ function HomeService({ data }) {
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
     centerMode: true,
     centerPadding: "20px", // Adjust as needed
     responsive: [
@@ -68,9 +70,9 @@ function HomeService({ data }) {
             </div>
           ))}
         </Slider>
-        <div className={style.globalLink}>
+        {/* <div className={style.globalLink}>
           <Link to="/">Explore  all our services<span><BsChevronRight /></span></Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
