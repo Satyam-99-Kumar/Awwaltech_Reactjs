@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import WebAppBanner from "../../components/WebApp/WebAppBanner/WebAppBanner";
+import EcommerceBanner from "../../components/Ecommerce/EcommerceBanner/EcommerceBanner";
 import ServiceEnterprize from "../../components/Service/ServiceEnterprize/ServiceEnterprize";
 import ServiceServices from "../../components/Service/ServiceServices/ServiceServices";
 import GlobalWorks from "../../components/Global/GlobalWorks/GlobalWorks";
@@ -22,7 +22,7 @@ function Ecommerce() {
   return (
     <>
       <Navbar />
-      <WebAppBanner apiData={mobileData} />
+      <EcommerceBanner apiData={mobileData} />
       <ServiceServices apiData={mobileData} />
       <ServiceEnterprize apiData={mobileData} />
       {/* <GlobalWorks background={`#fff`} apiData={homeData} /> */}

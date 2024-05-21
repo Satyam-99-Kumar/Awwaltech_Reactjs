@@ -1,0 +1,107 @@
+@import "../../../styles/breakpoints.scss";
+
+.banner {
+  width: 100%;
+  min-height: 90vh;
+  background: #165fff;
+  display: flex;
+  @include media("<=phone") {
+    flex-wrap: wrap;
+    min-height: 0vh;
+  }
+
+  &__left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 100px;
+    @include media("<=phone") {
+      width: 100%;
+      padding: 15px;
+      padding-top: 64px;
+      // padding-bottom: 100px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 36px;
+      font-family: var(--font-primary);
+      margin-bottom: 1rem;
+      color: #e5e5e5;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: 0.00014em;
+      font-family: var(--font-primary);
+      @include media("<=phone") {
+        font-size: 30px;
+      }
+    }
+    a {
+      text-decoration: none;
+      margin-top: 2rem;
+      width: 199px;
+      height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 21px;
+      font-family: var(--font-secondary);
+      font-weight: 600;
+      border-radius: 4px;
+      background-color: #e7f1fe;
+      color: #175fff;
+      border: 2px solid #175fff;
+      transition: 0.3s;
+      &:hover {
+        background-color: #e7f1fe;
+        border: 2px solid #99b9ff;
+        color: #153ab7;
+      }
+    }
+  }
+
+  &__right {
+    width: 50%;
+    position: relative;
+    @include media("<=phone") {
+      width: 100%;
+      display: none;
+    }
+    .frame {
+      position: absolute;
+      top:50%;
+      left: 6rem;
+      transform: translateY(-50%);
+      @include media(">=LGdesktop") {
+       left: 12rem;
+      }
+    }
+    .iphone1 {
+      position: absolute;
+      bottom: 0px;
+      right:4rem;
+      width: 55%;
+      @include media(">=LGdesktop") {
+        right: 2rem;
+      }
+    }
+    .iphone2 {
+      position: absolute;
+      bottom: 0px;
+      left: -150px;
+      @include media(">=LGdesktop") {
+        left: 0px !important;
+      }
+    }
+    .iphone3 {
+      position: absolute;
+      top: 2rem;
+      right: 0;
+    }
+  }
+}

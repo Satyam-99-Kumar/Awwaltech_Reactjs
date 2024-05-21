@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import WebAppBanner from "../../components/WebApp/WebAppBanner/WebAppBanner";
+import DedicatedBanner from "../../components/Dedicated/DedicatedBanner/DedicatedBanner";
 import ServiceEnterprize from "../../components/Service/ServiceEnterprize/ServiceEnterprize";
 import ServiceServices from "../../components/Service/ServiceServices/ServiceServices";
 import GlobalWorks from "../../components/Global/GlobalWorks/GlobalWorks";
@@ -22,7 +22,7 @@ function DedicaedTeam() {
   return (
     <>
       <Navbar />
-      <WebAppBanner apiData={mobileData} />
+      <DedicatedBanner apiData={mobileData} />
       <ServiceServices apiData={mobileData} />
       <ServiceEnterprize apiData={mobileData} />
       {/* <GlobalWorks background={`#fff`} apiData={homeData} /> */}

@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 function Work({ project }) {
   return (
     <div className={style.work}>
-      <a href={project.link} target="_blank" rel="noopener noreferrer">
+      <a className={style.work_link} href={project.link} target="_blank" rel="noopener noreferrer">
        
         <div className={style.work__container}>
           <div

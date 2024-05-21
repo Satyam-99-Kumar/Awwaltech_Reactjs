@@ -56,9 +56,12 @@
 
       @include media(">=LGdesktop") {
         width: 51%;
-       }
-      
+      }
     }
+  }
+
+  .work_link {
+    text-decoration: none;
   }
 
   .slider {
@@ -77,19 +80,24 @@
         margin-top: 2rem;
         padding: 0 15px;
       }
+
       .work {
         height: 84vh;
         border-radius: 8px;
         padding: 2rem;
+        text-decoration: none;
         @include media("<=phone") {
           padding: 12px;
           height: 64vh;
         }
+        .work > a {
+          text-decoration: none;
+        }
 
         @include media(">=LGdesktop") {
-         height: 68vh;
+          height: 68vh;
         }
-        
+
         &__container {
           background: #fff;
           // height: 60vh;
@@ -100,7 +108,7 @@
           @include media("<=phone") {
             height: 60vh;
           }
-          @include media (">=LGdesktop"){
+          @include media(">=LGdesktop") {
             height: 580px;
           }
           &:hover {
@@ -141,7 +149,6 @@
               margin-bottom: 20px;
               margin-top: 14px;
               color: rgba(0, 0, 0, 0.5) !important;
-              
             }
             a {
               font-size: 14px;
@@ -200,10 +207,10 @@
     @include media("<=phone") {
       margin-top: 2rem;
     }
-    @include media (">=LGdesktop"){
+    @include media(">=LGdesktop") {
       margin-top: -49px;
     }
-    
+
     span {
       font-size: 1.2rem;
       margin-top: 5px;
