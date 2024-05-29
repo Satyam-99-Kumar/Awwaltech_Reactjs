@@ -4,9 +4,11 @@ import Work from "./Work";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
+import { Data } from "./data";
 
 function GlobalWorks({background, data}) {
   const slider = useRef(null);
+  console.log("hello", data)
 
   const settings = {
     dots: false,
@@ -39,9 +41,9 @@ function GlobalWorks({background, data}) {
 
       <div className={style.slider}>
         <Slider className={style.allworks} {...settings} ref={slider}>
-        {data.RecentWorkSection?.Projects.map((project, index) => (
-                      <Work id={index} project={project} />
-        ))}
+        {Data.map(project => (
+        <Work key={project.id} project={project} />
+      ))}
           {/* <Work id={2} />
           <Work id={2} />
           <Work id={3} />
@@ -57,7 +59,7 @@ function GlobalWorks({background, data}) {
         </div>
       </div>
 
-      <Link className={style.global} to="/">
+      <Link className={style.global} to="/portfolio">
         View all projects{" "}
         <span>
           <BsChevronRight />

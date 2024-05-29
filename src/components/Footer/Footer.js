@@ -46,12 +46,18 @@ function Footer() {
         </div>
         <div className={style.footer__three}>
           <h3>Services</h3>
-          <Link to="/">Website Design</Link>
-          <Link to="/">Website Development</Link>
-          <Link to="/">Content Management</Link>
-          <Link to="/">Digital Marketing</Link>
-          <Link to="/">Reporting & Analysis</Link>
-          <Link to="/">Customer Support</Link>
+          <Link to="/service/mobile-app-development">Mobile App Development</Link>
+          <Link to="/service/mobileapp">Web Development</Link>
+          <Link to="/service/strategic-ux-development">Strategic UX Development</Link>
+          <Link to="/service/eCommerce-development">eCommerce Development</Link>
+          <Link to="/service/enterprise-Devops">Enterprise Devops</Link>
+          <Link to="/service/Quality-Assurance">Quality Assurance & Testing</Link>
+          <Link to="/service/strategic-ux-development">Customer Software Developm.</Link>
+          <Link to="/service/eCommerce-development">IT Consulting</Link>
+          <Link to="/service/eCommerce-development">Cybersecurity Consulting</Link>
+          <Link to="/service/eCommerce-development">Dedicated Developm. Team</Link>
+          <Link to="/service/eCommerce-development">Cloud Based Services</Link>
+          <Link to="/service/eCommerce-development">LMS Based Services</Link>
         </div>
         <div className={style.footer__four}>
           <h3>Industries</h3>

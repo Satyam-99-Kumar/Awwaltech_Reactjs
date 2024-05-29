@@ -13,6 +13,7 @@
   top: 0;
   left: 0;
   z-index: 100;
+  margin: 10px 0;
   @include media("<=desktop") {
     height: 4rem;
     padding: 0 100px;
@@ -97,10 +98,9 @@
         padding: 16px;
         border-radius: 3px;
         color: var(--white-color);
-        border: 1px solid var(--white-color);
         display: flex;
         align-items: center;
-        justify-content: center;
+        
         @include media("<=phone") {
           display: none;
         }
@@ -192,13 +192,12 @@
 .navOpen {
   background: var(--white-color);
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0;
   .nav__links {
     a,
     div {
       color: var(--black-color);
-      &:nth-child(7) {
-        border: 1px solid var(--black-color);
-      }
+     
     }
     a.activeLinkContact {
       background: rgba(0, 0, 0, 0.1);
@@ -207,6 +206,7 @@
   .menus {
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
   }
+  
   .btn__togglerLine {
     @include media("<=phone") {
       background: #000;

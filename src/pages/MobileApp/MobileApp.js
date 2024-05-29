@@ -7,19 +7,19 @@ import ServiceSolution from "../../components/Service/ServiceSolution/ServiceSol
 import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
-import jsonData from "../../json/services/mobileService.json";
+
 import MobileServices from "../../components/MobileApp/MobileServices/MobileServices";
 import MobileEnterprizes from "../../components/MobileApp/Mobileenterprizes/MobileEnterprizes";
 import MobileSolution from "../../components/MobileApp/MobileSolution/MobileSolution";
 import Mobiletechnology from "../../components/MobileApp/Mobiletechnology/Mobiletechnology";
-import homeData from "../../json/homeData.json"
+// import homeData from "../../json/homeData.json"
+import jsonData from "../../json/services/mobileService.json";
+
 
 function MobileApp() {
-  useEffect(() => {
-    window.scrollTo(0,0);
-    document.title = "Mobile App Development - Awwaltech Pvt. Ltd.";
-    document.querySelector('meta[name="description"]').setAttribute("content", "Learn about our company");
-  }, []);
+  
+console.log(jsonData)
+  
   return (
     <>
       <Navbar />
@@ -29,7 +29,7 @@ function MobileApp() {
           <MobileServices data={jsonData} />
           <MobileEnterprizes data={jsonData} />
           <MobileSolution data={jsonData} />
-          <GlobalWorks background={`#fff`} data={homeData} />
+          <GlobalWorks background={`#F5F5F7`} data={jsonData} />
 
           {/* <Mobiletechnology/> */}
           {/* <ServiceInvestors /> */}

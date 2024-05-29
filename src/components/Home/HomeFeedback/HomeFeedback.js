@@ -6,7 +6,7 @@ import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import "./slickStyle.scss";
 import { fetchClientFeedbackData } from '../../../config/apiService';
 
-function HomeFeedback({ background }) {
+function HomeFeedback({  background  }) {
   const [apiData, setApiData] = useState(null);
   const [error, setError] = useState(null);
   const slider = useRef(null);

@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import { Link } from "react-router-dom";
 // Assets
 import style from "./HomeService.module.scss";
-import { BsChevronRight, BsArrowRight } from "react-icons/bs";
+import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import { useState, useEffect } from 'react';
 
 function HomeService({ data }) {
@@ -24,15 +24,19 @@ function HomeService({ data }) {
 
   const settings = {
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    centerPadding: "20px", // Adjust as needed
     responsive: [
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          initialSlide: 1
+          slidesToShow: 1,
+          centerPadding: "10px" // Adjust as needed
         }
       },
     ]
@@ -41,9 +45,6 @@ function HomeService({ data }) {
   return (
     <div className={style.services}>
       <div className={style.services__text}>
-        {/* <h1 className={style.servicetexth1}>
-          <div className={style.servicediv}>{data.ServicesSection?.Title}</div>
-        </h1> */}
         <h1>
           <div>
             <span>{data.ServicesSection?.Title1}</span> {data.ServicesSection?.Title2}
@@ -64,14 +65,14 @@ function HomeService({ data }) {
                   <div>{service.Title2}</div>
                 </h3>
                 <p>{service.Paragraph}</p>
-                <Link to={service.Link}>Explore  <span>More</span> <span><BsArrowRight /></span></Link>
+                <Link to={service.Link}>Explore  <span>More</span> <span><BsChevronRight /></span></Link>
               </div>
             </div>
           ))}
         </Slider>
-        <div className={style.globalLink}>
+        {/* <div className={style.globalLink}>
           <Link to="/">Explore  all our services<span><BsChevronRight /></span></Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

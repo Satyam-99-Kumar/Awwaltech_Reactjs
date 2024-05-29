@@ -123,9 +123,11 @@
       font-family: var(--font-secondary);
       font-size: 18px;
       line-height: 21px;
-      padding: 1rem 2rem;
+      padding: 1rem 1rem;
       transition: 0.3s;
-      width: 20%;
+      width: 22%;
+      margin: 0 auto;
+      // height: 20%;
 
       &:hover {
         border: 1px solid rgba(0, 0, 0, 0.2);
@@ -160,6 +162,7 @@
     padding-bottom: 4rem;
     padding-left: 100px;
     padding-right: 100px;
+    align-items: center;
     @include media("<=phone") {
       flex-wrap: wrap;
       padding-left: 15px;
