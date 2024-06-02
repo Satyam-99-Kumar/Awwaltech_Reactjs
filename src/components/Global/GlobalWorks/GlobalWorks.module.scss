@@ -45,7 +45,7 @@
       margin: auto;
       text-align: center;
       font-size: 15px;
-      line-height: 21px;
+      line-height: 25px;
       color: rgba(0, 0, 0, 0.5);
       @include media("<=phone") {
         width: 100%;
@@ -82,7 +82,7 @@
       }
 
       .work {
-        height: 84vh;
+        height: 500px !important;
         border-radius: 8px;
         padding: 2rem;
         text-decoration: none;
