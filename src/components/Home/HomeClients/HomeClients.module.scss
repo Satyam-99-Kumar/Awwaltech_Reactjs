@@ -30,6 +30,7 @@
         line-height: 36px;
         letter-spacing: -1px;
       }
+
       @include media(">=LGdesktop") {
         font-weight: 700;
       }
@@ -57,26 +58,26 @@
       font-family: var(--font-secondary);
       font-size: 15px;
       font-weight: 400;
-      line-height: 21px;
+      line-height: 25px;
       margin: auto auto 1rem;
       text-align: center;
       width: 50%;
       display: block;
+
       @include media("<=phone") {
         width: 100%;
-      
+
       }
     }
-    @include media(">=LGdesktop") {
-    }
+
+    @include media(">=LGdesktop") {}
   }
 
   .padding {
+
     // font-size: 18px;
     // line-height: 21px;
-    @include media(">=LGdesktop") {
-      
-    }
+    @include media(">=LGdesktop") {}
   }
 
   .options {
@@ -108,8 +109,8 @@
       @include media("<=phone") {
         width: 350%;
       }
-      @include media(">=LGdesktop") {
-      }
+
+      @include media(">=LGdesktop") {}
     }
 
     .option {
@@ -137,8 +138,7 @@
         width: 24%;
       }
 
-      @include media(">=LGdesktop") {
-      }
+      @include media(">=LGdesktop") {}
 
       div:first-child {
         align-items: center;
@@ -146,8 +146,8 @@
         font-size: 18px;
         justify-content: center;
         margin-right: 24px;
-        @include media(">=LGdesktop") {
-        }
+
+        @include media(">=LGdesktop") {}
       }
     }
 
@@ -163,6 +163,7 @@
     padding-left: 100px;
     padding-right: 100px;
     align-items: center;
+
     @include media("<=phone") {
       flex-wrap: wrap;
       padding-left: 15px;
@@ -180,7 +181,7 @@
 
       .slider {
         height: 35vh;
-    width: 80%;
+        width: 80%;
 
         // height: 25vh;
         @include media("<=phone") {
@@ -189,8 +190,10 @@
 
         &__container {
           height: 35vh;
+
           img {
             height: 35vh;
+
             @include media("<=phone") {
               height: 35vh;
               width: 100%;
@@ -208,7 +211,7 @@
 
     .content {
       width: 75%;
-      
+
 
       @include media("<=phone") {
         width: 100%;
@@ -336,6 +339,7 @@
     margin: 0;
     margin-bottom: 40px;
   }
+
   @include media(">=LGdesktop") {
     height: 4rem;
   }
