@@ -14,7 +14,7 @@ function HomeBanner({ data }) {
     <header className={style.header}>
       <div className={style.header__text}>
         <h1>
-          <div>{data.Banner?.Title1}</div>
+          <div className={style.line}>{data.Banner?.Title1}</div>
           <div>{data.Banner?.Title2}</div>
         </h1>
         <p>{data.Banner?.BannerSubtitle}</p>
