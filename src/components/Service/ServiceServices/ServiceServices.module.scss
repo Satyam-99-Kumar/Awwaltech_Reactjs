@@ -4,12 +4,18 @@
   width: 100%;
   min-height: 100vh;
 
+  &__new {
+    background-color: #F7F8FA;
+  }
+
   &__identity {
-    width: calc(100% - 12rem);
+    width: 80%;
     display: flex;
+    align-items: center;
     padding: 24px;
-    margin: 6rem 6rem 0 6rem;
-    background: #F7F8FA;
+    margin: auto;
+    padding-top: 90px;
+
     @include media("<=phone") {
       width: calc(100% - 30px);
       margin: 15px 15px 25px 15px;
@@ -20,31 +26,35 @@
 
     .head {
       width: 50%;
+
       @include media("<=phone") {
         width: 100%;
       }
-      
-      div:not(:last-child){
+
+      div:not(:last-child) {
         @include media("<=phone") {
           display: none;
         }
       }
-      
-      .headMobile{
+
+      .headMobile {
         @include media("<=phone") {
           display: block;
           margin-bottom: 64px;
         }
+
         @include media(">=phone") {
           display: none;
         }
       }
+
       p {
         color: var(--primary-color);
         font-weight: 500;
         font-size: 22px;
         line-height: 28px;
       }
+
       h2 {
         font-weight: normal;
         font-weight: 500;
@@ -54,11 +64,14 @@
         margin-top: 1rem;
       }
     }
+
     .text {
       width: 50%;
+
       @include media("<=phone") {
         width: 100%;
       }
+
       p {
         margin-bottom: 2rem;
         font-size: 15px;
@@ -68,6 +81,7 @@
 
         &:last-child {
           position: relative;
+
           &::after {
             content: "";
             position: absolute;
@@ -85,11 +99,14 @@
   &__solutions {
     width: 100%;
     position: relative;
-    padding: 6rem 10rem;
+    padding: 50px 0px;
+
+    // padding: 6rem 10rem;
     @include media("<=phone") {
       padding: 0;
       overflow: hidden;
     }
+
     .text {
       h1 {
         font-weight: 500;
@@ -97,10 +114,12 @@
         line-height: 42px;
         text-align: center;
         margin-bottom: 1rem;
+
         span {
           color: #175fff;
         }
       }
+
       p {
         width: 46%;
         margin: auto;
@@ -109,17 +128,20 @@
         font-size: 15px;
         line-height: 21px;
         font-family: var(--font-secondary);
+
         @include media("<=phone") {
           width: 100%;
         }
+
         @include media(">=LGdesktop") {
           width: 30%;
         }
       }
     }
-    
-    .solutionWrapper{
+
+    .solutionWrapper {
       width: 100%;
+
       @include media("<=phone") {
         width: 100%;
         overflow-y: hidden;
@@ -127,7 +149,7 @@
         margin-bottom: 2rem;
       }
     }
-    
+
     .solutions {
       width: 100%;
       min-height: 55vh;
@@ -135,11 +157,13 @@
       justify-content: space-between;
       margin-top: 5rem;
       padding: 0 6rem;
+
       @include media("<=phone") {
         width: 320%;
-        
+
         padding: 0 15px;
       }
+
       .solution {
         width: 30%;
         padding: 2rem;
@@ -147,18 +171,22 @@
         border-radius: 6px;
         transition: 0.3s;
         border: 1px solid transparent;
+
         @include media(">=LGdesktop") {
           // padding: 2rem 2rem 12px 2rem;
           height: 57vh;
           padding: 2rem;
         }
+
         &:hover {
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
+
         .logo {
           font-size: 3rem;
           color: #b2b2b2;
         }
+
         h4 {
           font-weight: 500;
           font-size: 21px;
@@ -166,6 +194,7 @@
           margin-bottom: 1rem;
           color: rgba(0, 0, 0, 0.7);
         }
+
         p {
           width: 100%;
           text-align: left;
@@ -175,36 +204,41 @@
           font-family: var(--font-secondary);
           color: rgba(0, 0, 0, 0.7);
         }
+
         a {
           text-decoration: none;
-            display: flex;
-            align-items: center;
-            color: #175fff;
-            font-size: 14px;
-            line-height: 20px;
-            font-weight: 600;
-            margin-top: 22px;
-            span {
-              &:first-child {
-                opacity: 0;
-                margin-left: 8px;
-                transition: all 0.4s;
-              }
-              &:last-child {
-                margin-left: -2rem;
-                font-size: 1.5rem;
-                transition: all 0.3s;
-              }
+          display: flex;
+          align-items: center;
+          color: #175fff;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 600;
+          margin-top: 22px;
+
+          span {
+            &:first-child {
+              opacity: 0;
+              margin-left: 8px;
+              transition: all 0.4s;
             }
+
+            &:last-child {
+              margin-left: -2rem;
+              font-size: 1.5rem;
+              transition: all 0.3s;
+            }
+          }
         }
 
         &:hover {
           border: 1px solid var(--primary-color);
           cursor: pointer;
         }
+
         &:hover a span:first-child {
           opacity: 1;
         }
+
         &:hover a span:last-child {
           margin-left: 8px;
         }

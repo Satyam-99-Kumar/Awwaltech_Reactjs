@@ -9,20 +9,23 @@ function ServiceServices(data) {
       {/* ///////////////////////////////////// */}
       {/* short desc */}
       {/* ///////////////////////////////////// */}
-      <div className={style.solve__identity}>
-        <div className={style.head}>
-          <p>{data.apiData.MobileAppSolutionSection.Title1}</p>
-          <h2>
-            <div>{data.apiData.MobileAppSolutionSection.Title2}</div>
-            <div>{data.apiData.MobileAppSolutionSection.Title3}</div>
-            <div className={style.headMobile}>{data.apiData.MobileAppSolutionSection.Title2} {data.apiData.MobileAppSolutionSection.Title2} {data.apiData.MobileAppSolutionSection.Title3}</div>
-          </h2>
-        </div>
-        <div className={style.text}>
-          <p>{data.apiData.MobileAppSolutionSection.Paragraph1}</p>
-          <p>{data.apiData.MobileAppSolutionSection.Paragraph2}</p>
+      <div className={style.solve__new}>
+        <div className={style.solve__identity}>
+          <div className={style.head}>
+            <p>{data.apiData.MobileAppSolutionSection.Title1}</p>
+            <h2>
+              <div>{data.apiData.MobileAppSolutionSection.Title2}</div>
+              <div>{data.apiData.MobileAppSolutionSection.Title3}</div>
+              <div className={style.headMobile}>{data.apiData.MobileAppSolutionSection.Title2} {data.apiData.MobileAppSolutionSection.Title2} {data.apiData.MobileAppSolutionSection.Title3}</div>
+            </h2>
+          </div>
+          <div className={style.text}>
+            <p>{data.apiData.MobileAppSolutionSection.Paragraph1}</p>
+            <p>{data.apiData.MobileAppSolutionSection.Paragraph2}</p>
+          </div>
         </div>
       </div>
+
 
       {/* ///////////////////////////////////// */}
       {/* solutions */}

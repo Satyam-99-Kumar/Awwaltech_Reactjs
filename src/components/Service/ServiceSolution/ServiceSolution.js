@@ -17,33 +17,36 @@ const settings = {
 };
 
 
-function ServiceSolution(data ) {
+function ServiceSolution(data) {
   return (
     <div className={style.serviceSolution}>
       {/* ///////////////////////////////////// */}
       {/* Content */}
       {/* ///////////////////////////////////// */}
       <div className={style.wrapper}>
-        <div className={style.wrapper__left}>
-          <img src={img} alt="" />
-        </div>
-        <div className={style.wrapper__right}>
-          <p>{data.apiData.OurSolutionsSection.Title1}</p>
-          <h3>{data.apiData.OurSolutionsSection.Title2}</h3>
-          <ul>
-            {data.apiData.OurSolutionsSection.List.map(item => {
-              return (
-                <li>
-                  <div>
-                    <AiOutlineCheck />
-                  </div>
-                  <div>{item.Name} </div>
-                </li>
-              )
-            })}
+        <div className={style.wrapper__new}>
+          <div className={style.wrapper__left}>
+            <img src={img} alt="" />
+          </div>
+          <div className={style.wrapper__right}>
+            <p>{data.apiData.OurSolutionsSection.Title1}</p>
+            <h3>{data.apiData.OurSolutionsSection.Title2}</h3>
+            <ul>
+              {data.apiData.OurSolutionsSection.List.map(item => {
+                return (
+                  <li>
+                    <div>
+                      <AiOutlineCheck />
+                    </div>
+                    <div>{item.Name} </div>
+                  </li>
+                )
+              })}
 
-          </ul>
+            </ul>
+          </div>
         </div>
+
       </div>
 
       {/* ///////////////////////////////////// */}
