@@ -8,6 +8,7 @@ import img3 from "../../../assets/About/f3.png";
 function AboutBanner({ data }) {
   return (
     <div className={style.aboutBanner}>
+      
       <div className={style.aboutBanner__left}>
         <div>
           <p>{data?.Banner?.BannerTitle}</p>
