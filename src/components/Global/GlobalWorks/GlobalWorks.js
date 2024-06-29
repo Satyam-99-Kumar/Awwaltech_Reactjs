@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useRef } from "react";
 import { Data } from "./data";
 
-function GlobalWorks({background, data}) {
+function GlobalWorks({ background, data }) {
   const slider = useRef(null);
   console.log("hello", data)
 
@@ -30,7 +30,7 @@ function GlobalWorks({background, data}) {
   };
 
   return (
-    <div className={style.works} style={{background: background}}>
+    <div className={style.works} style={{ background: background }}>
       <div className={style.works__text}>
         <h1>
           {data.RecentWorkSection?.Title1}
@@ -41,9 +41,9 @@ function GlobalWorks({background, data}) {
 
       <div className={style.slider}>
         <Slider className={style.allworks} {...settings} ref={slider}>
-        {Data.map(project => (
-        <Work key={project.id} project={project} />
-      ))}
+          {Data.map(project => (
+            <Work key={project.id} project={project} />
+          ))}
           {/* <Work id={2} />
           <Work id={2} />
           <Work id={3} />

@@ -103,7 +103,7 @@
         }
 
         &__content {
-          width: 75%;
+          width: 428px !important;
           height: fit-content;
           border-radius: 8px;
           padding: 1rem;
@@ -115,6 +115,7 @@
 
           @include media("<=phone") {
             padding: 1rem;
+            width: 75% !important;
           }
 
           @include media(">=LGdesktop") {
@@ -279,4 +280,27 @@
   .slick-next {
     right: 10px;
   }
+}
+.customArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(4, 4, 4, 0.7);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #333;
+}
+
+.nextArrow {
+  right: 10px; // Adjust as needed
+}
+
+.prevArrow {
+  left: 10px; // Adjust as needed
 }
