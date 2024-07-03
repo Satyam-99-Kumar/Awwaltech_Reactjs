@@ -21,8 +21,8 @@ function Detail({ option, data }) {
           <p>{data[option - 1].text}</p>
           <h4>Our Expertise</h4>
           <ul className={style.listInDesktop}>
-            {data[option - 1].services.map((d) => (
-              <li key={d.id}>
+            {data[option - 1].services.map((d, index) => (
+              <li key={index}>
                 <div>
                   <AiOutlineCheck />
                 </div>
@@ -36,8 +36,8 @@ function Detail({ option, data }) {
       <>
         <h4 className={style.headInMobile}>Our Expertise</h4>
         <ul className={style.listInMobile}>
-          {data[option - 1].services.map((d) => (
-            <li key={d.id}>
+          {data[option - 1].services.map((d,index) => (
+            <li key={index}>
               <div>
                 <AiOutlineCheck />
               </div>

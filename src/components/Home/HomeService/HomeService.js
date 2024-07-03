@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import { Link } from "react-router-dom";
 // Assets
 import style from "./HomeService.module.scss";
-import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
+import { BsChevronRight} from "react-icons/bs";
 import { useState, useEffect } from 'react';
 
 function HomeService({ data }) {
@@ -57,7 +57,7 @@ function HomeService({ data }) {
       <div className={style.services__all}>
         <Slider {...settings} className={style.slider}>
           {data.ServicesSection?.Services.map((service, index) => (
-            <div className={style.service} key={service._id}>
+            <div className={style.service} key={index}>
               <div className={style.service__content}>
                 <img src={imagePaths[index]} alt="" />
                 <h3>
