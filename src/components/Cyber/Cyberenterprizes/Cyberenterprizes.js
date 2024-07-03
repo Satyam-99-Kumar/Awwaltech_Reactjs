@@ -1,7 +1,9 @@
-import style from "./webenterprizes.module.scss";
+import style from "./Cyberenterprizes.module.scss";
 import { BsAward, BsCheckCircle } from "react-icons/bs";
 import { AiOutlineCheck, AiOutlineMobile } from "react-icons/ai";
-function WebEnterprizes({ apiData }) {
+
+
+function Cyberenterprizes({ apiData }) {
   return (
     <div>
       <div className={style.achievements}>
@@ -57,7 +59,7 @@ function WebEnterprizes({ apiData }) {
           </div>
           <div className={style.Benefit2}>
             <p className={style.heading}>Benefits</p>
-            <h1 className={style.paragraph}>Benefits Of Web App Development</h1>
+            <h1 className={style.paragraph}>Benefits Of Mobile App Development</h1>
             <div className={style.content}>
               <p className={style.icon}>
                 <AiOutlineCheck />
@@ -121,4 +123,4 @@ function WebEnterprizes({ apiData }) {
   );
 }
 
-export default WebEnterprizes
+export default Cyberenterprizes

@@ -6,22 +6,15 @@
   overflow: hidden;
 
   @include media("<=phone") {
-    display: none;
+    // display: none;
   }
 
   .wrapper {
-    width: 100%;
+    width: calc(100% - 200px);
     display: flex;
     background: #f7f8fa;
-    margin: auto;
-
-    &__new {
-      width: 80%;
-      display: flex;
-      margin: auto;
-      padding: 50px 0px;
-
-    }
+    padding: 4rem;
+    margin: 6rem 100px 0 100px;
 
     &__left {
       width: 40%;
@@ -33,10 +26,8 @@
 
     &__right {
       width: 60%;
-      @include media(">=LGdesktop") {
-        padding-left: 2rem;
-      }
 
+      // padding-left: 2rem;
       p {
         font-size: 21px;
         line-height: 26px;
@@ -61,10 +52,6 @@
           display: flex;
           margin-bottom: 10px;
 
-          @include media(">=LGdesktop") {
-            margin-bottom: 1.2rem;
-          }
-
           div {
             &:first-child {
               width: 40px;
@@ -76,8 +63,6 @@
               font-size: 15px;
               line-height: 22px;
               color: rgba(0, 0, 0, 0.6);
-
-              @include media(">=LGdesktop") {}
             }
           }
         }
@@ -155,5 +140,185 @@
     position: absolute;
     left: 0;
     bottom: 8rem;
+  }
+}
+
+.number {
+  font-size: 30px;
+  color: #175fff;
+  
+}
+
+.maingridstl {
+  margin: 4rem 6rem 0 6rem;
+  padding-bottom: 80px;
+
+  .card {
+    padding: 10px 10px;
+  }
+}
+
+.mbsrbtn {
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.mbsrbtn button {
+  background-color: transparent;
+  border: hidden;
+  font-size: 16px;
+  color: blue;
+}
+
+.key_back {
+  background-color: #0B2845;
+}
+
+.key {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  width: 85%;
+  margin: auto;
+}
+
+.key h1 {
+  color: white;
+  width: 45%;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.key p {
+  color: #175FFF;
+}
+
+.para {
+  font-weight: 400;
+  font-size: 15px;
+  width: 80%;
+  color: white !important;
+  margin-top: 15px;
+}
+
+.key .card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card .code {
+  width: 25%;
+  background-color: #243D57 !important;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  // display: flex;
+}
+
+.code img {
+  // margin: 10px 0px;
+}
+
+.code p {
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  line-height: 1.5;
+}
+
+.code h4 {
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.blog {
+  width: 75%;
+  margin: auto;
+  // text-align: center;
+  margin-top: 50px;
+}
+
+.new {
+  display: flex;
+}
+
+.blog h1 {
+  width: 45%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.blog p {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.blogg {
+  width: 33%;
+  margin-top: 30px;
+  // padding: 15px;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.blogg h2 {
+  font-weight: 300;
+  margin: 10px 10px;
+  font-size: 22px;
+}
+
+.blogg .our {
+  font-weight: 400;
+  font-size: 15px;
+  color: black;
+  width: 100%;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.img {
+  background: url("../../../assets/Services/back.jpg") no-repeat center center / cover;
+  width: auto;
+  height: 250px;
+}
+
+@media (min-width: 280px) and (max-width: 700px) {
+  .key h1 {
+    width: 100%;
+  }
+  .para {
+    width: 100%;
+  }
+  .card .code {
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+  }
+  .key .card {
+    display: block;
+  }
+  .blog {
+    width: 100%;
+  }
+
+  .blog h1 {
+    width: 100%;
+  }
+  .blog p {
+    width: 100%;
+  }
+  .new {
+    display: block;
+  }
+  .blogg {
+    width: 100% !important;
+    margin: 0px;
+    margin-top: 15px;
   }
 }

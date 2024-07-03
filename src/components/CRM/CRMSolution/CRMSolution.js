@@ -1,4 +1,4 @@
-import style from "./webSolution.module.scss";
+import style from "./CRMSolution.module.scss";
 import { AiOutlineCheck, AiOutlineMobile } from "react-icons/ai";
 import { BsCart } from "react-icons/bs";
 import img from "../../../assets/Services/image.png";
@@ -17,7 +17,7 @@ const settings = {
 };
 
 
-function WebSolution(data) {
+function CRMSolution(apiData) {
   return (
     <div className={style.serviceSolution}>
       {/* ///////////////////////////////////// */}
@@ -29,10 +29,10 @@ function WebSolution(data) {
             <img src={img} alt="" />
           </div>
           <div className={style.wrapper__right}>
-            <p>{data.apiData.OurSolutionsSection.Title1}</p>
-            <h3>{data.apiData.OurSolutionsSection.Title2}</h3>
+            <p>{apiData.apiData.OurSolutionsSection.Title1}</p>
+            <h3>{apiData.apiData.OurSolutionsSection.Title2}</h3>
             <ul>
-              {data.apiData.OurSolutionsSection.List.map(item => {
+              {apiData.apiData.OurSolutionsSection.List.map(item => {
                 return (
                   <li>
                     <div>
@@ -106,4 +106,4 @@ function WebSolution(data) {
   );
 }
 
-export default WebSolution;
+export default CRMSolution;

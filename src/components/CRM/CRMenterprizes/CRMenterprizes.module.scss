@@ -1,0 +1,215 @@
+@import "../../../styles/breakpoints.scss";
+
+.achievements {
+  width: 100%;
+  height: fit-content;
+  margin-top: 50px;
+  background: linear-gradient(86.21deg,
+      rgba(11, 40, 69, 0.78) 49.81%,
+      rgba(11, 40, 69, 0) 114.07%),
+    url("../../../assets/Services/back.jpg") no-repeat center center / cover;
+  // background: url("") no-repeat left top,
+  //   linear-gradient(#eb01a5, #d13531);
+  display: flex;
+
+  @include media("<=phone") {
+    flex-wrap: wrap;
+  }
+
+  &__head {
+    width: 55%;
+    padding: 60px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media("<=phone") {
+      width: 100%;
+      padding: 63px 15px 32px 15px;
+    }
+
+    .logo {
+      color: var(--primary-color);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 21px;
+      color: #fff;
+      font-family: var(--font-secondary);
+
+      &:first-child {
+        color: #e5e5e5;
+      }
+
+      &:last-child {
+        color: #b2b2b2;
+      }
+    }
+
+    h1 {
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 600;
+      color: var(--white-color);
+      margin: 12px 0;
+    }
+  }
+
+  &__achieves {
+    width: 56%;
+    height: fit-content;
+    padding: 60px 29px;
+    display: flex;
+    justify-content: space-between;
+
+    @include media("<=phone") {
+      width: 100%;
+      padding: 15px;
+      flex-wrap: wrap;
+    }
+
+    .block1 {
+      width: 49%;
+
+      @include media("<=phone") {
+        width: 100%;
+      }
+    }
+
+    .block2 {
+      width: 49%;
+
+      @include media("<=phone") {
+        width: 100%;
+      }
+    }
+
+    .achive {
+      width: 100%;
+      padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+      background: #fff;
+      border-radius: 6px;
+      transition: 0.3s;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+
+        @include media("<=phone") {
+          margin-bottom: 24px;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.07);
+      }
+
+      @include media("<=phone") {
+        padding: 15px;
+        margin-bottom: 24px;
+      }
+
+      p {
+        display: block;
+        font-size: 15px;
+        line-height: 21px;
+        color: #000000B2;
+        font-weight: 400;
+        margin-top: 0.8rem;
+        font-family: var(--font-secondary);
+      }
+
+      svg {
+        color: #147BF3;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.Benefits {
+  margin-top: 50px;
+  display: flex;
+  // justify-content: space-around;
+  background-color: #F7F8FA;
+  border-radius: 8px;
+}
+
+
+
+.Benefit {
+  width: 85%;
+  margin: auto;
+}
+
+.Benefit1 {
+  background-color: #E5EDFF;
+  background: url("../../../assets/Services/back.jpg") no-repeat center center / cover;
+  height: auto;
+  width: 40%;
+  margin: 25px 20px 10px 20px;
+  // height: fit-content;
+}
+
+.Benefit2 {
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+@media (min-width: 280px) and (max-width: 700px) {
+  .Benefits {
+    display: block;
+  }
+  .Benefit1 {
+    background-color: #E5EDFF;
+    background: url("../../../assets/Services/back.jpg") no-repeat center center / cover;
+    height: auto;
+    width: 100%;
+    margin: 25px 20px 10px 20px;
+    // height: fit-content;
+  }
+}
+
+
+
+.content {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content div {
+  margin-left: 15px;
+}
+
+.content .icon {
+  color: blue;
+  margin-top: 20px;
+  font-size: 25px !important;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 21px;
+  color: #175FFF;
+}
+
+.paragraph {
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.Fitness {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.smartphones {
+  font-size: 14px;
+  font-weight: 500;
+}

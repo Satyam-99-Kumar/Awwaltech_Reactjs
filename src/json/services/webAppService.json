@@ -1,80 +1,79 @@
 {
   "MetaData": {
-    "Title": "Mobile App Services Title",
-    "Description": "Mobile App page Description"
+    "Title": "Web Development Services Title",
+    "Description": "Web Development page Description"
   },
   "Banner": {
-    "TitleTag": "Mobile App Development",
-    "Title1": "Native & Cross Platform",
-    "Title2": "Mobile App Development",
+    "TitleTag": "Web Development",
+    "Title1": "Responsive & Scalable",
+    "Title2": "Web Development",
     "Title3": "Company",
     "BannerBgImage": "",
     "BannerOtherImages": []
   },
   "WebAppSolutionSection": {
-    "Title1": "Mobile App Development Solutions",
-    "Title2": "Android, iOS & Flutter App",
+    "Title1": "Web Development Solutions",
+    "Title2": "Custom, Responsive & Scalable",
     "Title3": "Development",
     "Title4": "Services",
-    "Paragraph1": "Being a rising name in the IT industry across the world, we deliver quality services in a timely fashion to help our clients gain a leading edge in this competitive market.",
-    "Paragraph2": "We are your one-stop solution provider for Android, iOS & Flutter Mobile App development services. Leading Startups and Companies hiring Android, iOS and Flutter App developers from Zignuts Technolab to successfully drive and achieve their critical mobile app development projects. As a leading Indian mobile app development company with skiiled team of app developers in India, we help building custom mobile apps that have most interactive and modern interfaces.",
+    "Paragraph1": "As a leading name in the IT industry, we offer top-notch web development services that ensure your business stays ahead in this competitive market.",
+    "Paragraph2": "We provide comprehensive web development services, including custom website development, e-commerce solutions, CMS development, and more. Our team of skilled web developers ensures that your website is responsive, scalable, and tailored to your business needs.",
     "Services": [
       {
-        "Title1": "Android, IOS & Flutter Mobile App",
-        "Title2": " Development",
-        "Title3": " Services",
-        "Paragraph": "Custom mobile app development company with expert team of remote and dedicated app developers in India",
+        "Title1": "Custom Web",
+        "Title2": "Development",
+        "Title3": "Services",
+        "Paragraph": "Expert web development services tailored to meet your unique business requirements.",
         "Icon": "",
         "Link": ""
       },
       {
-        "Title1": " Web App",
-        "Title2": " Development",
-        "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome",
+        "Title1": "E-commerce",
+        "Title2": "Solutions",
+        "Paragraph": "Robust and scalable e-commerce solutions to enhance your online business presence.",
         "Icon": "",
         "Link": ""
       },
       {
-        "Title1": " Enterprise App",
-        "Title2": " DevOps",
-        "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome",
+        "Title1": "CMS",
+        "Title2": "Development",
+        "Paragraph": "Custom CMS development services to efficiently manage your website content.",
         "Icon": "",
         "Link": ""
       },
       {
-        "Title1": " Strategic UX",
-        "Title2": " Development",
-        "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome",
+        "Title1": "Responsive",
+        "Title2": "Design",
+        "Paragraph": "Creating responsive web designs that provide an optimal viewing experience across all devices.",
         "Icon": "",
         "Link": ""
       }
     ]
   },
-
   "WebAppSolutionSection2": {
-    "Title1": "Android, iOS & Flutter Mobile App",
+    "Title1": "Comprehensive Web",
     "Title2": "Development",
     "Title3": "Services",
-    "Paragraph": "Custom mobile app development company with expert team of remote and dedicated app developers in India",
+    "Paragraph": "Our team of expert web developers provides comprehensive services to build dynamic and scalable web applications.",
     "Services": [
       {
-        "Title1": "Web",
-        "Title2": " Development",
-        "Paragraph": "Zignuts Technolab offers its iOS app development services in designing and developing custom mobile apps for iPhone & iPad. Hire iOS app developers who have skills and expertise in everything ranging from iOS App development, app design, app support and maintenance. While you can focus on your business, our native iOS app development team combine in-depth research, outstanding design, and impeccable development to create an exceptional iOS application that fits your needs.",
+        "Title1": "Custom Web",
+        "Title2": "Applications",
+        "Paragraph": "We design and develop custom web applications that cater to your specific business needs, ensuring high performance and scalability.",
         "Icon": "",
         "Link": ""
       },
       {
-        "Title1": " Enterprise",
-        "Title2": "DevOps",
-        "Paragraph": "Don’t have to spend time building your own Android developers team, instead start working on your Android project right away with Zignuts Technolab to save time – a top rateted Android application development company. We offer custom, end-to-end, full-stack Android app development services. Our skilled and experts team specialises in customised and scalable applications for Android devices, including smartphones, tablets, Android TVs, and more. Book your risk-free trial of 2 weeks, retaining the rights to your code if you cancel the partnership.",
+        "Title1": "E-commerce",
+        "Title2": "Platforms",
+        "Paragraph": "Our e-commerce platforms are designed to provide a seamless shopping experience, integrated with advanced features to boost your online sales.",
         "Icon": "",
         "Link": ""
       },
       {
-        "Title1": " Strategic UX",
-        "Title2": " Development",
-        "Paragraph": "Flutter enables building and deploying apps for iOS and Android using a single code base. It reduces the app’s time-to-market and its development costs. Are you wondering how to choose the best Flutter app development company for your cross-platform project? Our team consists of top Flutter app developers, who can build your beautiful native app with Flutter in record time. Try us for 2 weeks, retaining the rights to your code if you cancel the partnership.",
+        "Title1": "Content Management",
+        "Title2": "Systems",
+        "Paragraph": "We offer CMS development services that enable you to easily manage and update your website content without technical expertise.",
         "Icon": "",
         "Link": ""
       }
@@ -82,91 +81,76 @@
   },
   "DrivingSection": {
     "TitleTag": "Driving Enterprise",
-    "Title1": "Why to choose Awwaltech as your",
-    "Title2": "Mobile App Development",
-    "Title3": "Company?",
-    "Paragraph": "Empowering businesses across verticals by leveraging the power of mobility that help accelerate innovation, reduce costs and improve performance.",
+    "Title1": "Why Choose Us for Your",
+    "Title2": "Web Development",
+    "Title3": "Needs?",
+    "Paragraph": "We empower businesses by delivering web development solutions that drive innovation, reduce costs, and improve performance.",
     "Services": [
       {
-        "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises",
+        "Paragraph": "Our web development solutions cater to startups, SMEs, and large enterprises, helping them to achieve their business goals.",
         "Link": ""
       },
       {
-        "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises",
+        "Paragraph": "We provide customized web development services to meet the unique needs of each client, ensuring high-quality results.",
         "Link": ""
       },
       {
-        "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises",
+        "Paragraph": "Our team of expert developers leverages the latest technologies to create dynamic and responsive web applications.",
         "Link": ""
       },
       {
-        "Paragraph": "Here, we understand your business, goals, and priorities. These brainstorming sessions help us to understand your future goals.",
-        "Link": ""
-      },
-      {
-        "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups.",
-        "Link": ""
-      },
-      {
-        "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups.",
-        "Link": ""
-      },
-      {
-        "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups.",
+        "Paragraph": "We offer comprehensive support and maintenance services to ensure your web applications run smoothly and efficiently.",
         "Link": ""
       }
     ]
   },
   "OurSolutionsSection": {
     "Title1": "Our Solutions",
-    "Title2": "Our app development solutions",
+    "Title2": "Our Web Development Solutions",
     "Image": "",
     "List": [
       {
-        "Name": "To be a first choice for extending your E-commerce team offshore."
+        "Name": "Custom web development tailored to your business needs."
       },
       {
-        "Name": "To provide customized E-commerce services from a dedicated offshore team while maintaining superseding the requested Qua"
+        "Name": "Robust e-commerce platforms to enhance your online business."
       },
       {
-        "Name": "To provide customized E-commerce services from a dedicated offshore team while maintaining superseding the requested Qua"
+        "Name": "CMS solutions for easy content management."
       },
       {
-        "Name": "To provide customized E-commerce services from a dedicated offshore team while maintaining superseding the requested Qua"
+        "Name": "Responsive web designs for optimal user experience."
       },
       {
-        "Name": "To provide customized E-commerce services from a dedicated offshore team while maintaining superseding the requested Qua"
+        "Name": "Scalable web applications to support your business growth."
       },
       {
-        "Name": "To be a first choice for extending your E-commerce team offshore."
-      },
-      {
-        "Name": "To provide customized E-commerce services from a dedicated offshore team while maintaining superseding the requested Qua"
+        "Name": "Comprehensive support and maintenance services."
       }
     ]
   },
   "RecentWorkSection": {
     "Title1": "Explore Our",
     "Title2": "Recent Work",
-    "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome-focused solutions with enhanced agility that help them to rapidly reshape, renew and build new capabilities for their business.",
+    "Paragraph": "We have successfully delivered a wide range of web development projects for startups, SMEs, and large enterprises, helping them to achieve their business goals with innovative and scalable solutions.",
     "Projects": [
       {
-        "ProjectName": "Click DRS",
-        "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome-focused solutions with enhanced agility that help them to rapidly reshape, renew and build new capabilities for their business.",
-        "Image": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
-        "Link": "xyzzzzzz"
+        "ProjectName": "E-commerce Platform",
+        "Paragraph": "A robust e-commerce platform designed to enhance the online shopping experience.",
+        "Image": "https://example.com/ecommerce-platform.jpg",
+        "Link": "https://example.com/ecommerce-platform"
       },
       {
-        "ProjectName": "Click DRS",
-        "Paragraph": "",
-        "Image": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
-        "Link": "xyzzzzzz"
+        "ProjectName": "Custom CMS",
+        "Paragraph": "A custom content management system developed to simplify website management.",
+        "Image": "https://example.com/custom-cms.jpg",
+        "Link": "https://example.com/custom-cms"
       },
       {
-        "ProjectName": "Click DRS",
-        "Paragraph": "Our complete spectrum of mobile app development and web solutions help startups, small-medium enterprises, and organizations to create outcome-focused solutions with enhanced agility that help them to rapidly reshape, renew and build new capabilities for their business.",
-        "Image": "https://sandips2.sg-host.com/static/media/Tesla.fe359e50f42c1b679c6abd0341867d87.svg",
-        "Link": "xyzzzzzz"
+        "ProjectName": "Responsive Web Design",
+        "Paragraph": "A responsive web design project to ensure optimal viewing experience across all devices.",
+        "Image": "https://example.com/responsive-web-design.jpg",
+        "Link": "https://example.com/responsive-web-design"
       }
     ]
   }
