@@ -9,8 +9,8 @@ import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 // import { fetchMobileAppServiceData, fetchHomeData } from '../../config/apiService';
-import mobileData from "../../json/services/mobileService.json";
-import homeData from "../../json/homeData.json";
+import mobileData from "../../json/services/dedicatedDev.json";
+
 
 function DedicaedTeam() {
   useEffect(() => {
