@@ -1,41 +1,38 @@
 import style from "./EcommerceServices.module.scss";
-import { BsChevronRight } from "react-icons/bs";
-import { Card, Grid } from "@mui/material";
-import { useState } from "react";
 
 function EcommerceServices({ apiData }) {
-  const [contacts] = useState([
-    {
-      number: "1.",
-      title: "Iphone App",
-      info: "Development",
-    },
-    {
-      number: "2.",
-      title: "Android App",
-      info: "Development",
-    },
-    {
-      number: "3.",
-      title: "Wearable App",
-      info: "Development",
-    },
-    {
-      number: "4.",
-      title: "IPad App",
-      info: "Development",
-    },
-    {
-      number: "5.",
-      title: "Cross ",
-      info: "Platform",
-    },
-    {
-      number: "6.",
-      title: "Progressiveweb App",
-      info: "Development",
-    },
-  ]);
+  // const [contacts] = useState([
+  //   {
+  //     number: "1.",
+  //     title: "Iphone App",
+  //     info: "Development",
+  //   },
+  //   {
+  //     number: "2.",
+  //     title: "Android App",
+  //     info: "Development",
+  //   },
+  //   {
+  //     number: "3.",
+  //     title: "Wearable App",
+  //     info: "Development",
+  //   },
+  //   {
+  //     number: "4.",
+  //     title: "IPad App",
+  //     info: "Development",
+  //   },
+  //   {
+  //     number: "5.",
+  //     title: "Cross ",
+  //     info: "Platform",
+  //   },
+  //   {
+  //     number: "6.",
+  //     title: "Progressiveweb App",
+  //     info: "Development",
+  //   },
+  // ]);
   return (
     <div className={style.solve}>
       {/* ///////////////////////////////////// */}
@@ -43,32 +40,26 @@ function EcommerceServices({ apiData }) {
       {/* ///////////////////////////////////// */}
       <div className={style.solve__identity}>
         <div className={style.head}>
-          <p>{apiData.WebAppSolutionSection.Title1}</p>
+          <p>{apiData.EcommerceSolutionSection.Title1}</p>
           <h2>
-            <div>{apiData.WebAppSolutionSection.Title2}</div>
-            <div>{apiData.WebAppSolutionSection.Title3}</div>
+            <div>{apiData.EcommerceSolutionSection.Title2}</div>
+            <div>{apiData.EcommerceSolutionSection.Title3}</div>
             <div className={style.headMobile}>
-              {apiData.WebAppSolutionSection.Title2}{" "}
-              {apiData.WebAppSolutionSection.Title2}{" "}
-              {apiData.WebAppSolutionSection.Title3}
+              {apiData.EcommerceSolutionSection.Title2}{" "}
+              {apiData.EcommerceSolutionSection.Title2}{" "}
+              {apiData.EcommerceSolutionSection.Title3}
             </div>
           </h2>
         </div>
         <div className={style.text}>
-          <p>{apiData.WebAppSolutionSection.Paragraph}</p>
+          <p>{apiData.EcommerceSolutionSection.Paragraph}</p>
           <p>
-            Being a rising name in the IT industry across the world, we deliver
-            quality services in a timely fashion to help our clients gain a
-            leading edge in this competitive market. 
+            As a prominent name in the IT industry worldwide, we provide high-quality e-commerce services promptly to help our clients gain a competitive edge in the market.
           </p>
-          <p> We are your one-stop
-            solution provider for Android, iOS & Flutter Mobile App development
-            services. Leading Startups and Companies hiring Android, iOS and
-            Flutter App developers from Zignuts Technolab to successfully drive
-            and achieve their critical mobile app development projects. As a
-            leading Indian mobile app development company with skiiled team of
-            app developers in India, we help building custom mobile apps that
-            have most interactive and modern interfaces.</p>
+          <p>
+            We are your one-stop solution provider for comprehensive e-commerce development services. Leading businesses hire our developers to successfully drive and achieve their critical e-commerce projects. As a leading e-commerce development company with a skilled team, we build custom e-commerce solutions featuring the most interactive and modern interfaces.
+          </p>
+
         </div>
       </div>
 

@@ -1,6 +1,6 @@
 import style from "./Ecommerceenterprizes.module.scss";
 import { BsAward, BsCheckCircle } from "react-icons/bs";
-import { AiOutlineCheck, AiOutlineMobile } from "react-icons/ai";
+import { AiOutlineCheck } from "react-icons/ai";
 
 
 function EcommerceEnterprizes({ apiData }) {
