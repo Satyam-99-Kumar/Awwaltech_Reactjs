@@ -9,8 +9,8 @@ function Footer() {
       <div className={style.footer}>
         <div className={style.footer__one}>
           <img src={logo} alt="" />
-          <p className={style.line}>
-            Awwaltech is a Prime and well recognized IT Solution Provider, which is a competitive global leader in Digital Transformation & Emerging Technologies, engaged in handling the service requests from the reputed clients across the Globe.
+          <p style={{lineHeight:"25px"}}>
+          Awwaltech is a Prime and well recognized IT Solution Provider, which is a competitive global leader in Digital Transformation & Emerging Technologies, engaged in handling the service requests from the reputed clients across the Globe.
           </p>
           <div className={style.info}>
 

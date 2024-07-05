@@ -5,17 +5,17 @@ import iphone1 from "../../../assets/Services/iphone1.png";
 import iphone2 from "../../../assets/Services/iphone2.png";
 import iphone3 from "../../../assets/Services/iphone3.png";
 
-function EcommerceBanner(data) {
-  console.log("===>", data)
+function EcommerceBanner(apiData) {
+  console.log("===>", apiData)
   return (
     <div className={style.banner}>
         <div className={style.banner__left}>
         <div>
           <p>Ecommerce Development</p>
           <h1>
-            <div>{data.apiData.Banner.Title1}</div>
-            <div>{data.apiData.Banner.Title2}</div>
-            <div>{data.apiData.Banner.Title3}</div>
+            <div>{apiData.apiData.Banner.Title1}</div>
+            <div>{apiData.apiData.Banner.Title2}</div>
+            <div>{apiData.apiData.Banner.Title3}</div>
           </h1>
           <Link to='/about'>Get a quote</Link>
         </div>

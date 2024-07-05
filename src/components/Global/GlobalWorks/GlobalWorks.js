@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 import { useRef } from "react";
 import { Data } from "./data";
 
-function GlobalWorks({ background, data }) {
+function GlobalWorks({ background, apiData }) {
   const slider = useRef(null);
-  console.log("hello", data)
+  console.log("globalWorkComponent =>", apiData)
 
   const settings = {
     dots: false,
@@ -33,10 +33,10 @@ function GlobalWorks({ background, data }) {
     <div className={style.works} style={{ background: background }}>
       <div className={style.works__text}>
         <h1>
-          {data.RecentWorkSection?.Title1}
-          <span> {data.RecentWorkSection?.Title2}</span>
+          {apiData.RecentWorkSection?.Title1}
+          <span> {apiData.RecentWorkSection?.Title2}</span>
         </h1>
-        <p>{data.RecentWorkSection?.Paragraph}</p>
+        <p>{apiData.RecentWorkSection?.Paragraph}</p>
       </div>
 
       <div className={style.slider}>

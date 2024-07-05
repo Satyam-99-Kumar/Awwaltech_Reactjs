@@ -41,7 +41,7 @@ function HomeClients({ data }) {
         <div className={style.options__wrapper}>
           {data.ClientsSection?.Clients.map((client, index) => (
             <div
-              key={client._id}
+              key={index}
               className={
                 selected === index + 1
                   ? `${style.option} ${style.active}`
@@ -68,7 +68,7 @@ function HomeClients({ data }) {
         <div className={style.image}>
           <Slider {...settings} className={style.slider}>
             {data.ClientsSection?.Clients.map((client, index) => (
-              <div className={style.slider__container} key={client._id}>
+              <div className={style.slider__container} key={index}>
                 {/* Replace this with your actual image URL */}
                 {/* <img src={client.Image} alt="" /> */}
                 <img src={img1} alt="" />

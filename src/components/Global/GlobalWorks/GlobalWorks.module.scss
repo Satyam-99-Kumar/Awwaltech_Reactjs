@@ -15,12 +15,12 @@
   }
 
   &__text {
-    padding: 3rem 10rem 0 10rem;
+    padding: 1rem 10rem 0 10rem;
     @include media("<=phone") {
       padding: 15px;
     }
     @include media(">=LGdesktop") {
-      padding: 6rem 10rem 0rem 10rem;
+      padding: 2rem 10rem 0rem 10rem;
     }
 
     h1 {
@@ -28,7 +28,7 @@
       span {
         color: #175fff !important;
       }
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       font-size: 36px;
       line-height: 42px;
       font-weight: 500;
@@ -37,7 +37,8 @@
         font-size: 26px;
         line-height: 36px;
         letter-spacing: -1px;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
+        
       }
     }
     p {
@@ -74,18 +75,22 @@
       margin-left: -10%;
     }
     .allworks {
-      margin-top: 4rem;
+      margin-top: 2rem;
       padding: 0 100px;
+      
+      
+
       @include media("<=phone") {
-        margin-top: 2rem;
+        margin-top: 1rem;
         padding: 0 15px;
       }
 
       .work {
-        height: 500px !important;
+        height: 74vh;
         border-radius: 8px;
         padding: 2rem;
         text-decoration: none;
+        
         @include media("<=phone") {
           padding: 12px;
           height: 64vh;
@@ -126,7 +131,7 @@
           }
           .content {
             // padding: 2rem;
-            padding: 20px 10px;
+            padding: 15px 10px;
             @include media("<=phone") {
               padding: 12px;
             }
@@ -142,7 +147,7 @@
             }
             p {
               display: block;
-              font-size: 15px;
+              font-size: 14px;
               line-height: 21px;
               font-weight: 400;
               font-family: var(--font-secondary);
@@ -175,6 +180,7 @@
       align-items: center;
       justify-content: center;
       transition: 0.3s;
+      v
       &:hover {
         background: #e7f1fe;
       }
@@ -204,8 +210,9 @@
     line-height: 21px;
     letter-spacing: -0.01em;
     color: #325ce8;
+    margin: 0;
     @include media("<=phone") {
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
     @include media(">=LGdesktop") {
       margin-top: -49px;
@@ -214,7 +221,7 @@
     span {
       font-size: 1.2rem;
       margin-top: 5px;
-      margin-left: 10px;
+      margin-left: 8px;
       font-weight: bold;
       transition: all 0.3s;
     }
