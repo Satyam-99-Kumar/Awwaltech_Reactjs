@@ -472,14 +472,12 @@
           width: 11%;
         }
 
-        @include media(">=tablet") {
-          font-size: 21px;
-          width: 11%;
-        }
+      
 
         @include media(">=tablet") {
           font-size: 32px;
-          width: 10%;
+          width: 15%;
+
         }
         @include media(">=LGdesktop") {
           color: var(--primary-color);

@@ -6,6 +6,8 @@
     background: var(--primary-color);
     display: flex;
     padding-top: 5rem;
+    padding-bottom: 2rem;
+
     @include media("<=phone") {
       min-height: 60vh;
       flex-wrap: wrap;

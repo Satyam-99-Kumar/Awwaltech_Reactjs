@@ -78,6 +78,8 @@
   justify-content: space-between;
   margin-top: 5rem;
   padding: 0 6rem;
+  margin-bottom: 4rem;
+
   @include media("<=phone") {
     flex-wrap: wrap;
     margin-top: 24px;

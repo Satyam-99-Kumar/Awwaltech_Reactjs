@@ -9,7 +9,7 @@ function HomeService({ data }) {
   console.log("....homeservicedta===>",data)
   const [imagePaths, setImagePaths] = useState([]);
   useEffect(() => {
-    // Define image paths
+    // Define image paths1
     const imgPaths = [
       require("../../../assets/Home/Services/Monitor.png"),
       require("../../../assets/Home/Services/Settings_Future.png"),
@@ -70,9 +70,7 @@ function HomeService({ data }) {
             </div>
           ))}
         </Slider>
-        {/* <div className={style.globalLink}>
-          <Link to="/">Explore  all our services<span><BsChevronRight /></span></Link>
-        </div> */}
+        
       </div>
     </div>
   );
