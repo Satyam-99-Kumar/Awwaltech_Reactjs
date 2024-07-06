@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import CustomerBanner from "../../components/CustomerSoftware/CustomerBanner/CustomerBanner";
-import ServiceEnterprize from "../../components/Service/ServiceEnterprize/ServiceEnterprize";
-import ServiceServices from "../../components/Service/ServiceServices/ServiceServices";
+import CustomerEnterprize from "../../components/CustomerSoftware/CustomerSoftwareenterprizes/CustomerSoftwareenterprizes";
+import CustomerServices from "../../components/CustomerSoftware/CustomerSoftwareServices/CustomerSoftwareServices";
 import GlobalWorks from "../../components/Global/GlobalWorks/GlobalWorks";
-import ServiceSolution from "../../components/Service/ServiceSolution/ServiceSolution";
+import CustomerSolution from "../../components/CustomerSoftware/CustomerSoftwareSolution/CustomerSoftwareSolution";
 // import ServiceInvestors from "../../components/Service/ServiceInvestors/ServiceInvestors";
 import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
@@ -23,10 +23,10 @@ function CustomerSoftware() {
     <>
       <Navbar />
       <CustomerBanner apiData={mobileData} />
-      <ServiceServices apiData={mobileData} />
-      <ServiceEnterprize apiData={mobileData} />
+      <CustomerServices apiData={mobileData} />
+      <CustomerEnterprize apiData={mobileData} />
       {/* <GlobalWorks background={`#fff`} apiData={homeData} /> */}
-      <ServiceSolution apiData={mobileData} />
+      <CustomerSolution apiData={mobileData} />
       {/* <ServiceInvestors /> */}
       <GlobalContact />
       <Footer />

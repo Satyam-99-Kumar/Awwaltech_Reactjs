@@ -12,7 +12,7 @@ import MobileServices from "../../components/MobileApp/MobileServices/MobileServ
 import MobileEnterprizes from "../../components/MobileApp/Mobileenterprizes/MobileEnterprizes";
 import MobileSolution from "../../components/MobileApp/MobileSolution/MobileSolution";
 import Mobiletechnology from "../../components/MobileApp/Mobiletechnology/Mobiletechnology";
-// import homeData from "../../json/homeData.json"
+
 import mobileData from "../../json/services/mobileService.json";
 
 

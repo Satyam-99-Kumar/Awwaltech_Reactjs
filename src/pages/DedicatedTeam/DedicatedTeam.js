@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import DedicatedBanner from "../../components/Dedicated/DedicatedBanner/DedicatedBanner";
-import ServiceEnterprize from "../../components/Service/ServiceEnterprize/ServiceEnterprize";
-import ServiceServices from "../../components/Service/ServiceServices/ServiceServices";
+import DedicatedEnterprize from "../../components/Dedicated/Dedicatedenterprizes/Dedicatedenterprizes";
+import DedicatedServices from "../../components/Dedicated/DedicatedServices/DedicatedServices";
 import GlobalWorks from "../../components/Global/GlobalWorks/GlobalWorks";
-import ServiceSolution from "../../components/Service/ServiceSolution/ServiceSolution";
+import DedicatedSolution from "../../components/Dedicated/DedicatedSolution/DedicatedSolution";
 // import ServiceInvestors from "../../components/Service/ServiceInvestors/ServiceInvestors";
 import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
@@ -23,10 +23,10 @@ function DedicaedTeam() {
     <>
       <Navbar />
       <DedicatedBanner apiData={mobileData} />
-      <ServiceServices apiData={mobileData} />
-      <ServiceEnterprize apiData={mobileData} />
+      <DedicatedServices apiData={mobileData} />
+      <DedicatedEnterprize apiData={mobileData} />
       {/* <GlobalWorks background={`#fff`} apiData={homeData} /> */}
-      <ServiceSolution apiData={mobileData} />
+      <DedicatedSolution apiData={mobileData} />
       {/* <ServiceInvestors /> */}
       <GlobalContact />
       <Footer />
