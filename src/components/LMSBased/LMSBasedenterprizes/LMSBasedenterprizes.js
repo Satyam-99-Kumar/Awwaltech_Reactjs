@@ -52,7 +52,7 @@ function LMSBasedenterprizes({ apiData }) {
           </div>
         </div>
       </div>
-      <div className={style.Benefit}>
+      {/* <div className={style.Benefit}>
         <div className={style.Benefits}>
           <div className={style.Benefit1}>
 
@@ -116,7 +116,7 @@ function LMSBasedenterprizes({ apiData }) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
 
 

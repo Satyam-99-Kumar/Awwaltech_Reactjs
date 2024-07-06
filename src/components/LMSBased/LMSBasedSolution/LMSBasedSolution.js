@@ -17,7 +17,7 @@ const settings = {
 };
 
 
-function LMSBasedSolution(apiData) {
+function LMSBasedSolution(apidata) {
   return (
     <div className={style.serviceSolution}>
       {/* ///////////////////////////////////// */}
@@ -29,10 +29,10 @@ function LMSBasedSolution(apiData) {
             <img src={img} alt="" />
           </div>
           <div className={style.wrapper__right}>
-            <p>{apiData.apiData.OurSolutionsSection.Title1}</p>
-            <h3>{apiData.apiData.OurSolutionsSection.Title2}</h3>
+            <p>{apidata.apiData.OurSolutionsSection.Title1}</p>
+            <h3>{apidata.apiData.OurSolutionsSection.Title2}</h3>
             <ul>
-              {apiData.apiData.OurSolutionsSection.List.map(item => {
+              {apidata.apiData.OurSolutionsSection.List.map(item => {
                 return (
                   <li>
                     <div>

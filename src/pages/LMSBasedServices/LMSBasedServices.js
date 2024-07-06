@@ -8,13 +8,10 @@ import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 
-import MobileServices from "../../components/MobileApp/MobileServices/MobileServices";
-import MobileEnterprizes from "../../components/MobileApp/Mobileenterprizes/MobileEnterprizes";
-import MobileSolution from "../../components/MobileApp/MobileSolution/MobileSolution";
-import Mobiletechnology from "../../components/MobileApp/Mobiletechnology/Mobiletechnology";
-// import homeData from "../../json/homeData.json"
-import mobileData from "../../json/services/mobileService.json";
-
+import LSMBasedServices from "../../components/LMSBased/LMSBasedServices/LMSBasedServices";
+import LSMSolution from "../../components/LMSBased/LMSBasedSolution/LMSBasedSolution";
+import LSMEnterprizes from "../../components/LMSBased/LMSBasedenterprizes/LMSBasedenterprizes"
+import lsmData from "../../json/services/lsmBasedServices.json";
 
 function LMSBasedServices() {
   
@@ -27,13 +24,16 @@ function LMSBasedServices() {
   return (
     <>
       <Navbar />
-      <LMSBanner apiData={mobileData} />
-      <ServiceEnterprize apiData={mobileData} />
-      {/* <GlobalWorks background={`#fff`} apiData={homeData} /> */}
-      <ServiceSolution apiData={mobileData} />
-      {/* <ServiceInvestors /> */}
-      <GlobalContact />
-      <Footer />
+      {lsmData && (
+        <>
+          <LMSBanner apiData={lsmData} />
+          <LSMBasedServices apiData={lsmData} />
+          <LSMEnterprizes apiData={lsmData} />
+          <LSMSolution apiData={lsmData} />
+          <GlobalContact />
+          <Footer />
+        </>
+      )}
     </>
   );
 }

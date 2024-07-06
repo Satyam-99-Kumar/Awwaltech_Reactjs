@@ -43,19 +43,19 @@ function CRMServices({ apiData }) {
       {/* ///////////////////////////////////// */}
       <div className={style.solve__identity}>
         <div className={style.head}>
-          <p>{apiData.WebAppSolutionSection.Title1}</p>
+          <p>{apiData.CRMSolutionSection.Title1}</p>
           <h2>
-            <div>{apiData.WebAppSolutionSection.Title2}</div>
-            <div>{apiData.WebAppSolutionSection.Title3}</div>
+            <div>{apiData.CRMSolutionSection.Title2}</div>
+            <div>{apiData.CRMSolutionSection.Title3}</div>
             <div className={style.headMobile}>
-              {apiData.WebAppSolutionSection.Title2}{" "}
-              {apiData.WebAppSolutionSection.Title2}{" "}
-              {apiData.WebAppSolutionSection.Title3}
+              {apiData.CRMSolutionSection.Title2}{" "}
+              {apiData.CRMSolutionSection.Title2}{" "}
+              {apiData.CRMSolutionSection.Title3}
             </div>
           </h2>
         </div>
         <div className={style.text}>
-          <p>{apiData.WebAppSolutionSection.Paragraph}</p>
+          <p>{apiData.CRMSolutionSection.Paragraph}</p>
           <p>
             Being a rising name in the IT industry across the world, we deliver
             quality services in a timely fashion to help our clients gain a
