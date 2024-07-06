@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import CyberBanner from "../../components/Cyber/CyberBanner/CyberBanner";
-import ServiceEnterprize from "../../components/Service/ServiceEnterprize/ServiceEnterprize";
-import ServiceServices from "../../components/Service/ServiceServices/ServiceServices";
+import CybeEnterprize from "../../components/Cyber/Cyberenterprizes/Cyberenterprizes";
+import CybeServices from "../../components/Cyber/CyberServices/CyberServices";
 import GlobalWorks from "../../components/Global/GlobalWorks/GlobalWorks";
-import ServiceSolution from "../../components/Service/ServiceSolution/ServiceSolution";
+import CybeSolution from "../../components/Cyber/CyberSolution/CyberSolution";
 // import ServiceInvestors from "../../components/Service/ServiceInvestors/ServiceInvestors";
 import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 // import { fetchMobileAppServiceData, fetchHomeData } from '../../config/apiService';
-import mobileData from "../../json/services/mobileService.json";
-import homeData from "../../json/homeData.json";
+import mobileData from "../../json/services/cyberSecurity.json";
+
 
 function CyberSecurity() {
   useEffect(() => {
@@ -23,10 +23,10 @@ function CyberSecurity() {
     <>
       <Navbar />
       <CyberBanner apiData={mobileData} />
-      <ServiceServices apiData={mobileData} />
-      <ServiceEnterprize apiData={mobileData} />
+      <CybeServices apiData={mobileData} />
+      <CybeEnterprize apiData={mobileData} />
       {/* <GlobalWorks background={`#fff`} apiData={homeData} /> */}
-      <ServiceSolution apiData={mobileData} />
+      <CybeSolution apiData={mobileData} />
       {/* <ServiceInvestors /> */}
       <GlobalContact />
       <Footer />

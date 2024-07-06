@@ -81,10 +81,11 @@
        left: 12rem;
       }
     }
-    .iphone1 {
+  .iphone1 {
       position: absolute;
-      bottom: 0px;
-      right:4rem;
+      bottom: 61px;
+      right: 3rem;
+      width: 98%;
       width: 55%;
       @include media(">=LGdesktop") {
         right: 2rem;

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import ITBanner from "../../components/IT/ITBanner/ITBanner";
-import ServiceEnterprize from "../../components/Service/ServiceEnterprize/ServiceEnterprize";
-import ServiceServices from "../../components/Service/ServiceServices/ServiceServices";
+import ITEnterprize from "../../components/IT/ITenterprizes/ITenterprizes";
+import ITServices from "../../components/IT/ITServices/ITServices";
 import GlobalWorks from "../../components/Global/GlobalWorks/GlobalWorks";
-import ServiceSolution from "../../components/Service/ServiceSolution/ServiceSolution";
+import ITSolution from "../../components/IT/ITSolution/ITSolution";
 // import ServiceInvestors from "../../components/Service/ServiceInvestors/ServiceInvestors";
 import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
@@ -23,10 +23,10 @@ function ITConsulting() {
     <>
       <Navbar />
       <ITBanner apiData={mobileData} />
-      <ServiceServices apiData={mobileData} />
-      <ServiceEnterprize apiData={mobileData} />
+      <ITServices apiData={mobileData} />
+      <ITEnterprize apiData={mobileData} />
       {/* <GlobalWorks background={`#fff`} apiData={homeData} /> */}
-      <ServiceSolution apiData={mobileData} />
+      <ITSolution apiData={mobileData} />
       {/* <ServiceInvestors /> */}
       <GlobalContact />
       <Footer />

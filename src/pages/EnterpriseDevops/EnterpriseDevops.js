@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import EnterpriseBanner from "../../components/EnterpriseDevops/EnterpriseBanner/EnterpriseBanner";
-import ServiceEnterprize from "../../components/Service/ServiceEnterprize/ServiceEnterprize";
-import ServiceServices from "../../components/Service/ServiceServices/ServiceServices";
+import EnterpriseEnterprizes from "../../components/EnterpriseDevops/EnterpriseEnterprizes/EnterpriseEnterprizes";
+import EnterpriseServices from "../../components/EnterpriseDevops/EnterpriseServices/EnterpriseServices";
 import GlobalWorks from "../../components/Global/GlobalWorks/GlobalWorks";
-import ServiceSolution from "../../components/Service/ServiceSolution/ServiceSolution";
+import EnterpriseSolution from "../../components/EnterpriseDevops/EnterpriseSolution/EnterpriseSolution";
 // import ServiceInvestors from "../../components/Service/ServiceInvestors/ServiceInvestors";
 import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
-// import { fetchMobileAppServiceData, fetchHomeData } from '../../config/apiService';
+
 import mobileData from "../../json/services/enterpriseDevops.json";
 
 
@@ -23,10 +23,10 @@ function EnterpriseDevops() {
     <>
       <Navbar />
       <EnterpriseBanner apiData={mobileData} />
-      <ServiceServices apiData={mobileData} />
-      <ServiceEnterprize apiData={mobileData} />
+      <EnterpriseServices apiData={mobileData} />
+      <EnterpriseEnterprizes apiData={mobileData} />
       {/* <GlobalWorks background={`#fff`} apiData={homeData} /> */}
-      <ServiceSolution apiData={mobileData} />
+      <EnterpriseSolution apiData={mobileData} />
       {/* <ServiceInvestors /> */}
       <GlobalContact />
       <Footer />

@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
 import CloudBanner from "../../components/CloudBased/CloudBanner/CloudBanner";
-import ServiceEnterprize from "../../components/Service/ServiceEnterprize/ServiceEnterprize";
-import ServiceServices from "../../components/Service/ServiceServices/ServiceServices";
-import GlobalWorks from "../../components/Global/GlobalWorks/GlobalWorks";
-import ServiceSolution from "../../components/Service/ServiceSolution/ServiceSolution";
+import CloudEnterprize from "../../components/CloudBased/CloudBasedenterprizes/CloudBasedenterprizes";
+import CloudServices from "../../components/CloudBased/CloudBasedServices/CloudBasedServices";
+import CloudSolution from "../../components/CloudBased/CloudBasedSolution/CloudBasedSolution";
 // import ServiceInvestors from "../../components/Service/ServiceInvestors/ServiceInvestors";
 import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 // import { fetchMobileAppServiceData, fetchHomeData } from '../../config/apiService';
-import mobileData from "../../json/services/mobileService.json";
-import homeData from "../../json/homeData.json";
+import mobileData from "../../json/services/cloudBased.json";
+
 
 function CloudBased() {
   useEffect(() => {
@@ -23,11 +22,12 @@ function CloudBased() {
     <>
       <Navbar />
       <CloudBanner apiData={mobileData} />
-      <ServiceServices apiData={mobileData} />
-      <ServiceEnterprize apiData={mobileData} />
-      {/* <GlobalWorks background={`#fff`} apiData={homeData} /> */}
-      <ServiceSolution apiData={mobileData} />
-      {/* <ServiceInvestors /> */}
+      <CloudServices apiData={mobileData} />
+      <CloudEnterprize apiData={mobileData} />
+     
+     
+      <CloudSolution apiData={mobileData} />
+   
       <GlobalContact />
       <Footer />
     </>

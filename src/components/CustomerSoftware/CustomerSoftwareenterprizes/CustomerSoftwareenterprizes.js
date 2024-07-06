@@ -20,7 +20,8 @@ function CustomerSoftwareenterprizes({ apiData }) {
               <div>{apiData.DrivingSection.Title2}</div>
               <div>{apiData.DrivingSection.Title3}</div>
             </h1>
-            <p>{apiData.DrivingSection.Paragraph}</p>
+            <p>{apiData.DrivingSection.Paragraph1}</p>
+            <p>{apiData.DrivingSection.Paragraph2}</p>
           </div>
         </div>
 

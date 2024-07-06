@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 import style from './DedicatedBanner.module.scss';
-import img1 from "../../../assets/Services/frame.png";
-import iphone1 from "../../../assets/Services/iphone1.png";
-import iphone2 from "../../../assets/Services/iphone2.png";
-import iphone3 from "../../../assets/Services/iphone3.png";
+import img1 from "../../../assets/Services/dedicated-team.png";
+
 
 function DedicatedBanner(data) {
   console.log("===>", data)
@@ -22,10 +20,8 @@ function DedicatedBanner(data) {
       </div>
 
       <div className={style.banner__right}>
-        <img src={img1} alt="" className={style.frame} />
-        <img src={iphone1} alt="" className={style.iphone1} />
-        <img src={iphone2} alt="" className={style.iphone2} />
-        <img src={iphone3} alt="" className={style.iphone3} />
+        <img src={img1} alt="" className={style.iphone1} />
+
       </div>
     </div>
   )

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import StrategicUXBanner from "../../components/StrategicUX/StrategicUXBanner/StrategicUXBanner";
-import ServiceEnterprize from "../../components/Service/ServiceEnterprize/ServiceEnterprize";
-import ServiceServices from "../../components/Service/ServiceServices/ServiceServices";
+import StrategicUXEnterprizes from "../../components/StrategicUX/StrategicUXEnterprizes/StrategicUXEnterprizes";
+import StrategicUXServices from "../../components/StrategicUX/StrategicUXServices/StrategicUXServices"
+import StrategicUXSolution from "../../components/StrategicUX/StrategicUXSolution/StrategicUXSolution"
 import GlobalWorks from "../../components/Global/GlobalWorks/GlobalWorks";
 import ServiceSolution from "../../components/Service/ServiceSolution/ServiceSolution";
 // import ServiceInvestors from "../../components/Service/ServiceInvestors/ServiceInvestors";
@@ -23,11 +24,11 @@ function StrategicUXDev() {
     <>
       <Navbar />
       <StrategicUXBanner apiData={mobileData} />
-      <ServiceServices apiData={mobileData} />
-      <ServiceEnterprize apiData={mobileData} />
-      {/* <GlobalWorks background={`#fff`} apiData={homeData} /> */}
-      <ServiceSolution apiData={mobileData} />
-      {/* <ServiceInvestors /> */}
+      <StrategicUXServices apiData={mobileData} />
+      <StrategicUXEnterprizes apiData={mobileData} />
+    
+      <StrategicUXSolution apiData={mobileData} />
+  
       <GlobalContact />
       <Footer />
     </>

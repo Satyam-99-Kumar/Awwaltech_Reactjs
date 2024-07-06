@@ -43,19 +43,19 @@ function EnterpriseServices({ apiData }) {
       {/* ///////////////////////////////////// */}
       <div className={style.solve__identity}>
         <div className={style.head}>
-          <p>{apiData.WebAppSolutionSection.Title1}</p>
+          <p>{apiData.MobileAppSolutionSection.Title1}</p>
           <h2>
-            <div>{apiData.WebAppSolutionSection.Title2}</div>
-            <div>{apiData.WebAppSolutionSection.Title3}</div>
+            <div>{apiData.MobileAppSolutionSection.Title2}</div>
+            <div>{apiData.MobileAppSolutionSection.Title3}</div>
             <div className={style.headMobile}>
-              {apiData.WebAppSolutionSection.Title2}{" "}
-              {apiData.WebAppSolutionSection.Title2}{" "}
-              {apiData.WebAppSolutionSection.Title3}
+              {apiData.MobileAppSolutionSection.Title2}{" "}
+              {apiData.MobileAppSolutionSection.Title2}{" "}
+              {apiData.MobileAppSolutionSection.Title3}
             </div>
           </h2>
         </div>
         <div className={style.text}>
-          <p>{apiData.WebAppSolutionSection.Paragraph}</p>
+          <p>{apiData.MobileAppSolutionSection.Paragraph}</p>
           <p>
             Being a rising name in the IT industry across the world, we deliver
             quality services in a timely fashion to help our clients gain a
