@@ -52,9 +52,9 @@ function WebEnterprizes({ apiData }) {
       </div>
       <div className={style.Benefit}>
         <div className={style.Benefits}>
-          <div className={style.Benefit1}>
+          {/* <div className={style.Benefit1}>
 
-          </div>
+          </div> */}
           <div className={style.Benefit2}>
             <p className={style.heading}>Benefits</p>
             <h1 className={style.paragraph}>Benefits Of Web App Development</h1>

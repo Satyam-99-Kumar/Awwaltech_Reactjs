@@ -43,19 +43,19 @@ function QAServices({ apiData }) {
       {/* ///////////////////////////////////// */}
       <div className={style.solve__identity}>
         <div className={style.head}>
-          <p>{apiData.WebAppSolutionSection.Title1}</p>
+          <p>{apiData.QASolutionSection.Title1}</p>
           <h2>
-            <div>{apiData.WebAppSolutionSection.Title2}</div>
-            <div>{apiData.WebAppSolutionSection.Title3}</div>
+            <div>{apiData.QASolutionSection.Title2}</div>
+            <div>{apiData.QASolutionSection.Title3}</div>
             <div className={style.headMobile}>
-              {apiData.WebAppSolutionSection.Title2}{" "}
-              {apiData.WebAppSolutionSection.Title2}{" "}
-              {apiData.WebAppSolutionSection.Title3}
+              {apiData.QASolutionSection.Title2}{" "}
+              {apiData.QASolutionSection.Title2}{" "}
+              {apiData.QASolutionSection.Title3}
             </div>
           </h2>
         </div>
         <div className={style.text}>
-          <p>{apiData.WebAppSolutionSection.Paragraph}</p>
+          <p>{apiData.QASolutionSection.Paragraph}</p>
           <p>
             Being a rising name in the IT industry across the world, we deliver
             quality services in a timely fashion to help our clients gain a

@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
 import QABanner from "../../components/QA/QABanner/QABanner";
-import ServiceEnterprize from "../../components/Service/ServiceEnterprize/ServiceEnterprize";
-import ServiceServices from "../../components/Service/ServiceServices/ServiceServices";
-import GlobalWorks from "../../components/Global/GlobalWorks/GlobalWorks";
-import ServiceSolution from "../../components/Service/ServiceSolution/ServiceSolution";
 // import ServiceInvestors from "../../components/Service/ServiceInvestors/ServiceInvestors";
 import GlobalContact from "../../components/Global/GlobalContact/GlobalContact";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 // import { fetchMobileAppServiceData, fetchHomeData } from '../../config/apiService';
-import mobileData from "../../json/services/mobileService.json";
-import homeData from "../../json/homeData.json";
+import QAServices from "../../components/QA/QAServices/QAServices";
+import QASolution from "../../components/QA/QASolution/QASolution";
+import QAenterprizes from "../../components/QA/QAenterprizes/QAenterprizes"
+import QAData from "../../json/services/qualityAssurance&Testing.json";
+
 
 function QA() {
   useEffect(() => {
@@ -21,15 +20,17 @@ function QA() {
 
   return (
     <>
-      <Navbar />
-      <QABanner apiData={mobileData} />
-      <ServiceServices apiData={mobileData} />
-      <ServiceEnterprize apiData={mobileData} />
-      {/* <GlobalWorks background={`#fff`} apiData={homeData} /> */}
-      <ServiceSolution apiData={mobileData} />
-      {/* <ServiceInvestors /> */}
-      <GlobalContact />
-      <Footer />
+     <Navbar />
+      {QAData && (
+        <>
+          <QABanner apiData={QAData} />
+          <QAServices apiData={QAData} />
+          <QAenterprizes apiData={QAData} />
+          <QASolution apiData={QAData} />
+          <GlobalContact />
+          <Footer />
+        </>
+      )}
     </>
   );
 }
