@@ -1,127 +1,95 @@
 import style from "./ITenterprizes.module.scss";
-import { BsAward, BsCheckCircle } from "react-icons/bs";
-import { AiOutlineCheck, AiOutlineMobile } from "react-icons/ai";
-
+import img1 from "../../../assets/Services/IT-consulting/cycle-1.webp";
+import img2 from "../../../assets/Services/IT-consulting/cycle-2.webp";
+import img3 from "../../../assets/Services/IT-consulting/cycle-3.webp";
+import img4 from "../../../assets/Services/IT-consulting/cycle-4.webp";
+import img5 from "../../../assets/Services/IT-consulting/cycle-5.webp";
 
 function ITenterprizes({ apiData }) {
   return (
-    <div>
-      <div className={style.achievements}>
-        {/* ///////////////////////////////////////////// */}
-        {/* ///////////////////////////////////////////// */}
-        <div className={style.achievements__head}>
-          <div>
-            <div className={style.logo}>
-              <BsAward />
-            </div>
-            <p>{apiData.DrivingSection.TitleTag}</p>
-            <h1>
-              <div>{apiData.DrivingSection.Title1}</div>
-              <div>{apiData.DrivingSection.Title2}</div>
-              <div>{apiData.DrivingSection.Title3}</div>
-            </h1>
-            <p>{apiData.DrivingSection.Paragraph}</p>
-          </div>
-        </div>
-
-        {/* ///////////////////////////////////////////// */}
-        {/* ///////////////////////////////////////////// */}
-        <div className={style.achievements__achieves}>
-          {/* column 1 */}
-          <div className={style.block1}>
-            {apiData.DrivingSection.Services.slice(0, 3).map((item, index) => {
-              return (
-                <div className={style.achive} key={index}>
-                  <BsCheckCircle />
-                  <p>{item.Paragraph}</p>
-                </div>
-              )
-            })}
-
-          </div>
-          {/* column 2 */}
-          <div className={style.block2}>
-            {apiData.DrivingSection.Services.slice(-3).map((item, index) => {
-              return (
-                <div className={style.achive} key={index}>
-                  <BsCheckCircle />
-                  <p>{item.Paragraph}</p>
-                </div>
-              )
-            })}
-          </div>
-        </div>
+    <div className={style.container}>
+      <div className={style.header}>
+        <h2 className={style.heading}>FULL-CYCLE IT CONSULTING SERVICES</h2>
+        <p className={style.description}>
+          Leverage our technological knowledge and expertise in IT consulting
+          complemented with data mining and analytics tools to get a solution
+          that really makes a difference to your business.
+        </p>
       </div>
-      <div className={style.Benefit}>
-        <div className={style.Benefits}>
-          <div className={style.Benefit1}>
-
-          </div>
-          <div className={style.Benefit2}>
-            <p className={style.heading}>Benefits</p>
-            <h1 className={style.paragraph}>Benefits Of Mobile App Development</h1>
-            <div className={style.content}>
-              <p className={style.icon}>
-                <AiOutlineCheck />
-              </p>
-              <div>
-                <h4 className={style.Fitness}>Food/Grocery</h4>
-                <p className={style.smartphones}>of food are purchased using smartphone or tablets</p>
-              </div>
-            </div>
-            <div className={style.content}>
-              <p className={style.icon}>
-                <AiOutlineCheck />
-              </p>
-              <div>
-                <h4 className={style.Fitness}>Realtime Communication</h4>
-                <p className={style.smartphones}>of people worldwide are using audio-video chatting on their mobile phones.</p>
-              </div>
-            </div>
-            <div className={style.content}>
-              <p className={style.icon}>
-                <AiOutlineCheck />
-              </p>
-              <div>
-                <h4 className={style.Fitness}>Real Estate</h4>
-                <p className={style.smartphones}>of property are searched online using real estate apps.</p>
-              </div>
-            </div>
-            <div className={style.content}>
-              <p className={style.icon}>
-                <AiOutlineCheck />
-              </p>
-              <div>
-                <h4 className={style.Fitness}>Travel & Hospitality</h4>
-                <p className={style.smartphones}>of tours are ordered from mobile devices.</p>
-              </div>
-            </div>
-            <div className={style.content}>
-              <p className={style.icon}>
-                <AiOutlineCheck />
-              </p>
-              <div>
-                <h4 className={style.Fitness}>Education</h4>
-                <p className={style.smartphones}>of people worldwide are using audio-video chatting on their mobile phones.</p>
-              </div>
-            </div>
-            <div className={style.content}>
-              <p className={style.icon}>
-                <AiOutlineCheck />
-              </p>
-              <div>
-                <h4 className={style.Fitness}>Realtime Communication</h4>
-                <p className={style.smartphones}>of high school students use smartphones to educate themselves, compared to 28% in 2012..</p>
-              </div>
-            </div>
-          </div>
+      <div className={style.services}>
+        <div className={style.serviceItem}>
+          <img src={img1} alt="IT assessment" className={style.serviceImage} />
+          <h3 className={style.serviceTitle}>IT assessment</h3>
+          <p className={style.serviceDescription}>
+            Taking into account your business goals, we assist you in selecting
+            the IT solutions and technologies that will meet your needs as
+            efficiently as possible. We’ll help you define the tech stack for
+            every project stage, including pre-planning, design, development,
+            and implementation.
+          </p>
+        </div>
+        <div className={style.serviceItem}>
+          <img
+            src={img2}
+            alt="Solutions & technology consulting"
+            className={style.serviceImage}
+          />
+          <h3 className={style.serviceTitle}>
+            Solutions & technology consulting
+          </h3>
+          <p className={style.serviceDescription}>
+            To ensure the security and efficiency of your solutions, we assess
+            your current infrastructure and consult on how to effectively modify
+            and maintain your existing solutions or build new ones with a
+            forward-looking perspective.
+          </p>
+        </div>
+        <div className={style.serviceItem}>
+          <img
+            src={img3}
+            alt="IT infrastructure consulting"
+            className={style.serviceImage}
+          />
+          <h3 className={style.serviceTitle}>IT infrastructure consulting</h3>
+          <p className={style.serviceDescription}>
+            To ensure the security and efficiency of your solutions, we assess
+            your current infrastructure and consult on how to effectively modify
+            and maintain your existing solutions or build new ones with a
+            forward-looking perspective.
+          </p>
+        </div>
+        <div className={style.serviceItem}>
+          <img
+            src={img4}
+            alt="Design consulting"
+            className={style.serviceImage}
+          />
+          <h3 className={style.serviceTitle}>Design consulting</h3>
+          <p className={style.serviceDescription}>
+            Our UX team will help you ensure your software solution’s success
+            through advising on UX methods and strategies to create experiences
+            that reach your target users. The SAP AppHaus, which has been
+            designed to conduct design thinking workshops and generate new ideas
+            for our clients’ solutions, helps us add more value to them.
+          </p>
+        </div>
+        <div className={style.serviceItem}>
+          <img
+            src={img5}
+            alt="Mobile app release consulting"
+            className={style.serviceImage}
+          />
+          <h3 className={style.serviceTitle}>Mobile app release consulting</h3>
+          <p className={style.serviceDescription}>
+            Our tech specialists help you download your mobile application to
+            the App Store, Google Play to ensure all the processes work well.
+            Our expert will carefully analyze it on compliance with the chosen
+            platform’s requirements to ensure its successful, pain-free release.
+          </p>
         </div>
       </div>
     </div>
-
-
   );
 }
 
-export default ITenterprizes
- 
+export default ITenterprizes;
