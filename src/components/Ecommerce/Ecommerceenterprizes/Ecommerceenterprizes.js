@@ -1,126 +1,68 @@
 import style from "./Ecommerceenterprizes.module.scss";
-import { BsAward, BsCheckCircle } from "react-icons/bs";
-import { AiOutlineCheck } from "react-icons/ai";
-
+import img from "../../../assets/Services/Ecommerce/img.webp";
 
 function EcommerceEnterprizes({ apiData }) {
   return (
-    <div>
-      <div className={style.achievements}>
-        {/* ///////////////////////////////////////////// */}
-        {/* ///////////////////////////////////////////// */}
-        <div className={style.achievements__head}>
-          <div>
-            <div className={style.logo}>
-              <BsAward />
-            </div>
-            <p>{apiData.DrivingSection.TitleTag}</p>
-            <h1>
-              <div>{apiData.DrivingSection.Title1}</div>
-              <div>{apiData.DrivingSection.Title2}</div>
-              <div>{apiData.DrivingSection.Title3}</div>
-            </h1>
-            <p>{apiData.DrivingSection.Paragraph}</p>
+    <>
+      <section className={style.introSection}>
+        <div className={style.container}>
+          <div className={style.imageWrapper}>
+            <img
+              src={img}
+              alt="eCommerce Development"
+              className={style.image}
+            />
+          </div>
+          <div className={style.content}>
+            <h2 className={style.heading}>
+              Maximize Sales with the Best eCommerce Development Company
+            </h2>
+            <p className={style.description}>
+              With expertise in advanced web development tools and technologies,
+              BrainSpate is a leading provider of eCommerce development services
+              for global clients.{" "}
+              <a href="#" className={style.link}>
+                Hire dedicated eCommerce developers
+              </a>{" "}
+              to create customized, high-performing, and scalable online stores
+              tailored to your specific needs, no matter your industry.
+            </p>
+            <p className={style.description}>
+              Our eCommerce experts have years of experience building
+              high-quality online stores, marketplaces, and more. With
+              BrainSpate, you can effectively promote and sell your products to
+              a wide audience. We also develop custom plugins and extensions,
+              adding features based on your unique requirements.
+            </p>
           </div>
         </div>
-
-        {/* ///////////////////////////////////////////// */}
-        {/* ///////////////////////////////////////////// */}
-        <div className={style.achievements__achieves}>
-          {/* column 1 */}
-          <div className={style.block1}>
-            {apiData.DrivingSection.Services.slice(0, 3).map((item, index) => {
-              return (
-                <div className={style.achive} key={index}>
-                  <BsCheckCircle />
-                  <p>{item.Paragraph}</p>
-                </div>
-              )
-            })}
-
-          </div>
-          {/* column 2 */}
-          <div className={style.block2}>
-            {apiData.DrivingSection.Services.slice(-3).map((item, index) => {
-              return (
-                <div className={style.achive} key={index}>
-                  <BsCheckCircle />
-                  <p>{item.Paragraph}</p>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </div>
-      <div className={style.Benefit}>
-        <div className={style.Benefits}>
-          <div className={style.Benefit1}>
-
-          </div>
-          <div className={style.Benefit2}>
-            <p className={style.heading}>Benefits</p>
-            <h1 className={style.paragraph}>Benefits Of Mobile App Development</h1>
-            <div className={style.content}>
-              <p className={style.icon}>
-                <AiOutlineCheck />
-              </p>
-              <div>
-                <h4 className={style.Fitness}>Food/Grocery</h4>
-                <p className={style.smartphones}>of food are purchased using smartphone or tablets</p>
+      </section>
+      <div className={style.solutionSection}>
+        <div className={style.container}>
+          <div
+            className={`${style.solutionContent} d-flex flex-wrap justify-space-between align-items-center`}
+          >
+            <div className={`${style.title}  w-70`}>
+              <h2 className={style.whiteText}>
+                Looking for eCommerce Web Development Services?
+              </h2>
+              <div className={style.subTitle}>
+                Enhance your online store with our custom eCommerce web
+                development services. Contact us today to create a customized,
+                high-performing, and scalable eCommerce solution for your
+                business.
               </div>
             </div>
-            <div className={style.content}>
-              <p className={style.icon}>
-                <AiOutlineCheck />
-              </p>
-              <div>
-                <h4 className={style.Fitness}>Realtime Communication</h4>
-                <p className={style.smartphones}>of people worldwide are using audio-video chatting on their mobile phones.</p>
-              </div>
-            </div>
-            <div className={style.content}>
-              <p className={style.icon}>
-                <AiOutlineCheck />
-              </p>
-              <div>
-                <h4 className={style.Fitness}>Real Estate</h4>
-                <p className={style.smartphones}>of property are searched online using real estate apps.</p>
-              </div>
-            </div>
-            <div className={style.content}>
-              <p className={style.icon}>
-                <AiOutlineCheck />
-              </p>
-              <div>
-                <h4 className={style.Fitness}>Travel & Hospitality</h4>
-                <p className={style.smartphones}>of tours are ordered from mobile devices.</p>
-              </div>
-            </div>
-            <div className={style.content}>
-              <p className={style.icon}>
-                <AiOutlineCheck />
-              </p>
-              <div>
-                <h4 className={style.Fitness}>Education</h4>
-                <p className={style.smartphones}>of people worldwide are using audio-video chatting on their mobile phones.</p>
-              </div>
-            </div>
-            <div className={style.content}>
-              <p className={style.icon}>
-                <AiOutlineCheck />
-              </p>
-              <div>
-                <h4 className={style.Fitness}>Realtime Communication</h4>
-                <p className={style.smartphones}>of high school students use smartphones to educate themselves, compared to 28% in 2012..</p>
-              </div>
+            <div className={style.fillbtn}>
+              <a className={style.fill} href="/contact-us/">
+                Book Free Consultation
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-
+    </>
   );
 }
 
-export default EcommerceEnterprizes
+export default EcommerceEnterprizes;

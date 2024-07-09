@@ -1,108 +1,72 @@
 import style from "./EcommerceSolution.module.scss";
-import { AiOutlineCheck, AiOutlineMobile } from "react-icons/ai";
-import { BsCart } from "react-icons/bs";
-import img from "../../../assets/Services/image.png";
-import Slider from "react-slick/lib/slider";
+import shopify from "../../../assets/Services/Ecommerce/shopify.svg";
+import woo from "../../../assets/Services/Ecommerce/woocommerce.svg";
 
-const settings = {
-  dots: false,
-  autoplay: true,
-  arrows: false,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  centerMode: true,
-  centerPadding: "0",
-};
 
 
 function EcommerceSolution(apiData) {
+  const cards = [
+    {
+      image: shopify,
+      title: "Shopify",
+      description:
+        "Shopify is a commerce platform that allows you to create your own online store and",
+    },
+    {
+      image: woo,
+      title: "Shopify",
+      description:
+        "Shopify is a commerce platform that allows you to create your own online store and",
+    },
+    {
+      image: woo,
+      title: "Shopify",
+      description:
+        "Shopify is a commerce platform that allows you to create your own online store and",
+    },
+    {
+      image: woo,
+      title: "Shopify",
+      description:
+        "Shopify is a commerce platform that allows you to create your own online store and",
+    },
+    {
+      image: woo,
+      title: "Shopify",
+      description:
+        "Shopify is a commerce platform that allows you to create your own online store and",
+    },
+  ];
+
+
   return (
-    <div className={style.serviceSolution}>
-      {/* ///////////////////////////////////// */}
-      {/* Content */}
-      {/* ///////////////////////////////////// */}
-      <div className={style.wrapper}>
-        <div className={style.wrapper__new}>
-          <div className={style.wrapper__left}>
-            <img src={img} alt="" />
-          </div>
-          <div className={style.wrapper__right}>
-            <p>{apiData.apiData.OurSolutionsSection.Title1}</p>
-            <h3>{apiData.apiData.OurSolutionsSection.Title2}</h3>
-            <ul>
-              {apiData.apiData.OurSolutionsSection.List.map(item => {
-                return (
-                  <li>
-                    <div>
-                      <AiOutlineCheck />
-                    </div>
-                    <div>{item.Name} </div>
-                  </li>
-                )
-              })}
+    <section className={style.platformsSection}>
+      <div className={style.container}>
+        <h2 className={style.heading}>
+          Platforms We Preferred for eCommerce Store Development
+        </h2>
+        <p className={style.subheading}>
+          BrainSpate uses advanced eCommerce CMS and CRM platforms, along with
+          the latest techniques, themes, plugins, and extensions, to create
+          customized eCommerce websites. This helps you expand your brand,
+          products, and services globally and increase revenue.
+        </p>
+        <div className={style.cardContainer}>
+          {cards.map((card, index) => (
+            <div key={index} className={style.card}>
+              <img src={card.image} alt="Shopify" className={style.cardImage} />
+              <h3 className={style.cardTitle}>{card.title}</h3>
+              <p className={style.cardDescription}>
+              {card.description}
+              </p>
+            </div>
+          ))}
 
-            </ul>
-          </div>
+         
+          {/* Add more cards as needed */}
         </div>
-
       </div>
-
-      {/* ///////////////////////////////////// */}
-      {/* option */}
-      {/* ///////////////////////////////////// */}
-      {/* ///////////////////////////////////// */}
-      {/* Slide */}
-      {/* ///////////////////////////////////// */}
-      <h4 className={style.sliderHeading}>Explore our other services</h4>
-      <Slider {...settings} className={style.options}>
-        <div className={style.option}>
-          <div className={style.wrap}>
-            <div className={style.left}>
-              <div>
-                <BsCart />
-              </div>
-              <div>Sales & Marketing</div>
-            </div>
-            <div className={style.right}>10%</div>
-          </div>
-        </div>
-        <div className={style.option}>
-          <div className={style.wrap}>
-            <div className={style.left}>
-              <div>
-                <AiOutlineMobile />
-              </div>
-              <div>Business Analytics</div>
-            </div>
-            <div className={style.right}>10%</div>
-          </div>
-        </div>
-        <div className={style.option}>
-          <div className={style.wrap}>
-            <div className={style.left}>
-              <div>
-                <AiOutlineMobile />
-              </div>
-              <div>Development</div>
-            </div>
-            <div className={style.right}>10%</div>
-          </div>
-        </div>
-        <div className={style.option}>
-          <div className={style.wrap}>
-            <div className={style.left}>
-              <div>
-                <AiOutlineMobile />
-              </div>
-              <div>Business Analytics</div>
-            </div>
-            <div className={style.right}>10%</div>
-          </div>
-        </div>
-      </Slider>
-    </div>
+    </section>
   );
 }
 

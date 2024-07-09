@@ -84,9 +84,8 @@
   .iphone1 {
       position: absolute;
       bottom: 61px;
-      right: 3rem;
-      width: 98%;
-      width: 55%;
+      right: 1rem;
+      width: 90%;
       @include media(">=LGdesktop") {
         right: 2rem;
       }
