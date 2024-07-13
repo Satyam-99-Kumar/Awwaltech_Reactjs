@@ -2,7 +2,7 @@ import style from "./EcommerceSolution.module.scss";
 import shopify from "../../../assets/Services/Ecommerce/shopify.svg";
 import woo from "../../../assets/Services/Ecommerce/woocommerce.svg";
 
-function EcommerceSolution(apiData) {
+function EcommerceExpertise(apiData) {
   const cards = [
     {
       image: shopify,
@@ -28,12 +28,7 @@ function EcommerceSolution(apiData) {
       description:
         "BrainSpate developers leverage Salesforce to streamline eCommerce website tasks such as customer data management, order management, and more. Using this platform, we enhance efficiency and improve overall customer experience.",
     },
-    {
-      image: woo,
-      title: "Shopify",
-      description:
-        "Shopify is a commerce platform that allows you to create your own online store and",
-    },
+ 
   ];
 
   return (
@@ -66,11 +61,11 @@ function EcommerceSolution(apiData) {
             </div>
           ))}
 
-          {/* Add more cards as needed */}
+        
         </div>
       </div>
     </section>
   );
 }
 
-export default EcommerceSolution;
+export default EcommerceExpertise;

@@ -1,0 +1,116 @@
+@import "../../../styles/breakpoints.scss";
+
+.developTypes {
+  &.triangle-top-bottom {
+    background: #82c7ca 0 0 no-repeat padding-box;
+    padding: 70px 0 90px;
+  }
+
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .mainTitle {
+    padding-bottom: 30px;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .subTitle {
+      font-size: 1rem;
+      color: #6d7d7f;
+      margin-bottom: 40px;
+      line-height: 25px;
+    }
+  }
+
+  .devBoxMain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+  }
+
+  .divWrap {
+    flex: 1 1 calc(33.33% - 26px); 
+    display: flex;
+    padding: 7px 0;
+
+    .card {
+      flex: 1;
+      min-height: 280px; 
+      padding: 30px 45px;
+      box-shadow: 0 0 25px #aeaeae33;
+      background-color: white;
+      transition: border 0.5s ease-in-out;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+
+      &:hover {
+        border: 1px solid blue;
+      }
+    }
+
+    .borderBlue {
+      &:hover {
+        border-color: blue;
+      }
+    }
+
+    .borderPurple {
+      &:hover {
+        border-color: purple;
+      }
+    }
+
+    .borderGreen {
+      &:hover {
+        border-color: green;
+      }
+    }
+
+    .borderOrange {
+      &:hover {
+        border-color: orange;
+      }
+    }
+
+    .borderLightBlue {
+      &:hover {
+        border-color: lightblue;
+      }
+    }
+
+    .borderYellow {
+      &:hover {
+        border-color: yellow;
+      }
+    }
+
+    .cardBody {
+      flex: 1;
+
+      .cardTitle {
+        h4 {
+          font-size: 1.25rem;
+          font-weight: 500;
+          color: #162438;
+          margin: 10px 0;
+        }
+      }
+
+      .cardText {
+        font-size: 17px;
+        line-height: 30px;
+        color: #a2a9b4;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
