@@ -163,7 +163,7 @@ export default function WebServices({ apiData }) {
         <p className={style.servicesPara}>
           Custom web development solutions specially crafted for your industry help your business with:
         </p>
-        <div className={style.services}>
+         <div className={style.services}>
           {[
             "Growth of user base",
             "Open new digital and business channels",
@@ -180,7 +180,9 @@ export default function WebServices({ apiData }) {
               </div>
             </div>
           ))}
-        </div>
+        </div> 
+    
+
       </div>
     </div>
   );
