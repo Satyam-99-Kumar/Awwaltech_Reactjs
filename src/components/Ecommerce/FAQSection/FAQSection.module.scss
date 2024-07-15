@@ -1,0 +1,89 @@
+@import "../../../styles/breakpoints.scss";
+
+.faqSection {
+    padding-bottom: 60px;
+    padding-top: 0px;
+  background-color: #f9f9f9;
+
+  .mainTitle {
+    padding-bottom: 50px;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .subTitle {
+      font-size: 1rem;
+      color: #6d7d7f;
+      margin-bottom: 40px;
+      line-height: 25px;
+    }
+  }
+  .faqQuestion {
+    color: #00a7ad;
+    padding-right: 20px;
+    font-size: 1.5rem;
+    line-height: 32px;
+    padding: 18px 0;
+}
+
+.answer {
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0b262a;
+}
+
+.list_main {
+  margin-left: 18px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0b262a;
+}
+  .accordionContainer {
+    .MuiAccordion-root {
+      margin-bottom: 10px;
+
+      &:before {
+        display: none;
+      }
+
+      .MuiAccordionSummary-root {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+
+        .MuiAccordionSummary-content {
+          display: flex;
+          align-items: center;
+        }
+
+        .MuiAccordionSummary-expandIcon {
+          color: #007bff;
+        }
+
+      
+
+     
+      }
+
+      .MuiAccordionDetails-root {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-top: none;
+        padding: 16px;
+
+        .MuiTypography-body1 {
+          font-size: 1rem;
+          color: #6d7d7f;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
