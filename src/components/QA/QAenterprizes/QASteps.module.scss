@@ -1,0 +1,30 @@
+.qastep {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    background-color: #068db6;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .qastepnumber {
+    
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 1.5em;
+  }
+  
+  .qastepcontent {
+    text-align: left;
+  }
+  
+  .qastepcontent h2 {
+    margin-bottom: 10px;
+  }
+  
+  .qastepcontent p {
+    margin: 0;
+  }
+  

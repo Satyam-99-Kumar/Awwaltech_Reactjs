@@ -1,0 +1,31 @@
+.awwaltechcard {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: left;
+    margin: 10px;
+  }
+  
+  .awwaltechcardimage img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  
+  .awwaltechcardcontent {
+    padding: 20px;
+    background: #fff;
+  }
+  
+  .awwaltechcardcontent h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .awwaltechcardcontent p {
+    color: #666;
+  }
+  
