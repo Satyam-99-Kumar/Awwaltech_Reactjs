@@ -1,0 +1,64 @@
+.UXtechnology{
+    background-color: #3c3c83;
+    width: 100%;
+}
+.technologyheading{
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+    padding-top: 2rem;
+}
+.technologysubtitle{
+    color: white;
+    font-size: 1.1rem;
+    line-height: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 3rem;
+}
+.Technologies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.Technologycard{
+    background-color: white;
+    width: 350px;
+    height: 170px;
+    box-sizing: border-box;
+    margin-bottom: 3.5rem;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    text-align: center;
+}
+.Technologycard h3 { 
+    font-size: 1.2rem;
+    
+ }
+ .Technologycard p {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0.5rem 1rem;
+}
+.technologysubheading{
+   margin-bottom: 1rem;
+   color: white;
+}
+.technologybtn{
+    background-color: #c5001a;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 0.7rem 3rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.technologybtn:hover{
+    background-color: #000080;
+}
