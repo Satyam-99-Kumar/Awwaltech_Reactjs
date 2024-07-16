@@ -1,0 +1,94 @@
+@import "../../../styles/breakpoints.scss";
+
+.hiringProcSec {
+  background: url(https://www.andolasoft.com/images/approach/benfit-sec.png) no-repeat 0px 0px;
+  width: 100%;
+  padding: 100px 0px 70px;
+  background-size: 100% auto;
+  color: #fff;
+}
+
+.container {
+  max-width: 1270px;
+        width: 100%;
+    }
+    .hiringProcSec h2 {
+      color: #fff;
+    text-align: center;
+    padding-bottom: 90px;
+}
+.hiringProcSec article {
+  margin-left: -10px;
+  margin-right: -10px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.hiringProcSec main {
+  font-size: 17px;
+  font-weight: 600;
+}
+    .hiringProcSec figure {
+      margin: 40px 0px;
+    }
+
+
+.fl {
+  float: left;
+}
+
+.cmnWidth {
+  width: 20%;
+  background: #fff;
+  border-right: 1px solid #E6E6E6;
+  padding: 60px 10px 30px;
+  position: relative;
+  min-height: 500px;
+}
+
+.cmnWidth span {
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+  display: block;
+  line-height: 85px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 47px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  margin-left: -43px;
+  margin-top: -43px;
+  background: #336799;
+}
+.cb {
+  clear: both;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.btnCmnEffect {
+  // Add your button common effect styles here
+}
+
+.cmnBlueBtnBg {
+  background-color: blue;
+  color: white;
+}
+
+.formBtmLink {
+  // Add your form bottom link styles here
+}
+
+.whiteBtn {
+  color: white;
+}

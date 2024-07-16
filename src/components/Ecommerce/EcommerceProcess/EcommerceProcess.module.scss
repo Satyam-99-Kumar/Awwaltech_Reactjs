@@ -1,0 +1,103 @@
+@import "../../../styles/breakpoints.scss";
+
+.ecommerceProcess {
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 50px 0px;
+  }
+
+  .mainTitle {
+    padding-bottom: 30px;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .subTitle {
+      font-size: 1rem;
+      color: #6d7d7f;
+      margin-bottom: 40px;
+      line-height: 25px;
+    }
+  }
+
+  .processMain {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .processLeft {
+    width: 50%;
+  }
+
+  .processContent {
+    display: flex;
+    align-items: start;
+
+    margin-bottom: 20px;
+  }
+
+  .processIcons {
+    margin-right: 15px;
+
+    figure {
+      margin: 0;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-top: 7px;
+
+      &.bgPurple {
+        background-color: purple;
+      }
+
+      &.bgBlue {
+        background-color: blue;
+      }
+
+      &.bgGreen {
+        background-color: green;
+      }
+
+      &.bgOrange {
+        background-color: orange;
+      }
+    }
+  }
+
+  .processTitle {
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #162438;
+      margin: 10px 0;
+    }
+
+    .description {
+      font-size: 17px;
+      line-height: 30px;
+      color: #a2a9b4;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+  }
+
+  .processRight {
+    width: 50%;
+
+    .processRightImage {
+      text-align: right;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

@@ -5,8 +5,9 @@ import HireBanner from "../../components/Hire/HireBanner/HireBanner";
 import HireService from "../../components/Hire/HireService/HireService";
 import Navbar from "../../components/Navbar/Navbar";
 import HireExperience from "../../components/Hire/HireExperience/HireExperience";
-import HireFaq from "../../components/Hire/HireFaq/HireFaq";
+import HireProcess from "../../components/Hire/HireProcess/HireProcess";
 import HireExcecutionProcess from "../../components/Hire/HireExcecutionProcess/HireExcecutionProcess";
+import HiringIncludeSection from "../../components/Hire/HiringIncludeSection/HiringIncludeSection";
 import jsonData from "../../json/hireData.json";
 
 function Hire() {
@@ -24,7 +25,8 @@ function Hire() {
           <HireService data={jsonData} />
           <HireExcecutionProcess data={jsonData} />
           <HireExperience data={jsonData} />
-          <HireFaq />
+          <HireProcess />
+          <HiringIncludeSection />
           <GlobalContact />
           <Footer />
         </>

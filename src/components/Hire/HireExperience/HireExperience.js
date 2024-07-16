@@ -1,108 +1,56 @@
 import { Link } from "react-router-dom";
 import img1 from "../../../assets/Hire/experience.png";
-import style from "./HireExperience.module.scss";
-import { AiOutlineRight, AiOutlineMobile } from "react-icons/ai";
-import { BsCart } from "react-icons/bs";
-import Slider from "react-slick/lib/slider";
+import styles from "./HireExperience.module.scss";
 
-const settings = {
-  dots: false,
-  autoplay: true,
-  arrows: false,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  centerMode: true,
-  centerPadding: "0",
-};
+
 
 function HireExperience({data}) {
   return (
-    <div className={style.hireExpWrapper}>
-      <div className={style.hireexperience}>
-        <div className={style.hireexperience__image}>
-          <img src={img1} alt="" />
-        </div>
-        <p>{data?.GetReadySection?.TitleTag}</p>
-        <h1>{data?.GetReadySection?.Title}</h1>
-        <p className={style.secondText}>{data?.GetReadySection?.Paragraph}</p>
-
-        <div className={style.infos}>
-          <div className={style.info}>
-            <h2>{data.GetReadySection.ManYearExp}</h2>
-            <p>MAN-YEAR-EXPERIENCE</p>
-          </div>
-          <div className={style.info}>
-            <h2>{data.GetReadySection.YearsExp}</h2>
-            <p>YEARS EXPERIENCE</p>
-          </div>
-          <div className={style.info}>
-            <h2>{data.GetReadySection.SatisfiedCustomers}</h2>
-            <p>SATISFIED CUSTOMERS</p>
-          </div>
-          <div className={style.info}>
-            <h2>{data.GetReadySection.ClientRetention}</h2>
-            <p>CLIENT RETENTION</p>
-          </div>
-        </div>
-
-        <Link to="/hire">
-          Contact us now{" "}
-          <span>
-            <AiOutlineRight />
-          </span>
-        </Link>
-      </div>
-
-      {/* Slider */}
-      <Slider {...settings} className={style.options}>
-        <div className={style.option}>
-          <div className={style.wrap}>
-            <div className={style.left}>
-              <div>
-                <BsCart />
-              </div>
-              <div>Sales & Marketing</div>
-            </div>
-            <div className={style.right}>10%</div>
-          </div>
-        </div>
-        <div className={style.option}>
-          <div className={style.wrap}>
-            <div className={style.left}>
-              <div>
-                <AiOutlineMobile />
-              </div>
-              <div>Business Analytics</div>
-            </div>
-            <div className={style.right}>10%</div>
-          </div>
-        </div>
-        <div className={style.option}>
-          <div className={style.wrap}>
-            <div className={style.left}>
-              <div>
-                <AiOutlineMobile />
-              </div>
-              <div>Development</div>
-            </div>
-            <div className={style.right}>10%</div>
-          </div>
-        </div>
-        <div className={style.option}>
-          <div className={style.wrap}>
-            <div className={style.left}>
-              <div>
-                <AiOutlineMobile />
-              </div>
-              <div>Business Analytics</div>
-            </div>
-            <div className={style.right}>10%</div>
-          </div>
-        </div>
-      </Slider>
+    <section className={styles.benefitsSec}>
+    <div className={styles.container}>
+      <aside className={`${styles.fr} ${styles.width50} ${styles.rtCnt}`}>
+        <figure>
+          <img
+            src="https://www.andolasoft.com/images/approach/monitor2.png"
+            alt="Healthcare website by Andolasoft dedicated developers"
+            title="Healthcare website by Andolasoft dedicated developers"
+            className="lazyload"
+            width="600"
+            height="363"
+          />
+        </figure>
+        <p>
+          Wellness By All Means: A healthcare website built on WordPress by a team of 'dedicated developers' from <strong>Andolasoft</strong>.<br />
+          <a href="https://www.andolasoft.com/portfolio/wellness/" title="View more details">
+            View more details →
+          </a>
+        </p>
+      </aside>
+      <aside className={`${styles.fl} ${styles.width50} ${styles.lftCnt}`}>
+        <h2>Benefits of Hiring Dedicated Developers</h2>
+        <ul>
+          <li>Pay for one developer who has skills to manage multiple aspects of project development.</li>
+          <li>Save 60% of development cost compared to hiring local resources.</li>
+          <li>Our dedicated developers work in your time-zone for seamless collaboration.</li>
+          <li>Connect to developers on multiple communication channels such as Skype, Phone, Email, WebEx and Go-To-Meetings.</li>
+          <li>Plan your project tasks with regular scrum meetings and updates on task progress.</li>
+          <li>
+            Collaborate with developers on world-class project collaboration tool -{' '}
+            <a href="http://www.orangescrum.com" target="_blank" title="OrangeScrum">
+              OrangeScrum
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div className={styles.cb}></div>
+      <aside className={`${styles.width100} ${styles.textCenter}`}>
+        <a className={`${styles.btnCmnEffect} ${styles.cmnBlueBtnBg} ${styles.whiteBtn} ${styles.formBtmLink}`} title="Get in touch" href="javascript:void(0)">
+          Get in Touch
+        </a>
+        <small className={styles.talk}>And we'd love to tell you a bunch of other benefits of working with us.</small>
+      </aside>
     </div>
+  </section>
   );
 }
 

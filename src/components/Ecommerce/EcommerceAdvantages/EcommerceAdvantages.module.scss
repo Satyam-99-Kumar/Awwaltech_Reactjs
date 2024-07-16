@@ -1,0 +1,72 @@
+@import "../../../styles/breakpoints.scss";
+
+.advantages {
+
+  &.bgPurpleLight {
+    background: transparent linear-gradient(89deg, #ce9ffc14, #7367f014);
+  }
+
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 60px 0 40px;
+  }
+
+  .mainTitle {
+    padding-bottom: 50px;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .subTitle {
+      font-size: 1rem;
+      color: #6d7d7f;
+      margin-bottom: 40px;
+      line-height: 25px;
+    }
+  }
+
+  .advantagesMain {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantagesContent {
+    width: 33.33%;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+
+    .advantagesIcon {
+      margin-right: 15px;
+
+      figure {
+        background: var(--color-ffffff);
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        box-shadow: 0 0 30px #7988974d;
+      }
+
+      img {
+        width: 26px;
+        height: 25px;
+        color: transparent;
+      }
+    }
+
+    .advantagesTitle {
+      h4 {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #162438;
+      }
+    }
+  }
+}

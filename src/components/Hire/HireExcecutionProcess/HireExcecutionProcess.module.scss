@@ -1,157 +1,103 @@
 @import "../../../styles/breakpoints.scss";
 
-.heprocess {
-  width: 100%;
-  min-height: fit-content;
-  position: relative;
-  background: #f5f5f7;
-
-  &__text {
-   
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 60px;
-
-    @include media("<=phone") {
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-top: 0;
-    }
-
-    @include media(">=LGdesktop") {
-      padding-left: 100px;
-      padding-right: 100px;
-      padding-top: 60px;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 1rem;
-      font-size: 36px;
-      line-height: 42px;
-      font-weight: 700;
-      letter-spacing: -0.34px;
-
-      @include media("<=phone") {
-        font-size: 26px;
-        line-height: 36px;
-        letter-spacing: -1px;
-      }
-
-      @include media(">=LGdesktop") {
-      font-weight: 700;
-      }
-    }
-
-    p {
-      font-family: var(--font-secondary);
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 21px;
-      margin: auto auto 1rem;
-      text-align: center;
-      width: 50%;
-
-      @include media("<=phone") {
-        width: 100%;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 24px;
-      }
-    }
-
-    span {
-      font-family: var(--font-secondary);
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 21px;
-    margin: auto auto 1rem;
-    text-align: center;
-    width: 50%;
-    display: block;
-    @include media("<=phone") {
-      width: 100%;
-    }
-    }
-  }
-
-  &__blocks {
+.businessAppSec {
+  .container {
+    background: url(https://www.andolasoft.com/images/approach/business-app-bg.png) no-repeat 0px 0px #fff;
     width: 100%;
-    padding: 40px 100px 80px 100px;
+    padding: 100px 0px 70px;
+  }
 
-    @include media("<=phone") {
-      padding: 15px;
-    }
+  .textCenter {
+    text-align: center;
+  }
 
-    @include media(">=LGdesktop") {
-     padding: 80px 100px;
-    }
+  .articleP {
+    font-size: 13px;
+    color: #333;
+    display: block;
+    padding-left: 65px;
+    position: relative;
+    line-height: 20px;
+    margin: 15px 0px 60px 65px;
 
-    .block {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
 
-      @include media("<=phone") {
-        flex-wrap: wrap;
-        margin-bottom: 0;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 24px;
-      }
-
-      .item {
-        width: calc(33.33% - 24px);
-        background: #fff;
-        padding: 16px;
-        background: linear-gradient(0deg, #ffffff, #ffffff), #0b2845;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
-        border-radius: 6px;
-
-        @include media("<=phone") {
-          width: 100%;
-          margin-bottom: 1rem;
-        }
-
-        &:not(:last-child) {
-          margin-right: 24px;
-
-          @include media("<=phone") {
-            margin-right: 0;
-          }
-        }
-
-        h4 {
-          margin-bottom: 12px;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 21px;
-          letter-spacing: -0.01em;
-          color: rgba(0, 0, 0, 0.7);
-          font-family: var(--font-secondary);
-
-          @include media("<=phone") {
-            margin: 10px 0;
-          }
-        }
-
-        p {
-          font-family: var(--font-secondary);
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 22px;
-          letter-spacing: -0.000793565em;
-          color: #333333;
-          padding-left: 12px;
-          border-left: 1px solid rgba(0, 0, 0, 0.2);
-          ;
-        }
-      }
+    .articleLink {
+      color: #336699;
+      text-decoration: none;
     }
   }
-  @include media(">=LGdesktop") {
-   
+  .articleP:before{
+
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: url(https://www.andolasoft.com/images/approach/team-small.png) no-repeat 0px 0px;
+  background-size: 100% auto;
+  width: 50px;
+  height: 45px;
+}
+  .fl {
+    float: left;
+  }
+  .fr {
+    float: right;
+  }
+
+  .fr h2 {
+    color: #36295f;
+    text-transform: none;
+  }
+  .cb {
+    clear: both;
+  }
+  .width55 {
+    width: 55%;
+  }
+  .width40 {
+    width: 40%;
+  }
+  .width100 {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .main {
+    font-weight: 600;
+    color: #333;
+    font-size: 27px;
+    margin: 25px 0px;
+    display: block;
+  }
+  .btnCmnEffect {
+    background: #69A132;
+    border-color: #69A132;
+    font-size: 22px;
+    padding: 22px 50px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+  }
+  .cmnBlueBtnBg:hover {
+    border: 2px solid #69A132;
+    background: #f0f4f5;
+    color: #69A132;
+    font-size: 22px;
+    padding: 22px 50px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    text-decoration: none;
+  margin-top: 20px;
+  }
+ 
+
+  .talk {
+    display: block;
+    font-size: 18px;
+    margin-top: 40px;
+    font-weight: 600;
   }
 }

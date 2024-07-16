@@ -1,0 +1,76 @@
+@import "../../../styles/breakpoints.scss";
+
+.getInTouch {
+  &.ecomBgHalf {
+  
+    background: transparent linear-gradient(89deg, #ce9ffc14, #7367f014);
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .getInTouchWrap {
+    background: transparent linear-gradient(290deg, #0b262a, #007685) 0 0 no-repeat padding-box;
+    display: flex !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 3px 4px 20px hsla(0, 0%, 68%, .2);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 90px;
+  }
+
+  .title {
+    &.whiteText {
+      color: #fff;
+      width: 70%;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    }
+
+    .subTitle {
+      &.coloredText {
+        font-size: 1rem;
+        color: #ccdfe1; 
+        margin-bottom: 40px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .fillbtn {
+    .fill {
+        position: relative;
+        display: block;
+        width: -moz-fit-content;
+        width: fit-content;
+        background-color: #00a7ad;
+        padding: 13px 18px;
+        font-size: var(--font-size-20);
+        border: 1px solid #00a7ad;
+        border-radius: 5px;
+        outline: 0;
+        overflow: hidden;
+        z-index: 1;
+        cursor: pointer;
+        transition: .08s ease-in;
+        -webkit-transition: .08s ease-in;
+        text-decoration: none;
+        color: #ccdfe1; 
+      &:hover {
+        background-color: transparent; 
+      }
+    }
+  }
+}
