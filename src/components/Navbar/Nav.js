@@ -59,6 +59,23 @@ function Nav({ drawerToggleClickHnadler }) {
 
       <div className={styles.nav__links}>
         {/* Menu */}
+
+        <NavLink
+          className={(navData) => (navData.isActive ? styles.activeLink : ``)}
+          to="/"
+        >
+          <div className={styles.barier}>Home</div>
+        </NavLink>
+
+        <NavLink
+          className={(navData) => (navData.isActive ? styles.activeLink : ``)}
+          to="/aboutus"
+        >
+          <div className={styles.barier}>About us</div>
+        </NavLink>
+
+
+
         <NavLink
           onClick={handleMenuClick}
           className={(navData) => (navData.isActive ? styles.activeLink : ``)}
@@ -125,7 +142,7 @@ function Nav({ drawerToggleClickHnadler }) {
               </NavLink>
               <NavLink  className={`${styles.menu}`} to="/service/dedicated-development-team">
                 <div><IoMdPeople /></div>
-                <div>Dedicated Developm. Team</div>
+                <div>Dedicated Development. Team</div>
               </NavLink>
               <NavLink  className={`${styles.menu}`} to="/service/cloud-based-services">
               <div><TiCloudStorage /></div>
@@ -140,12 +157,7 @@ function Nav({ drawerToggleClickHnadler }) {
               </NavLink>
           </div>
         </NavLink>
-        <NavLink
-          className={(navData) => (navData.isActive ? styles.activeLink : ``)}
-          to="/aboutus"
-        >
-          <div className={styles.barier}>About us</div>
-        </NavLink>
+        
         <NavLink
           className={(navData) => (navData.isActive ? styles.activeLink : ``)}
           to="/portfolio"
@@ -154,6 +166,45 @@ function Nav({ drawerToggleClickHnadler }) {
         </NavLink>
 
         <NavLink
+          className={(navData) => (navData.isActive ? styles.activeLink : ``)}
+          to="/technologies"
+        >
+          <div className={styles.barier}>Technologies</div>
+        </NavLink>
+
+
+
+
+        <NavLink
+           onClick={handleMenuClick}
+          className={(navData) => (navData.isActive ? styles.activeLink : ``)}
+          id="dropdown"
+           to="/more"
+        >
+          <div className={styles.barier}>
+            More{" "}
+            <span>
+              <BsChevronDown />
+            </span>
+          </div>
+          <div className={styles.menuss}>
+
+          <NavLink  className={`${styles.menu}`} to="/blog">
+                {/* <div><IoMdPeople /></div> */}
+                <div>Blog</div>
+              </NavLink>
+
+              
+
+              <NavLink  className={`${styles.menu}`} to="/hire">
+                {/* <div><TiCloudStorage /></div> */}
+                <div>Hire Developers</div>
+              </NavLink>  
+              
+          </div>
+        </NavLink>
+
+        {/* <NavLink
           className={(navData) => (navData.isActive ? styles.activeLink : ``)}
           to="/hire"
         >
@@ -166,21 +217,17 @@ function Nav({ drawerToggleClickHnadler }) {
           to="/blog"
         >
           <div className={styles.barier}>Blog</div>
-        </NavLink>
-        <NavLink
-          className={(navData) => (navData.isActive ? styles.activeLink : ``)}
-          to="/technologies"
-        >
-          <div className={styles.barier}>Technologies</div>
-        </NavLink>
+        </NavLink> */}
+        
         <NavLink
           className={(navData) =>
             navData.isActive ? styles.activeLinkContact : ``
           }
           to="/contactus"
         >
-          <div className={styles.barier}>Contact</div>
+          <div className={styles.barier}>Contact Us</div>
         </NavLink>
+
         <DrawerTogglerButton click={drawerToggleClickHnadler} />
       </div>
     </div>

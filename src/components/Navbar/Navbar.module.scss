@@ -111,15 +111,15 @@
       position: relative;
 
       .menus {
-        width: 35rem;
-        position: absolute;
-        top: 3.9rem;
-        left:300px;
+         width: 35rem;
+         position: absolute;
+         top: 3.9rem;
+        // left:300px;
         transform: translateX(-50%);
         background: #fff;
-        padding: 10px 5px;
+        padding: 4px 6px;
         border-radius: 6px;
-        display: flex;
+         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
 
@@ -363,3 +363,77 @@
     display: none;
   }
 }
+
+
+a {
+  position: relative;
+
+  .menuss {
+     width: 12rem;
+     position: absolute;
+     top: 3.9rem;
+     left: 90px;
+    transform: translateX(-50%);
+    background: whitesmoke;
+    //padding: 4px 3px;
+    border-radius: 6px;
+    display: inline;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    //-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    visibility: hidden;
+    a.menu {
+      width: 48%;
+      height: fit-content;
+       display: flex;
+       align-items: start;
+      padding: 10px;
+
+      margin: 0;
+       margin-bottom: 1rem;
+      border-radius: 8px;
+      transition: 0.3s;
+      &:hover div:nth-child(1) {
+        transform: scale(1.1); 
+      }
+      &:hover {
+        background: #9dbeea;
+       height: fit-content;
+       width: fit-content;
+       //display: flex;
+
+      }
+      div {
+        
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        color: var(--black-color);
+        color: yellow;
+        padding: 0;
+        transition: 0.3s;
+        margin-right: 15px !important;
+        &:nth-child(1) {
+          color: var(--primary-color);
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .activeLinkMenu {
+      background: #e7f1fe;
+    }
+  }
+
+  &:hover > .menuss {
+    //-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+
