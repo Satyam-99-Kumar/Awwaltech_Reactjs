@@ -6,9 +6,10 @@
     "Banner": {
         "BannerImage": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618",
         "BannerTitle": "About us",
-        "Title1": "Your End-to-End",
-        "Title2": "Software Development",
-        "Title3": "Partner",
+        "Title1":"Lorem content Lorem content Lorem ",
+        "Title2":"Lorem content Lorem content Lorem",
+        "Title3":"Lorem content Lorem content Lorem content",
+        "Title4":"Home/About us",
         "BannerImages": [
             {
                 "Images": "https://www.shutterstock.com/image-photo/young-businessteam-working-new-startup-project-1008055618"

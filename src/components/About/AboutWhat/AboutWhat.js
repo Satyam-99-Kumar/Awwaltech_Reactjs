@@ -3,6 +3,7 @@ import { AiOutlineCheck, AiOutlineMobile } from "react-icons/ai";
 import { BsCart } from "react-icons/bs";
 import style from "./AboutWhat.module.scss";
 import img1 from "../../../assets/About/discussion.png";
+import img2 from "../../../assets/About/f2.png";
 
 function AboutWhat({ data }) {
 
@@ -22,17 +23,22 @@ function AboutWhat({ data }) {
     <div className={style.what}>
       {/* short desc */}
       <div className={style.what__identity}>
-        <div className={style.head}>
+        <div className={style.wrapper}>
           <p>{data?.WhatIsMinttaskSection?.Title1}</p>
           <h2>
             <div>{data?.WhatIsMinttaskSection?.Title2}</div>
             <div>{data?.WhatIsMinttaskSection?.Title3}</div>
             <div>{data?.WhatIsMinttaskSection?.Title4}</div>
           </h2>
+           <p>{data?.WhatIsMinttaskSection?.Paragraph1}</p>
+          <p>{data?.WhatIsMinttaskSection?.Paragraph2}</p>
         </div>
         <div className={style.text}>
-          <p>{data?.WhatIsMinttaskSection?.Paragraph1}</p>
-          <p>{data?.WhatIsMinttaskSection?.Paragraph2}</p>
+
+          <div className={style.imagee}>
+             <img src={img2} alt="" />
+          </div>  
+
         </div>
       </div>
 
@@ -79,9 +85,9 @@ function AboutWhat({ data }) {
             {/* Final text */}
             <div className={style.finalTxt}>
 
-              <p>
+              {/* <p>
                 {data?.EnterprisesSection?.Paragraph}
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

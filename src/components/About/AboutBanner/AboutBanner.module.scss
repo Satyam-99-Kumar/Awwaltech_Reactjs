@@ -3,7 +3,7 @@
 .aboutBanner {
   width: 100%;
   min-height: 76vh;
-  background: #165fff;
+  background: #06402B;
   display: flex;
   @include media("<=phone") {
     flex-wrap: wrap;
@@ -20,11 +20,11 @@
   }
 
   &__left {
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
     color: #fff;
-    padding-left: 100px;
+    padding-left: 70%;
     @include media("<=phone") {
       width: 100%;
       padding: 15px;
@@ -36,23 +36,27 @@
     p {
       color: #e5e5e5;
       font-family: var(--font-primary);
-      font-size: 26px;
-      font-weight: 600;
+      font-size: 56px;
+      display: inline;
+      font-weight: 700;
       line-height: 36px;
       margin-bottom: 1rem;
+      
     }
     h1 {
-      font-weight: 700;
-      font-size: 42px;
-      line-height: 56px;
-      letter-spacing: 0.00014em;
+      font-weight: normal;
+      color: #e5e5e5;
+      display: inline;
+      font-size: 28px;
+      line-height: 30px;
+      // letter-spacing: 0.00014em;
       font-family: var(--font-primary);
       @include media("<=phone") {
         font-size: 30px !important;
       }
       @include media(">=tablet") {
-        font-size: 48px;
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 90;
       }
     }
     a {
@@ -68,70 +72,74 @@
       font-kerning: 21px;
       font-weight: 600;
       border-radius: 4px;
-      background-color: #e7f1fe;
-      color: #175fff;
-      border: 2px solid #175fff;
+      // background-color: #e7f1fe;
+      color: #e7f1fe;
+      border: 2px solid #e7f1fe;
+     
       transition: 0.3s;
       &:hover {
         background-color: #e7f1fe;
         border: 2px solid #99b9ff;
-        color: #153ab7;
+        color: #121313f4;
       }
     }
   }
-  &__right {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    @include media("<=phone") {
-      width: 100%;
-      display: none;
-    }
-    @include media(">=LGdesktop") {
-      width: 50%;
-    }
-    div {
-      min-width: 40%;
-      position: relative;
-      @include media(">=LGdesktop") {
-        min-width: 40%;
+  // &__right {
+  //   padding-left: 20%;
+  // }
+  // &__right {
+  //   width: 50%;
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   @include media("<=phone") {
+  //     width: 100%;
+  //     display: none;
+  //   }
+  //   @include media(">=LGdesktop") {
+  //     width: 50%;
+  //   }
+  //   div {
+  //     min-width: 40%;
+  //     position: relative;
+  //     @include media(">=LGdesktop") {
+  //       min-width: 40%;
         
-      }
-      &:last-child {
-        min-width: 20%;
-        @include media(">=LGdesktop") {
-          min-width: 20%;
-        }
+  //     }
+  //     &:last-child {
+  //       min-width: 20%;
+  //       @include media(">=LGdesktop") {
+  //         min-width: 20%;
+  //       }
        
-      }
-      img {
-        position: absolute;
-        width: 90%;
-      }
-    }
-    .frame1 img {
-      top: 50%;
-      transform: translateY(-50%);
-      @include media(">=desktop") {
-        top: 47%;
-      }
+  //     }
+  //     img {
+  //       position: absolute;
+  //       width: 90%;
+  //     }
+  //   }
+  //   .frame1 img {
+  //     top: 50%;
+  //     transform: translateY(-50%);
+  //     @include media(">=desktop") {
+  //       top: 47%;
+  //     }
 
-      @include media(">=LGdesktop") {
-        top: 50%;
-      }
-    }
-    .frame2 img,
-    .frame3 img {
-      bottom: 0;
-      @include media(">=LGdesktop") {
-        bottom: 0;
-      }
-    }
-    .frame3 img {
-      width: 100%;
-      @include media(">=LGdesktop") {
-        width: 100%;
-      }
-    }
-  }
+  //     @include media(">=LGdesktop") {
+  //       top: 50%;
+  //     }
+  //   }
+  //   .frame2 img,
+  //   .frame3 img {
+  //     bottom: 0;
+  //     @include media(">=LGdesktop") {
+  //       bottom: 0;
+  //     }
+  //   }
+  //   .frame3 img {
+  //     width: 100%;
+  //     @include media(">=LGdesktop") {
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 }
